@@ -1,0 +1,45 @@
+# ─── Proprietary application (not published) ───
+/phoenix_upscaler/
+/scripts/
+/packaging/
+/pyproject.toml
+/requirements.txt
+/.env
+/.env.*
+!.env.example
+/.gumroad-token
+/.gumroad-token.example
+/phoenix_upscaler.egg-info/
+/dist/
+/build/
+*.egg-info/
+PhoenixUpscaler.spec
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+.mypy_cache/
+
+# User data & secrets
+.phoenix/
+*.log
+.gumroad-auth-url.txt
+
+# Large demo masters (web copies are tracked)
+docs/assets/demo/mj-bad-tour-source-clip.mp4
+docs/assets/demo/mj-bad-tour-phoenix-restored.mp4
+docs/assets/demo/mj-bad-tour-1080p.mp4
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ─── Public repo (tracked) ───
+# README.md, docs/, .github/, release notes

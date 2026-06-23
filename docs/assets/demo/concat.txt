@@ -1,0 +1,6 @@
+file '/mnt/e/Business/phoenix-upscaler/docs/assets/demo/.web_tmp/seg_0_b.mp4'
+file '/mnt/e/Business/phoenix-upscaler/docs/assets/demo/.web_tmp/seg_0_a.mp4'
+file '/mnt/e/Business/phoenix-upscaler/docs/assets/demo/.web_tmp/seg_1_b.mp4'
+file '/mnt/e/Business/phoenix-upscaler/docs/assets/demo/.web_tmp/seg_1_a.mp4'
+file '/mnt/e/Business/phoenix-upscaler/docs/assets/demo/.web_tmp/seg_2_b.mp4'
+file '/mnt/e/Business/phoenix-upscaler/docs/assets/demo/.web_tmp/seg_2_a.mp4'

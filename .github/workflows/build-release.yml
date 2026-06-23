@@ -1,0 +1,74 @@
+name: Build Phoenix Upscaler
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            artifact: PhoenixUpscaler-linux-x86_64
+          - os: windows-latest
+            artifact: PhoenixUpscaler-windows-x64
+          - os: macos-latest
+            artifact: PhoenixUpscaler-macos
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install package
+        run: pip install -e .
+
+      - name: Install Inno Setup (Windows)
+        if: runner.os == 'Windows'
+        run: choco install innosetup -y
+
+      - name: Build installer
+        run: python scripts/build_installer.py
+        env:
+          PHOENIX_GUMROAD_PRODUCT_URL: https://aravindk74.gumroad.com/l/phoenixupscaler
+          PHOENIX_WEBSITE_URL: https://aravindk74.github.io/phoenix-upscaler/
+          PHOENIX_PRICE_USD: "6"
+
+      - name: Collect artifacts (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          cd dist
+          ls -la
+          for f in *.AppImage install-phoenix*.sh; do
+            [ -f "$f" ] && mv "$f" "../${{ matrix.artifact }}-${f}" || true
+          done
+          tar -czf ../${{ matrix.artifact }}-portable.tar.gz PhoenixUpscaler
+
+      - name: Collect artifacts (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          cd dist
+          if (Test-Path "PhoenixUpscaler-Setup-*.exe") {
+            Copy-Item PhoenixUpscaler-Setup-*.exe ../${{ matrix.artifact }}-Setup.exe
+          }
+          Compress-Archive -Path PhoenixUpscaler -DestinationPath ../${{ matrix.artifact }}-portable.zip
+
+      - name: Collect artifacts (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          cd dist
+          cp PhoenixUpscaler-*.dmg ../${{ matrix.artifact }}.dmg || true
+          tar -czf ../${{ matrix.artifact }}-portable.tar.gz PhoenixUpscaler
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          path: |
+            ${{ matrix.artifact }}*
+          if-no-files-found: error
