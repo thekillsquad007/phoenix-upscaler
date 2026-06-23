@@ -4,7 +4,7 @@
 
 ```bash
 cd /mnt/e/Business/phoenix-upscaler
-git remote add origin https://github.com/aravindk74/phoenix-upscaler.git
+git remote add origin https://github.com/thekillsquad007/phoenix-upscaler.git
 git push -u origin main
 ```
 
@@ -14,7 +14,7 @@ git push -u origin main
 
 The site deploys automatically on push to `main` when `docs/` changes.
 
-Live URL: **https://aravindk74.github.io/phoenix-upscaler/**
+Live URL: **https://thekillsquad007.github.io/phoenix-upscaler/**
 
 ## 3. Create a GitHub Release (installers)
 
