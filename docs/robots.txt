@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thekillsquad007.github.io/phoenix-upscaler/sitemap.xml
