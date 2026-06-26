@@ -180,7 +180,7 @@
 
     <section id="modes" class="section">
       <h2>Choose the right restoration mode</h2>
-      <p class="section-lead">The default path is reliable standard restoration. Generative AI is available for supported NVIDIA GPUs when you want to experiment with stronger detail recovery.</p>
+      <p class="section-lead">The default path is reliable standard restoration. On Windows, standard ONNX restoration can use DirectML acceleration on AMD, Intel, and NVIDIA GPUs. Generative AI remains NVIDIA-focused.</p>
       <div class="mode-grid">
         <article class="mode-card">
           <p class="pill">Recommended</p>
@@ -188,7 +188,7 @@
           <p>Denoise, deinterlace, sharpen, stabilize, and upscale old footage with predictable results.</p>
           <ul>
             <li>Best first choice for paid users</li>
-            <li>Works on more computers</li>
+            <li>Works on more computers, including AMD GPUs on Windows through DirectML</li>
             <li>Lower risk of artifacts</li>
           </ul>
         </article>
@@ -239,7 +239,7 @@
       <div class="download-grid">
         <article class="download-card">
           <h3>Windows</h3>
-          <p>Setup wizard with Start Menu shortcut, bundled FFmpeg, and local models.</p>
+          <p>Setup wizard with Start Menu shortcut, bundled FFmpeg, local models, and AMD-friendly DirectML acceleration.</p>
           <a class="btn btn-primary" href="https://github.com/thekillsquad007/phoenix-upscaler/releases/latest/download/PhoenixUpscaler-Setup-0.6.0.exe">Download for Windows</a>
         </article>
         <article class="download-card">
@@ -261,7 +261,7 @@
       <p class="section-lead">Phoenix is designed to run locally. Faster GPUs help, but the app should make the safe path clear before you start a long export.</p>
       <div class="requirements-grid">
         <article class="card"><h3>Minimum</h3><p>Modern Windows or Linux PC, 8 GB RAM, enough disk space for temporary video files, and FFmpeg-compatible media.</p></article>
-        <article class="card"><h3>Recommended</h3><p>16 GB RAM, recent NVIDIA/AMD/Intel GPU, SSD storage, and short test exports before processing long tapes.</p></article>
+        <article class="card"><h3>Recommended</h3><p>16 GB RAM, recent AMD/Intel/NVIDIA GPU, SSD storage, and short test exports before processing long tapes. Windows builds include DirectML for broad GPU support.</p></article>
         <article class="card"><h3>Generative AI</h3><p>NVIDIA GPU recommended. 8 GB VRAM can run Lite profiles; heavier modes need more VRAM and patience.</p></article>
       </div>
     </section>
@@ -308,6 +308,7 @@
             <li>Up to 2-hour clips</li>
             <li>Higher-resolution export presets, no watermark</li>
             <li>All standard restoration presets</li>
+            <li>DirectML acceleration for standard restore on Windows AMD/Intel/NVIDIA GPUs</li>
             <li>Generative Lite on supported NVIDIA GPUs</li>
           </ul>
           <a class="btn btn-primary btn-lg gumroad-link checkout-link" href="https://aravindk74.gumroad.com/l/phoenixupscaler">Subscribe on Gumroad</a>
@@ -324,6 +325,7 @@
       <details><summary>What video formats work?</summary><p>MP4, MOV, MKV, AVI, and most common formats from cameras, DVDs, and VHS capture cards.</p></details>
       <details><summary>Is generative restoration the default?</summary><p>No. Standard restoration is the safer default. Generative Lite is an advanced option for supported hardware and short preview-driven workflows.</p></details>
       <details><summary>How do I activate Pro?</summary><p>Subscribe on Gumroad, check your email for a <strong>PHX-</strong> license key, open Phoenix → Account → paste the key.</p></details>
+      <details><summary>Do AMD GPUs work?</summary><p>Yes for the standard ONNX restoration path on Windows. Phoenix packages ONNX Runtime DirectML so many AMD, Intel, and NVIDIA DirectX 12 GPUs can accelerate local restoration. Generative Lite remains NVIDIA-focused.</p></details>
       <details><summary>Do I need a powerful GPU?</summary><p>A GPU speeds things up, but Phoenix works on everyday laptops too. Processing runs locally either way.</p></details>
     </section>
   </main>
