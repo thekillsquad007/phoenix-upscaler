@@ -1,11 +1,13 @@
 :root {
-  --bg: #08090e;
-  --text: #f3f5fa;
-  --muted: #9aa3b8;
-  --accent: #ff6b2c;
-  --accent-2: #ffb347;
-  --line: rgba(255,255,255,0.08);
-  --serif: "Instrument Serif", Georgia, serif;
+  --bg: #0d1117;
+  --panel: #121821;
+  --panel-2: #171f2a;
+  --text: #f4f1ea;
+  --muted: #aab3bf;
+  --accent: #d97732;
+  --accent-2: #e8b56f;
+  --line: rgba(244,241,234,0.11);
+  --serif: Georgia, "Times New Roman", serif;
   --sans: "DM Sans", system-ui, sans-serif;
 }
 
@@ -15,7 +17,7 @@ body {
   font-family: var(--sans);
   color: var(--text);
   background:
-    radial-gradient(ellipse 70% 50% at 50% -10%, rgba(255,107,44,0.15), transparent),
+    linear-gradient(180deg, rgba(217,119,50,0.08), transparent 380px),
     var(--bg);
   line-height: 1.6;
 }
@@ -31,11 +33,23 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
-  backdrop-filter: blur(10px);
-  background: rgba(8,9,14,0.85);
+  backdrop-filter: blur(14px);
+  background: rgba(13,17,23,0.92);
   z-index: 10;
 }
-.logo { font-weight: 700; color: var(--text); text-decoration: none; font-size: 1.1rem; }
+.logo { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); text-decoration: none; font-size: 1.04rem; }
+.logo-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(232,181,111,0.42);
+  border-radius: 9px;
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  background: rgba(232,181,111,0.08);
+}
 .site-header nav { display: flex; gap: 20px; align-items: center; }
 .site-header nav a:not(.btn) { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
 
@@ -51,8 +65,8 @@ a:hover { text-decoration: underline; }
   text-decoration: none !important;
 }
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent), #ff3d00);
-  color: #1a0903;
+  background: var(--accent);
+  color: #140b04;
 }
 .btn-ghost {
   border-color: var(--line);
@@ -62,16 +76,16 @@ a:hover { text-decoration: underline; }
 .btn-lg { padding: 14px 24px; font-size: 1rem; }
 
 .hero {
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 72px 24px 40px;
+  padding: 84px 24px 44px;
   text-align: center;
 }
 .badge {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(255,107,44,0.3);
+  border: 1px solid rgba(232,181,111,0.32);
   color: var(--accent-2);
   font-size: 0.82rem;
   margin-bottom: 20px;
@@ -96,6 +110,21 @@ a:hover { text-decoration: underline; }
 .hero-compare .label { display: block; color: var(--muted); font-size: 0.82rem; }
 .hero-compare .bad { color: #ff7b7b; text-decoration: line-through; font-weight: 700; }
 .hero-compare .good { color: var(--accent-2); font-weight: 700; }
+.trust-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+.trust-row span {
+  color: var(--muted);
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.025);
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+}
 
 .showcase {
   display: flex;
@@ -148,7 +177,7 @@ a:hover { text-decoration: underline; }
   padding: 22px;
   border-radius: 16px;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,0.03);
+  background: var(--panel);
 }
 .card h3 { margin-top: 0; }
 .card p { color: var(--muted); margin-bottom: 0; }
@@ -165,7 +194,7 @@ a:hover { text-decoration: underline; }
   padding: 26px;
   border-radius: 18px;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,0.03);
+  background: var(--panel);
 }
 .mode-card h3 { margin: 8px 0 10px; font-size: 1.4rem; }
 .mode-card p, .mode-card li { color: var(--muted); }
@@ -213,8 +242,8 @@ a:hover { text-decoration: underline; }
   background: rgba(255,255,255,0.03);
 }
 .price-card.featured {
-  border-color: rgba(255,107,44,0.4);
-  box-shadow: 0 20px 60px rgba(255,107,44,0.12);
+  border-color: rgba(232,181,111,0.38);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.22);
 }
 .price-card h3 { margin-top: 0; }
 .amount { font-size: 2.4rem; font-weight: 700; margin: 8px 0 16px; }
@@ -256,7 +285,7 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--line);
   background: rgba(255,255,255,0.03);
 }
-.compare-card.featured { border-color: rgba(255,107,44,0.45); box-shadow: 0 20px 60px rgba(255,107,44,0.1); }
+.compare-card.featured { border-color: rgba(232,181,111,0.45); box-shadow: 0 20px 60px rgba(0,0,0,0.18); }
 .compare-card img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
 .compare-card figcaption { padding: 12px 16px; color: var(--muted); font-size: 0.9rem; text-align: center; }
 .compare-row {
@@ -311,7 +340,7 @@ a:hover { text-decoration: underline; }
 }
 .screenshot-grid figcaption { text-align: center; color: var(--muted); font-size: 0.88rem; margin-top: 10px; }
 
-.download-section { background: rgba(255,255,255,0.02); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.download-section { background: rgba(255,255,255,0.018); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .download-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -323,7 +352,7 @@ a:hover { text-decoration: underline; }
   padding: 24px;
   border-radius: 18px;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,0.03);
+  background: var(--panel);
   text-align: center;
 }
 .download-card h3 { margin-top: 0; }
@@ -347,7 +376,7 @@ a:hover { text-decoration: underline; }
   color: var(--text);
   text-decoration: none;
 }
-.guide-card:hover { border-color: rgba(255,107,44,0.38); text-decoration: none; }
+.guide-card:hover { border-color: rgba(232,181,111,0.38); text-decoration: none; }
 .guide-card strong { display: block; margin-bottom: 8px; }
 .guide-card span { color: var(--muted); font-size: 0.92rem; }
 
@@ -370,8 +399,8 @@ a:hover { text-decoration: underline; }
   margin-top: 36px;
   padding: 24px;
   border-radius: 18px;
-  border: 1px solid rgba(255,107,44,0.35);
-  background: rgba(255,107,44,0.08);
+  border: 1px solid rgba(232,181,111,0.35);
+  background: rgba(232,181,111,0.08);
 }
 
 @media (max-width: 800px) {
