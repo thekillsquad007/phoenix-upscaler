@@ -145,13 +145,23 @@
         <figure><img src="assets/demo/palmour_after/frame_02.jpg" alt="After frame 3" loading="lazy" /><figcaption>After</figcaption></figure>
       </div>
 
-      <div class="video-wrap">
-        <video controls playsinline poster="assets/demo/palmour_after/frame_01.jpg">
-          <source src="assets/demo/palmour-street-public-domain-demo-1080p.mp4" type="video/mp4" />
-          Your browser does not support video playback.
-        </video>
-        <p class="video-caption">Public-domain footage from <em>Palmour Street</em> (Prelinger Archives) — Phoenix Generative Lite remaster to 1080p. Process your own family archive clips locally in the app.</p>
+      <div class="video-grid">
+        <figure class="video-card">
+          <video controls playsinline preload="metadata" poster="assets/demo/palmour_before/frame_01.jpg">
+            <source src="assets/demo/palmour-street-public-domain-demo-source-clip.mp4" type="video/mp4" />
+            Your browser does not support video playback.
+          </video>
+          <figcaption>Original public-domain source clip</figcaption>
+        </figure>
+        <figure class="video-card featured">
+          <video controls playsinline preload="metadata" poster="assets/demo/palmour_after/frame_01.jpg">
+            <source src="assets/demo/palmour-street-public-domain-demo-1080p.mp4" type="video/mp4" />
+            Your browser does not support video playback.
+          </video>
+          <figcaption>Phoenix restored 1080p delivery</figcaption>
+        </figure>
       </div>
+      <p class="video-caption">Public-domain footage from <em>Palmour Street</em> (Prelinger Archives) — source clip beside the Phoenix Generative Lite remaster. Process your own family archive clips locally in the app.</p>
     </section>
 
     <section id="compare" class="section">
