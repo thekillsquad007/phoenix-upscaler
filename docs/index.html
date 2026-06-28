@@ -127,15 +127,15 @@
         <strong>Palmour Street</strong> (public-domain 1957 archive footage) restored with Phoenix Generative Lite and delivered at <strong>1080p</strong>.
       </p>
 
-      <div class="compare-grid">
-        <figure class="compare-card">
-          <img src="assets/demo/palmour_before/frame_01.jpg" alt="Before restoration — archival SD quality" loading="lazy" />
-          <figcaption>Before — public-domain archive source</figcaption>
-        </figure>
-        <figure class="compare-card featured">
-          <img src="assets/demo/palmour_after/frame_01.jpg" alt="After Phoenix restoration — 1080p" loading="lazy" />
-          <figcaption>After — Phoenix Generative Lite → 1080p</figcaption>
-        </figure>
+      <div class="before-after-slider" data-before-after>
+        <img class="slider-image" src="assets/demo/palmour_before/frame_01.jpg" alt="Before restoration — archival SD quality" loading="lazy" />
+        <div class="slider-after" data-after-pane>
+          <img class="slider-image" src="assets/demo/palmour_after/frame_01.jpg" alt="After Phoenix restoration — 1080p" loading="lazy" />
+        </div>
+        <div class="slider-handle" data-slider-handle aria-hidden="true"></div>
+        <span class="slider-label before">Source</span>
+        <span class="slider-label after">Phoenix 1080p</span>
+        <input class="slider-range" data-slider-range type="range" min="0" max="100" value="52" aria-label="Compare source and Phoenix restored frame" />
       </div>
 
       <div class="compare-row">
@@ -145,10 +145,10 @@
         <figure><img src="assets/demo/palmour_after/frame_02.jpg" alt="After frame 3" loading="lazy" /><figcaption>After</figcaption></figure>
       </div>
 
-      <div class="video-grid">
+      <div class="video-stack">
         <figure class="video-card">
           <video controls playsinline preload="metadata" poster="assets/demo/palmour_before/frame_01.jpg">
-            <source src="assets/demo/palmour-street-public-domain-demo-source-clip.mp4" type="video/mp4" />
+            <source src="assets/demo/palmour-street-public-domain-demo-source-clip.web.mp4" type="video/mp4" />
             Your browser does not support video playback.
           </video>
           <figcaption>Original public-domain source clip</figcaption>
