@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Phoenix Studio app — sign in, restore photos and video, pay a clear dollar price per job." />
+  <meta name="robots" content="noindex" />
+  <title>Phoenix Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="studio-app.css" />
+</head>
+<body class="studio-body">
+  <div id="app">
+    <!-- Login -->
+    <section id="view-login" class="studio-shell login-shell">
+      <div class="login-card">
+        <a class="logo" href="studio.html"><span class="logo-mark">PX</span><span>Phoenix Studio</span></a>
+        <h1>Sign in to Studio</h1>
+        <p class="muted">One account for restores, receipts, and Pro. No credit packs — you always see a dollar price.</p>
+        <label class="field">
+          Email
+          <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" />
+        </label>
+        <button type="button" class="btn btn-primary btn-lg" id="loginBtn">Continue with email</button>
+        <p class="fine-print">Preview build: sign-in is simulated in your browser until the live API ships. Production will use a secure magic link.</p>
+        <p class="muted center"><a href="studio.html">What is Studio?</a> · <a href="./">Desktop app</a></p>
+      </div>
+    </section>
+
+    <!-- App -->
+    <section id="view-app" class="studio-shell hidden">
+      <header class="studio-top">
+        <a class="logo" href="studio.html"><span class="logo-mark">PX</span><span>Studio</span></a>
+        <nav class="studio-nav">
+          <button type="button" class="nav-tab active" data-tab="new">New restore</button>
+          <button type="button" class="nav-tab" data-tab="history">History</button>
+          <button type="button" class="nav-tab" data-tab="account">Account</button>
+        </nav>
+        <div class="studio-user">
+          <span id="userEmailLabel" class="muted"></span>
+          <button type="button" class="btn btn-ghost btn-sm" id="logoutBtn">Log out</button>
+        </div>
+      </header>
+
+      <main class="studio-main">
+        <!-- New job -->
+        <div id="tab-new" class="tab-panel">
+          <h1>New restore</h1>
+          <p class="muted">Photo or video. Pick a quality. We’ll show the price in dollars before you pay.</p>
+
+          <div class="dropzone" id="dropzone">
+            <input type="file" id="fileInput" accept="image/*,video/*" hidden />
+            <div class="drop-icon">↑</div>
+            <h2>Drop a photo or video</h2>
+            <p class="muted">JPG, PNG, MP4, MOV, MKV…</p>
+            <button type="button" class="btn secondary" id="browseBtn">Browse files</button>
+            <p class="file-name" id="fileName">No file selected</p>
+          </div>
+
+          <div class="controls-row">
+            <label class="field">
+              Quality
+              <select id="quality">
+                <option value="standard">Standard — fast &amp; clean</option>
+                <option value="enhanced" selected>Enhanced — sharper detail</option>
+                <option value="max">Studio Max — best quality</option>
+              </select>
+            </label>
+            <label class="field" id="durationField">
+              Video length (seconds)
+              <input id="durationSec" type="number" min="1" max="600" value="30" />
+            </label>
+          </div>
+
+          <div class="price-box" id="priceBox">
+            <div>
+              <p class="price-label">Estimated price</p>
+              <p class="price-amount" id="priceAmount">$0.00</p>
+              <p class="muted" id="priceNote">Select a file to see the price.</p>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg" id="payBtn" disabled>Confirm &amp; pay</button>
+          </div>
+
+          <div class="job hidden" id="jobPanel">
+            <div class="job-head">
+              <strong id="jobTitle">Processing…</strong>
+              <span id="jobPercent">0%</span>
+            </div>
+            <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+            <p class="muted" id="jobMsg">Starting…</p>
+            <div id="jobDone" class="hidden">
+              <p><strong>Ready.</strong> In production this downloads your file. Preview simulates success.</p>
+              <button type="button" class="btn btn-primary" id="newJobBtn">Start another</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- History -->
+        <div id="tab-history" class="tab-panel hidden">
+          <h1>History</h1>
+          <p class="muted">Past jobs and what you paid.</p>
+          <div id="historyList" class="history-list"></div>
+        </div>
+
+        <!-- Account -->
+        <div id="tab-account" class="tab-panel hidden">
+          <h1>Account</h1>
+          <div class="account-grid-studio">
+            <article class="card">
+              <h3>Plan</h3>
+              <p id="planLabel">Studio · pay per job</p>
+              <p class="muted">Desktop Pro is optional for unlimited local restores.</p>
+              <a class="btn btn-ghost gumroad-link" href="https://aravindk74.gumroad.com/l/phoenixupscaler">Get Desktop Pro — $6/mo</a>
+            </article>
+            <article class="card">
+              <h3>Licenses &amp; devices</h3>
+              <p class="muted">When live: see active devices, sign out a PC, cancel renewal.</p>
+              <ul class="plain-list">
+                <li>Issue Pro to your email</li>
+                <li>Bind up to 2 devices</li>
+                <li>Cancel without support tickets</li>
+              </ul>
+              <button type="button" class="btn secondary" id="cancelHintBtn">How cancel works</button>
+            </article>
+            <article class="card">
+              <h3>Billing</h3>
+              <p class="muted">No credit balance. Each job is a normal card charge with a receipt.</p>
+              <p class="fine-print">Stripe checkout will replace this preview.</p>
+            </article>
+          </div>
+        </div>
+      </main>
+    </section>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="site.js"></script>
+  <script src="studio-app.js"></script>
+</body>
+</html>
