@@ -76,6 +76,9 @@ p { margin: 0 0 1em; }
 }
 .lede { color: var(--ink-dim); font-size: 18.5px; max-width: 46ch; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 14px; }
+/* Pages without a second hero column (e.g. no before/after demo yet) get a
+   single centered column instead of a lopsided empty half. */
+.hero > :only-child { grid-column: 1 / -1; max-width: 640px; margin: 0 auto; }
 .fineprint { color: var(--ink-faint); font-size: 14px; margin: 0; }
 .hero-shot figcaption, .video-pair figcaption {
   color: var(--ink-faint); font-size: 14px; margin-top: 10px; text-align: center;
