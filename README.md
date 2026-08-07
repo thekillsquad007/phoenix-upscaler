@@ -1,137 +1,134 @@
 # Phoenix Upscaler
 
-**Bring VHS tapes, camcorder footage, and old DVDs back to life — on your own computer.**
+**Bring VHS tapes, camcorder footage, and old DVDs back to life.**
 
-Phoenix is a desktop app built for people who care about family history, not Hollywood budgets. Drop in a clip, pick a preset, download restored video. Nothing uploads to the cloud. Ever.
+Phoenix is built for people who care about family history, not Hollywood budgets. Drop in a clip, pick a preset, get back restored video. Run it on your own computer for a one-time $129, or use the cloud studio and pay only for the clips you restore.
 
-**[Try it free →](https://thekillsquad007.github.io/phoenix-upscaler/)** · **[Get Pro ($6/mo)](https://aravindk74.gumroad.com/l/phoenixupscaler)**
+**[Try it free →](https://phoenixlabs.space/)** · **[Get the desktop app ($129 once) →](https://phoenixlabs.space/#price)** · **[Open the cloud studio →](https://phoenixlabs.space/studio.html)**
 
 ---
 
 ## Why Phoenix exists
 
-You found a box of tapes. Maybe a Michael Jackson concert rip from 1990. Maybe your parents' wedding. The footage is precious — but it's fuzzy, interlaced, and stuck at VHS quality.
+You found a box of tapes. Maybe your parents' wedding, maybe an old camcorder recording, maybe a concert you rented a VHS off someone for years ago. The footage matters, but it's fuzzy, interlaced, and stuck at VHS quality.
 
-The usual options hurt:
+Topaz Video AI is the usual answer, and it's good, but as of late 2025 they stopped selling a one-time license entirely. It's $299/yr now, subscription only, for restoration that's largely built on the same open models anyone can access.
 
-| | **Topaz Video AI** | **Adobe / cloud tools** | **Phoenix Upscaler** |
-|---|---|---|---|
-| **Price** | ~$299+ or ~$25/mo | Creative Cloud + extras | **$6/mo** or **$60/yr** |
-| **Privacy** | Local (but pricey) | Often cloud-based | **100% local** |
-| **Built for** | Pros & filmmakers | General editing | **VHS, tape, archival SD** |
-| **Learning curve** | Steep | Steep | **Drag, drop, done** |
-| **Subscription trap** | Expensive renewals | Locked ecosystem | Cancel anytime on Gumroad |
+Phoenix does the same job (denoise, deinterlace, rebuild lost detail) for $129 once. You own it. No renewal, no credits, no upsell.
 
-Phoenix is the **best-value alternative** for restoring old personal footage — without paying Topaz prices or handing your memories to a server.
+---
+
+## Two ways to restore a tape
+
+|  | **Desktop app** | **Cloud studio** |
+|---|---|---|
+| **Price** | $129 once | Pay per clip, from $2.99 |
+| **Requires** | Your own NVIDIA GPU | Nothing — any OS, any device |
+| **Privacy** | Fully local, nothing uploads | Uploaded only for the job, deleted after |
+| **Best for** | A whole shoebox of tapes | An occasional clip |
+
+Same restoration engine either way. If you have an NVIDIA GPU and tapes to get through, the desktop app is the better value. If you don't, or you've just got one clip, the [cloud studio](https://phoenixlabs.space/studio.html) does the same job with no install and no hardware requirements.
 
 ---
 
 ## See it in action
 
-Real restoration: **Color Harmony for Your Home** — public-domain 1956 color film restored to **1080p**.
+Real restoration on a public-domain 1952 home movie, print damage and all:
 
-![Before and after](docs/assets/demo/color_harmony_after/frame_01.jpg)
+![Before and after](docs/assets/demo/enhanced_after.jpg)
 
-More examples on our **[official website](https://thekillsquad007.github.io/phoenix-upscaler/#demo)**.
+More before/afters, including a second clip from 1938, on the **[official site](https://phoenixlabs.space/#proof)**.
 
 ---
 
 ## Download
 
+Get the latest desktop build from **[Releases](https://github.com/thekillsquad007/phoenix-upscaler/releases/latest)**.
+
 | Platform | Installer |
 |---|---|
 | **Windows** | `PhoenixUpscaler-Setup.exe` — double-click, Next, done |
 | **Linux** | `PhoenixUpscaler.AppImage` — chmod +x, run |
-| **macOS** | `PhoenixUpscaler.dmg` — drag to Applications |
+| **macOS** | Not available yet — use the [cloud studio](https://phoenixlabs.space/studio.html) instead |
 
-Get the latest build from **[Releases](https://github.com/thekillsquad007/phoenix-upscaler/releases)**.
+No Python, no command line. AI models are included and it works fully offline after install.
 
-No Python. No command line. AI models included — works offline after install.
+No NVIDIA card at all? Skip the download and use the **[cloud studio](https://phoenixlabs.space/studio-app.html)** instead.
 
 ---
 
 ## What you get
 
-- **VHS & tape preset** — deinterlace, denoise, upscale without the plastic look
-- **Film & archive preset** — keeps natural grain, lifts resolution
-- **Faces preset** — interviews and home movies where people matter
-- **Auto mode** — Phoenix analyzes your clip and picks the best settings
-- **Live progress** — see exactly what stage you're on, frame by frame
-- **Free tier** — 90-second clips, 5 exports/month (watermarked)
-- **Pro** — unlimited exports, 2-hour clips, 4× upscale, all presets, no watermark
+- **Denoise** — kills the crawling speckle VHS tape leaves behind
+- **Deinterlace** — fixes the torn, striped edge on anything that moves
+- **Detail reconstruction** — hair, fabric, signage, things the tape blurred into a smudge come back readable
+- **Auto mode** — Phoenix reads the footage and picks its own settings
+- **Generative restoration** — on 8GB+ VRAM NVIDIA cards, an optional diffusion-based mode (FlashVSR) goes further on badly degraded sources; 12GB+ unlocks a higher-quality generative tier (SeedVR2)
+- **Free tier** — restore 60-second clips with a small watermark, no purchase required to try it
 
 ---
 
 ## Pricing
 
-| Plan | Price | Best for |
-|---|---|---|
-| **Free** | $0 | Testing on a short clip |
-| **Pro monthly** | $6/mo | Regular restorations |
-| **Pro annual** | $60/yr | Save $12 — family archive projects |
+**Desktop — $129 once.** Yours permanently, every future update included free, no watermark, any clip length, install on up to 3 of your own computers, works offline once activated.
 
-Subscribe on **[Gumroad](https://aravindk74.gumroad.com/l/phoenixupscaler)**. License key arrives by email. Paste it in the app → Account → Activate.
+**Cloud studio — pay per job, from $2.99.** Standard quality matches the desktop app. Enhanced and Studio Max modes add AI detail reconstruction for badly degraded tape. Exact price shown before you pay. A failed job is refunded automatically.
 
-Demo key for reviewers: contact us via the website.
-
----
-
-## Screenshots
-
-| Home | Processing | Account |
-|---|---|---|
-| ![Home](docs/assets/screenshots/app-home.png) | ![Processing](docs/assets/screenshots/app-processing.png) | ![Account](docs/assets/screenshots/app-account.png) |
+Card and UPI payments are handled by Lemon Squeezy, our merchant of record. A license key for the desktop app arrives by email immediately after purchase.
 
 ---
 
 ## Who Phoenix is for
 
-- Families digitizing **VHS and camcorder tapes**
-- Fans restoring **concert recordings and TV captures**
-- Anyone who wants **Topaz-class results** without Topaz-class pricing
-- People who refuse to **upload private footage** to the cloud
+- Families digitizing VHS and camcorder tapes
+- Anyone restoring old TV captures or personal concert/event recordings
+- People who want Topaz-class results without a Topaz-class subscription
+- Anyone who'd rather their footage never touch a server (desktop mode)
 
 ## Who Phoenix is not for
 
-- Hollywood VFX pipelines (use Topaz + DaVinci)
+- Hollywood VFX pipelines — use Topaz + DaVinci
 - Real-time streaming upscaling
-- People who need cloud rendering farms
+- Expecting detail the original tape never recorded — Phoenix restores what's there, it doesn't invent footage
 
 ---
 
-## GPU compatibility
+## GPU compatibility (desktop app)
 
-| | **NVIDIA (recommended)** | **AMD** | **Intel / Integrated** |
+|  | **NVIDIA** | **AMD** | **Intel / integrated** |
 |---|---|---|---|
-| **Classic (Denoise + Real‑ESRGAN)** | ✅ Full speed (CUDA) | ✅ DirectML | ⚠️ CPU fallback, slow |
-| **Generative (FlashVSR / SeedVR2)** | ✅ Diffusion restoration, 8GB+ | ❌ Not supported — requires CUDA‑only kernels (Block‑Sparse Attention, flash‑attn) | ❌ Not supported |
-| **Windows Quality (SAFA ONNX)** | ✅ DirectML | ✅ DirectML video‑native (best AMD option) | ⚠️ CPU fallback |
+| **Standard (denoise, deinterlace, upscale)** | Full speed, CUDA | Supported via DirectML | CPU fallback, slow |
+| **Generative Lite — FlashVSR** | 8GB+ VRAM | Not supported (CUDA-only kernels) | Not supported |
+| **Generative Pro — SeedVR2** | 12GB+ VRAM | Not supported | Not supported |
 
-If you have an **AMD GPU**, the **Windows Video Quality Pack** (`--quality windows_quality`) gives you paired‑frame SAFA upscaling through DirectML — much better than frame‑by‑frame ONNX, but not generative. You can also send longer jobs to a remote NVIDIA rig via `scripts/remote_process.py`.
+No NVIDIA GPU, or below the minimum? The [cloud studio](https://phoenixlabs.space/studio.html) runs the same restoration, including the generative modes, on our GPUs instead.
 
 ---
 
 ## FAQ
 
-**Is my video uploaded anywhere?**  
-No. Phoenix runs entirely on your machine.
+**Does my video get uploaded anywhere?**
+Not with the desktop app. Everything happens on your machine, and once activated it doesn't need an internet connection to run. The cloud studio uploads a clip only for the duration of that job, then deletes both the source and the result.
 
-**How is this different from Topaz?**  
-Topaz is excellent and worth it for professionals. Phoenix targets the same restoration problems — interlacing, noise, resolution, flicker — at a fraction of the cost, with a simpler workflow for home archives.
+**Is this a subscription?**
+No. The desktop app is $129 once, forever, including future updates. The cloud studio has no subscription either, you pay per job in dollars with no credits.
 
-**What formats work?**  
-MP4, MOV, MKV, AVI, and most common video files.
+**How is this different from Topaz?**
+Same tier of restoration problem (interlacing, noise, lost detail), a fraction of the price, and you actually own it, Topaz no longer sells a one-time license at all.
 
-**Can I cancel?**  
-Yes. Gumroad subscriptions cancel anytime.
+**What formats work?**
+MP4, MOV, MKV, and AVI.
+
+**Will it make a bad tape look brand new?**
+No, and be wary of anything claiming otherwise. Detail the tape never recorded can't be recovered, only what's genuinely there gets pulled out and cleaned up.
 
 ---
 
 ## Official website
 
-Full showcase, before/after demo, and download links:
+Full showcase, before/after demos, pricing, and both download paths:
 
-**https://thekillsquad007.github.io/phoenix-upscaler/**
+**https://phoenixlabs.space/**
 
 ---
 
@@ -139,4 +136,4 @@ Full showcase, before/after demo, and download links:
 
 This repo contains the **marketing site**, **release installers**, and **demo assets**. Application source is proprietary.
 
-© 2026 Phoenix Upscaler. All rights reserved.
+© 2026 Phoenix Labs.
