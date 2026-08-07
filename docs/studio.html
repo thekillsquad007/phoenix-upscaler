@@ -61,14 +61,14 @@
     </div>
     <figure class="hero-shot">
       <div class="ba" data-ba>
-        <img class="ba-after" src="assets/demo/enhanced_after.jpg" alt="A restored face, sharp and detailed" />
+        <img class="ba-after" src="assets/demo/enhanced_after.jpg" alt="A restored face, sharp and detailed, in color" />
         <div class="ba-clip"><img src="assets/demo/enhanced_before.jpg" alt="The same face before restoration, soft and faded" /></div>
         <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
         <span class="ba-handle" aria-hidden="true"></span>
         <span class="ba-tag ba-tag-l">Before</span>
         <span class="ba-tag ba-tag-r">After</span>
       </div>
-      <figcaption>The same restore the desktop app produces — run on our GPUs.</figcaption>
+      <figcaption>Phoenix Enhanced — the diffusion-based mode, run on our GPUs.</figcaption>
     </figure>
   </section>
 
@@ -80,10 +80,22 @@
 
   <section id="how" class="section">
     <h2>Three steps</h2>
-    <div class="video-pair">
-      <figure><figcaption><strong>1. Upload</strong> a photo or old video clip and pick a quality level.</figcaption></figure>
-      <figure><figcaption><strong>2. Pay the exact price</strong> shown — a normal card or UPI charge, no credit balance.</figcaption></figure>
-      <figure><figcaption><strong>3. Download</strong> the restored file. Your upload is then deleted.</figcaption></figure>
+    <div class="step-grid">
+      <div>
+        <span class="step-num">1</span>
+        <h3>Upload</h3>
+        <p>Drop in a photo or old video clip and pick a quality level.</p>
+      </div>
+      <div>
+        <span class="step-num">2</span>
+        <h3>Pay the exact price</h3>
+        <p>Shown up front, before you commit — a normal card charge, no credit balance.</p>
+      </div>
+      <div>
+        <span class="step-num">3</span>
+        <h3>Download</h3>
+        <p>Get the restored file. Your upload is deleted automatically right after.</p>
+      </div>
     </div>
   </section>
 
@@ -99,13 +111,13 @@
         <p class="price-eyebrow">Cloud restore</p>
         <p class="price-amount">from $2.99<span>per job</span></p>
         <ul>
-          <li><strong>Standard</strong> — clean, reliable restore, from $2.99.</li>
-          <li><strong>Enhanced</strong> — sharper detail for tapes &amp; soft SD, from $5.99.</li>
-          <li><strong>Studio Max</strong> — top quality when the clip matters.</li>
+          <li><strong>Standard</strong> — the same restoration as the desktop app: denoise, deinterlace, upscale 2×. From $2.99.</li>
+          <li><strong>Enhanced</strong> — adds AI detail reconstruction on top, for badly degraded tape where Standard still looks soft. From $5.99.</li>
+          <li><strong>Studio Max</strong> — Enhanced at 4× output scale instead of 2×, for the largest, most detailed result.</li>
           <li>Exact total shown before payment. Failed jobs refunded.</li>
         </ul>
         <a class="btn btn-lg btn-block" href="studio-app.html">Open the studio</a>
-        <p class="fineprint">Card &amp; UPI handled by Lemon Squeezy. Tax handled for you.</p>
+        <p class="fineprint">Card payments handled by Lemon Squeezy. Tax handled for you.</p>
       </div>
       <div class="price-aside">
         <h3>Desktop vs cloud</h3>

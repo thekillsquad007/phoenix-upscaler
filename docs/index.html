@@ -80,7 +80,7 @@
 
     <figure class="hero-shot">
       <div class="ba" data-ba>
-        <img class="ba-after" src="assets/demo/enhanced_after.jpg" alt="A restored face, sharp and detailed" />
+        <img class="ba-after" src="assets/demo/enhanced_after.jpg" alt="A restored face, sharp and detailed, in color" />
         <div class="ba-clip"><img src="assets/demo/enhanced_before.jpg" alt="The same face before restoration, soft and faded" /></div>
         <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
         <span class="ba-handle" aria-hidden="true"></span>
@@ -97,11 +97,46 @@
     <div><strong>Runs on your NVIDIA GPU.</strong> No NVIDIA card? Use the <a href="studio.html">cloud studio</a>.</div>
   </section>
 
+  <section id="paths" class="section section-alt">
+    <h2>Two ways to restore a tape</h2>
+    <p class="section-sub">
+      Same restoration engine either way. The only question is whether the work
+      happens on your computer or on ours.
+    </p>
+    <div class="how-grid paths-grid">
+      <div class="path-card">
+        <p class="path-eyebrow">For NVIDIA PC owners</p>
+        <h3>Desktop app — $129 once</h3>
+        <p>
+          Install it, drag in your tapes, and restore as many as you like —
+          forever, with no per-clip cost. Everything runs on your own graphics
+          card, so nothing ever leaves your computer. Best if you've got a
+          shoebox of tapes to get through, or you just don't want your family
+          videos touching the internet.
+        </p>
+        <a class="btn btn-lg" href="#price">Get the desktop app</a>
+      </div>
+      <div class="path-card">
+        <p class="path-eyebrow">For everyone else</p>
+        <h3>Cloud studio — pay per clip</h3>
+        <p>
+          Works from a Mac, an AMD/Intel PC, a Chromebook, even a phone — no
+          NVIDIA card, no install. Upload a clip, see the exact price in
+          dollars before you pay, and download the result. There's also an
+          Enhanced mode here that goes further than the desktop app, rebuilding
+          detail on badly degraded tape. Best for an occasional clip or if you
+          don't own a gaming PC.
+        </p>
+        <a class="btn btn-lg" href="studio.html">Open the cloud studio</a>
+      </div>
+    </div>
+  </section>
+
   <section id="proof" class="section">
     <h2>The same clip, twice</h2>
     <p class="section-sub">
-      Left is the untouched 1952 home movie. Right is what Phoenix gave back.
-      Play both, then judge it full screen.
+      Left is the untouched 1952 home movie — real print damage, not a clean
+      transfer. Right is what Phoenix gave back. Play both, then judge it full screen.
     </p>
 
     <div class="video-pair">
@@ -130,6 +165,40 @@
       </div>
     </div>
     <p class="credit">Footage: <em>Texas Farm Family</em> (1952), public domain, via the Prelinger Archives. Restored with Phoenix Enhanced.</p>
+  </section>
+
+  <section id="proof-2" class="section">
+    <h2>One more, so it's not a fluke</h2>
+    <p class="section-sub">
+      A different tape, a different decade — this one black and white. Same engine, same settings.
+    </p>
+
+    <div class="video-pair">
+      <figure>
+        <video src="assets/demo/enhanced-1938-before.web.mp4" controls muted loop playsinline preload="metadata"></video>
+        <figcaption>Straight off the film</figcaption>
+      </figure>
+      <figure>
+        <video src="assets/demo/enhanced-1938-after.web.mp4" controls muted loop playsinline preload="metadata"></video>
+        <figcaption>After Phoenix Enhanced</figcaption>
+      </figure>
+    </div>
+
+    <div class="ba-row">
+      <div class="ba" data-ba>
+        <img class="ba-after" src="assets/demo/enh38_a_1.jpg" alt="Restored frame" />
+        <div class="ba-clip"><img src="assets/demo/enh38_b_1.jpg" alt="Original frame" /></div>
+        <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare" />
+        <span class="ba-handle" aria-hidden="true"></span>
+      </div>
+      <div class="ba" data-ba>
+        <img class="ba-after" src="assets/demo/enh38_a_2.jpg" alt="Restored frame" />
+        <div class="ba-clip"><img src="assets/demo/enh38_b_2.jpg" alt="Original frame" /></div>
+        <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare" />
+        <span class="ba-handle" aria-hidden="true"></span>
+      </div>
+    </div>
+    <p class="credit">Footage: <em>Ivan Besse collection, Britton, South Dakota</em> (1938–39), public domain, via the Prelinger Archives. Restored with Phoenix Enhanced.</p>
   </section>
 
   <section id="how" class="section section-alt">
@@ -176,7 +245,7 @@
         </ul>
         <a class="btn btn-lg btn-block" id="buyBtn" href="#download" data-ls-checkout>Buy Phoenix — $129</a>
         <a class="btn btn-ghost btn-block" href="#download">Or try it free first</a>
-        <p class="fineprint">Card &amp; UPI payment handled by Lemon Squeezy. Your key arrives by email immediately.</p>
+        <p class="fineprint">Card payment handled by Lemon Squeezy. Your key arrives by email immediately.</p>
       </div>
       <div class="price-aside">
         <h3>Try it first</h3>
@@ -206,30 +275,40 @@
       <span class="dl dl-soon"><strong>macOS</strong><span>Coming later</span></span>
     </div>
     <div class="req">
-      <h3>What you need</h3>
+      <h3>System requirements</h3>
       <p>
-        A reasonably modern PC with a dedicated graphics card. Phoenix leans on the
-        GPU, so a laptop with integrated graphics will work but will be slow.
-        16 GB of memory is comfortable. A full-length tape takes hours rather than
-        minutes, so most people set it going and leave it overnight.
+        Phoenix leans on the GPU for the actual restoration work, so what
+        matters most is your graphics card. A full-length tape is hours of
+        processing either way — most people set it going overnight.
+      </p>
+      <table class="req-table">
+        <thead>
+          <tr><th></th><th>Minimum</th><th>Recommended</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>Graphics card</th><td>NVIDIA, 4 GB VRAM<br /><span class="muted">e.g. GTX 1650</span></td><td>NVIDIA, 8 GB+ VRAM<br /><span class="muted">e.g. RTX 3060 or newer</span></td></tr>
+          <tr><th>Memory</th><td>8 GB RAM</td><td>16 GB RAM</td></tr>
+          <tr><th>OS</th><td colspan="2">Windows 10/11 (64-bit) or Linux</td></tr>
+          <tr><th>Storage</th><td colspan="2">Free space roughly equal to your source footage</td></tr>
+        </tbody>
+      </table>
+      <p class="fineprint">
+        No NVIDIA card, or below the minimum? The <a href="studio.html">cloud studio</a>
+        does the same restoration on our GPUs — no hardware requirements at all.
       </p>
     </div>
   </section>
 
   <section id="cloud" class="section section-alt">
-    <h2>No NVIDIA card? Restore in the cloud</h2>
+    <h2>Don't have an NVIDIA card?</h2>
     <p class="section-sub">
-      The desktop app needs an NVIDIA GPU. If you're on a Mac, an AMD or Intel
-      machine, or just don't want to install anything, use the cloud studio:
-      upload a clip, see the exact price in dollars, pay for that one job, and
-      download the result. No account, no subscription, no credits — and a
-      failed job is refunded.
+      No install, no waiting on a download — <a href="studio.html">the cloud studio</a>
+      does the same restoration on our GPUs. Upload, see the exact price, pay for
+      that one clip.
     </p>
     <div class="hero-actions">
-      <a class="btn btn-lg" href="studio.html">Open the cloud studio</a>
-      <a class="btn btn-ghost btn-lg" href="studio-app.html">Upload a clip now</a>
+      <a class="btn btn-lg" href="studio-app.html">Upload a clip now</a>
     </div>
-    <p class="fineprint">Runs on datacenter GPUs. Your file is deleted after the job.</p>
   </section>
 
   <section id="faq" class="section">

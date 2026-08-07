@@ -69,9 +69,9 @@
             <label class="field">
               Quality
               <select id="quality">
-                <option value="standard">Standard — fast &amp; clean</option>
-                <option value="enhanced" selected>Enhanced — sharper detail</option>
-                <option value="max">Studio Max — best quality</option>
+                <option value="standard">Standard — denoise &amp; upscale 2×</option>
+                <option value="enhanced" selected>Enhanced — AI detail rebuild, 2×</option>
+                <option value="max">Studio Max — AI detail rebuild, 4×</option>
               </select>
             </label>
             <label class="field" id="durationField">
@@ -96,10 +96,7 @@
             </div>
             <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
             <p class="muted" id="jobMsg">Starting…</p>
-            <div id="jobDone" class="hidden">
-              <p><strong>Ready.</strong> In production this downloads your file. Preview simulates success.</p>
-              <button type="button" class="btn btn-primary" id="newJobBtn">Start another</button>
-            </div>
+            <div id="jobDone" class="hidden"></div>
           </div>
         </div>
 
@@ -126,7 +123,7 @@
             </article>
             <article class="card">
               <h3>Billing</h3>
-              <p class="muted">No credit balance. Each job is a normal card &amp; UPI charge with a receipt.</p>
+              <p class="muted">No credit balance. Each job is a normal card charge with a receipt.</p>
               <p class="fine-print">Secure checkout by Lemon Squeezy. Failed jobs are refunded automatically.</p>
             </article>
           </div>
