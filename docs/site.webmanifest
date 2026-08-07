@@ -1,0 +1,13 @@
+{
+  "name": "Phoenix Upscaler",
+  "short_name": "Phoenix",
+  "description": "Restore and upscale old VHS, camcorder and DVD video.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0c0e",
+  "theme_color": "#0b0c0e",
+  "icons": [
+    { "src": "assets/brand/phoenix-mark-64.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

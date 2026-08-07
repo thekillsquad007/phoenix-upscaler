@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /studio-app.html
 
-Sitemap: https://thekillsquad007.github.io/phoenix-upscaler/sitemap.xml
+Sitemap: https://phoenixlabs.space/sitemap.xml

@@ -1,375 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Phoenix Upscaler is a local video restoration app for VHS, camcorder, DVD, and archive footage. Denoise, deinterlace, sharpen, and upscale old videos privately on your PC." />
-  <meta name="keywords" content="VHS restoration software, video upscaler, restore old video, camcorder video restoration, DVD upscaler, Topaz alternative, local video restoration, AI video enhancement" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://thekillsquad007.github.io/phoenix-upscaler/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://thekillsquad007.github.io/phoenix-upscaler/" />
-  <meta property="og:title" content="Phoenix Upscaler — Local VHS &amp; old video restoration" />
-  <meta property="og:description" content="Clean noisy VHS, camcorder, DVD, and archive footage on your own PC. No cloud uploads. $6/month Pro plan." />
-  <meta property="og:image" content="https://thekillsquad007.github.io/phoenix-upscaler/assets/demo/color_harmony_after/frame_01.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Phoenix Upscaler — Local VHS &amp; old video restoration" />
-  <meta name="twitter:description" content="Restore old VHS, camcorder, DVD, and archive footage privately on your PC." />
-  <meta name="twitter:image" content="https://thekillsquad007.github.io/phoenix-upscaler/assets/demo/color_harmony_after/frame_01.jpg" />
-  <title>Phoenix Upscaler — VHS Restoration Software &amp; Local Video Upscaler</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Instrument+Serif&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Phoenix Upscaler",
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "Linux, Windows",
-    "description": "Local video restoration software for VHS, camcorder, DVD, and archive footage. Denoise, deinterlace, sharpen, and upscale old videos privately on your PC.",
-    "image": "https://thekillsquad007.github.io/phoenix-upscaler/assets/demo/color_harmony_after/frame_01.jpg",
-    "url": "https://thekillsquad007.github.io/phoenix-upscaler/",
-    "downloadUrl": "https://github.com/thekillsquad007/phoenix-upscaler/releases/latest",
-    "offers": {
-      "@type": "Offer",
-      "price": "6",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is my footage uploaded to the internet?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Phoenix runs locally on your computer, so private family videos and archives do not need to be uploaded to the cloud."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can Phoenix replace Topaz for old tapes?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "For many VHS, broadcast SD, and home archive jobs, Phoenix is a simpler and cheaper local option. Topaz remains the choice for high-end professional pipelines."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What video formats work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Phoenix supports common FFmpeg-compatible formats including MP4, MOV, MKV, AVI, and many camera, DVD, and VHS capture formats."
-        }
-      }
-    ]
-  }
-  </script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Phoenix Upscaler — clean up old VHS and camcorder video on your own PC</title>
+<meta name="description" content="Phoenix removes tape noise, fixes combed motion and rebuilds detail in old VHS, camcorder and DVD footage. Runs on your computer, nothing uploads. $129 once." />
+<link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="canonical" href="https://phoenixlabs.space/" />
+<meta name="theme-color" content="#0b0c0e" />
+<meta property="og:title" content="Phoenix Upscaler — by Phoenix Labs" />
+<meta property="og:description" content="Clean up old VHS and camcorder video on your own PC. $129 once, yours forever." />
+<meta property="og:image" content="https://phoenixlabs.space/assets/demo/enhanced_after.jpg" />
+<meta property="og:url" content="https://phoenixlabs.space/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="manifest" href="site.webmanifest" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Organization", "@id": "https://phoenixlabs.space/#org", "name": "Phoenix Labs",
+      "url": "https://phoenixlabs.space/", "logo": "https://phoenixlabs.space/assets/brand/phoenix-mark.png" },
+    { "@type": "WebSite", "@id": "https://phoenixlabs.space/#website", "url": "https://phoenixlabs.space/",
+      "name": "Phoenix Upscaler", "publisher": { "@id": "https://phoenixlabs.space/#org" } },
+    { "@type": "SoftwareApplication", "name": "Phoenix Upscaler",
+      "applicationCategory": "MultimediaApplication", "operatingSystem": "Windows 10, Windows 11",
+      "description": "Restore and upscale old VHS, camcorder and DVD video. Removes tape noise, fixes combed motion and rebuilds lost detail. Runs locally on your NVIDIA GPU; nothing uploads.",
+      "publisher": { "@id": "https://phoenixlabs.space/#org" },
+      "offers": { "@type": "Offer", "price": "129", "priceCurrency": "USD", "url": "https://phoenixlabs.space/#price" } },
+    { "@type": "FAQPage", "mainEntity": [
+      { "@type": "Question", "name": "Does my video get uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. Everything happens on your machine. Once activated, Phoenix doesn't need an internet connection at all." } },
+      { "@type": "Question", "name": "Is this a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "No. You pay $129 once and it's yours, including every update afterwards. Nothing expires, nothing renews." } },
+      { "@type": "Question", "name": "What files can it open?", "acceptedAnswer": { "@type": "Answer", "text": "MP4, MOV, MKV and AVI, including USB tape-capture output." } },
+      { "@type": "Question", "name": "How long does a tape take?", "acceptedAnswer": { "@type": "Answer", "text": "A two-hour tape is typically an overnight job — it processes every one of ~180,000 frames." } },
+      { "@type": "Question", "name": "Can I put it on my other computer?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, up to three at a time. Release one from inside the app and move it to a new machine." } },
+      { "@type": "Question", "name": "Will it make a bad tape look like it was shot yesterday?", "acceptedAnswer": { "@type": "Answer", "text": "No. Detail the tape never recorded can't be recovered, only guessed at. Phoenix aims for a clean, honest picture rather than an invented one." } }
+    ] }
+  ]
+}
+</script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="#"><span class="logo-mark">PX</span><span>Phoenix Upscaler</span></a>
-    <nav>
-      <a href="#demo">Demo</a>
-      <a href="studio.html">Studio</a>
-      <a href="#compare">Compare</a>
-      <a href="#download">Download</a>
-      <a href="#pricing">Pricing</a>
-      <a class="btn btn-ghost" href="studio-app.html">Log in</a>
-      <a class="btn btn-primary gumroad-link" href="https://aravindk74.gumroad.com/l/phoenixupscaler">Get Pro — $6/mo</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <p class="badge">VHS restoration software · Local video upscaler · No cloud uploads</p>
-      <h1>Restore VHS, camcorder, and old family videos on your PC</h1>
-      <p class="lead">
-        Phoenix is a local video restoration app for noisy tapes, DVD rips, camcorder clips, and archive footage.
-        Deinterlace, denoise, sharpen, and upscale for modern screens without sending private videos to the cloud.
+<header class="nav">
+  <a class="brand" href="#top">
+    <img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="32" height="32" />
+    <span>Phoenix Labs</span>
+  </a>
+  <nav>
+    <a href="#proof">See it</a>
+    <a href="#how">How it works</a>
+    <a href="#price">Price</a>
+    <a href="studio.html">Cloud</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-sm" href="#price">Get Phoenix</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Old tapes look old.<br />This fixes that.</h1>
+      <p class="lede">
+        Feed Phoenix a capture from a VHS deck, an old camcorder or a DVD.
+        It strips the tape noise, sorts out the combed motion, and rebuilds
+        detail the tape lost decades ago.
       </p>
-      <div class="hero-cta">
-        <a class="btn btn-primary btn-lg" href="#download">Download Phoenix</a>
-        <a class="btn btn-ghost btn-lg" href="studio.html">Try Studio online</a>
+      <p class="lede">It runs on your own computer. The footage never leaves it.</p>
+      <div class="hero-actions">
+        <a class="btn btn-lg" href="#price">Get Phoenix — $129</a>
+        <a class="btn btn-ghost btn-lg" href="#proof">Watch a before &amp; after</a>
       </div>
-      <div class="hero-compare">
-        <div><span class="label">High-end tools</span><span class="bad">~$299+</span></div>
-        <div><span class="label">Phoenix Pro</span><span class="good">$6/mo</span></div>
-        <div><span class="label">Your footage</span><span class="good">Stays on your PC</span></div>
-      </div>
-      <div class="trust-row" aria-label="Product highlights">
-        <span>Local processing</span>
-        <span>VHS and SD focused</span>
-        <span>Public-domain demo</span>
-        <span>Gumroad billing</span>
-      </div>
-    </section>
+      <p class="fineprint">One payment. Every update included. Try it free on 60-second clips first.</p>
+    </div>
 
-    <section id="use-cases" class="section">
-      <h2>Built for the videos people actually need to save</h2>
-      <p class="section-lead">Phoenix focuses on home archives and SD sources where a simple, private workflow matters more than a professional editing suite.</p>
-      <div class="grid-3">
-        <article class="card"><h3>VHS &amp; Hi8 tapes</h3><p>Reduce tape noise, clean interlacing, and make old captures easier to watch on modern TVs.</p></article>
-        <article class="card"><h3>Camcorder clips</h3><p>Improve soft, shaky, low-resolution family footage without uploading private moments.</p></article>
-        <article class="card"><h3>DVD &amp; archive video</h3><p>Upscale SD videos, old broadcasts, school projects, concerts, and public-domain footage.</p></article>
+    <figure class="hero-shot">
+      <div class="ba" data-ba>
+        <img class="ba-after" src="assets/demo/enhanced_after.jpg" alt="A restored face, sharp and detailed" />
+        <div class="ba-clip"><img src="assets/demo/enhanced_before.jpg" alt="The same face before restoration, soft and faded" /></div>
+        <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
+        <span class="ba-handle" aria-hidden="true"></span>
+        <span class="ba-tag ba-tag-l">Before</span>
+        <span class="ba-tag ba-tag-r">After</span>
       </div>
-    </section>
+      <figcaption>Drag the slider. Restored from a 1952 home movie.</figcaption>
+    </figure>
+  </section>
 
-    <section id="demo" class="section demo-section">
-      <h2>Real restoration demo</h2>
-      <p class="section-lead">
-        <strong>Color Harmony for Your Home</strong> (public-domain 1956 color film) restored with Phoenix Generative Lite and delivered at <strong>1080p</strong>.
+  <section class="strip">
+    <div><strong>Nothing uploads.</strong> Your video stays on your machine.</div>
+    <div><strong>No subscription.</strong> Pay once, keep it.</div>
+    <div><strong>Runs on your NVIDIA GPU.</strong> No NVIDIA card? Use the <a href="studio.html">cloud studio</a>.</div>
+  </section>
+
+  <section id="proof" class="section">
+    <h2>The same clip, twice</h2>
+    <p class="section-sub">
+      Left is the untouched 1952 home movie. Right is what Phoenix gave back.
+      Play both, then judge it full screen.
+    </p>
+
+    <div class="video-pair">
+      <figure>
+        <video src="assets/demo/enhanced-1952-before.web.mp4" controls muted loop playsinline preload="metadata"></video>
+        <figcaption>Straight off the film</figcaption>
+      </figure>
+      <figure>
+        <video src="assets/demo/enhanced-1952-after.web.mp4" controls muted loop playsinline preload="metadata"></video>
+        <figcaption>After Phoenix Enhanced</figcaption>
+      </figure>
+    </div>
+
+    <div class="ba-row">
+      <div class="ba" data-ba>
+        <img class="ba-after" src="assets/demo/enh_a_3.jpg" alt="Restored frame" />
+        <div class="ba-clip"><img src="assets/demo/enh_b_3.jpg" alt="Original frame" /></div>
+        <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare" />
+        <span class="ba-handle" aria-hidden="true"></span>
+      </div>
+      <div class="ba" data-ba>
+        <img class="ba-after" src="assets/demo/enh_a_13.jpg" alt="Restored frame" />
+        <div class="ba-clip"><img src="assets/demo/enh_b_13.jpg" alt="Original frame" /></div>
+        <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare" />
+        <span class="ba-handle" aria-hidden="true"></span>
+      </div>
+    </div>
+    <p class="credit">Footage: <em>Texas Farm Family</em> (1952), public domain, via the Prelinger Archives. Restored with Phoenix Enhanced.</p>
+  </section>
+
+  <section id="how" class="section section-alt">
+    <h2>What it does to the picture</h2>
+    <div class="how-grid">
+      <div>
+        <h3>Kills the tape noise</h3>
+        <p>That crawling speckle VHS leaves behind, without smearing faces into wax.</p>
+      </div>
+      <div>
+        <h3>Fixes combed motion</h3>
+        <p>Old tape and TV footage is interlaced, so anything that moves gets a torn, striped edge. Phoenix untangles it.</p>
+      </div>
+      <div>
+        <h3>Rebuilds lost detail</h3>
+        <p>Hair, fabric, the lettering on a sign. Things the tape blurred into a smudge come back readable.</p>
+      </div>
+      <div>
+        <h3>Keeps the grain</h3>
+        <p>Film should still look like film. Phoenix puts texture back so the result doesn't go plastic.</p>
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li><span>1</span> Drag your video onto the window.</li>
+      <li><span>2</span> Phoenix reads the footage and picks its own settings.</li>
+      <li><span>3</span> Go and make a cup of tea.</li>
+      <li><span>4</span> Save the result wherever you like.</li>
+    </ol>
+  </section>
+
+  <section id="price" class="section">
+    <h2>One price</h2>
+    <div class="price-wrap">
+      <div class="price-card">
+        <p class="price-eyebrow">Phoenix Upscaler</p>
+        <p class="price-amount">$129<span>once</span></p>
+        <ul>
+          <li>Yours permanently. Nothing renews.</li>
+          <li>Every future update included, free.</li>
+          <li>No watermark, any clip length.</li>
+          <li>Install on 3 of your own computers.</li>
+          <li>Works offline once activated.</li>
+        </ul>
+        <a class="btn btn-lg btn-block" id="buyBtn" href="#download" data-ls-checkout>Buy Phoenix — $129</a>
+        <a class="btn btn-ghost btn-block" href="#download">Or try it free first</a>
+        <p class="fineprint">Card &amp; UPI payment handled by Lemon Squeezy. Your key arrives by email immediately.</p>
+      </div>
+      <div class="price-aside">
+        <h3>Try it first</h3>
+        <p>
+          The free download restores 60-second clips with a small watermark, so you
+          can point it at your own tape and see the result before paying anything.
+        </p>
+        <h3>Compared to the alternative</h3>
+        <p>
+          Topaz Video AI is where most people end up. It's good, it's built for film
+          crews, and it runs around $299. If you're restoring a shoebox of family
+          tapes rather than grading a feature, you're paying for a lot you'll never open.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="section section-alt">
+    <h2>Download</h2>
+    <div class="dl-grid">
+      <a class="dl" href="https://github.com/thekillsquad007/phoenix-upscaler/releases/latest">
+        <strong>Windows</strong><span>10 and 11, 64-bit</span>
+      </a>
+      <a class="dl" href="https://github.com/thekillsquad007/phoenix-upscaler/releases/latest">
+        <strong>Linux</strong><span>AppImage</span>
+      </a>
+      <span class="dl dl-soon"><strong>macOS</strong><span>Coming later</span></span>
+    </div>
+    <div class="req">
+      <h3>What you need</h3>
+      <p>
+        A reasonably modern PC with a dedicated graphics card. Phoenix leans on the
+        GPU, so a laptop with integrated graphics will work but will be slow.
+        16 GB of memory is comfortable. A full-length tape takes hours rather than
+        minutes, so most people set it going and leave it overnight.
       </p>
+    </div>
+  </section>
 
-      <div class="before-after-slider" data-before-after>
-        <img class="slider-image" src="assets/demo/color_harmony_before/frame_01.jpg" alt="Before restoration — faded archival color film" loading="lazy" />
-        <div class="slider-after" data-after-pane>
-          <img class="slider-image" src="assets/demo/color_harmony_after/frame_01.jpg" alt="After Phoenix restoration — 1080p color demo" loading="lazy" />
-        </div>
-        <div class="slider-handle" data-slider-handle aria-hidden="true"></div>
-        <span class="slider-label before">Source</span>
-        <span class="slider-label after">Phoenix 1080p</span>
-        <input class="slider-range" data-slider-range type="range" min="0" max="100" value="52" aria-label="Compare source and Phoenix restored frame" />
-      </div>
+  <section id="cloud" class="section section-alt">
+    <h2>No NVIDIA card? Restore in the cloud</h2>
+    <p class="section-sub">
+      The desktop app needs an NVIDIA GPU. If you're on a Mac, an AMD or Intel
+      machine, or just don't want to install anything, use the cloud studio:
+      upload a clip, see the exact price in dollars, pay for that one job, and
+      download the result. No account, no subscription, no credits — and a
+      failed job is refunded.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-lg" href="studio.html">Open the cloud studio</a>
+      <a class="btn btn-ghost btn-lg" href="studio-app.html">Upload a clip now</a>
+    </div>
+    <p class="fineprint">Runs on datacenter GPUs. Your file is deleted after the job.</p>
+  </section>
 
-      <div class="compare-row">
-        <figure><img src="assets/demo/color_harmony_before/frame_00.jpg" alt="Before color frame 1" loading="lazy" /><figcaption>Before</figcaption></figure>
-        <figure><img src="assets/demo/color_harmony_after/frame_00.jpg" alt="After color frame 1" loading="lazy" /><figcaption>After</figcaption></figure>
-        <figure><img src="assets/demo/color_harmony_before/frame_02.jpg" alt="Before color frame 3" loading="lazy" /><figcaption>Before</figcaption></figure>
-        <figure><img src="assets/demo/color_harmony_after/frame_02.jpg" alt="After color frame 3" loading="lazy" /><figcaption>After</figcaption></figure>
-      </div>
+  <section id="faq" class="section">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Does my video get uploaded anywhere?</summary>
+        <p>No. Everything happens on your machine. Once activated, Phoenix doesn't need an internet connection at all.</p>
+      </details>
+      <details>
+        <summary>Is this a subscription?</summary>
+        <p>No. You pay $129 once and it's yours, including every update afterwards. Nothing expires, nothing renews.</p>
+      </details>
+      <details>
+        <summary>What files can it open?</summary>
+        <p>MP4, MOV, MKV and AVI. If you've captured a tape with a USB capture stick, whatever it produced will almost certainly work.</p>
+      </details>
+      <details>
+        <summary>How long does a tape take?</summary>
+        <p>Longer than you'd like. A two-hour tape is an overnight job on most machines. It's doing real work on every frame, and there are around 180,000 of them.</p>
+      </details>
+      <details>
+        <summary>Can I put it on my other computer?</summary>
+        <p>Yes, up to three at a time. Release one from inside the app and move it to a new machine whenever you want.</p>
+      </details>
+      <details>
+        <summary>Will it make a bad tape look like it was shot yesterday?</summary>
+        <p>No, and be wary of anything claiming otherwise. Detail the tape never recorded can't be recovered, only guessed at. Phoenix aims for a clean, honest picture rather than an invented one.</p>
+      </details>
+    </div>
+  </section>
 
-      <div class="video-stack">
-        <figure class="video-card">
-          <video controls playsinline preload="metadata" poster="assets/demo/color_harmony_before/frame_01.jpg">
-            <source src="assets/demo/color-harmony-public-domain-demo-source-clip.web.mp4" type="video/mp4" />
-            Your browser does not support video playback.
-          </video>
-          <figcaption>Original public-domain source clip</figcaption>
-        </figure>
-        <figure class="video-card featured">
-          <video controls playsinline preload="metadata" poster="assets/demo/color_harmony_after/frame_01.jpg">
-            <source src="assets/demo/color-harmony-public-domain-demo-1080p.mp4" type="video/mp4" />
-            Your browser does not support video playback.
-          </video>
-          <figcaption>Phoenix restored 1080p delivery</figcaption>
-        </figure>
-      </div>
-      <p class="video-caption">Public-domain footage from <em>Color Harmony for Your Home</em> (Prelinger Archives) — source clip beside the Phoenix Generative Lite remaster. Process your own family archive clips locally in the app.</p>
-    </section>
+  <section class="cta">
+    <h2>Get those tapes off the shelf</h2>
+    <a class="btn btn-lg" href="#price">Get Phoenix — $129</a>
+  </section>
 
-    <section id="compare" class="section">
-      <h2>How Phoenix compares</h2>
-      <p class="section-lead">A focused alternative for home archives — not Hollywood pipelines.</p>
-      <div class="table-wrap">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Topaz Video AI</th>
-              <th>Adobe / cloud</th>
-              <th class="highlight">Phoenix</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Price</td><td>~$299+ or ~$25/mo</td><td>CC subscription</td><td class="highlight"><strong>$6/mo</strong> or $60/yr</td></tr>
-            <tr><td>Privacy</td><td>Local</td><td>Often cloud</td><td class="highlight"><strong>100% local</strong></td></tr>
-            <tr><td>Best for</td><td>Pros &amp; filmmakers</td><td>General editing</td><td class="highlight"><strong>VHS, tape, SD archives</strong></td></tr>
-            <tr><td>Setup</td><td>Complex</td><td>Complex</td><td class="highlight"><strong>Install → drag &amp; drop</strong></td></tr>
-            <tr><td>Cancel anytime</td><td>Varies</td><td>Varies</td><td class="highlight"><strong>Yes (Gumroad)</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+</main>
 
-    <section id="modes" class="section">
-      <h2>Choose the right restoration mode</h2>
-      <p class="section-lead">The default path is reliable standard restoration. On Windows, standard ONNX restoration can use DirectML acceleration on AMD, Intel, and NVIDIA GPUs. Generative AI remains NVIDIA-focused.</p>
-      <div class="mode-grid">
-        <article class="mode-card">
-          <p class="pill">Recommended</p>
-          <h3>Standard Restore</h3>
-          <p>Denoise, deinterlace, sharpen, stabilize, and upscale old footage with predictable results.</p>
-          <ul>
-            <li>Best first choice for paid users</li>
-            <li>Works on more computers, including AMD GPUs on Windows through DirectML</li>
-            <li>Lower risk of artifacts</li>
-          </ul>
-        </article>
-        <article class="mode-card">
-          <p class="pill muted-pill">Advanced</p>
-          <h3>Generative Lite</h3>
-          <p>Optional AI detail restoration for clips where stronger enhancement is worth longer processing time.</p>
-          <ul>
-            <li>Best with NVIDIA GPUs</li>
-            <li>Hardware-dependent speed</li>
-            <li>Use short previews before long exports</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+<footer class="foot">
+  <p>Phoenix Upscaler is a product of Phoenix Labs. © 2026 Phoenix Labs.</p>
+  <p><a href="./">Desktop app</a> · <a href="studio.html">Cloud studio</a> · <a href="restore-old-video.html">Restoring old video</a> · <a href="vhs-restoration-software.html">VHS restoration</a> · <a href="topaz-video-ai-alternative.html">Topaz alternative</a></p>
+  <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
+</footer>
 
-    <section id="features" class="section">
-      <h2>Why families choose Phoenix</h2>
-      <div class="grid-3">
-        <article class="card"><h3>VHS &amp; tape cleanup</h3><p>Deinterlace and denoise without turning every face into plastic.</p></article>
-        <article class="card"><h3>Private by default</h3><p>Your wedding, concerts, family tapes, and school videos stay on your hard drive.</p></article>
-        <article class="card"><h3>Simple workflow</h3><p>Drop a file, pick Auto or VHS, export the restored video. No editing timeline required.</p></article>
-      </div>
-    </section>
-
-    <section id="screenshots" class="section">
-      <h2>The app</h2>
-      <p class="section-lead">Clean desktop app — no terminal, no cloud dashboard.</p>
-      <div class="screenshot-grid">
-        <figure>
-          <img src="assets/screenshots/app-home.png" alt="Phoenix Upscaler home screen" loading="lazy" />
-          <figcaption>Drag &amp; drop · pick a preset</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/screenshots/app-processing.png" alt="Phoenix processing with live progress" loading="lazy" />
-          <figcaption>Live progress — frame by frame</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/screenshots/app-account.png" alt="Phoenix account and licensing" loading="lazy" />
-          <figcaption>Activate Pro with your Gumroad key</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="download" class="section download-section">
-      <h2>Download Phoenix</h2>
-      <p class="section-lead">One installer. Local processing. Works offline after setup.</p>
-      <div class="download-grid">
-        <article class="download-card">
-          <h3>Windows</h3>
-          <p>Setup wizard with Start Menu shortcut, bundled FFmpeg, local models, and AMD-friendly DirectML acceleration.</p>
-          <a class="btn btn-primary" href="https://github.com/thekillsquad007/phoenix-upscaler/releases/latest/download/PhoenixUpscaler-Setup-0.6.0.exe">Download for Windows</a>
-        </article>
-        <article class="download-card">
-          <h3>Linux</h3>
-          <p>AppImage — chmod +x, then double-click.</p>
-          <a class="btn btn-primary" href="https://github.com/thekillsquad007/phoenix-upscaler/releases/latest/download/PhoenixUpscaler-0.6.0-x86_64.AppImage">Download for Linux</a>
-        </article>
-        <article class="download-card">
-          <h3>macOS</h3>
-          <p>Mac package is planned after the Windows/Linux builds stabilize.</p>
-          <a class="btn btn-ghost" href="https://github.com/thekillsquad007/phoenix-upscaler/releases/latest">View releases</a>
-        </article>
-      </div>
-      <p class="download-note">Free tier included. Upgrade to Pro anytime from inside the app.</p>
-    </section>
-
-    <section id="requirements" class="section">
-      <h2>System requirements</h2>
-      <p class="section-lead">Phoenix is designed to run locally. Faster GPUs help, but the app should make the safe path clear before you start a long export.</p>
-      <div class="requirements-grid">
-        <article class="card"><h3>Minimum</h3><p>Modern Windows or Linux PC, 8 GB RAM, enough disk space for temporary video files, and FFmpeg-compatible media.</p></article>
-        <article class="card"><h3>Recommended</h3><p>16 GB RAM, recent AMD/Intel/NVIDIA GPU, SSD storage, and short test exports before processing long tapes. Windows builds include DirectML for broad GPU support.</p></article>
-        <article class="card"><h3>Generative AI</h3><p>NVIDIA GPU recommended. 8 GB VRAM can run Lite profiles; heavier modes need more VRAM and patience.</p></article>
-      </div>
-    </section>
-
-    <section id="guides" class="section">
-      <h2>Video restoration guides</h2>
-      <p class="section-lead">Practical SEO-focused guides for people searching how to save old tapes and SD footage.</p>
-      <div class="guide-grid">
-        <a class="guide-card" href="vhs-restoration-software.html"><strong>VHS restoration software</strong><span>How to clean, deinterlace, and upscale VHS captures locally.</span></a>
-        <a class="guide-card" href="restore-old-video.html"><strong>How to restore old video</strong><span>A simple workflow for camcorder, DVD, and archive footage.</span></a>
-        <a class="guide-card" href="topaz-video-ai-alternative.html"><strong>Topaz alternative for home archives</strong><span>When a cheaper local tool is enough for family footage.</span></a>
-      </div>
-    </section>
-
-    <section id="how" class="section">
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li><strong>1. Install</strong><span>Download the installer for your system. No Python required.</span></li>
-        <li><strong>2. Drop your video</strong><span>VHS rips, DVD captures, old MP4s — Phoenix handles them.</span></li>
-        <li><strong>3. Pick a preset</strong><span>Auto, VHS, Film, or Faces. Phoenix analyzes and restores.</span></li>
-        <li><strong>4. Download</strong><span>Save restored footage. Share with family. Keep the originals safe.</span></li>
-      </ol>
-    </section>
-
-    <section id="studio" class="section">
-      <h2>Phoenix Studio — online photo &amp; video</h2>
-      <p class="section-lead">
-        No GPU at home? Open <a href="studio.html">Studio</a>, sign in, upload a photo or video,
-        and pay a <strong>clear dollar price</strong> for that job. No credit packs.
-      </p>
-      <div class="hero-cta" style="justify-content:center">
-        <a class="btn btn-primary btn-lg" href="studio-app.html">Open Studio</a>
-        <a class="btn btn-ghost btn-lg" href="studio.html">How Studio works</a>
-      </div>
-    </section>
-
-    <section id="pricing" class="section pricing">
-      <h2>Pricing</h2>
-      <div class="pricing-grid pricing-grid-3">
-        <article class="price-card">
-          <h3>Free desktop</h3>
-          <p class="amount">$0</p>
-          <ul>
-            <li>90-second clips</li>
-            <li>5 exports / month</li>
-            <li>2× upscale, watermark</li>
-          </ul>
-          <a class="btn btn-ghost checkout-link" href="#download">Download free</a>
-        </article>
-        <article class="price-card featured">
-          <h3>Desktop Pro</h3>
-          <p class="amount">$6 <span>/ month</span></p>
-          <p class="amount-sub">or <strong>$60 / year</strong> — save $12</p>
-          <ul>
-            <li>Unlimited local exports</li>
-            <li>Up to 2-hour clips</li>
-            <li>No watermark</li>
-            <li>Account login for license control</li>
-            <li>Cancel anytime</li>
-          </ul>
-          <a class="btn btn-primary btn-lg gumroad-link checkout-link" href="https://aravindk74.gumroad.com/l/phoenixupscaler">Subscribe on Gumroad</a>
-          <p class="note">License key by email · manage in Account</p>
-        </article>
-        <article class="price-card">
-          <h3>Studio</h3>
-          <p class="amount">Pay per job</p>
-          <p class="amount-sub">Exact $ total before you pay</p>
-          <ul>
-            <li>Photos from $1.49</li>
-            <li>Video from $2.99</li>
-            <li>Studio Max for best quality</li>
-            <li>No credits · no mystery balance</li>
-            <li>Login required</li>
-          </ul>
-          <a class="btn btn-primary checkout-link" href="studio.html">See Studio prices</a>
-          <p class="note">Failed jobs are not charged</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="faq" class="section faq">
-      <h2>FAQ</h2>
-      <details open><summary>Is my footage uploaded to the internet?</summary><p><strong>Desktop:</strong> never — files stay on your PC. <strong>Studio:</strong> files are uploaded for that paid job only, then removed on a schedule. We’ll always say which mode you’re in.</p></details>
-      <details><summary>Do I need credits for Studio?</summary><p>No. Studio shows a normal dollar price for the photo or video before you pay.</p></details>
-      <details><summary>Can Phoenix replace Topaz for old tapes?</summary><p>For many VHS, broadcast SD, and home archive jobs, Phoenix is a simpler and cheaper local option. Topaz remains the choice for high-end professional pipelines.</p></details>
-      <details><summary>What makes Phoenix different from online AI video enhancers?</summary><p>Phoenix runs locally. That means wedding videos, family tapes, school events, and private archives do not need to be uploaded to a third-party server.</p></details>
-      <details><summary>What video formats work?</summary><p>MP4, MOV, MKV, AVI, and most common formats from cameras, DVDs, and VHS capture cards.</p></details>
-      <details><summary>Is generative restoration the default?</summary><p>No. Standard restoration is the safer default. Generative Lite is an advanced option for supported hardware and short preview-driven workflows.</p></details>
-      <details><summary>How do I activate Pro?</summary><p>Subscribe on Gumroad, check your email for a <strong>PHX-</strong> license key, open Phoenix → Account → paste the key.</p></details>
-      <details><summary>Do AMD GPUs work?</summary><p>Yes for the standard ONNX restoration path on Windows. Phoenix packages ONNX Runtime DirectML so many AMD, Intel, and NVIDIA DirectX 12 GPUs can accelerate local restoration. Generative Lite remains NVIDIA-focused.</p></details>
-      <details><summary>Do I need a powerful GPU?</summary><p>A GPU speeds things up, but Phoenix works on everyday laptops too. Processing runs locally either way.</p></details>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2026 Phoenix · <a href="studio.html">Studio</a> · <a class="gumroad-link" href="https://aravindk74.gumroad.com/l/phoenixupscaler">Pro</a> · <a href="https://github.com/thekillsquad007/phoenix-upscaler">GitHub</a></p>
-  </footer>
-  <script src="site.js"></script>
+<script src="site.js"></script>
 </body>
 </html>

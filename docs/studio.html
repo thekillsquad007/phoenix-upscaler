@@ -3,182 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Phoenix Studio — restore photos and old videos online. Sign in, see a clear dollar price, pay once per job, download. No credit packs." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://thekillsquad007.github.io/phoenix-upscaler/studio.html" />
-  <meta property="og:title" content="Phoenix Studio — Photo & video restoration" />
-  <meta property="og:description" content="Upload a photo or old video. See the price in dollars. Get a clean modern restore. Login to manage your account." />
-  <meta property="og:image" content="https://thekillsquad007.github.io/phoenix-upscaler/assets/demo/color_harmony_after/frame_01.jpg" />
-  <title>Phoenix Studio — Photo &amp; video restoration</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <meta name="description" content="Restore old video in the cloud — no NVIDIA GPU, no install, no account. Upload a clip, see the exact price in dollars, pay for that one job, download. Failed jobs are refunded." />
+  <link rel="canonical" href="https://phoenixlabs.space/studio.html" />
+  <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <meta property="og:title" content="Phoenix Cloud Studio — restore old video, pay per job" />
+  <meta property="og:description" content="No NVIDIA card? Upload a clip, see the price in dollars, pay once, download. No account, no subscription, no credits." />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/demo/enhanced_after.jpg" />
+  <meta property="og:url" content="https://phoenixlabs.space/studio.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Phoenix Cloud Studio — restore old video, pay per job</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="site.webmanifest" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Phoenix Cloud Studio",
+    "serviceType": "AI video restoration",
+    "provider": { "@type": "Organization", "name": "Phoenix Labs", "url": "https://phoenixlabs.space/" },
+    "description": "Cloud video restoration billed per job in dollars. No account or subscription; failed jobs are refunded.",
+    "offers": { "@type": "Offer", "priceCurrency": "USD", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "2.99", "priceCurrency": "USD" } }
+  }
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="./"><span class="logo-mark">PX</span><span>Phoenix</span></a>
-    <nav>
-      <a href="./#demo">Desktop demo</a>
-      <a href="studio.html">Studio</a>
-      <a href="./#pricing">Pricing</a>
-      <a class="btn btn-ghost" href="studio-app.html">Log in</a>
-      <a class="btn btn-primary" href="studio-app.html">Open Studio</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <p class="badge">Phoenix Studio · Photos &amp; video · Pay per job in dollars</p>
-      <h1>Restore photos and old videos without buying a GPU</h1>
-      <p class="lead">
-        Sign in, drop a file, pick a quality level, and see exactly what you’ll pay —
-        no credit packs, no mystery balances. Download when it’s done.
+<header class="nav">
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="32" height="32" /><span>Phoenix Labs</span></a>
+  <nav>
+    <a href="./">Desktop</a>
+    <a href="#how">How it works</a>
+    <a href="#price">Price</a>
+    <a href="./#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-sm" href="studio-app.html">Open the studio</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>No NVIDIA card?<br />Restore it in the cloud.</h1>
+      <p class="lede">
+        Upload an old clip, see exactly what it costs in dollars, pay for that
+        one job, and download the result. It runs on our datacenter GPUs — so it
+        works from a Mac, an AMD or Intel PC, or a phone.
       </p>
-      <div class="hero-cta">
-        <a class="btn btn-primary btn-lg" href="studio-app.html">Open Studio</a>
-        <a class="btn btn-ghost btn-lg" href="./#download">Prefer desktop? Download free</a>
+      <p class="lede">No account. No subscription. No credits. A failed job is refunded.</p>
+      <div class="hero-actions">
+        <a class="btn btn-lg" href="studio-app.html">Upload a clip</a>
+        <a class="btn btn-ghost btn-lg" href="./#price">Prefer to run it locally? $129 desktop app</a>
       </div>
-      <div class="trust-row" aria-label="Studio highlights">
-        <span>Clear $ prices</span>
-        <span>Account login</span>
-        <span>Photos + video</span>
-        <span>Cancel Pro anytime</span>
+      <p class="fineprint">Your file is used only for the job, then deleted automatically.</p>
+    </div>
+    <figure class="hero-shot">
+      <div class="ba" data-ba>
+        <img class="ba-after" src="assets/demo/enhanced_after.jpg" alt="A restored face, sharp and detailed" />
+        <div class="ba-clip"><img src="assets/demo/enhanced_before.jpg" alt="The same face before restoration, soft and faded" /></div>
+        <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
+        <span class="ba-handle" aria-hidden="true"></span>
+        <span class="ba-tag ba-tag-l">Before</span>
+        <span class="ba-tag ba-tag-r">After</span>
       </div>
-    </section>
+      <figcaption>The same restore the desktop app produces — run on our GPUs.</figcaption>
+    </figure>
+  </section>
 
-    <section class="section">
-      <h2>Built like a small studio, not a crypto wallet</h2>
-      <p class="section-lead">Most AI tools sell opaque “credits.” Studio shows a normal price before you pay.</p>
-      <div class="grid-3">
-        <article class="card">
-          <h3>1. Sign in</h3>
-          <p>Your account holds Pro licenses, device access, job history, and receipts — so cancel and support actually work.</p>
-        </article>
-        <article class="card">
-          <h3>2. Upload photo or video</h3>
-          <p>Family photos, VHS rips, camcorder clips, DVD captures. Pick Standard, Enhanced, or Studio Max.</p>
-        </article>
-        <article class="card">
-          <h3>3. Pay the shown amount</h3>
-          <p>Example: “This video will cost <strong>$4.99</strong>.” Confirm, process, download. Failed jobs are not charged.</p>
-        </article>
+  <section class="strip">
+    <div><strong>Pay per job.</strong> A dollar price, shown before you pay.</div>
+    <div><strong>No account.</strong> Just your email for the receipt.</div>
+    <div><strong>Refunded if it fails.</strong> You only pay for a good result.</div>
+  </section>
+
+  <section id="how" class="section">
+    <h2>Three steps</h2>
+    <div class="video-pair">
+      <figure><figcaption><strong>1. Upload</strong> a photo or old video clip and pick a quality level.</figcaption></figure>
+      <figure><figcaption><strong>2. Pay the exact price</strong> shown — a normal card or UPI charge, no credit balance.</figcaption></figure>
+      <figure><figcaption><strong>3. Download</strong> the restored file. Your upload is then deleted.</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="price" class="section section-alt">
+    <h2>What it costs</h2>
+    <p class="section-sub">
+      You always see the exact dollar total in the studio before you pay — it
+      scales with the clip's length and the quality you choose. There are no
+      credits and nothing recurring.
+    </p>
+    <div class="price-wrap">
+      <div class="price-card">
+        <p class="price-eyebrow">Cloud restore</p>
+        <p class="price-amount">from $2.99<span>per job</span></p>
+        <ul>
+          <li><strong>Standard</strong> — clean, reliable restore, from $2.99.</li>
+          <li><strong>Enhanced</strong> — sharper detail for tapes &amp; soft SD, from $5.99.</li>
+          <li><strong>Studio Max</strong> — top quality when the clip matters.</li>
+          <li>Exact total shown before payment. Failed jobs refunded.</li>
+        </ul>
+        <a class="btn btn-lg btn-block" href="studio-app.html">Open the studio</a>
+        <p class="fineprint">Card &amp; UPI handled by Lemon Squeezy. Tax handled for you.</p>
       </div>
-    </section>
-
-    <section class="section" id="pricing">
-      <h2>Simple prices</h2>
-      <p class="section-lead">Launch pricing — exact quote always shown in-app before payment.</p>
-      <div class="table-wrap">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Job</th>
-              <th>Enhanced</th>
-              <th class="highlight">Studio Max</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Photo</td>
-              <td>from $1.49</td>
-              <td class="highlight"><strong>from $2.99</strong></td>
-            </tr>
-            <tr>
-              <td>Video (per 10 seconds)</td>
-              <td>from $0.99 <span class="muted">(min $2.99)</span></td>
-              <td class="highlight"><strong>from $1.99</strong> <span class="muted">(min $4.99)</span></td>
-            </tr>
-            <tr>
-              <td>What you see</td>
-              <td colspan="2">Exact dollar total before you pay — never a credit balance</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="price-aside">
+        <h3>Desktop vs cloud</h3>
+        <p>
+          The <a href="./#price">$129 desktop app</a> is the best value if you have an
+          NVIDIA GPU and lots of tapes — one payment, unlimited local restores,
+          nothing leaves your PC. The cloud studio is for everyone else, or for a
+          one-off job you'd rather not install anything for.
+        </p>
+        <h3>Your privacy</h3>
+        <p>
+          A cloud job uploads your file only to process it. The source and the
+          result are removed automatically after you download — see our
+          <a href="privacy.html">privacy policy</a>.
+        </p>
       </div>
-      <p class="section-lead" style="margin-top:1.5rem">Need unlimited local restores? Keep <a href="./#pricing">Desktop Pro at $6/mo</a>.</p>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
-      <h2>Quality levels (plain English)</h2>
-      <div class="mode-grid">
-        <article class="mode-card">
-          <p class="pill">Fast</p>
-          <h3>Standard</h3>
-          <p>Clean, reliable restore. Best for previews and everyday photos.</p>
-        </article>
-        <article class="mode-card">
-          <p class="pill">Recommended</p>
-          <h3>Enhanced</h3>
-          <p>Sharper detail and cleaner motion for tapes and soft SD video.</p>
-        </article>
-        <article class="mode-card">
-          <p class="pill muted-pill">Best</p>
-          <h3>Studio Max</h3>
-          <p>Highest quality path when the clip matters — takes longer, costs more, looks better.</p>
-        </article>
-      </div>
-    </section>
+  <section class="cta">
+    <h2>Try one clip</h2>
+    <a class="btn btn-lg" href="studio-app.html">Open the cloud studio</a>
+  </section>
+</main>
 
-    <section class="section">
-      <h2>Desktop vs Studio</h2>
-      <div class="table-wrap">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Desktop app</th>
-              <th class="highlight">Studio</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Where it runs</td><td>Your PC</td><td class="highlight"><strong>Our studio (cloud)</strong></td></tr>
-            <tr><td>Login</td><td>Optional (Pro key)</td><td class="highlight"><strong>Required</strong></td></tr>
-            <tr><td>Privacy</td><td>Files stay local</td><td class="highlight">Uploaded for the job, then deleted on a schedule</td></tr>
-            <tr><td>Payment</td><td>Free or $6/mo Pro</td><td class="highlight"><strong>Pay the price shown per job</strong></td></tr>
-            <tr><td>Best for</td><td>Private archives, batch local work</td><td class="highlight"><strong>No GPU / best quality on demand</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+<footer class="foot">
+  <p>Phoenix Cloud Studio is a product of Phoenix Labs. © 2026 Phoenix Labs.</p>
+  <p><a href="./">Desktop app</a> · <a href="studio.html">Cloud studio</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
+</footer>
 
-    <section class="section faq">
-      <h2>FAQ</h2>
-      <details open>
-        <summary>Do I buy credits?</summary>
-        <p><strong>No.</strong> You see a dollar amount for that photo or video, then pay that amount. That’s it.</p>
-      </details>
-      <details>
-        <summary>Why do I need an account?</summary>
-        <p>So we can issue and cancel Pro licenses properly, show receipts, let you sign out devices, and keep your job history in one place.</p>
-      </details>
-      <details>
-        <summary>Are my files private?</summary>
-        <p>Desktop jobs never leave your computer. Studio jobs are uploaded for processing, stored only as long as needed for download, then removed. We’ll show retention clearly at upload.</p>
-      </details>
-      <details>
-        <summary>What if a job fails?</summary>
-        <p>You are not charged for failed processing. Support can also refund from your account history.</p>
-      </details>
-      <details>
-        <summary>Can I cancel Pro?</summary>
-        <p>Yes — from Account in Studio or your original checkout provider. Cancellation stops renewal; local Pro access ends at the period boundary.</p>
-      </details>
-    </section>
-
-    <section class="section download-section">
-      <h2>Ready?</h2>
-      <p class="section-lead">Open Studio to try the app experience, or download the desktop app for local-only work.</p>
-      <div class="hero-cta" style="justify-content:center">
-        <a class="btn btn-primary btn-lg" href="studio-app.html">Open Studio</a>
-        <a class="btn btn-ghost btn-lg" href="./#download">Download desktop</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2026 Phoenix · <a href="./">Desktop</a> · <a href="studio.html">Studio</a> · <a class="gumroad-link" href="https://aravindk74.gumroad.com/l/phoenixupscaler">Pro</a></p>
-  </footer>
-  <script src="site.js"></script>
+<script src="site.js"></script>
 </body>
 </html>

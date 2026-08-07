@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Phoenix Studio app — sign in, restore photos and video, pay a clear dollar price per job." />
+  <meta name="description" content="Phoenix Cloud Studio — upload a clip, pay a clear dollar price per job, download the restore. No account, no credits." />
+  <link rel="manifest" href="site.webmanifest" />
   <meta name="robots" content="noindex" />
   <title>Phoenix Studio</title>
+  <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0c0e" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet" />
@@ -17,15 +22,15 @@
     <!-- Login -->
     <section id="view-login" class="studio-shell login-shell">
       <div class="login-card">
-        <a class="logo" href="studio.html"><span class="logo-mark">PX</span><span>Phoenix Studio</span></a>
-        <h1>Sign in to Studio</h1>
-        <p class="muted">One account for restores, receipts, and Pro. No credit packs — you always see a dollar price.</p>
+        <a class="logo" href="studio.html"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="28" height="28" style="vertical-align:middle;margin-right:8px" /><span>Phoenix Studio</span></a>
+        <h1>Start a cloud restore</h1>
+        <p class="muted">No account, no subscription, no credits. Your email is just where the receipt goes — you see a dollar price and pay per job.</p>
         <label class="field">
           Email
           <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" />
         </label>
         <button type="button" class="btn btn-primary btn-lg" id="loginBtn">Continue with email</button>
-        <p class="fine-print">Preview build: sign-in is simulated in your browser until the live API ships. Production will use a secure magic link.</p>
+        <p class="fine-print">No account needed — your email is just where the receipt goes. You only pay when a restore succeeds.</p>
         <p class="muted center"><a href="studio.html">What is Studio?</a> · <a href="./">Desktop app</a></p>
       </div>
     </section>
@@ -33,7 +38,7 @@
     <!-- App -->
     <section id="view-app" class="studio-shell hidden">
       <header class="studio-top">
-        <a class="logo" href="studio.html"><span class="logo-mark">PX</span><span>Studio</span></a>
+        <a class="logo" href="studio.html"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="28" height="28" style="vertical-align:middle;margin-right:8px" /><span>Studio</span></a>
         <nav class="studio-nav">
           <button type="button" class="nav-tab active" data-tab="new">New restore</button>
           <button type="button" class="nav-tab" data-tab="history">History</button>
@@ -111,24 +116,18 @@
           <div class="account-grid-studio">
             <article class="card">
               <h3>Plan</h3>
-              <p id="planLabel">Studio · pay per job</p>
-              <p class="muted">Desktop Pro is optional for unlimited local restores.</p>
-              <a class="btn btn-ghost gumroad-link" href="https://aravindk74.gumroad.com/l/phoenixupscaler">Get Desktop Pro — $6/mo</a>
+              <p id="planLabel">Cloud Studio · pay per job</p>
+              <p class="muted">Nothing to subscribe to. Every restore is a one-off price you see up front.</p>
             </article>
             <article class="card">
-              <h3>Licenses &amp; devices</h3>
-              <p class="muted">When live: see active devices, sign out a PC, cancel renewal.</p>
-              <ul class="plain-list">
-                <li>Issue Pro to your email</li>
-                <li>Bind up to 2 devices</li>
-                <li>Cancel without support tickets</li>
-              </ul>
-              <button type="button" class="btn secondary" id="cancelHintBtn">How cancel works</button>
+              <h3>Prefer to run it yourself?</h3>
+              <p class="muted">The desktop app restores unlimited video locally on your own NVIDIA GPU — one payment, no per-job cost.</p>
+              <a class="btn btn-ghost" href="https://phoenixlabs.space/#price">Get the desktop app — $129 once</a>
             </article>
             <article class="card">
               <h3>Billing</h3>
-              <p class="muted">No credit balance. Each job is a normal card charge with a receipt.</p>
-              <p class="fine-print">Stripe checkout will replace this preview.</p>
+              <p class="muted">No credit balance. Each job is a normal card &amp; UPI charge with a receipt.</p>
+              <p class="fine-print">Secure checkout by Lemon Squeezy. Failed jobs are refunded automatically.</p>
             </article>
           </div>
         </div>
