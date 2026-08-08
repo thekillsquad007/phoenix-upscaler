@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Phoenix Editor auto-cuts dead air and filler words from your Let's Play or stream VODs, turns highlights into captioned vertical Shorts, and composites reaction videos with the Reactor template. GPU-accelerated on AMD and NVIDIA. Private beta." />
+  <link rel="canonical" href="https://phoenixlabs.space/editor.html" />
+  <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <meta property="og:title" content="Phoenix Editor — automatic video editing for streamers and reactors" />
+  <meta property="og:description" content="Auto-cut dead air, auto-generate captioned Shorts, and composite reaction videos with the Reactor template. GPU-accelerated, private beta." />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/brand/phoenix-mark.png" />
+  <meta property="og:url" content="https://phoenixlabs.space/editor.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Phoenix Editor — automatic video editing for streamers and reactors</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="site.webmanifest" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "SoftwareApplication", "name": "Phoenix Editor",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "description": "Automatic video editor for streamers and Let's Players: cuts dead air and filler words, generates captioned vertical Shorts from detected highlights, and composites reaction videos with the Reactor template. GPU-accelerated on AMD and NVIDIA.",
+        "publisher": { "@type": "Organization", "name": "Phoenix Labs", "url": "https://phoenixlabs.space/" } },
+      { "@type": "FAQPage", "mainEntity": [
+        { "@type": "Question", "name": "Is Phoenix Editor available yet?", "acceptedAnswer": { "@type": "Answer", "text": "It's in private beta. Join the list on this page and we'll email you when it opens up." } },
+        { "@type": "Question", "name": "Is this a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — planned at $20/month at launch, unlike the one-time Phoenix Upscaler. Early access members keep launch pricing for as long as they stay subscribed." } },
+        { "@type": "Question", "name": "Does my footage get uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. Detection, transcription and rendering all run on your own machine and your own GPU." } }
+      ] }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="32" height="32" /><span>Phoenix Labs</span></a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#reactor">Reactor</a>
+    <a href="#price">Price</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-sm" href="#price">Get early access</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Stop editing your VODs by hand.</h1>
+      <p class="lede">
+        Phoenix Editor watches your Let's Play or stream recording, cuts the
+        dead air and filler words, and turns your best moments into
+        captioned, vertically-cropped Shorts automatically.
+      </p>
+      <p class="lede">
+        Reacting to someone else's video? The <a href="#reactor">Reactor template</a>
+        composites your cam over their footage, cuts your own dead air, and
+        ducks their audio under your commentary — no manual timeline work.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-lg" href="#price">Join early access</a>
+        <a class="btn btn-ghost btn-lg" href="#features">See what it does</a>
+      </div>
+      <p class="fineprint">In private beta. GPU-accelerated on AMD and NVIDIA from day one.</p>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div><strong>Runs on your own GPU.</strong> AMD or NVIDIA, nothing uploads.</div>
+    <div><strong>Auto-cuts dead air and filler words.</strong> No manual scrubbing.</div>
+    <div><strong>Reactor template built in.</strong> For reaction and commentary content.</div>
+  </section>
+
+  <section id="features" class="section">
+    <h2>What it does</h2>
+    <div class="how-grid">
+      <div>
+        <h3>Auto-cut long-form VODs</h3>
+        <p>Transcribes your recording, then removes silence, dead air and filler words automatically — a tightened edit without touching a timeline.</p>
+      </div>
+      <div>
+        <h3>Auto-generate Shorts</h3>
+        <p>Scores your VOD for highlight moments, then reframes, crops and burns in captions for vertical Shorts/TikTok/Reels — subject-tracking crop follows the action, not the center of the frame.</p>
+      </div>
+      <div>
+        <h3 id="reactor">Reactor template</h3>
+        <p>Give it your reaction cam and the source video. It composites your cam as a positioned, scaled, optionally mirrored or transparent overlay, cuts dead air from your own commentary, and mutes, ducks or muffles the source audio underneath it.</p>
+      </div>
+      <div>
+        <h3>GPU-accelerated, either vendor</h3>
+        <p>Hardware encode/decode and transcription on AMD (VAAPI/Vulkan) or NVIDIA (NVENC/CUDA) — picked automatically for your machine.</p>
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li><span>1</span> Drop in your recording (or your reaction cam + source, for Reactor).</li>
+      <li><span>2</span> Phoenix detects dead air, filler words and highlight moments.</li>
+      <li><span>3</span> Review the detected cuts and Shorts before anything renders.</li>
+      <li><span>4</span> Render — GPU-accelerated, on your own machine.</li>
+    </ol>
+  </section>
+
+  <section id="price" class="section section-alt">
+    <h2>Early access</h2>
+    <div class="price-wrap">
+      <div class="price-card">
+        <p class="price-eyebrow">Phoenix Editor</p>
+        <p class="price-amount">$20<span>/month at launch</span></p>
+        <ul>
+          <li>Auto-cut long-form VODs.</li>
+          <li>Auto-generate captioned Shorts.</li>
+          <li>Reactor template included.</li>
+          <li>GPU-accelerated on AMD or NVIDIA.</li>
+          <li>Nothing uploads — runs on your machine.</li>
+        </ul>
+        <a class="btn btn-lg btn-block" href="mailto:support@phoenixlabs.space?subject=Phoenix%20Editor%20early%20access">Get notified at launch</a>
+        <p class="fineprint">Private beta — no charge yet. Early access members keep launch pricing.</p>
+      </div>
+      <div class="price-aside">
+        <h3>Why a subscription, not one-time?</h3>
+        <p>
+          Unlike Phoenix Upscaler, the Editor ships new detection models and
+          templates on an ongoing basis — Reactor was the first, more are
+          coming. A subscription keeps those updates flowing instead of
+          freezing the product at launch.
+        </p>
+        <h3>Same house rules</h3>
+        <p>
+          Detection, transcription and rendering all happen on your own GPU.
+          Your footage isn't uploaded anywhere to use the app.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Is Phoenix Editor available yet?</summary>
+        <p>It's in private beta. Join the list above and we'll email you when it opens up.</p>
+      </details>
+      <details>
+        <summary>Is this a subscription?</summary>
+        <p>Yes — planned at $20/month at launch, unlike the one-time Phoenix Upscaler. Early access members keep launch pricing for as long as they stay subscribed.</p>
+      </details>
+      <details>
+        <summary>Does my footage get uploaded anywhere?</summary>
+        <p>No. Detection, transcription and rendering all run on your own machine and your own GPU.</p>
+      </details>
+      <details>
+        <summary>What is the Reactor template, exactly?</summary>
+        <p>A composite of your reaction cam over a source video: your cam becomes a positioned, scaled, optionally mirrored or semi-transparent overlay window. Phoenix cuts dead air from your own commentary track and mutes, ducks or muffles the source's audio underneath it. It's built to help make a reaction video a transformative edit rather than a straight re-upload — that's a creative and editorial choice, not a legal guarantee, so you're still responsible for how you use the source material.</p>
+      </details>
+      <details>
+        <summary>Which platforms will it run on?</summary>
+        <p>Windows, macOS and Linux are all planned. GPU acceleration is designed for both AMD and NVIDIA from the start.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Get early access to Phoenix Editor</h2>
+    <a class="btn btn-lg" href="mailto:support@phoenixlabs.space?subject=Phoenix%20Editor%20early%20access">Get notified at launch</a>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Phoenix Editor is a product of Phoenix Labs. © 2026 Phoenix Labs.</p>
+  <p><a href="./">Phoenix Upscaler</a> · <a href="studio.html">Cloud studio</a> · <a href="editor.html">Phoenix Editor</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
+</footer>
+
+</body>
+</html>

@@ -2,11 +2,13 @@
   --bg: #0b0c0e;
   --bg-alt: #101216;
   --panel: #14171c;
+  --panel-2: #1b1f27;
   --line: #23272e;
   --ink: #eef1f5;
   --ink-dim: #a4acb8;
   --ink-faint: #6f7885;
   --accent: #e8703a;
+  --accent-2: #e8b56f;
   --accent-soft: rgba(232, 112, 58, 0.14);
   --radius: 14px;
   --max: 1140px;
@@ -76,6 +78,9 @@ p { margin: 0 0 1em; }
 }
 .lede { color: var(--ink-dim); font-size: 18.5px; max-width: 46ch; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 14px; }
+/* Pages without a second hero column (e.g. no before/after demo yet) get a
+   single centered column instead of a lopsided empty half. */
+.hero > :only-child { grid-column: 1 / -1; max-width: 640px; margin: 0 auto; }
 .fineprint { color: var(--ink-faint); font-size: 14px; margin: 0; }
 .hero-shot figcaption, .video-pair figcaption {
   color: var(--ink-faint); font-size: 14px; margin-top: 10px; text-align: center;
@@ -135,8 +140,10 @@ p { margin: 0 0 1em; }
 
 /* ---------- sections ---------- */
 .section { max-width: var(--max); margin: 0 auto; padding: 78px 28px; }
-.section-alt { background: var(--bg-alt); max-width: none; }
-.section-alt > * { max-width: var(--max); margin-inline: auto; }
+.section-alt {
+  background: var(--bg-alt); max-width: none;
+  padding-inline: max(28px, calc((100% - var(--max)) / 2));
+}
 .section-sub { color: var(--ink-dim); max-width: 62ch; margin-bottom: 30px; }
 .credit { color: var(--ink-faint); font-size: 13.5px; margin-top: 18px; }
 
@@ -151,13 +158,33 @@ p { margin: 0 0 1em; }
 }
 .how-grid p { color: var(--ink-dim); margin: 0; font-size: 15.5px; }
 
-.steps { list-style: none; counter-reset: s; display: grid; gap: 12px; padding: 0; margin: 0; max-width: 62ch; }
-.steps li { display: flex; align-items: baseline; gap: 14px; color: var(--ink-dim); }
+.paths-grid { margin-bottom: 0; }
+.path-card { display: flex; flex-direction: column; }
+.path-eyebrow { color: var(--ink-faint); font-size: 14px; margin: 0 0 6px; }
+.path-card h3 { margin: 0 0 12px; }
+.path-card p { margin-bottom: 22px; }
+.path-card .btn { align-self: flex-start; margin-top: auto; }
+
+.steps { list-style: none; counter-reset: s; display: grid; gap: 12px; padding: 0; margin-block: 0; }
+.steps li { display: flex; align-items: baseline; gap: 14px; color: var(--ink-dim); max-width: 62ch; }
 .steps span {
   flex: 0 0 26px; height: 26px; display: grid; place-items: center;
   border-radius: 50%; background: var(--accent-soft); color: var(--accent);
   font-size: 13px; font-weight: 650;
 }
+
+.step-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.step-grid > div {
+  padding: 22px 24px; border: 1px solid var(--line);
+  border-radius: var(--radius); background: var(--panel);
+}
+.step-num {
+  width: 30px; height: 30px; display: grid; place-items: center;
+  border-radius: 50%; background: var(--accent-soft); color: var(--accent);
+  font-size: 14px; font-weight: 650; margin-bottom: 14px;
+}
+.step-grid h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.step-grid p { color: var(--ink-dim); margin: 0; font-size: 15px; }
 
 /* ---------- price ---------- */
 .price-wrap { display: grid; grid-template-columns: 400px 1fr; gap: 46px; align-items: start; }
@@ -192,6 +219,16 @@ p { margin: 0 0 1em; }
 .dl-soon { opacity: 0.5; }
 .dl-soon:hover { border-color: var(--line); }
 .req p { color: var(--ink-dim); max-width: 66ch; }
+.req-table {
+  width: 100%; max-width: 640px; border-collapse: collapse; margin: 22px 0;
+  border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+}
+.req-table th, .req-table td { padding: 12px 16px; text-align: left; font-size: 15px; }
+.req-table thead th { color: var(--ink-faint); font-weight: 560; font-size: 13px; text-transform: uppercase; letter-spacing: 0.02em; }
+.req-table tbody th { color: var(--ink); font-weight: 560; white-space: nowrap; }
+.req-table tbody td { color: var(--ink-dim); }
+.req-table tbody tr { border-top: 1px solid var(--line); }
+.req-table .muted { color: var(--ink-faint); font-size: 13px; }
 
 /* ---------- faq ---------- */
 .faq { display: grid; gap: 0; max-width: 74ch; }
@@ -219,7 +256,7 @@ p { margin: 0 0 1em; }
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 34px; padding-top: 46px; }
-  .strip, .how-grid, .video-pair, .ba-row, .dl-grid { grid-template-columns: 1fr; }
+  .strip, .how-grid, .video-pair, .ba-row, .dl-grid, .step-grid { grid-template-columns: 1fr; }
   .price-wrap { grid-template-columns: 1fr; gap: 30px; }
   .nav nav { display: none; }
   .section { padding: 54px 22px; }
