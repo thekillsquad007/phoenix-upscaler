@@ -37,7 +37,7 @@
 .field {
   display: grid;
   gap: 6px;
-  color: var(--muted);
+  color: var(--ink-dim);
   font-size: 0.88rem;
 }
 
@@ -48,19 +48,24 @@
   border-radius: 12px;
   border: 1px solid var(--line);
   background: var(--panel-2);
-  color: var(--text);
+  color: var(--ink);
   font: inherit;
 }
 
+.field select option {
+  background: var(--panel-2);
+  color: var(--ink);
+}
+
 .fine-print {
-  color: var(--muted);
+  color: var(--ink-dim);
   font-size: 0.78rem;
   line-height: 1.45;
   margin: 0;
 }
 
 .center { text-align: center; }
-.muted { color: var(--muted); }
+.muted { color: var(--ink-dim); }
 .hidden { display: none !important; }
 
 .btn-sm {
@@ -90,7 +95,7 @@
 .nav-tab {
   border: 0;
   background: transparent;
-  color: var(--muted);
+  color: var(--ink-dim);
   padding: 8px 14px;
   border-radius: 999px;
   font: inherit;
@@ -173,7 +178,7 @@
 
 .price-label {
   margin: 0;
-  color: var(--muted);
+  color: var(--ink-dim);
   font-size: 0.85rem;
 }
 
@@ -243,7 +248,7 @@
 .plain-list {
   margin: 0 0 12px;
   padding-left: 18px;
-  color: var(--muted);
+  color: var(--ink-dim);
   line-height: 1.7;
 }
 

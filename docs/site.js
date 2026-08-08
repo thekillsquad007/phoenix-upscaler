@@ -3,7 +3,7 @@
 // in Lemon Squeezy (Products → your product → Share → copy the checkout link,
 // e.g. "https://phoenixlabs.lemonsqueezy.com/buy/xxxxxxxx-xxxx-xxxx"). Until
 // it's set, the buy button falls back to the free-download section.
-const LEMON_CHECKOUT_URL = "https://phoenixlabss.lemonsqueezy.com/checkout/buy/bcdf42dc-6c93-4013-8887-f9758b637a07";
+const LEMON_CHECKOUT_URL = "https://phoenixlabss.lemonsqueezy.com/checkout/buy/66a237da-d2b8-4fc8-9f1f-7390bccdb44a";
 
 document.querySelectorAll("[data-ls-checkout]").forEach((btn) => {
   if (LEMON_CHECKOUT_URL) {
