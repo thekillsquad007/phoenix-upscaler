@@ -27,8 +27,8 @@
     { "@type": "WebSite", "@id": "https://phoenixlabs.space/#website", "url": "https://phoenixlabs.space/",
       "name": "Phoenix Upscaler", "publisher": { "@id": "https://phoenixlabs.space/#org" } },
     { "@type": "SoftwareApplication", "name": "Phoenix Upscaler",
-      "applicationCategory": "MultimediaApplication", "operatingSystem": "Windows 10, Windows 11",
-      "description": "Restore and upscale old VHS, camcorder and DVD video. Removes tape noise, fixes combed motion and rebuilds lost detail. Runs locally on your NVIDIA GPU; nothing uploads.",
+      "applicationCategory": "MultimediaApplication", "operatingSystem": "Windows 10, Windows 11, Linux",
+      "description": "Restore and upscale old VHS, camcorder and DVD video. Removes tape noise, fixes combed motion and rebuilds lost detail. Runs locally on your own NVIDIA or AMD GPU; nothing uploads.",
       "publisher": { "@id": "https://phoenixlabs.space/#org" },
       "offers": { "@type": "Offer", "price": "129", "priceCurrency": "USD", "url": "https://phoenixlabs.space/#price" } },
     { "@type": "FAQPage", "mainEntity": [
@@ -95,7 +95,7 @@
   <section class="strip">
     <div><strong>Nothing uploads.</strong> Your video stays on your machine.</div>
     <div><strong>No subscription.</strong> Pay once, keep it.</div>
-    <div><strong>Runs on your NVIDIA GPU.</strong> No NVIDIA card? Use the <a href="studio.html">cloud studio</a>.</div>
+    <div><strong>Runs on your own GPU.</strong> NVIDIA or AMD. No gaming PC? Use the <a href="studio.html">cloud studio</a>.</div>
   </section>
 
   <section id="paths" class="section section-alt">
@@ -106,7 +106,7 @@
     </p>
     <div class="how-grid paths-grid">
       <div class="path-card">
-        <p class="path-eyebrow">For NVIDIA PC owners</p>
+        <p class="path-eyebrow">For gaming PC owners</p>
         <h3>Desktop app — $129 once</h3>
         <p>
           Install it, drag in your tapes, and restore as many as you like —
@@ -121,12 +121,11 @@
         <p class="path-eyebrow">For everyone else</p>
         <h3>Cloud studio — pay per clip</h3>
         <p>
-          Works from a Mac, an AMD/Intel PC, a Chromebook, even a phone — no
-          NVIDIA card, no install. Upload a clip, see the exact price in
-          dollars before you pay, and download the result. There's also an
-          Enhanced mode here that goes further than the desktop app, rebuilding
-          detail on badly degraded tape. Best for an occasional clip or if you
-          don't own a gaming PC.
+          Works from a Mac, a laptop, a Chromebook, even a phone — no gaming
+          PC, no install. Upload a clip, see the exact price in
+          dollars before you pay, and download the result. Datacenter GPUs mean
+          the heaviest detail-rebuilding modes run here without a 16 GB card of
+          your own. Best for an occasional clip or if you don't own a gaming PC.
         </p>
         <a class="btn btn-lg" href="studio.html">Open the cloud studio</a>
       </div>
@@ -288,21 +287,24 @@
           <tr><th></th><th>Minimum</th><th>Recommended</th></tr>
         </thead>
         <tbody>
-          <tr><th>Graphics card</th><td>NVIDIA, 4 GB VRAM<br /><span class="muted">e.g. GTX 1650</span></td><td>NVIDIA, 8 GB+ VRAM<br /><span class="muted">e.g. RTX 3060 or newer</span></td></tr>
-          <tr><th>Memory</th><td>8 GB RAM</td><td>16 GB RAM</td></tr>
+          <tr><th>Graphics card</th><td>Any modern GPU, 4 GB VRAM<br /><span class="muted">NVIDIA, AMD or Intel</span></td><td>NVIDIA 8 GB+ or AMD 16 GB+<br /><span class="muted">e.g. RTX 3060 / RX 7800 XT</span></td></tr>
+          <tr><th>Memory</th><td>8 GB RAM</td><td>16 GB RAM<br /><span class="muted">32 GB for AMD Generative</span></td></tr>
           <tr><th>OS</th><td colspan="2">Windows 10/11 (64-bit) or Linux</td></tr>
           <tr><th>Storage</th><td colspan="2">Free space roughly equal to your source footage</td></tr>
         </tbody>
       </table>
       <p class="fineprint">
-        No NVIDIA card, or below the minimum? The <a href="studio.html">cloud studio</a>
-        does the same restoration on our GPUs — no hardware requirements at all.
+        Standard and Enhanced restoration run on any modern graphics card. Generative
+        mode — the deepest detail reconstruction — needs an 8 GB+ NVIDIA card, or a
+        16 GB+ AMD card after a one-time setup the app runs for you. Below that, or on
+        a Mac? The <a href="studio.html">cloud studio</a> does the same restoration on
+        our GPUs with no hardware requirements at all.
       </p>
     </div>
   </section>
 
   <section id="cloud" class="section section-alt">
-    <h2>Don't have an NVIDIA card?</h2>
+    <h2>Don't have a gaming PC?</h2>
     <p class="section-sub">
       No install, no waiting on a download — <a href="studio.html">the cloud studio</a>
       does the same restoration on our GPUs. Upload, see the exact price, pay for

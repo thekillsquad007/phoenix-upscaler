@@ -13,6 +13,19 @@ document.querySelectorAll("[data-ls-checkout]").forEach((btn) => {
   }
 });
 
+// Separate product, separate URL — Editor is $99 one-time (includes a year
+// of updates, $49/yr to renew), not the $129 one-time perpetual Upscaler,
+// so this must never fall back to LEMON_CHECKOUT_URL above.
+const LEMON_EDITOR_CHECKOUT_URL = "https://phoenixlabss.lemonsqueezy.com/checkout/buy/47adb5fa-7203-4e78-8517-c2c48aeff18a";
+
+document.querySelectorAll("[data-ls-checkout-editor]").forEach((btn) => {
+  if (LEMON_EDITOR_CHECKOUT_URL) {
+    btn.href = LEMON_EDITOR_CHECKOUT_URL;
+    btn.setAttribute("target", "_blank");
+    btn.setAttribute("rel", "noopener");
+  }
+});
+
 // Before/after comparison sliders.
 //
 // The "before" image sits in a clipped overlay above the "after" image. Both

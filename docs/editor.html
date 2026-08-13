@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Phoenix Editor auto-cuts dead air, turns highlights into captioned Shorts, and composites reaction videos with Reactor. GPU-accelerated, private beta." />
+  <meta name="description" content="Phoenix Editor auto-cuts dead air, turns highlights into captioned Shorts, and composites reaction videos with Reactor. GPU-accelerated, $99 one-time for a year of updates." />
   <link rel="canonical" href="https://phoenixlabs.space/editor.html" />
   <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <meta name="theme-color" content="#0b0c0e" />
   <meta property="og:title" content="Phoenix Editor — automatic video editing for streamers and reactors" />
-  <meta property="og:description" content="Auto-cut dead air, auto-generate captioned Shorts, and composite reaction videos with the Reactor template. GPU-accelerated, private beta." />
+  <meta property="og:description" content="Auto-cut dead air, auto-generate captioned Shorts, and composite reaction videos with the Reactor template. GPU-accelerated, $99 one-time for a year of updates." />
   <meta property="og:image" content="https://phoenixlabs.space/assets/demo/editor_review_ui.jpg" />
   <meta property="og:url" content="https://phoenixlabs.space/editor.html" />
   <meta property="og:type" content="website" />
@@ -24,12 +24,13 @@
     "@graph": [
       { "@type": "SoftwareApplication", "name": "Phoenix Editor",
         "applicationCategory": "MultimediaApplication",
-        "operatingSystem": "Windows, macOS, Linux",
+        "operatingSystem": "Windows",
         "description": "Automatic video editor for streamers and Let's Players: cuts dead air and filler words, generates captioned vertical Shorts from detected highlights, and composites reaction videos with the Reactor template. GPU-accelerated on AMD and NVIDIA.",
+        "offers": { "@type": "Offer", "price": "99.00", "priceCurrency": "USD" },
         "publisher": { "@type": "Organization", "name": "Phoenix Labs", "url": "https://phoenixlabs.space/" } },
       { "@type": "FAQPage", "mainEntity": [
-        { "@type": "Question", "name": "Is Phoenix Editor available yet?", "acceptedAnswer": { "@type": "Answer", "text": "It's in private beta. Join the list on this page and we'll email you when it opens up." } },
-        { "@type": "Question", "name": "Is this a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — planned at $20/month at launch, unlike the one-time Phoenix Upscaler. Early access members keep launch pricing for as long as they stay subscribed." } },
+        { "@type": "Question", "name": "Is Phoenix Editor available yet?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Phoenix Editor is available now for Windows. macOS and Linux support are planned." } },
+        { "@type": "Question", "name": "Is this a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "It's a $99 one-time payment that includes a full year of updates. It renews at $49/year after that if you want to keep getting new features — cancel anytime and keep using the version you have, full quality, no watermark, no expiry." } },
         { "@type": "Question", "name": "Does my footage get uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. Detection, transcription and rendering all run on your own machine and your own GPU." } }
       ] }
     ]
@@ -46,7 +47,7 @@
     <a href="#price">Price</a>
     <a href="#faq">FAQ</a>
   </nav>
-  <a class="btn btn-sm" href="#price">Get early access</a>
+  <a class="btn btn-sm" href="#price">Get Phoenix Editor</a>
 </header>
 
 <main id="top">
@@ -65,10 +66,10 @@
         ducks their audio under your commentary — no manual timeline work.
       </p>
       <div class="hero-actions">
-        <a class="btn btn-lg" href="#price">Join early access</a>
+        <a class="btn btn-lg" href="#price">Get Phoenix Editor — $99</a>
         <a class="btn btn-ghost btn-lg" href="#features">See what it does</a>
       </div>
-      <p class="fineprint">In private beta. GPU-accelerated on AMD and NVIDIA from day one.</p>
+      <p class="fineprint">Available now for Windows. GPU-accelerated on AMD and NVIDIA.</p>
     </div>
 
     <figure class="hero-shot">
@@ -113,11 +114,11 @@
   </section>
 
   <section id="price" class="section section-alt">
-    <h2>Early access</h2>
+    <h2>Pricing</h2>
     <div class="price-wrap">
       <div class="price-card">
         <p class="price-eyebrow">Phoenix Editor</p>
-        <p class="price-amount">$20<span>/month at launch</span></p>
+        <p class="price-amount">$99<span> first year</span></p>
         <ul>
           <li>Auto-cut long-form VODs.</li>
           <li>Auto-generate captioned Shorts.</li>
@@ -125,16 +126,18 @@
           <li>GPU-accelerated on AMD or NVIDIA.</li>
           <li>Nothing uploads — runs on your machine.</li>
         </ul>
-        <a class="btn btn-lg btn-block" href="mailto:support@phoenixlabs.space?subject=Phoenix%20Editor%20early%20access">Get notified at launch</a>
-        <p class="fineprint">Private beta — no charge yet. Early access members keep launch pricing.</p>
+        <a class="btn btn-lg btn-block" data-ls-checkout-editor href="mailto:support@phoenixlabs.space?subject=Phoenix%20Editor">Get Phoenix Editor</a>
+        <p class="fineprint">$99 covers a full year of updates, then renews at $49/year to keep new features coming. Cancel anytime — you keep using the version you have, full quality, no watermark, no expiry. Billed and handled by Lemon Squeezy.</p>
       </div>
       <div class="price-aside">
-        <h3>Why a subscription, not one-time?</h3>
+        <h3>Not a subscription trap</h3>
         <p>
-          Unlike Phoenix Upscaler, the Editor ships new detection models and
-          templates on an ongoing basis — Reactor was the first, more are
-          coming. A subscription keeps those updates flowing instead of
-          freezing the product at launch.
+          It runs on your own GPU, so you're not paying for our hosting or
+          compute — $99 unlocks everything and includes a year of new
+          detection models and templates (Reactor was the first). If you
+          cancel, Phoenix Editor keeps working exactly as it is: full
+          quality, no watermark, forever. Renewing at $49/year just keeps
+          new features coming.
         </p>
         <h3>Same house rules</h3>
         <p>
@@ -150,11 +153,11 @@
     <div class="faq">
       <details>
         <summary>Is Phoenix Editor available yet?</summary>
-        <p>It's in private beta. Join the list above and we'll email you when it opens up.</p>
+        <p>Yes — Phoenix Editor is available now for Windows. macOS and Linux support are planned.</p>
       </details>
       <details>
         <summary>Is this a subscription?</summary>
-        <p>Yes — planned at $20/month at launch, unlike the one-time Phoenix Upscaler. Early access members keep launch pricing for as long as they stay subscribed.</p>
+        <p>It's a $99 one-time payment that includes a full year of updates. It renews at $49/year after that if you want to keep getting new features — cancel anytime and keep using the version you have, full quality, no watermark, no expiry.</p>
       </details>
       <details>
         <summary>Does my footage get uploaded anywhere?</summary>
@@ -166,14 +169,14 @@
       </details>
       <details>
         <summary>Which platforms will it run on?</summary>
-        <p>Windows, macOS and Linux are all planned. GPU acceleration is designed for both AMD and NVIDIA from the start.</p>
+        <p>Windows is available now. macOS and Linux support are planned. GPU acceleration works on both AMD and NVIDIA.</p>
       </details>
     </div>
   </section>
 
   <section class="cta">
-    <h2>Get early access to Phoenix Editor</h2>
-    <a class="btn btn-lg" href="mailto:support@phoenixlabs.space?subject=Phoenix%20Editor%20early%20access">Get notified at launch</a>
+    <h2>Stop editing your VODs by hand</h2>
+    <a class="btn btn-lg" data-ls-checkout-editor href="mailto:support@phoenixlabs.space?subject=Phoenix%20Editor">Get Phoenix Editor — $99</a>
   </section>
 
 </main>
@@ -183,5 +186,6 @@
   <p><a href="./">Phoenix Upscaler</a> · <a href="studio.html">Cloud studio</a> · <a href="editor.html">Phoenix Editor</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
 </footer>
 
+<script src="site.js"></script>
 </body>
 </html>

@@ -20,10 +20,21 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Phoenix Labs", "item": "https://phoenixlabs.space/" },
-      { "@type": "ListItem", "position": 2, "name": "VHS Restoration Software", "item": "https://phoenixlabs.space/vhs-restoration-software.html" }
+    "@graph": [
+      { "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Phoenix Labs", "item": "https://phoenixlabs.space/" },
+          { "@type": "ListItem", "position": 2, "name": "VHS Restoration Software", "item": "https://phoenixlabs.space/vhs-restoration-software.html" }
+        ] },
+      { "@type": "HowTo",
+        "name": "Recommended VHS restoration workflow",
+        "description": "A practical local workflow for restoring VHS, Hi8, or MiniDV captures before exporting a full tape.",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Capture", "text": "Capture the tape at the best quality your capture hardware supports." },
+          { "@type": "HowToStep", "position": 2, "name": "Preview", "text": "Run a short Phoenix preview using Standard Restore first." },
+          { "@type": "HowToStep", "position": 3, "name": "Check the preview", "text": "Check faces, text, motion, and noisy shadows before exporting a long tape." },
+          { "@type": "HowToStep", "position": 4, "name": "Choose a restoration mode", "text": "Standard and Enhanced run on any modern AMD, Intel or NVIDIA Windows GPU. Generative rebuilds the most detail and runs on 8 GB+ NVIDIA cards, or on 16 GB+ AMD cards after a one-time in-app setup. Pick Generative when the preview looks better." }
+        ] }
     ]
   }
   </script>
@@ -45,7 +56,7 @@
       <li>Capture the tape at the best quality your capture hardware supports.</li>
       <li>Run a short Phoenix preview using Standard Restore first.</li>
       <li>Check faces, text, motion, and noisy shadows before exporting a long tape.</li>
-      <li>Use standard restoration on AMD, Intel, or NVIDIA Windows GPUs through DirectML. Use Generative Lite only on supported NVIDIA GPUs and only when the preview looks better.</li>
+      <li>Standard and Enhanced run on any modern AMD, Intel or NVIDIA Windows GPU. Generative rebuilds the most detail and runs on 8 GB+ NVIDIA cards, or on 16 GB+ AMD cards after a one-time in-app setup. Pick Generative when the preview looks better.</li>
     </ol>
     <h2>Why local matters</h2>
     <p>Family tapes can include weddings, children, addresses, and private conversations. Phoenix keeps restoration on your PC instead of requiring a cloud upload.</p>

@@ -20,10 +20,22 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Phoenix Labs", "item": "https://phoenixlabs.space/" },
-      { "@type": "ListItem", "position": 2, "name": "How to Restore Old Video Locally", "item": "https://phoenixlabs.space/restore-old-video.html" }
+    "@graph": [
+      { "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Phoenix Labs", "item": "https://phoenixlabs.space/" },
+          { "@type": "ListItem", "position": 2, "name": "How to Restore Old Video Locally", "item": "https://phoenixlabs.space/restore-old-video.html" }
+        ] },
+      { "@type": "HowTo",
+        "name": "How to restore old video from tapes, DVDs, and camcorders",
+        "description": "The best old-video restoration workflow is simple: start with a safe cleanup pass, inspect a short preview, then upscale only after the footage is stable and clean.",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Deinterlace", "text": "Deinterlace when the source came from tape, DVD, or broadcast video." },
+          { "@type": "HowToStep", "position": 2, "name": "Denoise", "text": "Denoise and clean compression artifacts." },
+          { "@type": "HowToStep", "position": 3, "name": "Sharpen", "text": "Sharpen lightly so faces and edges stay natural." },
+          { "@type": "HowToStep", "position": 4, "name": "Upscale", "text": "Upscale to a modern delivery size such as 1080p." },
+          { "@type": "HowToStep", "position": 5, "name": "AI detail restoration", "text": "Use AI detail restoration only after checking a short preview." }
+        ] }
     ]
   }
   </script>

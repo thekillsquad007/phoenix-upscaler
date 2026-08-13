@@ -63,8 +63,15 @@ No NVIDIA card at all? Skip the download and use the **[cloud studio](https://ph
 - **Deinterlace** — fixes the torn, striped edge on anything that moves
 - **Detail reconstruction** — hair, fabric, signage, things the tape blurred into a smudge come back readable
 - **Auto mode** — Phoenix reads the footage and picks its own settings
-- **Generative restoration** — on 8GB+ VRAM NVIDIA cards, an optional diffusion-based mode (FlashVSR) goes further on badly degraded sources; 12GB+ unlocks a higher-quality generative tier (SeedVR2)
 - **Free tier** — restore 60-second clips with a small watermark, no purchase required to try it
+
+### Three quality modes
+
+- **Standard** — fast and compatible, runs anywhere
+- **Enhanced** — a stronger restore on any modern Windows GPU (AMD, Intel or NVIDIA), no extra setup
+- **Generative** — diffusion-based detail reconstruction for badly degraded tape. Runs on NVIDIA out of the box, and on **AMD** after a one-time **Install Generative** click inside the app
+
+If your machine can't run Generative locally, the [cloud studio](https://phoenixlabs.space/studio.html) runs it on our GPUs.
 
 ---
 
@@ -97,11 +104,13 @@ Card and UPI payments are handled by Lemon Squeezy, our merchant of record. A li
 
 |  | **NVIDIA** | **AMD** | **Intel / integrated** |
 |---|---|---|---|
-| **Standard (denoise, deinterlace, upscale)** | Full speed, CUDA | Supported via DirectML | CPU fallback, slow |
-| **Generative Lite — FlashVSR** | 8GB+ VRAM | Not supported (CUDA-only kernels) | Not supported |
-| **Generative Pro — SeedVR2** | 12GB+ VRAM | Not supported | Not supported |
+| **Standard** (denoise, deinterlace, upscale) | Full speed, CUDA | Supported via DirectML | CPU fallback, slow |
+| **Enhanced** (DirectML video restore) | Supported | Supported | Supported on modern GPUs |
+| **Generative** (diffusion detail) | 8GB+ VRAM, works out of the box | 16GB+ VRAM, one-time in-app setup | Not supported — use the cloud studio |
 
-No NVIDIA GPU, or below the minimum? The [cloud studio](https://phoenixlabs.space/studio.html) runs the same restoration, including the generative modes, on our GPUs instead.
+AMD Generative runs FlashVSR on ROCm through Windows Subsystem for Linux. The app installs and configures all of that for you when you click **Install Generative**; the first run takes a while, after that it's just another quality mode in the dropdown.
+
+Can't run Generative locally? The [cloud studio](https://phoenixlabs.space/studio.html) runs the same restoration on our GPUs instead.
 
 ---
 
