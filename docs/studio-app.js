@@ -8,12 +8,12 @@
 // Where the cloud API lives — the Cloudflare Worker (studio_worker/). Defaults
 // to api.phoenixlabs.space in production, localhost in dev, ?api=... to override.
 const CLOUD_API_BASE = (() => {
+  const local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === "file:";
   const q = new URLSearchParams(location.search).get("api");
-  if (q) return q.replace(/\/$/, "");
-  if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === "file:") {
-    return "http://127.0.0.1:8787";
-  }
-  return "https://api.phoenixlabs.space"; // route your Worker here (or use the *.workers.dev URL)
+  // ?api= is a local-dev override only — ignore it on the production site.
+  if (q && local) return q.replace(/\/$/, "");
+  if (local) return "http://127.0.0.1:8787";
+  return "https://api.phoenixlabs.space";
 })();
 
 // UI quality -> server quality vocabulary.
