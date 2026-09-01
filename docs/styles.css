@@ -277,3 +277,12 @@ p { margin: 0 0 1em; }
 .content-page li { margin: 6px 0; }
 .content-page a { color: var(--accent); }
 .content-page .muted { color: var(--ink-faint); font-size: 14.5px; }
+
+/* Ticked list for prose sections outside the price card (see editor-guide.html) */
+.guide-list { list-style: none; padding: 0; margin: 14px 0; display: grid; gap: 11px; max-width: 62ch; }
+.guide-list li { padding-left: 26px; position: relative; color: var(--ink-dim); line-height: 1.65; }
+.guide-list li::before {
+  content: ""; position: absolute; left: 4px; top: 9px;
+  width: 6px; height: 11px; border: solid var(--accent);
+  border-width: 0 2px 2px 0; transform: rotate(42deg);
+}

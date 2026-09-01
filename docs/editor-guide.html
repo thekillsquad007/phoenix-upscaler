@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="How to set up Phoenix Editor and make your first edit: install it, drop in a VOD, review the cuts it found, and export a long-form edit plus captioned Shorts." />
+  <link rel="canonical" href="https://phoenixlabs.space/editor-guide.html" />
+  <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <meta property="og:title" content="Phoenix Editor — setup and your first edit" />
+  <meta property="og:description" content="Install Phoenix Editor, drop in a stream recording, review what it cut, and export a long-form edit plus captioned Shorts." />
+  <meta property="og:url" content="https://phoenixlabs.space/editor-guide.html" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Phoenix Editor — setup and your first edit</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="site.webmanifest" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Set up Phoenix Editor and make your first edit",
+    "step": [
+      { "@type": "HowToStep", "name": "Install", "text": "Download the installer and run it. Windows may warn about an unrecognised app; choose More info then Run anyway." },
+      { "@type": "HowToStep", "name": "Add a recording", "text": "Drag your VOD onto the window, or use Choose video." },
+      { "@type": "HowToStep", "name": "Analyze", "text": "Phoenix transcribes the audio and finds dead air, filler words and scene changes." },
+      { "@type": "HowToStep", "name": "Review", "text": "Untick any cut you disagree with and trim the suggested Shorts." },
+      { "@type": "HowToStep", "name": "Export", "text": "Render the long-form edit and the captioned Shorts." }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="32" height="32" /><span>Phoenix Labs</span></a>
+  <nav>
+    <a href="editor.html#features">Features</a>
+    <a href="editor.html#price">Price</a>
+    <a href="editor.html#download">Download</a>
+    <a href="#troubleshooting">Troubleshooting</a>
+  </nav>
+  <a class="btn btn-sm" href="editor.html#download">Download</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Setup and your first edit</h1>
+      <p class="lede">
+        Start to finish, from installing Phoenix Editor to exporting a finished
+        long-form cut and a set of captioned Shorts. About ten minutes of your
+        attention, plus however long your recording takes to process.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-lg" href="editor.html#download">Get the installer</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>1. Install it</h2>
+    <p>
+      Download the installer from the
+      <a href="editor.html#download">download section</a> and run it. Phoenix
+      Editor installs for your user account, so it does not ask for an
+      administrator password.
+    </p>
+    <p>
+      Windows will probably show a blue &ldquo;Windows protected your PC&rdquo;
+      box the first time. That appears for any installer without a paid code
+      signing certificate, not because anything is wrong with the file. Click
+      <strong>More info</strong>, then <strong>Run anyway</strong>.
+    </p>
+    <p class="fineprint">
+      Everything the app needs is inside the installer, including the
+      transcription models and ffmpeg. There is no second download and no
+      account to create. The first 7 days are a full free trial with no
+      watermark and no card required.
+    </p>
+  </section>
+
+  <section class="section section-alt">
+    <h2>2. Add a recording</h2>
+    <p>
+      Drag your VOD straight onto the window, or use <strong>Choose
+      video</strong>. MP4, MKV, MOV, WebM, AVI, FLV and TS all work, which
+      covers what OBS and most capture software produce.
+    </p>
+    <p>
+      Phoenix picks an output folder next to your source file and shows it
+      under the video. Change it with <strong>Change</strong> if you would
+      rather the exports landed somewhere else, like a faster drive.
+    </p>
+    <p class="fineprint">
+      Nothing is uploaded at any point. Transcription, detection and rendering
+      all happen on your own machine.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>3. Let it analyze</h2>
+    <p>
+      Press <strong>Detect cuts + highlights</strong>. Phoenix transcribes the
+      audio, then looks for three things: dead air, filler words like
+      &ldquo;um&rdquo; and &ldquo;uh&rdquo;, and the points where the picture
+      changes.
+    </p>
+    <p>
+      This is the slow part, and it scales with the length of your recording
+      and the speed of your GPU. The progress bar shows elapsed time and an
+      estimate once it has enough to go on. You can leave it running and come
+      back.
+    </p>
+    <p class="fineprint">
+      A rough guide: on a recent GPU, expect somewhere around a tenth of the
+      recording's own length. A two hour stream is normally a coffee break, not
+      an overnight job. Without a GPU it is considerably slower but still works.
+    </p>
+  </section>
+
+  <section class="section section-alt">
+    <h2>4. Review before it renders</h2>
+    <p>
+      Nothing is exported until you say so. You get a list of every cut Phoenix
+      wants to make, with the reason next to it, and a list of the moments it
+      thinks would make good Shorts.
+    </p>
+    <ul class="guide-list">
+      <li>Untick any cut you disagree with and that footage stays in.</li>
+      <li>Untick a Short you do not want and it will not be rendered.</li>
+      <li>Drag the handles on a Short to trim exactly where it starts and ends.</li>
+      <li>Pick a caption style, or turn captions off.</li>
+    </ul>
+    <p>
+      It is worth skimming this on your first recording. It is the fastest way
+      to learn how aggressive the detection is on your particular audio setup,
+      and whether you want to keep more of your natural pauses.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>5. Export</h2>
+    <p>
+      Press <strong>Render</strong>. Phoenix writes the long-form edit and each
+      Short you kept into the output folder, with captions burned in where you
+      asked for them. Open the folder straight from the app when it finishes.
+    </p>
+    <p class="fineprint">
+      During the trial, and after it if you have not bought a licence, exports
+      carry a small &ldquo;Made with Phoenix Editor&rdquo; mark. Everything else
+      is identical, including quality and length.
+    </p>
+  </section>
+
+  <section id="troubleshooting" class="section section-alt">
+    <h2>If something goes wrong</h2>
+    <div class="faq">
+      <details>
+        <summary>Windows blocked the installer</summary>
+        <p>Click <strong>More info</strong> and then <strong>Run anyway</strong>. This is SmartScreen reacting to an installer that has not yet been signed with a paid certificate, not to anything it found in the file.</p>
+      </details>
+      <details>
+        <summary>It is cutting pauses I wanted to keep</summary>
+        <p>Untick those cuts in the review step before rendering. Phoenix only removes silences longer than a set minimum, so a beat for effect should survive, but a genuinely long pause is treated as dead air.</p>
+      </details>
+      <details>
+        <summary>It left in an &ldquo;um&rdquo; or missed one</summary>
+        <p>Filler detection works from the transcript, so a word the transcriber misheard cannot be cut. It is deliberately conservative and only removes unambiguous disfluencies, because wrongly cutting a real word is far more damaging to an edit than leaving one in.</p>
+      </details>
+      <details>
+        <summary>It is much slower than expected</summary>
+        <p>Check the chips at the top of the window. They show which GPU was detected and which transcription and encoding backends were chosen. If they say CPU, Phoenix did not find a usable GPU and is falling back, which is functional but much slower. Updating your graphics driver is the usual fix.</p>
+      </details>
+      <details>
+        <summary>My recording has no audio track</summary>
+        <p>Phoenix needs audio to find dead air and filler words, since both come from what you said. A silent source can still be used as the source video in Reactor, where your commentary track is the one being cut.</p>
+      </details>
+      <details>
+        <summary>The app showed an error screen</summary>
+        <p>Use <strong>Copy error details</strong> and send them to <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a>. Your files are not touched when this happens, and reloading usually clears it.</p>
+      </details>
+      <details>
+        <summary>It is taking up a lot of disk space</summary>
+        <p>Phoenix keeps working files next to your exports so a re-render does not have to redo everything. If your source is a format that needs converting first, such as MKV from OBS, that copy is the bulk of it. Delete the files beginning with an underscore in the output folder once you are happy with the result.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to try it on a real VOD?</h2>
+    <a class="btn btn-lg" href="editor.html#download">Download Phoenix Editor</a>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Phoenix Editor is a product of Phoenix Labs. © 2026 Phoenix Labs.</p>
+  <p><a href="./">Phoenix Upscaler</a> · <a href="studio.html">Cloud studio</a> · <a href="editor.html">Phoenix Editor</a> · <a href="editor-guide.html">Editor guide</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

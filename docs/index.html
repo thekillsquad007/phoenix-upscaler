@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Phoenix Upscaler — clean up old VHS and camcorder video on your own PC</title>
-<meta name="description" content="Phoenix removes tape noise, fixes combed motion and rebuilds detail in old VHS, camcorder and DVD footage. Runs on your computer, nothing uploads. $129 once." />
+<title>Phoenix Upscaler — make old video watchable again, on your own PC</title>
+<meta name="description" content="Phoenix rebuilds detail in old video: VHS and camcorder tapes, DVDs, film scans, and low-resolution phone footage. Runs on your own computer, nothing uploads. $129 once." />
 <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
 <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 <link rel="canonical" href="https://phoenixlabs.space/" />
 <meta name="theme-color" content="#0b0c0e" />
 <meta property="og:title" content="Phoenix Upscaler — by Phoenix Labs" />
-<meta property="og:description" content="Clean up old VHS and camcorder video on your own PC. $129 once, yours forever." />
+<meta property="og:description" content="Make old video watchable again on your own PC. Tapes, DVDs, film scans, old phone clips. $129 once, yours forever." />
 <meta property="og:image" content="https://phoenixlabs.space/assets/demo/enhanced_after.jpg" />
 <meta property="og:url" content="https://phoenixlabs.space/" />
 <meta property="og:type" content="website" />
@@ -28,14 +28,14 @@
       "name": "Phoenix Upscaler", "publisher": { "@id": "https://phoenixlabs.space/#org" } },
     { "@type": "SoftwareApplication", "name": "Phoenix Upscaler",
       "applicationCategory": "MultimediaApplication", "operatingSystem": "Windows 10, Windows 11, Linux",
-      "description": "Restore and upscale old VHS, camcorder and DVD video. Removes tape noise, fixes combed motion and rebuilds lost detail. Runs locally on your own NVIDIA or AMD GPU; nothing uploads.",
+      "description": "Restore and upscale old video: VHS and camcorder tapes, DVDs, film scans and low-resolution phone footage. Removes noise, fixes combed motion and rebuilds detail lost to compression and tape. Runs locally on your own NVIDIA or AMD GPU; nothing uploads.",
       "publisher": { "@id": "https://phoenixlabs.space/#org" },
       "offers": { "@type": "Offer", "price": "129", "priceCurrency": "USD", "url": "https://phoenixlabs.space/#price" } },
     { "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "Does my video get uploaded anywhere?", "acceptedAnswer": { "@type": "Answer", "text": "No. Everything happens on your machine. Once activated, Phoenix doesn't need an internet connection at all." } },
       { "@type": "Question", "name": "Is this a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "No. You pay $129 once and it's yours, including every update afterwards. Nothing expires, nothing renews." } },
-      { "@type": "Question", "name": "What files can it open?", "acceptedAnswer": { "@type": "Answer", "text": "MP4, MOV, MKV and AVI, including USB tape-capture output." } },
-      { "@type": "Question", "name": "How long does a tape take?", "acceptedAnswer": { "@type": "Answer", "text": "A two-hour tape is typically an overnight job — it processes every one of ~180,000 frames." } },
+      { "@type": "Question", "name": "What files can it open?", "acceptedAnswer": { "@type": "Answer", "text": "Anything you can play: MP4, MOV, MKV, AVI, WMV, MPG and VOB among them, including USB tape-capture output and DVD rips." } },
+      { "@type": "Question", "name": "How long does it take?", "acceptedAnswer": { "@type": "Answer", "text": "It depends far more on the quality mode than the length. Standard runs near playback speed. A two-hour tape in Generative is an overnight job, because every one of its ~180,000 frames is rebuilt." } },
       { "@type": "Question", "name": "What happens if it crashes or I close the app partway through?", "acceptedAnswer": { "@type": "Answer", "text": "It doesn't start over. Long Generative restores save progress as they go, so a crash, a driver hiccup, or closing the app mid-job just means picking up where it stopped next time you open Phoenix." } },
       { "@type": "Question", "name": "Can I put it on my other computer?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, up to three at a time. Release one from inside the app and move it to a new machine." } },
       { "@type": "Question", "name": "Will it make a bad tape look like it was shot yesterday?", "acceptedAnswer": { "@type": "Answer", "text": "No. Detail the tape never recorded can't be recovered, only guessed at. Phoenix aims for a clean, honest picture rather than an invented one." } }
@@ -53,7 +53,8 @@
   </a>
   <nav>
     <a href="#proof">See it</a>
-    <a href="#how">How it works</a>
+    <a href="#what">What it fixes</a>
+    <a href="upscaler-guide.html">Guide</a>
     <a href="#price">Price</a>
     <a href="studio.html">Cloud</a>
     <a href="editor.html">Editor</a>
@@ -66,11 +67,12 @@
 
   <section class="hero">
     <div class="hero-copy">
-      <h1>Old tapes look old.<br />This fixes that.</h1>
+      <h1>Old video looks old.<br />This fixes that.</h1>
       <p class="lede">
-        Feed Phoenix a capture from a VHS deck, an old camcorder or a DVD.
-        It strips the tape noise, sorts out the combed motion, and rebuilds
-        detail the tape lost decades ago.
+        Tapes, DVDs, film scans, and the phone videos you shot in 2012 that
+        looked fine then and look like a postage stamp now. Phoenix strips the
+        noise, sorts out combed motion, and rebuilds the detail that
+        compression and cheap sensors threw away.
       </p>
       <p class="lede">It runs on your own computer. The footage never leaves it.</p>
       <div class="hero-actions">
@@ -99,8 +101,58 @@
     <div><strong>Runs on your own GPU.</strong> NVIDIA or AMD. No gaming PC? Use the <a href="studio.html">cloud studio</a>.</div>
   </section>
 
+  <section id="what" class="section">
+    <h2>It is not just tapes</h2>
+    <p class="section-sub">
+      Phoenix was built for VHS, and tape is still the hardest case it
+      handles. But lost resolution, compression, noise and combed motion are
+      the same problems on almost any old footage, whatever recorded it.
+    </p>
+    <div class="how-grid">
+      <div class="path-card">
+        <h3>Phone video from the 2010s</h3>
+        <p>
+          480p and 720p clips, compressed hard by a phone with a tiny sensor.
+          The most common thing people bring Phoenix, and often the most
+          rewarding, because the subject is usually someone you know.
+        </p>
+      </div>
+      <div class="path-card">
+        <h3>Tape, DVD and camcorder</h3>
+        <p>
+          VHS, Hi8, MiniDV, wedding DVDs. Interlaced, noisy, colour-bled.
+          Deinterlacing and noise removal are on by default for these, and the
+          detail underneath is usually better than the tape suggests.
+        </p>
+      </div>
+      <div class="path-card">
+        <h3>Film scans</h3>
+        <p>
+          8mm and Super 8 transfers, where grain is part of the image rather
+          than a defect. The Film preset keeps it instead of smoothing the
+          picture into plastic.
+        </p>
+      </div>
+      <div class="path-card">
+        <h3>Your own back catalogue</h3>
+        <p>
+          Old uploads, gameplay captures, screen recordings, webcam footage.
+          Anything that was fine on a 2012 monitor and is not fine on a 4K
+          television.
+        </p>
+      </div>
+    </div>
+    <p class="fineprint">
+      What it will not do is invent a picture that was never recorded. Footage
+      that is genuinely out of focus stays out of focus. Phoenix rebuilds
+      detail that compression and tape destroyed, which is a different problem
+      and a solvable one.
+      <a href="upscaler-guide.html">See the full guide</a>.
+    </p>
+  </section>
+
   <section id="paths" class="section section-alt">
-    <h2>Two ways to restore a tape</h2>
+    <h2>Two ways to run it</h2>
     <p class="section-sub">
       Same restoration engine either way. The only question is whether the work
       happens on your computer or on ours.
@@ -110,10 +162,10 @@
         <p class="path-eyebrow">For gaming PC owners</p>
         <h3>Desktop app — $129 once</h3>
         <p>
-          Install it, drag in your tapes, and restore as many as you like —
+          Install it, drag in your footage, and restore as much as you like:
           forever, with no per-clip cost. Everything runs on your own graphics
           card, so nothing ever leaves your computer. Best if you've got a
-          shoebox of tapes to get through, or you just don't want your family
+          backlog to get through, or you just don't want your family
           videos touching the internet.
         </p>
         <a class="btn btn-lg" href="#price">Get the desktop app</a>
@@ -365,7 +417,7 @@
 
 <footer class="foot">
   <p>Phoenix Upscaler is a product of Phoenix Labs. © 2026 Phoenix Labs.</p>
-  <p><a href="./">Desktop app</a> · <a href="studio.html">Cloud studio</a> · <a href="editor.html">Phoenix Editor</a> · <a href="restore-old-video.html">Restoring old video</a> · <a href="vhs-restoration-software.html">VHS restoration</a> · <a href="topaz-video-ai-alternative.html">Topaz alternative</a></p>
+  <p><a href="./">Desktop app</a> · <a href="studio.html">Cloud studio</a> · <a href="editor.html">Phoenix Editor</a> · <a href="editor-guide.html">Editor guide</a> · <a href="restore-old-video.html">Restoring old video</a> · <a href="vhs-restoration-software.html">VHS restoration</a> · <a href="topaz-video-ai-alternative.html">Topaz alternative</a></p>
   <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
 </footer>
 
