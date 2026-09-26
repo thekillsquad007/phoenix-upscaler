@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Phoenix Motion: turn any image into a video</title>
+<meta name="description" content="Upload an image, describe what should happen, get a 5-second video. Logos, concept art, product shots, portraits, paintings. From $0.59 a clip, no subscription, no watermark." />
+<link rel="canonical" href="https://phoenixlabs.space/motion.html" />
+<link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<meta name="theme-color" content="#0b0c0e" />
+<meta property="og:title" content="Phoenix Motion: turn any image into a video" />
+<meta property="og:description" content="Drop in a picture, say what should happen, get a 5-second clip. Pay per clip from a balance. No subscription, no watermark." />
+<meta property="og:image" content="https://phoenixlabs.space/assets/motion/logo-still.jpg" />
+<meta property="og:url" content="https://phoenixlabs.space/motion.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="motion.css" />
+<link rel="manifest" href="site.webmanifest" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Phoenix Motion",
+  "serviceType": "AI image-to-video generation",
+  "provider": { "@type": "Organization", "name": "Phoenix Labs", "url": "https://phoenixlabs.space/" },
+  "description": "Turn an image into a 5-second video from a text prompt. Paid per clip in dollars from a prepaid balance.",
+  "offers": { "@type": "Offer", "priceCurrency": "USD", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "0.59", "priceCurrency": "USD" } }
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="32" height="32" /><span>Phoenix Labs</span></a>
+  <nav>
+    <a href="#examples">Examples</a>
+    <a href="#price">Price</a>
+    <a href="#rules">What you can make</a>
+    <a href="#faq">FAQ</a>
+    <a href="./">Upscaler</a>
+    <a href="editor.html">Editor</a>
+  </nav>
+  <a class="btn btn-sm" href="motion-app.html">Make a clip</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="motion-eyebrow">Phoenix Motion · image to video</p>
+      <h1>Give any image<br />five seconds of motion.</h1>
+      <p class="lede">
+        Drop in a picture, say what should happen, and get a short video back.
+        Logos, concept art, product shots, portraits, paintings, screenshots.
+        If it's a still, it can move.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-lg" href="motion-app.html">Make a clip</a>
+        <a class="btn btn-ghost btn-lg" href="#examples">See what it makes</a>
+      </div>
+      <p class="fineprint">From <span data-price="480p">$0.59</span> a clip, paid from a balance. No subscription, no watermark.</p>
+    </div>
+
+    <figure class="hero-shot motion-hero">
+      <video src="assets/motion/logo.mp4" poster="assets/motion/logo-still.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>Our own logo, one prompt, first take.</figcaption>
+    </figure>
+  </section>
+
+  <section class="strip">
+    <div><strong>Pay per clip.</strong> Top up once, spend it clip by clip. The balance doesn't expire.</div>
+    <div><strong>Few rules.</strong> Action, horror, the weird stuff. The one thing we don't make is sexual content.</div>
+    <div><strong>It's yours.</strong> No watermark. Use your clips however you like, commercially too.</div>
+  </section>
+
+  <section id="examples" class="section">
+    <h2>One image, one sentence</h2>
+    <p class="section-sub">
+      Each of these started as a single still and the prompt under it. No
+      editing afterwards, and each is the first take.
+    </p>
+    <div class="motion-examples">
+      <figure class="motion-example">
+        <video src="assets/motion/logo.mp4" poster="assets/motion/logo-still.jpg" muted loop playsinline preload="none" controls></video>
+        <figcaption>“The phoenix beats its wings and bursts into flame. Fire ripples along its feathers and glowing embers drift upward into the darkness.”</figcaption>
+      </figure>
+      <figure class="motion-example">
+        <video src="assets/motion/house.mp4" poster="assets/motion/house-still.jpg" muted loop playsinline preload="none" controls></video>
+        <figcaption>“Slow cinematic push-in toward the house. The tree's branches sway in the wind and clouds drift across the sky.”</figcaption>
+      </figure>
+      <figure class="motion-example">
+        <video src="assets/motion/portrait.mp4" poster="assets/motion/portrait-still.jpg" muted loop playsinline preload="none" controls></video>
+        <figcaption>“The woman turns her head slightly toward the camera and smiles, her hair moving in a light breeze.”</figcaption>
+      </figure>
+    </div>
+    <p class="credit">Stills: the Phoenix Labs logo, and frames from <em>Color Harmony</em> and <em>Texas Farm Family</em> (public domain, Prelinger Archives).</p>
+  </section>
+
+  <section id="how" class="section section-alt">
+    <h2>How it works</h2>
+    <div class="step-grid">
+      <div>
+        <p class="step-num">1</p>
+        <h3>Drop an image</h3>
+        <p>JPEG, PNG or WebP, any shape. Your photo's location data is stripped in your browser before it uploads.</p>
+      </div>
+      <div>
+        <p class="step-num">2</p>
+        <h3>Say what should happen</h3>
+        <p>What moves, how, and what the camera does. "Slow push-in, wind in her hair, she turns to the camera" beats "make it cinematic".</p>
+      </div>
+      <div>
+        <p class="step-num">3</p>
+        <h3>Download the clip</h3>
+        <p>Usually ready in a minute or two. Don't like it? Make another take. Every take is different unless you reuse its seed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="price" class="section">
+    <h2>What it costs</h2>
+    <div class="price-wrap">
+      <div class="price-card">
+        <p class="price-eyebrow">Per 5-second clip</p>
+        <table class="motion-prices">
+          <tbody>
+            <tr><th>480p</th><td data-price="480p">$0.59</td><td class="muted">Fastest. Drafts, social posts, trying ideas.</td></tr>
+            <tr><th>720p</th><td data-price="720p">$0.99</td><td class="muted">Sharper. For the take you keep.</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>Add $10, $25, $50, or any amount from $5 to $200.</li>
+          <li>Your balance doesn't expire.</li>
+          <li>A failed or refused clip costs nothing. The price goes straight back.</li>
+          <li>No subscription, no watermark, no account to make.</li>
+        </ul>
+        <a class="btn btn-lg btn-block" href="motion-app.html">Make a clip</a>
+        <p class="fineprint">Card payments handled by Lemon Squeezy. Tax handled for you.</p>
+      </div>
+      <div class="price-aside">
+        <h3>Why a balance and not a charge per clip</h3>
+        <p>
+          You rarely keep the first take. A card payment per 59-cent clip would
+          cost more in fees than the clip itself, so you add money once and
+          spend it clip by clip. It's plain dollars at the prices on this page.
+          Unused balance can be refunded on request.
+        </p>
+        <h3>No login</h3>
+        <p>
+          Your balance lives behind a private wallet key that your browser keeps.
+          Every top-up receipt has a link back to it, so you can pick it up on
+          another device or after clearing your browser.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="rules" class="section section-alt">
+    <h2>What you can make</h2>
+    <p class="section-sub">
+      Almost anything. Fight scenes, monsters, fantasy, dark and strange ideas,
+      parody. We don't police taste, and we don't water down prompts behind
+      your back.
+    </p>
+    <div class="how-grid">
+      <div>
+        <h3>No sexual or nude content</h3>
+        <p>
+          Our payment provider doesn't allow sexual content for any business it
+          works with, and breaking that rule would stop every Phoenix product
+          from selling. Prompts and images that ask for it are refused before
+          you're charged.
+        </p>
+      </div>
+      <div>
+        <h3>Nothing illegal</h3>
+        <p>
+          And nothing sexual or suggestive involving a child, ever. You need the
+          right to use the image you upload, and you're responsible for what you
+          do with the clip. Each clip's file notes that it's AI-generated.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>How long does a clip take?</summary>
+        <p>Usually a minute or two. The first clip after a quiet spell can take a little longer while a GPU gets ready.</p>
+      </details>
+      <details>
+        <summary>How long are the clips?</summary>
+        <p>Five seconds at 16 frames per second, the length the model was trained on. Longer clips from this model drift and loop, so we don't sell them.</p>
+      </details>
+      <details>
+        <summary>Can I use the clips commercially?</summary>
+        <p>Yes. The clips are yours. Phoenix Motion runs Wan 2.2, an open model released under the Apache 2.0 licence, which allows commercial use.</p>
+      </details>
+      <details>
+        <summary>Do you keep my images?</summary>
+        <p>No. Your image is deleted as soon as the clip is made, and finished clips are deleted after two days. Download the ones you want to keep.</p>
+      </details>
+      <details>
+        <summary>What if I don't like a clip?</summary>
+        <p>Make another take with a sharper prompt. A clip that fails or gets refused costs nothing, but a clip that was made used real GPU time, so we can't refund it because it wasn't the one you pictured.</p>
+      </details>
+      <details>
+        <summary>What's a wallet key?</summary>
+        <p>A private code that stands for your balance, so there's no account or password. Your browser keeps it, and your top-up receipt links back to it. Anyone with the key can spend the balance, so don't share it.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Pick an image. Make it move.</h2>
+    <a class="btn btn-lg" href="motion-app.html">Make a clip</a>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Phoenix Motion is a product of Phoenix Labs. © 2026 Phoenix Labs.</p>
+  <p><a href="./">Phoenix Upscaler</a> · <a href="studio.html">Cloud restore</a> · <a href="motion.html">Phoenix Motion</a> · <a href="editor.html">Phoenix Editor</a></p>
+  <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
+</footer>
+
+<script src="site.js"></script>
+<script>
+// Show the live prices, so this page can't disagree with the app.
+(async () => {
+  const local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  try {
+    const r = await fetch(`${local ? "http://127.0.0.1:8787" : "https://api.phoenixlabs.space"}/motion/config`);
+    const cfg = await r.json();
+    for (const q of cfg.sizes) {
+      document.querySelectorAll(`[data-price="${q.size}"]`).forEach((el) => { el.textContent = q.display; });
+    }
+  } catch { /* the prices written above stand */ }
+})();
+</script>
+</body>
+</html>

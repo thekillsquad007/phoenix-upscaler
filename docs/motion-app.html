@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Phoenix Motion: upload an image, describe what should happen, get a 5-second video. Paid from a dollar balance, no subscription." />
+  <meta name="robots" content="noindex" />
+  <title>Phoenix Motion</title>
+  <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="motion-app.css" />
+</head>
+<body class="motion-body">
+  <header class="m-top">
+    <a class="brand" href="motion.html">
+      <img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="28" height="28" />
+      <span>Phoenix Motion</span>
+    </a>
+    <div class="m-wallet">
+      <button type="button" class="m-balance" id="balanceBtn" aria-haspopup="dialog" title="Your balance and wallet key">
+        <span class="m-balance-label">Balance</span>
+        <span class="m-balance-amount" id="balanceAmount">$0.00</span>
+      </button>
+      <button type="button" class="btn btn-sm" id="topupBtn">Add balance</button>
+    </div>
+  </header>
+
+  <main class="m-main">
+    <section class="m-compose" aria-labelledby="composeTitle">
+      <h1 id="composeTitle">Make a clip</h1>
+
+      <div class="m-drop" id="drop" tabindex="0" role="button" aria-label="Choose an image">
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden />
+        <img id="preview" class="hidden" alt="The image you chose" />
+        <div class="m-drop-empty" id="dropEmpty">
+          <p class="m-drop-title">Drop an image</p>
+          <p class="muted">or click to choose one. JPEG, PNG or WebP.</p>
+        </div>
+        <button type="button" class="m-drop-clear hidden" id="clearImage" aria-label="Remove image">Change</button>
+      </div>
+
+      <label class="m-field" for="prompt">
+        <span>What should happen?</span>
+        <textarea id="prompt" rows="4" maxlength="800"
+          placeholder="Slow push-in. Wind catches her coat, sparks drift past the lens, she turns to look at the camera."></textarea>
+      </label>
+      <div class="m-ideas" id="ideas" aria-label="Add to the prompt">
+        <button type="button" data-idea="Slow cinematic push-in.">Push-in</button>
+        <button type="button" data-idea="Handheld camera, slight shake.">Handheld</button>
+        <button type="button" data-idea="Camera orbits slowly around the subject.">Orbit</button>
+        <button type="button" data-idea="Wind moves the hair and clothes.">Wind</button>
+        <button type="button" data-idea="Turns to look straight at the camera.">Looks at camera</button>
+        <button type="button" data-idea="Rain starts falling, puddles ripple.">Rain</button>
+        <button type="button" data-idea="An explosion erupts in the background.">Explosion</button>
+        <button type="button" data-idea="Slow motion.">Slow motion</button>
+      </div>
+
+      <fieldset class="m-sizes" id="sizes">
+        <legend>Quality</legend>
+      </fieldset>
+
+      <details class="m-advanced">
+        <summary>Seed</summary>
+        <p class="muted">The same image, prompt and seed make the same clip. Leave it empty for a new take every time.</p>
+        <input id="seed" type="number" min="0" max="2147483647" inputmode="numeric" placeholder="Random" />
+      </details>
+
+      <button type="button" class="btn btn-lg btn-block" id="makeBtn" disabled>Make clip</button>
+      <p class="fineprint" id="makeNote">Paid from your balance. If a clip fails, the price goes straight back.</p>
+    </section>
+
+    <section class="m-gallery" aria-labelledby="galleryTitle">
+      <div class="m-gallery-head">
+        <h2 id="galleryTitle">Your clips</h2>
+        <p class="muted" id="galleryNote">Clips are kept for 2 days. Download the ones you want.</p>
+      </div>
+      <div id="clips" class="m-clips">
+        <p class="m-empty muted" id="emptyNote">Your clips show up here. Each one is 5 seconds.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="topupDialog" class="m-dialog" aria-labelledby="topupTitle">
+    <form method="dialog" id="topupForm">
+      <h2 id="topupTitle">Add to your balance</h2>
+      <p class="muted">Dollars in, dollars out. Each clip costs its listed price and nothing else. Your balance doesn't expire.</p>
+      <div class="m-amounts" id="amounts" role="radiogroup" aria-label="Amount"></div>
+      <label class="m-field" for="customAmount">
+        <span>Or another amount (US$)</span>
+        <input id="customAmount" type="number" min="5" max="200" step="1" inputmode="decimal" placeholder="e.g. 15" />
+      </label>
+      <label class="m-field" for="email">
+        <span>Email for the receipt</span>
+        <input id="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+      </label>
+      <p class="fineprint">The receipt has a link back to this balance, so you can open it on any device.</p>
+      <div class="m-dialog-actions">
+        <button type="button" class="btn btn-ghost" value="cancel" data-close>Cancel</button>
+        <button type="submit" class="btn" id="checkoutBtn" value="go">Continue to checkout</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="keyDialog" class="m-dialog" aria-labelledby="keyTitle">
+    <form method="dialog">
+      <h2 id="keyTitle">Your wallet key</h2>
+      <p class="muted">This key is your balance. Anyone with it can spend it, so keep it private. Your top-up receipts carry it too.</p>
+      <div class="m-key">
+        <code id="keyText">No wallet yet</code>
+        <button type="button" class="btn btn-sm btn-ghost" id="copyKey">Copy</button>
+      </div>
+      <label class="m-field" for="otherKey">
+        <span>Use a key from another device</span>
+        <input id="otherKey" type="text" autocomplete="off" spellcheck="false" placeholder="pmk_…" />
+      </label>
+      <div class="m-dialog-actions">
+        <button type="button" class="btn btn-ghost" id="useKey">Use this key</button>
+        <button type="button" class="btn" data-close>Done</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="m-toast hidden" role="status" aria-live="polite"></div>
+  <script src="motion-app.js"></script>
+</body>
+</html>

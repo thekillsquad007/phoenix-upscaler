@@ -1,0 +1,32 @@
+/* Phoenix Motion landing page. Builds on styles.css. */
+
+.motion-eyebrow {
+  color: var(--accent-2); font-size: 14px; font-weight: 600;
+  letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 14px;
+}
+
+.motion-hero video {
+  width: 100%; border-radius: var(--radius); border: 1px solid var(--line); background: #000;
+  aspect-ratio: 16 / 9; object-fit: cover;
+}
+
+.motion-examples { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.motion-example { display: grid; gap: 12px; align-content: start; }
+.motion-example video {
+  width: 100%; aspect-ratio: 16 / 9; object-fit: contain;
+  border-radius: var(--radius); border: 1px solid var(--line); background: #000;
+}
+.motion-example figcaption { color: var(--ink-dim); font-size: 14.5px; line-height: 1.55; }
+
+.motion-prices { width: 100%; border-collapse: collapse; margin: 4px 0 22px; }
+.motion-prices th, .motion-prices td { padding: 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+.motion-prices th { width: 64px; font-weight: 620; }
+.motion-prices td:nth-child(2) {
+  width: 80px; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums; line-height: 1.2;
+}
+.motion-prices td.muted { color: var(--ink-dim); font-size: 14.5px; }
+
+@media (max-width: 900px) {
+  .motion-examples { grid-template-columns: 1fr; }
+}
