@@ -88,6 +88,14 @@
           },
           {
             "@type": "Question",
+            "name": "Can an assistant pay with crypto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. An assistant with its own wallet can add USDC on Base to your balance with x402, from $1 to $200 at a time, and it can still only spend up to its key's limit. You can pay with USDC from the Motion app too."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "What happens to the files an assistant sends?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -129,7 +137,7 @@
   <dl class="dev-facts">
     <div><dt>MCP server</dt><dd><code>https://api.phoenixlabs.space/mcp</code></dd></div>
     <div><dt>REST API</dt><dd><a href="https://api.phoenixlabs.space/openapi.json">OpenAPI description</a></dd></div>
-    <div><dt>Paying</dt><dd>A prepaid balance in US dollars, spent at listed prices</dd></div>
+    <div><dt>Paying</dt><dd>A prepaid US dollar balance, added by card or in USDC (x402)</dd></div>
   </dl>
 
   <h2>Set it up in three steps</h2>
@@ -178,6 +186,7 @@
         <tr data-tool="cancel_job"><th><code>cancel_job</code></th><td>Cancel a job whose file never arrived, with an instant refund</td><td>Refunds</td></tr>
         <tr data-tool="get_balance"><th><code>get_balance</code></th><td>The balance, and how much of the key's limit is left</td><td>Free</td></tr>
         <tr data-tool="create_top_up_link"><th><code>create_top_up_link</code></th><td>A checkout link for you to add money</td><td>Nothing until you pay</td></tr>
+        <tr data-tool="top_up_with_usdc"><th><code>top_up_with_usdc</code></th><td>Add money itself, in USDC on Base, from its own crypto wallet (x402)</td><td>$1 to $200</td></tr>
       </tbody>
     </table>
   </div>
@@ -188,11 +197,20 @@
     <li><strong>A key can't spend past its limit.</strong> The limit is checked on the server in the same step that takes the money, so two requests at once can't slip past it.</li>
     <li><strong>It can't do more than spend.</strong> An agent key can't see your wallet key or your email, can't make other keys, and only sees the jobs it started itself.</li>
     <li><strong>Failures cost nothing.</strong> A clip or restore that fails, or a prompt that's refused, is refunded to the balance straight away, and to the key's allowance too.</li>
-    <li><strong>It can't use your card.</strong> When the balance runs low, the most an assistant can do is hand you a checkout link. Nothing is charged until you pay it.</li>
+    <li><strong>It can't use your card.</strong> When the balance runs low, an assistant can hand you a checkout link, and nothing is charged until you pay it. An assistant with its own crypto wallet can add USDC itself, but it still can't spend past its key's limit.</li>
     <li><strong>Assistants are asked to confirm prices.</strong> The server tells every connected assistant to say what something costs before spending, unless you've already agreed to it.</li>
     <li><strong>Same rules as the website.</strong> Clips follow the same content rule: no sexual or nude content, and nothing sexual or suggestive involving a minor.</li>
     <li><strong>Switch it off any time.</strong> Revoke a key from the <em>Agent keys</em> list and it stops working at once.</li>
   </ul>
+
+  <h2>Paying with USDC (x402)</h2>
+  <p>Assistants that hold their own crypto wallet can add money to the balance themselves, in USDC on Base, using <a href="https://www.x402.org/">x402</a>, the open standard for paying over HTTP. They need USDC and nothing else: no gas, no account. 1 USDC adds $1, from $1 to $200 at a time, and it's spent exactly like balance added by card, with the same key limits and refunds.</p>
+  <ul>
+    <li><strong>Over MCP:</strong> call <code>top_up_with_usdc</code>. It answers with the payment terms; sign the USDC transfer and call it again with the payment in <code>_meta["x402/payment"]</code>.</li>
+    <li><strong>Over HTTP:</strong> <code>POST /wallet/topup/crypto</code> with <code>{"amount_cents": 500}</code> answers <code>402</code> with the terms in the <code>PAYMENT-REQUIRED</code> header. Send the same request again with the signed payment in <code>PAYMENT-SIGNATURE</code>. Any x402 client library does this for you.</li>
+    <li><strong>In the browser:</strong> people can pay the same way from <em>Add balance</em> in <a href="motion-app.html">Phoenix Motion</a>, with MetaMask, Coinbase Wallet or Rabby.</li>
+  </ul>
+  <p class="muted">We credit a payment only after reading the transfer back from the Base network ourselves. USDC payments go straight to Phoenix Labs, not through our card processor, and unused USDC balance is refunded in USDC to the address that paid.</p>
 
   <h2>Using the API directly</h2>
   <p>Everything the MCP tools do is plain HTTP and JSON, described in the <a href="https://api.phoenixlabs.space/openapi.json">OpenAPI file</a>. Make a clip from an image link:</p>
@@ -231,6 +249,10 @@ curl -X POST https://api.phoenixlabs.space/cloud/jobs/JOB_ID/start -H "Authoriza
     <details>
       <summary>Can the assistant pay with my card?</summary>
       <p>No. It can only spend the balance you've added, up to its key's limit. To add more, it gives you a checkout link, and nothing is charged until you pay it yourself.</p>
+    </details>
+    <details>
+      <summary>Can an assistant pay with crypto?</summary>
+      <p>Yes. An assistant with its own wallet can add USDC on Base to your balance with x402, from $1 to $200 at a time, and it can still only spend up to its key's limit. You can pay with USDC from the Motion app too.</p>
     </details>
     <details>
       <summary>What happens to the files an assistant sends?</summary>

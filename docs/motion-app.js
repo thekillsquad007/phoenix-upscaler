@@ -463,6 +463,98 @@ async function checkout(ev) {
   }
 }
 
+// ── Paying with USDC (x402) ──────────────────────────────────────────────────
+// The Worker answers the first request with 402 and the payment terms; the
+// wallet signs an EIP-3009 USDC transfer for exactly that; the same request
+// goes again with the signature, and the Worker settles it, reads it back
+// from the chain and credits the balance (studio_worker/src/crypto.ts).
+
+const b64json = (obj) => btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(obj))));
+
+async function useChain(eth, c) {
+  const id = Number(c.network.split(":")[1]);
+  const hex = `0x${id.toString(16)}`;
+  if ((await eth.request({ method: "eth_chainId" })) === hex) return id;
+  try {
+    await eth.request({ method: "wallet_switchEthereumChain", params: [{ chainId: hex }] });
+  } catch (e) {
+    if (e.code !== 4902 || id !== 8453) throw e;
+    await eth.request({
+      method: "wallet_addEthereumChain",
+      params: [{ chainId: hex, chainName: "Base", nativeCurrency: { name: "Ether", symbol: "ETH", decimals: 18 },
+        rpcUrls: ["https://mainnet.base.org"], blockExplorerUrls: ["https://basescan.org"] }],
+    });
+  }
+  return id;
+}
+
+async function usdcRequest(body, signature) {
+  const headers = { "Content-Type": "application/json", Authorization: `Bearer ${key}` };
+  if (signature) headers["PAYMENT-SIGNATURE"] = signature;
+  const res = await fetch(`${API}/motion/wallet/topup/crypto`, { method: "POST", headers, body: JSON.stringify(body) });
+  return { res, data: await res.json().catch(() => ({})) };
+}
+
+async function payUsdc() {
+  const c = config.crypto;
+  const eth = window.ethereum;
+  if (!c?.enabled) return;
+  if (!eth) { toast("Paying with USDC needs a browser wallet such as MetaMask, Coinbase Wallet or Rabby.", true); return; }
+  if (!(topupCents >= c.min_cents && topupCents <= c.max_cents)) {
+    toast(`Pay between ${money(c.min_cents)} and ${money(c.max_cents)} in USDC.`, true);
+    return;
+  }
+  const btn = $("#usdcBtn");
+  btn.disabled = true;
+  btn.textContent = "Open your wallet…";
+  try {
+    const [account] = await eth.request({ method: "eth_requestAccounts" });
+    const chainId = await useChain(eth, c);
+    await ensureWallet();
+    const body = { amount_cents: topupCents };
+    let { res, data } = await usdcRequest(body);
+    if (res.status !== 402 || !data.payment_required) throw new Error(data.detail || "Couldn't start the payment.");
+    const pr = data.payment_required;
+    const terms = pr.accepts[0];
+    const now = Math.floor(Date.now() / 1000);
+    const nonce = `0x${[...crypto.getRandomValues(new Uint8Array(32))].map((b) => b.toString(16).padStart(2, "0")).join("")}`;
+    const authorization = {
+      from: account, to: terms.payTo, value: terms.amount,
+      validAfter: String(now - 60), validBefore: String(now + terms.maxTimeoutSeconds), nonce,
+    };
+    btn.textContent = "Approve in your wallet…";
+    const signature = await eth.request({
+      method: "eth_signTypedData_v4",
+      params: [account, JSON.stringify({
+        types: {
+          EIP712Domain: [
+            { name: "name", type: "string" }, { name: "version", type: "string" },
+            { name: "chainId", type: "uint256" }, { name: "verifyingContract", type: "address" },
+          ],
+          TransferWithAuthorization: [
+            { name: "from", type: "address" }, { name: "to", type: "address" }, { name: "value", type: "uint256" },
+            { name: "validAfter", type: "uint256" }, { name: "validBefore", type: "uint256" }, { name: "nonce", type: "bytes32" },
+          ],
+        },
+        primaryType: "TransferWithAuthorization",
+        domain: { name: terms.extra.name, version: terms.extra.version, chainId, verifyingContract: terms.asset },
+        message: authorization,
+      })],
+    });
+    btn.textContent = "Confirming…";
+    ({ res, data } = await usdcRequest(body, b64json({ x402Version: 2, resource: pr.resource, accepted: terms, payload: { signature, authorization } })));
+    if (!res.ok) throw new Error(data.detail || `The payment didn't go through (${res.status}).`);
+    if (data.wallet) setWallet(data.wallet); else await loadWallet();
+    $("#topupDialog").close();
+    toast(res.status === 202 ? "Paid. The balance updates as soon as the network confirms it." : `Added ${money(data.credited_cents)} in USDC.`);
+  } catch (e) {
+    toast(e.code === 4001 ? "Cancelled in your wallet. Nothing was taken." : e.message, true);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Pay with USDC";
+  }
+}
+
 // ── Wallet key dialog ────────────────────────────────────────────────────────
 
 function openKey() {
@@ -608,6 +700,7 @@ function wire() {
 
   $("#topupBtn").addEventListener("click", openTopup);
   $("#topupForm").addEventListener("submit", checkout);
+  $("#usdcBtn").addEventListener("click", payUsdc);
   $("#balanceBtn").addEventListener("click", openKey);
   $("#copyKey").addEventListener("click", async () => {
     try { await navigator.clipboard.writeText(key); toast("Key copied."); } catch { toast("Select the key and copy it.", true); }
@@ -632,6 +725,7 @@ async function init() {
   }
   renderSizes();
   renderAmounts();
+  $("#usdcRow").classList.toggle("hidden", !config.crypto?.enabled);
   await loadWallet();
   updateMakeButton();
   await loadClips();

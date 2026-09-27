@@ -169,11 +169,11 @@
 .m-amounts button[aria-checked="true"] { border-color: var(--accent); background: var(--accent-soft); }
 .m-key { display: flex; align-items: center; gap: 10px; }
 .m-dialog-wide { width: min(580px, calc(100vw - 32px)); }
-.m-agents-entry {
+.m-agents-entry, .m-usdc {
   display: flex; align-items: center; justify-content: space-between; gap: 14px;
   padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-alt);
 }
-.m-agents-entry p { margin-top: 2px; font-size: 13.5px; }
+.m-agents-entry p, .m-usdc p { margin-top: 2px; font-size: 13.5px; }
 .m-agent-new { display: grid; grid-template-columns: 1fr 120px auto; gap: 10px; align-items: end; }
 .m-agent-created {
   display: grid; gap: 10px; padding: 14px;
@@ -189,7 +189,7 @@
 .m-agent-list li.revoked { opacity: 0.55; }
 .m-agent-list li.m-agent-empty { color: var(--ink-dim); justify-content: center; }
 .m-agent-list .meta { font-size: 13px; color: var(--ink-dim); }
-@media (max-width: 520px) { .m-agent-new { grid-template-columns: 1fr; } .m-agents-entry { flex-direction: column; align-items: stretch; } }
+@media (max-width: 520px) { .m-agent-new { grid-template-columns: 1fr; } .m-agents-entry, .m-usdc { flex-direction: column; align-items: stretch; } }
 .m-key code {
   flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap;
   padding: 10px 12px; border-radius: 10px; background: var(--bg-alt); border: 1px solid var(--line);

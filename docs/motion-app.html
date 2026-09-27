@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=edee7689" />
-  <link rel="stylesheet" href="motion-app.css?v=623d2852" />
+  <link rel="stylesheet" href="motion-app.css?v=4017f219" />
 </head>
 <body class="motion-body">
   <header class="m-top">
@@ -113,6 +113,13 @@
         <button type="button" class="btn btn-ghost" value="cancel" data-close>Cancel</button>
         <button type="submit" class="btn" id="checkoutBtn" value="go">Continue to checkout</button>
       </div>
+      <div class="m-usdc hidden" id="usdcRow">
+        <div>
+          <strong>Or pay with USDC</strong>
+          <p class="muted">On Base, from a browser wallet such as MetaMask, Coinbase Wallet or Rabby. No network fee; 1 USDC adds $1.</p>
+        </div>
+        <button type="button" class="btn btn-sm btn-ghost" id="usdcBtn">Pay with USDC</button>
+      </div>
     </form>
   </dialog>
 
@@ -173,6 +180,6 @@
   </dialog>
 
   <div id="toast" class="m-toast hidden" role="status" aria-live="polite"></div>
-  <script src="motion-app.js?v=8b1c216d"></script>
+  <script src="motion-app.js?v=954267eb"></script>
 </body>
 </html>
