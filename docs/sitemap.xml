@@ -49,6 +49,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://phoenixlabs.space/developers</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://phoenixlabs.space/upscaler-guide</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>

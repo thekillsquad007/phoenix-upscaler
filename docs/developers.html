@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phoenix for AI agents: MCP server, API and agent keys</title>
+  <meta name="description" content="Let Claude, ChatGPT, Cursor or your own code restore old video and make clips with Phoenix, paid from a balance you control with a capped agent key." />
+  <link rel="canonical" href="https://phoenixlabs.space/developers" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta property="og:site_name" content="Phoenix Labs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Phoenix for AI agents: MCP server, API and agent keys" />
+  <meta property="og:description" content="Let Claude, ChatGPT, Cursor or your own code restore old video and make clips with Phoenix, paid from a balance you control with a capped agent key." />
+  <meta property="og:url" content="https://phoenixlabs.space/developers" />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/social/developers.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Let your AI assistant use Phoenix" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=edee7689" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebAPI",
+        "name": "Phoenix Labs API",
+        "description": "Restore old video and turn still images into video clips with sound. REST and MCP, paid from a prepaid US dollar balance with capped agent keys.",
+        "url": "https://api.phoenixlabs.space/",
+        "documentation": "https://api.phoenixlabs.space/openapi.json",
+        "termsOfService": "https://phoenixlabs.space/terms",
+        "provider": {
+          "@type": "Organization",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Phoenix Labs",
+            "item": "https://phoenixlabs.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "For AI agents",
+            "item": "https://phoenixlabs.space/developers"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can an AI assistant spend more than I allow?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Each agent key has a total it may spend, checked on the server in the same step that takes the money. When a job fails, the amount goes back to both the balance and the key's allowance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which assistants work with Phoenix?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Anything that can connect to a remote MCP server over HTTP, including Claude Code, Cursor and other MCP apps, and apps that add servers by URL. Anything that can make HTTP requests can use the REST API directly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the assistant pay with my card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It can only spend the balance you've added, up to its key's limit. To add more, it gives you a checkout link, and nothing is charged until you pay it yourself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to the files an assistant sends?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The same as on the website. Images are deleted as soon as the clip is made, and uploaded videos and results are deleted automatically, typically within 48 hours. Nothing is used to train a model."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there an API for the desktop apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not yet. Phoenix Upscaler and Phoenix Editor run on your own computer; the API covers the cloud services, Cloud Restore and Phoenix Motion."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="upscaler.html">Upscaler</a>
+    <a href="studio.html">Cloud Restore</a>
+    <a href="motion.html">Motion</a>
+    <a href="editor.html">Editor</a>
+  </nav>
+  <a class="btn btn-sm nav-cta" href="motion-app.html">Make an agent key</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+</header>
+
+<main class="content-page dev-page">
+  <p class="badge">For AI agents and developers</p>
+  <h1>Let your AI assistant use Phoenix</h1>
+  <p class="lead">Claude, ChatGPT, Cursor or your own code can restore old video and make clips with Phoenix, and pay for them from a balance you control. You give the assistant its own key with a spending limit. It can never spend more than that, and you can switch it off at any time.</p>
+
+  <dl class="dev-facts">
+    <div><dt>MCP server</dt><dd><code>https://api.phoenixlabs.space/mcp</code></dd></div>
+    <div><dt>REST API</dt><dd><a href="https://api.phoenixlabs.space/openapi.json">OpenAPI description</a></dd></div>
+    <div><dt>Paying</dt><dd>A prepaid balance in US dollars, spent at listed prices</dd></div>
+  </dl>
+
+  <h2>Set it up in three steps</h2>
+  <ol>
+    <li><strong>Add some balance.</strong> Open <a href="motion-app.html">Phoenix Motion</a> and add $5 or more. That balance pays for clips and for cloud restores.</li>
+    <li><strong>Make an agent key.</strong> Click your balance, then <em>Agent keys</em>. Name it, set a limit (say $10), and copy the <code>pak_…</code> key it shows. You only see it once.</li>
+    <li><strong>Connect your assistant</strong> to the MCP server with that key, using one of the snippets below.</li>
+  </ol>
+
+  <h2>Connect your assistant</h2>
+  <h3>Claude Code</h3>
+  <div class="code"><div class="code-label"><span>Terminal</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>claude mcp add --transport http phoenix https://api.phoenixlabs.space/mcp --header "Authorization: Bearer pak_your_key"</code></pre></div>
+
+  <h3>Cursor, Windsurf and other apps with an MCP config file</h3>
+  <div class="code"><div class="code-label"><span>mcp.json</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>{
+  "mcpServers": {
+    "phoenix": {
+      "url": "https://api.phoenixlabs.space/mcp",
+      "headers": { "Authorization": "Bearer pak_your_key" }
+    }
+  }
+}</code></pre></div>
+
+  <h3>Apps that only ask for a server URL</h3>
+  <p>Some apps, such as the custom connectors in chat apps, only take an address. Put the key on the end of it:</p>
+  <div class="code"><div class="code-label"><span>Server URL</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>https://api.phoenixlabs.space/mcp?key=pak_your_key</code></pre></div>
+  <p class="muted">Only ever use an agent key this way, never your wallet key: a URL can end up in logs and settings screens. The server refuses a wallet key in a URL for that reason.</p>
+
+  <h2>What your assistant can do</h2>
+  <div class="table-wrap">
+    <table class="req-table dev-tools">
+      <thead><tr><th>Tool</th><th>What it does</th><th>Cost</th></tr></thead>
+      <tbody>
+        <tr data-tool="get_prices"><th><code>get_prices</code></th><td>Current prices and limits</td><td>Free</td></tr>
+        <tr data-tool="quote_restore"><th><code>quote_restore</code></th><td>Exact price to restore a clip of a given length and size</td><td>Free</td></tr>
+        <tr data-tool="create_restore"><th><code>create_restore</code></th><td>Start a cloud restore and get an upload link</td><td>From $2.99, by length</td></tr>
+        <tr data-tool="start_restore"><th><code>start_restore</code></th><td>Run the restore once the video is uploaded, or get a checkout link for you</td><td>Paid at create</td></tr>
+        <tr data-tool="get_restore"><th><code>get_restore</code></th><td>Progress, and the download link when it's done</td><td>Free</td></tr>
+        <tr data-tool="make_clip"><th><code>make_clip</code></th><td>Turn an image into a five-second clip with sound, from a prompt</td><td>$0.59 (480p), $0.99 (720p)</td></tr>
+        <tr data-tool="start_clip"><th><code>start_clip</code></th><td>Start a clip once its image is uploaded</td><td>Paid at make</td></tr>
+        <tr data-tool="get_clip"><th><code>get_clip</code></th><td>Progress, and the video when it's done</td><td>Free</td></tr>
+        <tr data-tool="list_clips"><th><code>list_clips</code></th><td>Clips this key has made</td><td>Free</td></tr>
+        <tr data-tool="cancel_job"><th><code>cancel_job</code></th><td>Cancel a job whose file never arrived, with an instant refund</td><td>Refunds</td></tr>
+        <tr data-tool="get_balance"><th><code>get_balance</code></th><td>The balance, and how much of the key's limit is left</td><td>Free</td></tr>
+        <tr data-tool="create_top_up_link"><th><code>create_top_up_link</code></th><td>A checkout link for you to add money</td><td>Nothing until you pay</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Assistants usually send files one of two ways. For a clip, they can pass a link to a public image and Phoenix fetches it. Otherwise the create tool returns an upload link: the assistant sends the file there with an HTTP <code>PUT</code>, then calls the matching start tool. Coding assistants such as Claude Code and Cursor can upload a video from your disk this way.</p>
+
+  <h2>Money, limits and safety</h2>
+  <ul>
+    <li><strong>A key can't spend past its limit.</strong> The limit is checked on the server in the same step that takes the money, so two requests at once can't slip past it.</li>
+    <li><strong>It can't do more than spend.</strong> An agent key can't see your wallet key or your email, can't make other keys, and only sees the jobs it started itself.</li>
+    <li><strong>Failures cost nothing.</strong> A clip or restore that fails, or a prompt that's refused, is refunded to the balance straight away, and to the key's allowance too.</li>
+    <li><strong>It can't use your card.</strong> When the balance runs low, the most an assistant can do is hand you a checkout link. Nothing is charged until you pay it.</li>
+    <li><strong>Assistants are asked to confirm prices.</strong> The server tells every connected assistant to say what something costs before spending, unless you've already agreed to it.</li>
+    <li><strong>Same rules as the website.</strong> Clips follow the same content rule: no sexual or nude content, and nothing sexual or suggestive involving a minor.</li>
+    <li><strong>Switch it off any time.</strong> Revoke a key from the <em>Agent keys</em> list and it stops working at once.</li>
+  </ul>
+
+  <h2>Using the API directly</h2>
+  <p>Everything the MCP tools do is plain HTTP and JSON, described in the <a href="https://api.phoenixlabs.space/openapi.json">OpenAPI file</a>. Make a clip from an image link:</p>
+  <div class="code"><div class="code-label"><span>curl</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>curl https://api.phoenixlabs.space/motion/jobs \
+  -H "Authorization: Bearer pak_your_key" \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "Slow push-in, wind in the trees", "image_url": "https://example.com/photo.jpg", "size": "480p"}'
+
+# then poll until status is "done" and use download_url
+curl https://api.phoenixlabs.space/motion/jobs/CLIP_ID -H "Authorization: Bearer pak_your_key"</code></pre></div>
+  <p>Restore a video paid from the balance:</p>
+  <div class="code"><div class="code-label"><span>curl</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code># 1. Create the job (the price comes off the balance now)
+curl https://api.phoenixlabs.space/cloud/jobs \
+  -H "Authorization: Bearer pak_your_key" -H "Content-Type: application/json" \
+  -d '{"filename": "tape.mp4", "content_type": "video/mp4", "duration_sec": 95, "width": 720, "height": 480, "quality": "enhanced"}'
+
+# 2. Upload the file to the upload_url it returns
+curl -X PUT -H "Content-Type: video/mp4" --upload-file tape.mp4 "UPLOAD_URL"
+
+# 3. Start it, then poll GET /cloud/jobs/JOB_ID until status is "done"
+curl -X POST https://api.phoenixlabs.space/cloud/jobs/JOB_ID/start -H "Authorization: Bearer pak_your_key"</code></pre></div>
+  <p>The GPU checks the real length of every video. One that's much longer than declared is refused and refunded rather than charged extra, so quote what the file really is.</p>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <details>
+      <summary>Can an AI assistant spend more than I allow?</summary>
+      <p>No. Each agent key has a total it may spend, checked on the server in the same step that takes the money. When a job fails, the amount goes back to both the balance and the key's allowance.</p>
+    </details>
+    <details>
+      <summary>Which assistants work with Phoenix?</summary>
+      <p>Anything that can connect to a remote MCP server over HTTP, including Claude Code, Cursor and other MCP apps, and apps that add servers by URL. Anything that can make HTTP requests can use the REST API directly.</p>
+    </details>
+    <details>
+      <summary>Can the assistant pay with my card?</summary>
+      <p>No. It can only spend the balance you've added, up to its key's limit. To add more, it gives you a checkout link, and nothing is charged until you pay it yourself.</p>
+    </details>
+    <details>
+      <summary>What happens to the files an assistant sends?</summary>
+      <p>The same as on the website. Images are deleted as soon as the clip is made, and uploaded videos and results are deleted automatically, typically within 48 hours. Nothing is used to train a model.</p>
+    </details>
+    <details>
+      <summary>Is there an API for the desktop apps?</summary>
+      <p>Not yet. Phoenix Upscaler and Phoenix Editor run on your own computer; the API covers the cloud services, Cloud Restore and Phoenix Motion.</p>
+    </details>
+  </div>
+
+  <div class="content-cta"><h2>Make your first agent key</h2><p>Add a few dollars of balance, set a limit you're comfortable with, and connect your assistant.</p><a class="btn btn-primary" href="motion-app.html">Open Phoenix Motion</a></div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><h4>Restore</h4><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a><a href="restore-old-video.html">Restoring old video</a></div>
+    <div class="foot-col"><h4>Create</h4><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
+    <div class="foot-col"><h4>Compare</h4><a href="topaz-video-ai-alternative.html">Topaz alternative</a><a href="vhs-restoration-software.html">VHS restoration</a></div>
+    <div class="foot-col"><h4>Company</h4><a href="developers.html">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
+</footer>
+<script src="site.js?v=bcd942b8"></script>
+</body>
+</html>

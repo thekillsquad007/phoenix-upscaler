@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=43d161db" />
-  <link rel="stylesheet" href="motion-app.css?v=d73ebac2" />
+  <link rel="stylesheet" href="styles.css?v=edee7689" />
+  <link rel="stylesheet" href="motion-app.css?v=623d2852" />
 </head>
 <body class="motion-body">
   <header class="m-top">
@@ -124,6 +124,13 @@
         <code id="keyText">No wallet yet</code>
         <button type="button" class="btn btn-sm btn-ghost" id="copyKey">Copy</button>
       </div>
+      <div class="m-agents-entry">
+        <div>
+          <strong>Let an AI assistant use this balance</strong>
+          <p class="muted">Give it its own key with a spending limit. Revoke it any time.</p>
+        </div>
+        <button type="button" class="btn btn-sm btn-ghost" id="openAgents">Agent keys</button>
+      </div>
       <label class="m-field" for="otherKey">
         <span>Use a key from another device</span>
         <input id="otherKey" type="text" autocomplete="off" spellcheck="false" placeholder="pmk_…" />
@@ -135,7 +142,37 @@
     </form>
   </dialog>
 
+  <dialog id="agentsDialog" class="m-dialog m-dialog-wide" aria-labelledby="agentsTitle">
+    <form method="dialog" id="agentForm">
+      <h2 id="agentsTitle">Keys for AI agents</h2>
+      <p class="muted">An agent key lets Claude, ChatGPT, Cursor or your own code make clips and restores from this balance, never more than the limit you set. It can't see your wallet key or make other keys. <a href="developers.html" target="_blank" rel="noopener">How to connect an agent</a></p>
+      <div class="m-agent-new">
+        <label class="m-field" for="agentLabel">
+          <span>Name</span>
+          <input id="agentLabel" type="text" maxlength="60" autocomplete="off" placeholder="e.g. Claude on my laptop" />
+        </label>
+        <label class="m-field" for="agentLimit">
+          <span>Limit (US$)</span>
+          <input id="agentLimit" type="number" min="1" max="1000" step="1" value="10" inputmode="decimal" />
+        </label>
+        <button type="submit" class="btn" id="makeAgentKey">Make key</button>
+      </div>
+      <div id="agentCreated" class="m-agent-created hidden" aria-live="polite">
+        <p><strong>Copy this key now.</strong> It isn't shown again.</p>
+        <div class="m-key">
+          <code id="agentKeyText"></code>
+          <button type="button" class="btn btn-sm btn-ghost" id="copyAgentKey">Copy</button>
+        </div>
+        <p class="fineprint">Connect it to the MCP server <code>https://api.phoenixlabs.space/mcp</code> with the header <code>Authorization: Bearer</code> and the key. Apps that only take a URL can use the server address with <code>?key=</code> and the key on the end.</p>
+      </div>
+      <ul class="m-agent-list" id="agentList" aria-label="Agent keys"></ul>
+      <div class="m-dialog-actions">
+        <button type="button" class="btn" data-close>Done</button>
+      </div>
+    </form>
+  </dialog>
+
   <div id="toast" class="m-toast hidden" role="status" aria-live="polite"></div>
-  <script src="motion-app.js?v=4d9cf376"></script>
+  <script src="motion-app.js?v=8b1c216d"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=43d161db" />
+  <link rel="stylesheet" href="styles.css?v=edee7689" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -63,7 +63,7 @@
 
 <main class="content-page">
   <h1>Privacy Policy</h1>
-  <p class="muted">Last updated 26 September 2026. Phoenix Upscaler, Phoenix Cloud Studio and Phoenix Motion are products of Phoenix Labs (“we”, “us”).</p>
+  <p class="muted">Last updated 27 September 2026. Phoenix Upscaler, Phoenix Cloud Studio and Phoenix Motion are products of Phoenix Labs (“we”, “us”).</p>
 
   <h2>The short version</h2>
   <p>The desktop app processes your video entirely on your own computer — your footage never reaches us. The cloud studio only receives a file when you choose to upload one, uses it to run that single job, and deletes it shortly afterwards. We don’t sell your data.</p>
@@ -80,8 +80,9 @@
 
   <h2>Phoenix Motion</h2>
   <ul>
-    <li><strong>Your image</strong>: re-encoded in your browser before upload, which removes its metadata (including any GPS location), used to make the clip you asked for, and deleted as soon as that clip is made. We do not view, share, or use it to train models.</li>
+    <li><strong>Your image</strong>: in the web app, re-encoded in your browser before upload, which removes its metadata (including any GPS location). Images sent through the API are stored as sent, and when an assistant gives us a link we download that image once. Either way it is used to make the clip you asked for and deleted as soon as that clip is made. We do not view, share, or use it to train models.</li>
     <li><strong>Your prompt and finished clips</strong>: kept so you can see and download your clips. Clips are deleted after about two days; the prompt stays in your clip history.</li>
+    <li><strong>Agent keys</strong>: we store a one-way hash of each key, the name you gave it, its limit, what it has spent and when it was last used, so you can see and revoke them.</li>
     <li><strong>Your wallet key</strong>: kept in your browser. We store only a one-way hash of it. Your top-up receipt from Lemon Squeezy includes a link carrying the key, so you can reopen your balance from your email.</li>
     <li><strong>Your email</strong>: given to Lemon Squeezy for the receipt when you top up, and kept with your balance so we can help if you contact us. We do not send marketing email.</li>
   </ul>
@@ -110,10 +111,10 @@
     <div class="foot-col"><h4>Restore</h4><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a><a href="restore-old-video.html">Restoring old video</a></div>
     <div class="foot-col"><h4>Create</h4><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
     <div class="foot-col"><h4>Compare</h4><a href="topaz-video-ai-alternative.html">Topaz alternative</a><a href="vhs-restoration-software.html">VHS restoration</a></div>
-    <div class="foot-col"><h4>Company</h4><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+    <div class="foot-col"><h4>Company</h4><a href="developers.html">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
   </div>
   <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>
-<script src="site.js?v=52199ce8"></script>
+<script src="site.js?v=bcd942b8"></script>
 </body>
 </html>

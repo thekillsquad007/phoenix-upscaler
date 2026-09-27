@@ -143,6 +143,21 @@ document.querySelectorAll("[data-vcompare]").forEach((el) => {
   els.forEach((el) => io.observe(el));
 })();
 
+// ── Copy buttons on code blocks ───────────────────────────────────────────
+document.querySelectorAll("[data-copy]").forEach((btn) => {
+  btn.addEventListener("click", async () => {
+    const code = btn.closest(".code")?.querySelector("pre");
+    if (!code) return;
+    try {
+      await navigator.clipboard.writeText(code.innerText.trim());
+      btn.textContent = "Copied";
+    } catch {
+      btn.textContent = "Select and copy";
+    }
+    setTimeout(() => { btn.textContent = "Copy"; }, 1800);
+  });
+});
+
 // ── One demo with sound at a time ──────────────────────────────────────────
 // Only for clips the visitor starts themselves (they have controls and aren't
 // the ambient loops): starting one pauses the others, so two never talk over

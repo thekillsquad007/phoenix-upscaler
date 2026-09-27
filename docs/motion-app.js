@@ -493,6 +493,91 @@ async function useOtherKey() {
   }
 }
 
+// ── Agent keys ───────────────────────────────────────────────────────────────
+// Keys an AI assistant can spend with, up to a limit. The Worker keeps only
+// their hashes, so a new key is shown once, here, and never again.
+
+function openAgents() {
+  if (!key) { toast("Add some balance first. That makes your wallet.", true); return; }
+  $("#keyDialog").close();
+  $("#agentCreated").classList.add("hidden");
+  $("#agentKeyText").textContent = "";
+  $("#agentsDialog").showModal();
+  loadAgentKeys();
+}
+
+async function loadAgentKeys() {
+  const list = $("#agentList");
+  try {
+    const { keys } = await api("/wallet/keys", { auth: true });
+    list.replaceChildren(...keys.map(agentRow));
+    if (!keys.length) {
+      const li = document.createElement("li");
+      li.className = "m-agent-empty";
+      li.textContent = "No agent keys yet.";
+      list.append(li);
+    }
+  } catch (e) {
+    toast(e.message, true);
+  }
+}
+
+function agentRow(k) {
+  const li = document.createElement("li");
+  li.classList.toggle("revoked", k.revoked);
+  const info = document.createElement("div");
+  const name = document.createElement("strong");
+  name.textContent = k.label;
+  const meta = document.createElement("div");
+  meta.className = "meta";
+  const used = k.last_used_at ? `last used ${new Date(k.last_used_at).toLocaleDateString()}` : "not used yet";
+  meta.textContent = k.revoked ? "Revoked" : `${money(k.spent_cents)} of ${money(k.limit_cents)} spent · ${used}`;
+  info.append(name, meta);
+  li.append(info);
+  if (!k.revoked) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "btn btn-sm btn-ghost";
+    btn.textContent = "Revoke";
+    btn.addEventListener("click", async () => {
+      if (btn.dataset.armed !== "1") { btn.dataset.armed = "1"; btn.textContent = "Confirm revoke"; return; }
+      btn.disabled = true;
+      try {
+        await api(`/wallet/keys/${encodeURIComponent(k.id)}/revoke`, { method: "POST", auth: true });
+        toast(`${k.label} can't spend any more.`);
+        loadAgentKeys();
+      } catch (e) {
+        btn.disabled = false;
+        toast(e.message, true);
+      }
+    });
+    li.append(btn);
+  }
+  return li;
+}
+
+async function makeAgentKey(e) {
+  e.preventDefault();
+  const dollars = Number($("#agentLimit").value);
+  if (!(dollars >= 1 && dollars <= 1000)) { toast("Set a limit between $1 and $1,000.", true); return; }
+  const btn = $("#makeAgentKey");
+  btn.disabled = true;
+  try {
+    const r = await api("/wallet/keys", {
+      method: "POST", auth: true,
+      body: { label: $("#agentLabel").value.trim() || "AI agent", limit_cents: Math.round(dollars * 100) },
+    });
+    $("#agentKeyText").textContent = r.key;
+    $("#agentCreated").classList.remove("hidden");
+    $("#agentLabel").value = "";
+    loadAgentKeys();
+  } catch (err) {
+    toast(err.message, true);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
 // ── Wiring ───────────────────────────────────────────────────────────────────
 
 function wire() {
@@ -528,6 +613,11 @@ function wire() {
     try { await navigator.clipboard.writeText(key); toast("Key copied."); } catch { toast("Select the key and copy it.", true); }
   });
   $("#useKey").addEventListener("click", useOtherKey);
+  $("#openAgents").addEventListener("click", openAgents);
+  $("#agentForm").addEventListener("submit", makeAgentKey);
+  $("#copyAgentKey").addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText($("#agentKeyText").textContent); toast("Agent key copied."); } catch { toast("Select the key and copy it.", true); }
+  });
   document.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", () => b.closest("dialog").close()));
 }
 
