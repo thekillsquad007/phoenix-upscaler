@@ -149,7 +149,7 @@ Not with the desktop apps: the Upscaler and Editor do all their work on your own
 
 ### Can an AI assistant use Phoenix for me?
 
-Yes. Cloud Restore and Phoenix Motion work with AI assistants such as Claude, ChatGPT and Cursor, through our MCP server and API. You give the assistant its own key with a spending limit, and it pays from your balance, never past that limit. [How to set it up](https://phoenixlabs.space/developers).
+Yes. Cloud Restore and Phoenix Motion work with AI assistants such as Claude, ChatGPT and Cursor, through our MCP server and API. Add Phoenix to the assistant, approve it once with a spending limit, and it pays from your balance, never past that limit. [How to set it up](https://phoenixlabs.space/developers).
 
 ## Start with the one you need.
 

@@ -75,7 +75,7 @@
             "name": "Which assistants work with Phoenix?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Anything that can connect to a remote MCP server over HTTP, including Claude Code, Cursor and other MCP apps, and apps that add servers by URL. Anything that can make HTTP requests can use the REST API directly."
+              "text": "Anything that can connect to a remote MCP server over HTTP. Apps that support MCP sign-in, such as Claude, ChatGPT and Cursor, connect in one click and ask you to approve a spending limit; others use an agent key. Anything that can make HTTP requests can use the REST API directly."
             }
           },
           {
@@ -132,7 +132,7 @@
 <main class="content-page dev-page">
   <p class="badge">For AI agents and developers</p>
   <h1>Let your AI assistant use Phoenix</h1>
-  <p class="lead">Claude, ChatGPT, Cursor or your own code can restore old video and make clips with Phoenix, and pay for them from a balance you control. You give the assistant its own key with a spending limit. It can never spend more than that, and you can switch it off at any time.</p>
+  <p class="lead">Claude, ChatGPT, Cursor or your own code can restore old video and make clips with Phoenix, and pay for them from a balance you control. You approve each assistant once, with a spending limit. It can never spend more than that, and you can switch it off at any time.</p>
 
   <dl class="dev-facts">
     <div><dt>MCP server</dt><dd><code>https://api.phoenixlabs.space/mcp</code></dd></div>
@@ -140,14 +140,19 @@
     <div><dt>Paying</dt><dd>A prepaid US dollar balance, added by card or in USDC (x402)</dd></div>
   </dl>
 
-  <h2>Set it up in three steps</h2>
+  <h2>Connect in one click</h2>
+  <p>Apps that sign in to MCP servers, such as Claude, ChatGPT and Cursor, need only the address:</p>
+  <div class="code"><div class="code-label"><span>MCP server</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>https://api.phoenixlabs.space/mcp</code></pre></div>
   <ol>
-    <li><strong>Add some balance.</strong> Open <a href="motion-app.html">Phoenix Motion</a> and add $5 or more. That balance pays for clips and for cloud restores.</li>
-    <li><strong>Make an agent key.</strong> Click your balance, then <em>Agent keys</em>. Name it, set a limit (say $10), and copy the <code>pak_…</code> key it shows. You only see it once.</li>
-    <li><strong>Connect your assistant</strong> to the MCP server with that key, using one of the snippets below.</li>
+    <li><strong>Add it as a connector</strong> (in Claude or ChatGPT, a custom connector in settings) and click <em>Connect</em>.</li>
+    <li><strong>Approve it on Phoenix.</strong> A Phoenix page opens showing which app is asking and where it will send you back to. Set a spending limit, say $10, and click <em>Allow</em>. If this browser has no Phoenix balance yet, the page makes one.</li>
+    <li><strong>Add money when you need to</strong>, in <a href="motion-app.html">Phoenix Motion</a> or from a top-up link the assistant gives you.</li>
   </ol>
+  <p>The connection shows up in Phoenix Motion under your balance, then <em>Agent keys</em>, marked as a connected app. Revoke it there to disconnect the app at once.</p>
 
-  <h2>Connect your assistant</h2>
+  <h2>Or use an agent key</h2>
+  <p>For apps and scripts that don't sign in: click your balance in <a href="motion-app.html">Phoenix Motion</a>, then <em>Agent keys</em>, set a limit, and copy the <code>pak_…</code> key it shows (you see it only once). Then connect with one of these.</p>
   <h3>Claude Code</h3>
   <div class="code"><div class="code-label"><span>Terminal</span><button type="button" class="code-copy" data-copy>Copy</button></div>
 <pre><code>claude mcp add --transport http phoenix https://api.phoenixlabs.space/mcp --header "Authorization: Bearer pak_your_key"</code></pre></div>
@@ -163,8 +168,8 @@
   }
 }</code></pre></div>
 
-  <h3>Apps that only ask for a server URL</h3>
-  <p>Some apps, such as the custom connectors in chat apps, only take an address. Put the key on the end of it:</p>
+  <h3>Apps that only take an address and don't sign in</h3>
+  <p>Put the key on the end of it:</p>
   <div class="code"><div class="code-label"><span>Server URL</span><button type="button" class="code-copy" data-copy>Copy</button></div>
 <pre><code>https://api.phoenixlabs.space/mcp?key=pak_your_key</code></pre></div>
   <p class="muted">Only ever use an agent key this way, never your wallet key: a URL can end up in logs and settings screens. The server refuses a wallet key in a URL for that reason.</p>
@@ -244,7 +249,7 @@ curl -X POST https://api.phoenixlabs.space/cloud/jobs/JOB_ID/start -H "Authoriza
     </details>
     <details>
       <summary>Which assistants work with Phoenix?</summary>
-      <p>Anything that can connect to a remote MCP server over HTTP, including Claude Code, Cursor and other MCP apps, and apps that add servers by URL. Anything that can make HTTP requests can use the REST API directly.</p>
+      <p>Anything that can connect to a remote MCP server over HTTP. Apps that support MCP sign-in, such as Claude, ChatGPT and Cursor, connect in one click and ask you to approve a spending limit; others use an agent key. Anything that can make HTTP requests can use the REST API directly.</p>
     </details>
     <details>
       <summary>Can the assistant pay with my card?</summary>

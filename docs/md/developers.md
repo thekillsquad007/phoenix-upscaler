@@ -8,7 +8,7 @@ For AI agents and developers
 
 # Let your AI assistant use Phoenix
 
-Claude, ChatGPT, Cursor or your own code can restore old video and make clips with Phoenix, and pay for them from a balance you control. You give the assistant its own key with a spending limit. It can never spend more than that, and you can switch it off at any time.
+Claude, ChatGPT, Cursor or your own code can restore old video and make clips with Phoenix, and pay for them from a balance you control. You approve each assistant once, with a spending limit. It can never spend more than that, and you can switch it off at any time.
 
 MCP server
 :   `https://api.phoenixlabs.space/mcp`
@@ -19,13 +19,25 @@ REST API
 Paying
 :   A prepaid US dollar balance, added by card or in USDC (x402)
 
-## Set it up in three steps
+## Connect in one click
 
-1. **Add some balance.** Open [Phoenix Motion](https://phoenixlabs.space/motion-app) and add $5 or more. That balance pays for clips and for cloud restores.
-2. **Make an agent key.** Click your balance, then *Agent keys*. Name it, set a limit (say $10), and copy the `pak_…` key it shows. You only see it once.
-3. **Connect your assistant** to the MCP server with that key, using one of the snippets below.
+Apps that sign in to MCP servers, such as Claude, ChatGPT and Cursor, need only the address:
 
-## Connect your assistant
+MCP server
+
+```
+https://api.phoenixlabs.space/mcp
+```
+
+1. **Add it as a connector** (in Claude or ChatGPT, a custom connector in settings) and click *Connect*.
+2. **Approve it on Phoenix.** A Phoenix page opens showing which app is asking and where it will send you back to. Set a spending limit, say $10, and click *Allow*. If this browser has no Phoenix balance yet, the page makes one.
+3. **Add money when you need to**, in [Phoenix Motion](https://phoenixlabs.space/motion-app) or from a top-up link the assistant gives you.
+
+The connection shows up in Phoenix Motion under your balance, then *Agent keys*, marked as a connected app. Revoke it there to disconnect the app at once.
+
+## Or use an agent key
+
+For apps and scripts that don't sign in: click your balance in [Phoenix Motion](https://phoenixlabs.space/motion-app), then *Agent keys*, set a limit, and copy the `pak_…` key it shows (you see it only once). Then connect with one of these.
 
 ### Claude Code
 
@@ -50,9 +62,9 @@ mcp.json
 }
 ```
 
-### Apps that only ask for a server URL
+### Apps that only take an address and don't sign in
 
-Some apps, such as the custom connectors in chat apps, only take an address. Put the key on the end of it:
+Put the key on the end of it:
 
 Server URL
 
@@ -145,7 +157,7 @@ No. Each agent key has a total it may spend, checked on the server in the same s
 
 ### Which assistants work with Phoenix?
 
-Anything that can connect to a remote MCP server over HTTP, including Claude Code, Cursor and other MCP apps, and apps that add servers by URL. Anything that can make HTTP requests can use the REST API directly.
+Anything that can connect to a remote MCP server over HTTP. Apps that support MCP sign-in, such as Claude, ChatGPT and Cursor, connect in one click and ask you to approve a spending limit; others use an agent key. Anything that can make HTTP requests can use the REST API directly.
 
 ### Can the assistant pay with my card?
 

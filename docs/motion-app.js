@@ -623,7 +623,8 @@ function agentRow(k) {
   const meta = document.createElement("div");
   meta.className = "meta";
   const used = k.last_used_at ? `last used ${new Date(k.last_used_at).toLocaleDateString()}` : "not used yet";
-  meta.textContent = k.revoked ? "Revoked" : `${money(k.spent_cents)} of ${money(k.limit_cents)} spent · ${used}`;
+  const via = k.connected_app ? "Connected app · " : "";
+  meta.textContent = k.revoked ? `${via}Revoked` : `${via}${money(k.spent_cents)} of ${money(k.limit_cents)} spent · ${used}`;
   info.append(name, meta);
   li.append(info);
   if (!k.revoked) {

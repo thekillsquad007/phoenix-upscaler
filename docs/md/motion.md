@@ -122,7 +122,7 @@ A private code that stands for your balance, so there's no account or password. 
 
 ### Can an AI assistant make clips for me?
 
-Yes. In the app, click your balance, then Agent keys, and make a key with a spending limit. Connect your assistant to our MCP server with it, and it can make clips from your balance up to that limit. [Setup for Claude, Cursor and others](https://phoenixlabs.space/developers).
+Yes. Add our MCP server to your assistant and approve it once with a spending limit (or make it an agent key in the app, under your balance), and it can make clips from your balance up to that limit. [Setup for Claude, ChatGPT, Cursor and others](https://phoenixlabs.space/developers).
 
 ## Pick an image. Make it move.
 

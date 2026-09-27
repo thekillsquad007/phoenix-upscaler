@@ -99,7 +99,7 @@ Yes. Drop in a photo instead of a clip and it's priced and restored the same way
 
 ### Can an AI assistant restore videos for me?
 
-Yes. Give it an agent key with a spending limit (made in Phoenix Motion, which shares the same balance) and it can run restores through our MCP server or API, paid from your balance. Or it can start a restore and hand you the checkout link. [How it works](https://phoenixlabs.space/developers).
+Yes. Connect it to our MCP server and approve it with a spending limit (it shares the balance you use in Phoenix Motion), and it can run restores paid from your balance. Or it can start a restore and hand you the checkout link. [How it works](https://phoenixlabs.space/developers).
 
 ## Try one clip
 

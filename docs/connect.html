@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Connect Phoenix</title>
+  <meta name="description" content="Let an app use your Phoenix balance, up to a spending limit you set." />
+  <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <meta name="referrer" content="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=edee7689" />
+  <style>
+    body.connect { min-height: 100vh; display: grid; place-items: center; padding: 32px 16px; }
+    .cx { width: min(480px, 100%); display: grid; gap: 18px; }
+    .cx-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--ink); text-decoration: none; }
+    .cx-card { display: grid; gap: 16px; padding: 26px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--panel); }
+    .cx-card > * { min-width: 0; }
+    .cx h1 { font-size: 1.45rem; line-height: 1.25; margin: 0; letter-spacing: -0.01em; }
+    .cx p { margin: 0; color: var(--ink-dim); font-size: 15px; line-height: 1.55; }
+    .cx-host { color: var(--ink); font-weight: 600; overflow-wrap: anywhere; }
+    .cx-warn { padding: 12px 14px; border-radius: 12px; border: 1px solid var(--accent); background: var(--accent-soft, rgba(232,112,58,0.12)); color: var(--ink); font-size: 14px; }
+    .cx-can { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 14.5px; color: var(--ink-dim); }
+    .cx-can li { padding-left: 24px; position: relative; }
+    .cx-can li::before { position: absolute; left: 0; font-weight: 700; }
+    .cx-can .yes::before { content: "✓"; color: var(--accent-2); }
+    .cx-can .no::before { content: "✕"; color: var(--ink-faint); }
+    .cx-wallet { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-alt); }
+    .cx-wallet strong { font-size: 1.1rem; color: var(--ink); }
+    .cx-field { display: grid; gap: 6px; font-size: 14px; color: var(--ink-dim); }
+    .cx-field input { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+    .cx-field input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+    .cx-row { display: grid; grid-template-columns: 1fr 1.4fr; gap: 12px; }
+    .cx-actions { display: flex; justify-content: flex-end; gap: 10px; }
+    .cx-fine { font-size: 13px !important; color: var(--ink-faint) !important; }
+    .cx-error { color: var(--ink); }
+    .hidden { display: none !important; }
+    @media (max-width: 420px) { .cx-row { grid-template-columns: 1fr; } .cx-card { padding: 20px; } }
+  </style>
+</head>
+<body class="connect">
+  <main class="cx">
+    <a class="cx-brand" href="./"><img src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+
+    <section class="cx-card" id="loading" aria-live="polite"><p>Checking the connection request…</p></section>
+
+    <section class="cx-card hidden" id="problem" role="alert">
+      <h1>This connection link doesn't work</h1>
+      <p class="cx-error" id="problemText"></p>
+      <p class="cx-fine">Start the connection again from your app. Nothing was shared.</p>
+    </section>
+
+    <section class="cx-card hidden" id="consent">
+      <h1><span id="appName">An app</span> wants to use your Phoenix balance</h1>
+      <p>When you're done you'll go back to <span class="cx-host" id="redirectHost"></span>.</p>
+      <p class="cx-warn hidden" id="loopbackWarn">This app runs on your own computer. Only continue if you started this connection yourself just now.</p>
+      <ul class="cx-can">
+        <li class="yes">Make clips and restores, paid from your balance</li>
+        <li class="yes">Check your balance, and ask you to add money</li>
+        <li class="no">Spend more than the limit you set below</li>
+        <li class="no">See your wallet key or email, or use your card</li>
+      </ul>
+
+      <div id="walletHave" class="cx-wallet hidden">
+        <span>Your balance</span><strong id="balance">$0.00</strong>
+      </div>
+      <div id="walletNone" class="hidden">
+        <p>There's no Phoenix balance in this browser yet.</p>
+        <div class="cx-actions" style="justify-content:flex-start;margin-top:10px">
+          <button type="button" class="btn btn-sm" id="createWallet">Create a new balance</button>
+          <button type="button" class="btn btn-sm btn-ghost" id="showUseKey">Use a wallet key</button>
+        </div>
+        <label class="cx-field hidden" id="useKeyField" style="margin-top:12px">
+          <span>Your wallet key (pmk_…)</span>
+          <input id="walletKey" type="text" autocomplete="off" spellcheck="false" placeholder="pmk_…" />
+        </label>
+      </div>
+
+      <div class="cx-row">
+        <label class="cx-field" for="limit">
+          <span>Spending limit (US$)</span>
+          <input id="limit" type="number" min="1" max="1000" step="1" value="10" inputmode="decimal" />
+        </label>
+        <label class="cx-field" for="label">
+          <span>Name for this connection</span>
+          <input id="label" type="text" maxlength="60" autocomplete="off" />
+        </label>
+      </div>
+
+      <div class="cx-actions">
+        <button type="button" class="btn btn-ghost" id="deny">Deny</button>
+        <button type="button" class="btn" id="allow" disabled>Allow</button>
+      </div>
+      <p class="cx-fine">Disconnect any time: Phoenix Motion, click your balance, then Agent keys. Failed jobs are refunded to the balance and to this limit.</p>
+    </section>
+  </main>
+  <script src="connect.js?v=1213d4b6"></script>
+</body>
+</html>

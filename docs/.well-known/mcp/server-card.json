@@ -31,13 +31,15 @@
     }
   },
   "authentication": {
-    "required": false,
+    "required": true,
     "schemes": [
+      "oauth2",
       "bearer"
     ],
-    "description": "Free tools need no key. Paid tools need an agent key (pak_…) as `Authorization: Bearer pak_…`, or `?key=pak_…` on the URL."
+    "description": "Sign in with OAuth (\"Connect Phoenix\": the user approves on phoenixlabs.space and sets a spending limit), or send an agent key (pak_…) as `Authorization: Bearer pak_…` or `?key=pak_…`.",
+    "protectedResourceMetadata": "https://api.phoenixlabs.space/.well-known/oauth-protected-resource/mcp"
   },
-  "instructions": "Phoenix Labs tools: restore old video in the cloud (Cloud Restore) and turn a still image into a five-second video clip with sound (Phoenix Motion).\n\nMoney: prices are real US dollars. Paid tools spend the Phoenix balance behind the agent key on this connection, never more than the key's limit. Tell the user what something costs (get_prices, quote_restore) before spending, unless they have already agreed to it. If the balance is short, create_top_up_link gives the user a checkout link to add more; an assistant with its own crypto wallet can instead add USDC on Base itself with top_up_with_usdc (x402). Without a key, create_restore can still make a restore the user pays for through a checkout link.\n\nFiles: for clips, pass image_url (a public JPEG, PNG or WebP link). Otherwise the create tool returns an upload_url: send the file there with HTTP PUT and the Content-Type it gives, then call the matching start tool. Poll the get tool every 10 seconds or so: clips usually finish in under a minute, restores take minutes. Download links last 24 hours.\n\nContent rule for clips: no sexual or nude content, and nothing sexual or suggestive involving a minor. Prompts that break it are refused before anything is charged.",
+  "instructions": "Phoenix Labs tools: restore old video in the cloud (Cloud Restore) and turn a still image into a five-second video clip with sound (Phoenix Motion).\n\nMoney: prices are real US dollars. Paid tools spend the Phoenix balance behind the agent key on this connection, never more than the key's limit. Tell the user what something costs (get_prices, quote_restore) before spending, unless they have already agreed to it. If the balance is short, create_top_up_link gives the user a checkout link to add more; an assistant with its own crypto wallet can instead add USDC on Base itself with top_up_with_usdc (x402). create_restore with pay_with \"checkout\" makes a restore the user pays for through a checkout link instead.\n\nFiles: for clips, pass image_url (a public JPEG, PNG or WebP link). Otherwise the create tool returns an upload_url: send the file there with HTTP PUT and the Content-Type it gives, then call the matching start tool. Poll the get tool every 10 seconds or so: clips usually finish in under a minute, restores take minutes. Download links last 24 hours.\n\nContent rule for clips: no sexual or nude content, and nothing sexual or suggestive involving a minor. Prompts that break it are refused before anything is charged.",
   "tools": [
     {
       "name": "get_prices",

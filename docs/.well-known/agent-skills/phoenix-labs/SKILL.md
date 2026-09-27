@@ -18,7 +18,7 @@ Prices are real US dollars. Always tell the user what something costs before you
 - REST API: `https://api.phoenixlabs.space`, described at `https://api.phoenixlabs.space/openapi.json`
 - Human guide: `https://phoenixlabs.space/developers`
 
-Free tools (prices, quotes) need no key. Paid tools need an **agent key** (`pak_…`) that the user makes in Phoenix Motion (https://phoenixlabs.space/motion-app.html: click the balance, then Agent keys) with a spending limit. Send it as `Authorization: Bearer pak_…`, or as `?key=pak_…` on the MCP URL if the client only takes a URL. Never ask for the user's wallet key (`pmk_…`); ask them to make an agent key instead.
+The MCP server needs sign-in. If your client supports MCP OAuth, connecting is one click: the user approves your app on https://phoenixlabs.space/connect and sets a spending limit. Otherwise ask the user for an **agent key** (`pak_…`), which they make in Phoenix Motion (https://phoenixlabs.space/motion-app.html: click the balance, then Agent keys) with a limit, and send it as `Authorization: Bearer pak_…` (or `?key=pak_…` on the MCP URL if the client only takes a URL). Never ask for the user's wallet key (`pmk_…`). Prices and quotes are free over the REST API without any key.
 
 ## Make a clip (Phoenix Motion)
 
