@@ -10,7 +10,7 @@
   aspect-ratio: 16 / 9; object-fit: cover;
 }
 
-.motion-examples { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.motion-examples { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .motion-example { display: grid; gap: 12px; align-content: start; }
 .motion-example video {
   width: 100%; aspect-ratio: 16 / 9; object-fit: contain;

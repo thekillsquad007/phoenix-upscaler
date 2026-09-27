@@ -229,6 +229,7 @@ async function make() {
       seconds: 5,
       content_type: "image/jpeg",
       image_bytes: picked.blob.size,
+      loop: $("#loop").checked,
     };
     if (seedText) body.seed = Number(seedText);
     let r;
@@ -271,7 +272,7 @@ const ACTIVE = new Set(["awaiting_upload", "queued", "processing"]);
 const STATUS_TEXT = {
   awaiting_upload: "Uploading your image…",
   queued: "Waiting for a GPU…",
-  processing: "Making your clip. Usually a minute or two.",
+  processing: "Making your clip. Usually under a minute.",
   failed: "This clip failed. The price is back on your balance.",
   refused: "Not made. The price is back on your balance.",
   expired: "The image never uploaded. Nothing was charged.",
@@ -344,7 +345,10 @@ function clipCard(job) {
   prompt.textContent = job.prompt;
   const meta = document.createElement("div");
   meta.className = "m-clip-meta";
-  const bits = [job.size, "5 s", ACTIVE.has(job.status) || job.status === "done" ? money(job.amount_cents) : "not charged"];
+  const bits = [job.size, "5 s"];
+  if (job.loop) bits.push("loop");
+  if (job.status === "done") bits.push("sound");
+  bits.push(ACTIVE.has(job.status) || job.status === "done" ? money(job.amount_cents) : "not charged");
   if (job.seed != null && job.status === "done") bits.push(`seed ${job.seed}`);
   bits.forEach((b) => meta.append(Object.assign(document.createElement("span"), { textContent: b })));
 
@@ -356,6 +360,7 @@ function clipCard(job) {
   const again = Object.assign(document.createElement("button"), { type: "button", className: "btn btn-ghost", textContent: "Use this prompt" });
   again.addEventListener("click", () => {
     $("#prompt").value = job.prompt;
+    $("#loop").checked = Boolean(job.loop);
     if (!picked) toast("Choose an image to make another take with this prompt.");
     updateMakeButton();
     $("#prompt").focus();

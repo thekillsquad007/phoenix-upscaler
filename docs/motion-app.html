@@ -63,6 +63,14 @@
         <legend>Quality</legend>
       </fieldset>
 
+      <label class="m-loop" for="loop">
+        <input type="checkbox" id="loop" />
+        <span>
+          <strong>Make it a loop</strong>
+          <small>Only what you describe moves, the camera stays still, and the clip ends where it starts. For cover art, logos and backgrounds.</small>
+        </span>
+      </label>
+
       <details class="m-advanced">
         <summary>Seed</summary>
         <p class="muted">The same image, prompt and seed make the same clip. Leave it empty for a new take every time.</p>
@@ -79,7 +87,7 @@
         <p class="muted" id="galleryNote">Clips are kept for 2 days. Download the ones you want.</p>
       </div>
       <div id="clips" class="m-clips">
-        <p class="m-empty muted" id="emptyNote">Your clips show up here. Each one is 5 seconds.</p>
+        <p class="m-empty muted" id="emptyNote">Your clips show up here. Each is 5 seconds, with sound.</p>
       </div>
     </section>
   </main>
