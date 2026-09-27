@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css?v=43d161db" />
 <link rel="manifest" href="site.webmanifest" />
 <link rel="preload" as="image" href="assets/site/hero-reel.jpg" />
 <script type="application/ld+json">
@@ -151,7 +151,7 @@
 
   <section class="home-hero" aria-labelledby="hero-title">
     <img class="hero-poster" src="assets/site/hero-reel.jpg" alt="" width="1920" height="1080" fetchpriority="high" />
-    <video poster="assets/site/hero-reel.jpg" autoplay muted loop playsinline preload="auto" data-inview data-ambient aria-hidden="true">
+    <video width="1280" height="720" poster="assets/site/hero-reel.jpg" autoplay muted loop playsinline preload="auto" data-inview data-ambient aria-hidden="true">
       <source src="assets/site/hero-reel-720.mp4" type="video/mp4" media="(max-width: 760px)" />
       <source src="assets/site/hero-reel.mp4" type="video/mp4" />
     </video>
@@ -192,7 +192,7 @@
     <div class="products">
       <article class="product-card reveal">
         <div class="product-media">
-          <video src="assets/site/upscaler-split.mp4" poster="assets/site/upscaler-split.jpg" muted loop playsinline preload="none" data-inview aria-label="A 1952 film frame: the left half as it was, the right half after Phoenix restored it"></video>
+          <video width="1280" height="960" src="assets/site/upscaler-split.mp4" poster="assets/site/upscaler-split.jpg" muted loop playsinline preload="none" data-inview aria-label="A 1952 film frame: the left half as it was, the right half after Phoenix restored it"></video>
           <span class="vc-tag vc-tag-l">Before</span><span class="vc-tag vc-tag-r">After</span>
         </div>
         <div class="product-body">
@@ -221,7 +221,7 @@
 
       <article class="product-card reveal">
         <div class="product-media">
-          <video src="assets/motion/logo.mp4" poster="assets/motion/logo-still.jpg" muted loop playsinline preload="none" data-inview aria-label="The Phoenix logo, animated by Phoenix Motion: its wings catch fire"></video>
+          <video width="1280" height="704" src="assets/motion/logo.mp4" poster="assets/motion/logo-still.jpg" muted loop playsinline preload="none" data-inview aria-label="The Phoenix logo, animated by Phoenix Motion: its wings catch fire"></video>
           <span class="vc-tag vc-tag-r">With sound</span>
         </div>
         <div class="product-body">
@@ -263,8 +263,8 @@
       </div>
       <div class="reveal reveal-d1">
         <div class="vcompare" data-vcompare>
-          <video class="vc-after" src="assets/site/compare-after.mp4" poster="assets/site/compare.jpg" muted loop playsinline preload="none" data-inview aria-label="Restored footage"></video>
-          <video class="vc-before" src="assets/site/compare-before.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <video width="1280" height="960" class="vc-after" src="assets/site/compare-after.mp4" poster="assets/site/compare.jpg" muted loop playsinline preload="none" data-inview aria-label="Restored footage"></video>
+          <video width="1280" height="960" class="vc-before" src="assets/site/compare-before.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="vc-line" aria-hidden="true"></span>
           <input class="vc-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the original and the restore" />
           <span class="vc-handle" aria-hidden="true"></span>
@@ -287,15 +287,15 @@
     </div>
     <div class="clip-row">
       <figure class="reveal">
-        <video src="assets/site/motion-house.mp4" poster="assets/site/motion-house.jpg" muted loop playsinline preload="none" data-inview controls></video>
+        <video width="936" height="704" src="assets/site/motion-house.mp4" poster="assets/site/motion-house.jpg" muted loop playsinline preload="none" data-inview controls></video>
         <figcaption>“Slow cinematic push-in toward the house. Wind through dry grass.”</figcaption>
       </figure>
       <figure class="reveal reveal-d1">
-        <video src="assets/motion/portrait.mp4" poster="assets/motion/portrait-still.jpg" muted loop playsinline preload="none" data-inview controls></video>
+        <video width="1088" height="768" src="assets/motion/portrait.mp4" poster="assets/motion/portrait-still.jpg" muted loop playsinline preload="none" data-inview controls></video>
         <figcaption>“She turns toward the camera and smiles. Soft wind and distant birdsong.”</figcaption>
       </figure>
       <figure class="reveal reveal-d2">
-        <video src="assets/motion/loop.mp4" poster="assets/motion/loop-still.jpg" muted loop playsinline preload="none" data-inview controls></video>
+        <video width="1280" height="704" src="assets/motion/loop.mp4" poster="assets/motion/loop-still.jpg" muted loop playsinline preload="none" data-inview controls></video>
         <figcaption>Loop: “The logo stays still. Only embers drift upward.” It ends where it starts.</figcaption>
       </figure>
     </div>
@@ -408,6 +408,6 @@
   <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>
 
-<script src="site.js"></script>
+<script src="site.js?v=52199ce8"></script>
 </body>
 </html>

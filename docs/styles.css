@@ -36,6 +36,8 @@ body {
 }
 img, video { max-width: 100%; display: block; }
 img { height: auto; }
+/* width/height attributes give the box its shape before metadata loads */
+video { height: auto; }
 figure { margin: 0; }  /* UA default is 1em 40px, which eats 80px on mobile */
 a { color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
