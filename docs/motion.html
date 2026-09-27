@@ -1,49 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Phoenix Motion: turn any image into a video</title>
-<meta name="description" content="Upload an image, describe what should happen, get a 5-second video with sound. Logos, concept art, product shots, portraits, paintings, seamless loops. From $0.59 a clip, no subscription, no watermark." />
+<title>Phoenix Motion: turn any image into a video with sound</title>
+<meta name="description" content="Upload an image, say what should happen, and get a five-second video with sound. Logos, art, product shots, portraits and loops. From $0.59 a clip." />
 <link rel="canonical" href="https://phoenixlabs.space/motion.html" />
+<meta name="robots" content="max-image-preview:large" />
+<meta property="og:site_name" content="Phoenix Labs" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Phoenix Motion: turn any image into a video with sound" />
+<meta property="og:description" content="Upload an image, say what should happen, and get a five-second video with sound. Logos, art, product shots, portraits and loops. From $0.59 a clip." />
+<meta property="og:url" content="https://phoenixlabs.space/motion.html" />
+<meta property="og:image" content="https://phoenixlabs.space/assets/social/motion.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Phoenix Motion: give any image five seconds of motion" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
 <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 <meta name="theme-color" content="#0b0c0e" />
-<meta property="og:title" content="Phoenix Motion: turn any image into a video" />
-<meta property="og:description" content="Drop in a picture, say what should happen, get a 5-second clip with sound. Pay per clip from a balance. No subscription, no watermark." />
-<meta property="og:image" content="https://phoenixlabs.space/assets/motion/logo-still.jpg" />
-<meta property="og:url" content="https://phoenixlabs.space/motion.html" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="motion.css" />
 <link rel="manifest" href="site.webmanifest" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Phoenix Motion",
-  "serviceType": "AI image-to-video generation",
-  "provider": { "@type": "Organization", "name": "Phoenix Labs", "url": "https://phoenixlabs.space/" },
-  "description": "Turn an image into a 5-second video with sound from a text prompt. Paid per clip in dollars from a prepaid balance.",
-  "offers": { "@type": "Offer", "priceCurrency": "USD", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "0.59", "priceCurrency": "USD" } }
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Phoenix Motion",
+      "serviceType": "AI image-to-video generation",
+      "provider": {
+        "@type": "Organization",
+        "name": "Phoenix Labs",
+        "url": "https://phoenixlabs.space/"
+      },
+      "description": "Turn an image into a 5-second video with sound from a text prompt. Paid per clip in dollars from a prepaid balance.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "0.59",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Phoenix Labs",
+          "item": "https://phoenixlabs.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Phoenix Motion",
+          "item": "https://phoenixlabs.space/motion.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does a clip take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually well under a minute. The first clip after a quiet spell takes a minute or two longer while a GPU loads the model."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long are the clips?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Five seconds at 24 frames per second, with sound made in the same pass as the picture. Tick \"Make it a loop\" and the clip ends where it starts, ready to repeat forever."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the clips commercially?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, within the rules on this page. Phoenix Motion runs LTX-2.5, an open video model from Lightricks, whose licence claims no rights in what you make with it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you keep my images?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Your image is deleted as soon as the clip is made, and finished clips are deleted after two days. Download the ones you want to keep."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I don't like a clip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Make another take with a sharper prompt. A clip that fails or gets refused costs nothing, but a clip that was made used real GPU time, so we can't refund it because it wasn't the one you pictured."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's a wallet key?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A private code that stands for your balance, so there's no account or password. Your browser keeps it, and your top-up receipt links back to it. Anyone with the key can spend the balance, so don't share it."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Phoenix Motion example: a logo bursting into flame",
+      "description": "Made from one still image and this prompt: Our own logo, one prompt, first take. Unmute it: the fire is part of the clip.",
+      "thumbnailUrl": "https://phoenixlabs.space/assets/motion/logo-still.jpg",
+      "contentUrl": "https://phoenixlabs.space/assets/motion/logo.mp4",
+      "uploadDate": "2026-09-27",
+      "duration": "PT5S"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Phoenix Motion example: slow push-in on a farmhouse",
+      "description": "Made from one still image and this prompt: “Slow cinematic push-in toward the house. The tree's branches sway in the wind and clouds drift across the sky. Wind through dry grass.”",
+      "thumbnailUrl": "https://phoenixlabs.space/assets/motion/house-still.jpg",
+      "contentUrl": "https://phoenixlabs.space/assets/motion/house.mp4",
+      "uploadDate": "2026-09-27",
+      "duration": "PT5S"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Phoenix Motion example: a 1952 portrait brought to life",
+      "description": "Made from one still image and this prompt: “The woman turns her head slightly toward the camera and smiles, her hair moving in a light breeze. Handheld camera, natural light. Soft wind and distant birdsong.”",
+      "thumbnailUrl": "https://phoenixlabs.space/assets/motion/portrait-still.jpg",
+      "contentUrl": "https://phoenixlabs.space/assets/motion/portrait.mp4",
+      "uploadDate": "2026-09-27",
+      "duration": "PT5S"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Phoenix Motion example: a seamless logo loop",
+      "description": "Made from one still image and this prompt: “The phoenix logo stays completely still. Only glowing embers drift slowly upward around it and its edges shimmer with heat.” Everything else holds still, and the clip ends where it starts.",
+      "thumbnailUrl": "https://phoenixlabs.space/assets/motion/loop-still.jpg",
+      "contentUrl": "https://phoenixlabs.space/assets/motion/loop.mp4",
+      "uploadDate": "2026-09-27",
+      "duration": "PT5S"
+    }
+  ]
 }
 </script>
 </head>
 <body>
 
 <header class="nav">
-  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="32" height="32" /><span>Phoenix Labs</span></a>
-  <nav>
-    <a href="#examples">Examples</a>
-    <a href="#price">Price</a>
-    <a href="#rules">What you can make</a>
-    <a href="#faq">FAQ</a>
-    <a href="./">Upscaler</a>
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="upscaler.html">Upscaler</a>
+    <a href="studio.html">Cloud Restore</a>
+    <a href="motion.html" aria-current="page">Motion</a>
     <a href="editor.html">Editor</a>
   </nav>
-  <a class="btn btn-sm" href="motion-app.html">Make a clip</a>
+  <a class="btn btn-sm nav-cta" href="motion-app.html">Make a clip</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
 </header>
 
 <main id="top">
@@ -228,10 +357,18 @@
 
 </main>
 
-<footer class="foot">
-  <p>Phoenix Motion is a product of Phoenix Labs. © 2026 Phoenix Labs.</p>
-  <p><a href="./">Phoenix Upscaler</a> · <a href="studio.html">Cloud restore</a> · <a href="motion.html">Phoenix Motion</a> · <a href="editor.html">Phoenix Editor</a></p>
-  <p><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><h4>Restore</h4><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a><a href="restore-old-video.html">Restoring old video</a></div>
+    <div class="foot-col"><h4>Create</h4><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
+    <div class="foot-col"><h4>Compare</h4><a href="topaz-video-ai-alternative.html">Topaz alternative</a><a href="vhs-restoration-software.html">VHS restoration</a></div>
+    <div class="foot-col"><h4>Company</h4><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>
 
 <script src="site.js"></script>

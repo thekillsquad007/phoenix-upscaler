@@ -1,0 +1,53 @@
+# Phoenix Labs
+
+> Phoenix Labs makes video software. Phoenix Upscaler restores and upscales old video on your own PC for a one-time $129. Phoenix Cloud Restore does the same restoration on our GPUs, paid per clip. Phoenix Motion turns a still image into a five-second video with sound, paid per clip. Phoenix Editor cuts long streams and recordings into edits and captioned Shorts, $99 with a year of updates. Nothing is sold as a subscription, and nothing uses credits.
+
+Prices are in US dollars. Payments are handled by Lemon Squeezy, the Merchant of Record. Support: support@phoenixlabs.space.
+
+## Phoenix Upscaler (desktop, restore and upscale old video)
+
+- What it fixes: VHS, Hi8 and MiniDV tapes, DVDs, 8mm and Super 8 film scans, phone video from the 2010s, old uploads, gameplay and webcam recordings. It removes noise, deinterlaces combed motion and rebuilds detail lost to compression, with output up to 4K.
+- Where it runs: Windows 10 and 11, and Linux, on your own graphics card. On Windows any modern card works; Generative, the mode that rebuilds the most detail, needs a stronger NVIDIA or AMD card. Video never leaves your computer, and it works offline once activated. There is no macOS version; Mac users can use Cloud Restore.
+- Price: $129 once. Every future update is included, nothing renews, and it installs on up to three of your own computers. The free download restores 60-second clips with a small watermark. Refundable within 14 days.
+- Opens MP4, MOV, MKV and AVI.
+- What it won't do: invent detail the camera never recorded. Out-of-focus footage stays out of focus.
+- [Phoenix Upscaler](https://phoenixlabs.space/upscaler.html): features, before/after demos, price, download, system requirements, FAQ
+- [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide.html): setup, quality modes and troubleshooting
+
+## Phoenix Cloud Restore (web, pay per clip)
+
+- The Upscaler's restoration running on our datacenter GPUs, for people without a capable PC. Works from a Mac, a laptop or a phone.
+- Upload a video clip or a photo, see the exact price in dollars before paying, pay for that one job, download the result. No account (just an email for the receipt), no subscription, no credits.
+- Prices: Standard from $2.99, Enhanced from $5.99, Studio Max (Enhanced delivered at up to 4K) from $5.99. The price depends on clip length and mode.
+- Limits: uploads up to 2 GB. Standard takes clips up to 30 minutes; Enhanced and Studio Max up to 6 minutes per clip.
+- Uploads and results are deleted automatically, typically within 48 hours, and are never used for training. A job that fails is refunded automatically.
+- [Phoenix Cloud Restore](https://phoenixlabs.space/studio.html)
+
+## Phoenix Motion (web, image to video)
+
+- Upload a still image, describe what should happen, and get a five-second clip at 24 frames per second with sound generated in the same pass. Optional seamless loop mode, where only the described motion moves and the clip ends where it starts.
+- Prices: $0.59 per 480p clip, $0.99 per 720p clip, paid from a prepaid dollar balance. Top-ups from $5 to $200; the balance doesn't expire. A clip that fails or is refused costs nothing. No account: a private wallet key stands for the balance.
+- Runs LTX-2.5, an open video model from Lightricks. Clips can be used commercially within the content rules.
+- Content rules: no sexual or nude content, and nothing sexual or suggestive involving a minor. Other themes, including action, horror and fantasy, are allowed.
+- Uploaded images are deleted as soon as the clip is made; finished clips are deleted after about two days.
+- [Phoenix Motion](https://phoenixlabs.space/motion.html): examples with their prompts, prices, rules, FAQ
+
+## Phoenix Editor (desktop, automatic editing for streamers)
+
+- For streamers, Let's Players and reaction channels: cuts dead air and filler words from long recordings, finds highlight moments and turns them into captioned vertical Shorts, and composites reaction videos with the Reactor template.
+- Where it runs: Windows 10 and 11, and Linux (.deb and .rpm), GPU-accelerated on AMD and NVIDIA. A macOS version is planned. Footage is not uploaded.
+- Price: $99, including a year of updates. Renewing at $49 a year is optional and only adds new features; the app keeps working without it. 7-day free trial with every feature and no watermark.
+- [Phoenix Editor](https://phoenixlabs.space/editor.html)
+- [Phoenix Editor guide](https://phoenixlabs.space/editor-guide.html): setup and a first edit
+
+## Guides and comparisons
+
+- [How to restore old video](https://phoenixlabs.space/restore-old-video.html): diagnosing old footage and fixing it in the right order, for tapes, DVDs, film scans and old phone clips
+- [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software.html): capturing and restoring VHS, Hi8 and MiniDV tapes at home
+- [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative.html): Phoenix Upscaler and Topaz Video compared on price, licence and platforms
+
+## Policies
+
+- [Privacy policy](https://phoenixlabs.space/privacy.html)
+- [Terms of service](https://phoenixlabs.space/terms.html)
+- [Refund policy](https://phoenixlabs.space/refund.html)

@@ -1,48 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Restore old video in the cloud — no gaming PC, no install, no account. Upload a clip, see the exact price in dollars, pay for that one job, download. Failed jobs are refunded." />
+  <title>Phoenix Cloud Restore: restore old video online, pay per clip</title>
+  <meta name="description" content="Restore old video online with no gaming PC and no install. Upload a clip, see the price in dollars, pay for that one job, download it. From $2.99." />
   <link rel="canonical" href="https://phoenixlabs.space/studio.html" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta property="og:site_name" content="Phoenix Labs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Phoenix Cloud Restore: restore old video online, pay per clip" />
+  <meta property="og:description" content="Restore old video online with no gaming PC and no install. Upload a clip, see the price in dollars, pay for that one job, download it. From $2.99." />
+  <meta property="og:url" content="https://phoenixlabs.space/studio.html" />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/social/cloud-restore.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Phoenix Cloud Restore: restore old video in the cloud" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <meta name="theme-color" content="#0b0c0e" />
-  <meta property="og:title" content="Phoenix Cloud Studio — restore old video, pay per job" />
-  <meta property="og:description" content="No gaming PC? Upload a clip, see the price in dollars, pay once, download. No account, no subscription, no credits." />
-  <meta property="og:image" content="https://phoenixlabs.space/assets/demo/enhanced_after.jpg" />
-  <meta property="og:url" content="https://phoenixlabs.space/studio.html" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <title>Phoenix Cloud Studio — restore old video, pay per job</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="manifest" href="site.webmanifest" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Phoenix Cloud Studio",
-    "serviceType": "AI video restoration",
-    "provider": { "@type": "Organization", "name": "Phoenix Labs", "url": "https://phoenixlabs.space/" },
-    "description": "Cloud video restoration billed per job in dollars. No account or subscription; failed jobs are refunded.",
-    "offers": { "@type": "Offer", "priceCurrency": "USD", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "2.99", "priceCurrency": "USD" } }
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Phoenix Cloud Studio",
+        "serviceType": "AI video restoration",
+        "provider": {
+          "@type": "Organization",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "description": "Cloud video restoration billed per job in dollars. No account or subscription; failed jobs are refunded.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "2.99",
+            "priceCurrency": "USD"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Phoenix Labs",
+            "item": "https://phoenixlabs.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phoenix Cloud Restore",
+            "item": "https://phoenixlabs.space/studio.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a cloud restore cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You see the exact price in dollars before you pay. It depends on how long the clip is and the mode you pick: Standard starts at $2.99, Enhanced and Studio Max at $5.99. There are no credits and nothing recurring."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long can a clip be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Uploads can be up to 2 GB. Standard restores clips up to 30 minutes long; Enhanced and Studio Max take up to 6 minutes per clip for now, a little less for very high resolution or frame rates. Split longer videos into parts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to my file?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's used for your job and nothing else. The upload and the result are deleted automatically, typically within 48 hours, so download the result when it's ready. We don't look at it, share it, or train on it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if the restore fails?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You get your money back automatically. You only pay for a result you can download."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Just an email address, for the receipt and so you can come back to the download."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can it restore old photos too?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Drop in a photo instead of a clip and it's priced and restored the same way."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
 <body>
 
 <header class="nav">
-  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="32" height="32" /><span>Phoenix Labs</span></a>
-  <nav>
-    <a href="./">Desktop</a>
-    <a href="#how">How it works</a>
-    <a href="#price">Price</a>
-    <a href="editor.html">Editor</a>
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="upscaler.html">Upscaler</a>
+    <a href="studio.html" aria-current="page">Cloud Restore</a>
     <a href="motion.html">Motion</a>
-    <a href="./#faq">FAQ</a>
+    <a href="editor.html">Editor</a>
   </nav>
-  <a class="btn btn-sm" href="studio-app.html">Open the studio</a>
+  <a class="btn btn-sm nav-cta" href="studio-app.html">Upload a clip</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
 </header>
 
 <main id="top">
@@ -57,14 +150,14 @@
       <p class="lede">No account. No subscription. No credits. A failed job is refunded.</p>
       <div class="hero-actions">
         <a class="btn btn-lg" href="studio-app.html">Upload a clip</a>
-        <a class="btn btn-ghost btn-lg" href="./#price">Prefer to run it locally? $129 desktop app</a>
+        <a class="btn btn-ghost btn-lg" href="upscaler.html#price">Prefer to run it locally? $129 desktop app</a>
       </div>
       <p class="fineprint">Your file is used only for the job, then deleted automatically.</p>
     </div>
     <figure class="hero-shot">
       <div class="ba" data-ba>
-        <img class="ba-after" src="assets/demo/enhanced_after.jpg" alt="A restored face, sharp and detailed, in color" />
-        <div class="ba-clip"><img src="assets/demo/enhanced_before.jpg" alt="The same face before restoration, soft and faded" /></div>
+        <img width="1280" height="960" class="ba-after" src="assets/demo/enhanced_after.jpg" alt="A restored face, sharp and detailed, in color" />
+        <div class="ba-clip"><img width="1280" height="960" src="assets/demo/enhanced_before.jpg" alt="The same face before restoration, soft and faded" /></div>
         <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
         <span class="ba-handle" aria-hidden="true"></span>
         <span class="ba-tag ba-tag-l">Before</span>
@@ -124,7 +217,7 @@
       <div class="price-aside">
         <h3>Desktop vs cloud</h3>
         <p>
-          The <a href="./#price">$129 desktop app</a> is the best value if you have a
+          The <a href="upscaler.html#price">$129 desktop app</a> is the best value if you have a
           gaming GPU (NVIDIA or AMD) and a lot of footage — one payment, unlimited local restores,
           nothing leaves your PC. The cloud studio is for everyone else, or for a
           one-off job you'd rather not install anything for.
@@ -139,15 +232,54 @@
     </div>
   </section>
 
+  <section id="faq" class="section">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>How much does a cloud restore cost?</summary>
+        <p>You see the exact price in dollars before you pay. It depends on how long the clip is and the mode you pick: Standard starts at $2.99, Enhanced and Studio Max at $5.99. There are no credits and nothing recurring.</p>
+      </details>
+      <details>
+        <summary>How long can a clip be?</summary>
+        <p>Uploads can be up to 2 GB. Standard restores clips up to 30 minutes long; Enhanced and Studio Max take up to 6 minutes per clip for now, a little less for very high resolution or frame rates. Split longer videos into parts.</p>
+      </details>
+      <details>
+        <summary>What happens to my file?</summary>
+        <p>It's used for your job and nothing else. The upload and the result are deleted automatically, typically within 48 hours, so download the result when it's ready. We don't look at it, share it, or train on it.</p>
+      </details>
+      <details>
+        <summary>What if the restore fails?</summary>
+        <p>You get your money back automatically. You only pay for a result you can download.</p>
+      </details>
+      <details>
+        <summary>Do I need an account?</summary>
+        <p>No. Just an email address, for the receipt and so you can come back to the download.</p>
+      </details>
+      <details>
+        <summary>Can it restore old photos too?</summary>
+        <p>Yes. Drop in a photo instead of a clip and it's priced and restored the same way.</p>
+      </details>
+    </div>
+  </section>
+
   <section class="cta">
     <h2>Try one clip</h2>
     <a class="btn btn-lg" href="studio-app.html">Open the cloud studio</a>
   </section>
 </main>
 
-<footer class="foot">
-  <p>Phoenix Cloud Studio is a product of Phoenix Labs. © 2026 Phoenix Labs.</p>
-  <p><a href="./">Desktop app</a> · <a href="studio.html">Cloud studio</a> · <a href="editor.html">Phoenix Editor</a> · <a href="motion.html">Phoenix Motion</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><h4>Restore</h4><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a><a href="restore-old-video.html">Restoring old video</a></div>
+    <div class="foot-col"><h4>Create</h4><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
+    <div class="foot-col"><h4>Compare</h4><a href="topaz-video-ai-alternative.html">Topaz alternative</a><a href="vhs-restoration-software.html">VHS restoration</a></div>
+    <div class="foot-col"><h4>Company</h4><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>
 
 <script src="site.js"></script>

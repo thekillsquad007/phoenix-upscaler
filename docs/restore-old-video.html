@@ -1,72 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn how to restore old video from VHS, camcorders, DVDs, and archives with a local workflow: denoise, deinterlace, sharpen, and upscale." />
+  <title>How to restore old video: tapes, DVDs, film and phone clips</title>
+  <meta name="description" content="How to restore old video from tapes, DVDs, film scans or an old phone: work out what&#x27;s wrong, fix it in the right order, and know what restoration can&#x27;t do." />
   <link rel="canonical" href="https://phoenixlabs.space/restore-old-video.html" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta property="og:site_name" content="Phoenix Labs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to restore old video: tapes, DVDs, film and phone clips" />
+  <meta property="og:description" content="How to restore old video from tapes, DVDs, film scans or an old phone: work out what&#x27;s wrong, fix it in the right order, and know what restoration can&#x27;t do." />
+  <meta property="og:url" content="https://phoenixlabs.space/restore-old-video.html" />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/social/restore-old-video.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="How to restore old video" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <meta name="theme-color" content="#0b0c0e" />
-  <meta property="og:title" content="How to Restore Old Video Locally" />
-  <meta property="og:description" content="A simple workflow for cleaning and upscaling old SD footage on your own PC." />
-  <meta property="og:image" content="https://phoenixlabs.space/assets/demo/color_harmony_after/frame_01.jpg" />
-  <title>How to Restore Old Video Locally | Phoenix Upscaler</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Instrument+Serif&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Phoenix Labs", "item": "https://phoenixlabs.space/" },
-          { "@type": "ListItem", "position": 2, "name": "How to Restore Old Video Locally", "item": "https://phoenixlabs.space/restore-old-video.html" }
-        ] },
-      { "@type": "HowTo",
-        "name": "How to restore old video from tapes, DVDs, and camcorders",
-        "description": "The best old-video restoration workflow is simple: start with a safe cleanup pass, inspect a short preview, then upscale only after the footage is stable and clean.",
+      {
+        "@type": "HowTo",
+        "name": "How to restore old video",
+        "description": "Restore old video from tapes, DVDs, film scans or old phones: work out what is wrong, then fix it in the right order.",
         "step": [
-          { "@type": "HowToStep", "position": 1, "name": "Deinterlace", "text": "Deinterlace when the source came from tape, DVD, or broadcast video." },
-          { "@type": "HowToStep", "position": 2, "name": "Denoise", "text": "Denoise and clean compression artifacts." },
-          { "@type": "HowToStep", "position": 3, "name": "Sharpen", "text": "Sharpen lightly so faces and edges stay natural." },
-          { "@type": "HowToStep", "position": 4, "name": "Upscale", "text": "Upscale to a modern delivery size such as 1080p." },
-          { "@type": "HowToStep", "position": 5, "name": "AI detail restoration", "text": "Use AI detail restoration only after checking a short preview." }
-        ] }
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Start from the best copy you have",
+            "text": "A clean capture of the tape, the original file off the old phone, the DVD's own files. A clip that went through a messaging app or a social network was compressed again on the way, and that damage stacks."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Deinterlace first, if the footage is interlaced",
+            "text": "Tape, camcorder, DVD and TV footage usually is. Undo it before anything else, or every later step sharpens the comb teeth."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Go easy on denoising before you upscale",
+            "text": "Modern restoration models learned on noisy, compressed footage. Scrub it clean first and you strip the texture they work from, and faces come out waxy."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Restore and upscale in one pass",
+            "text": "Rebuild the detail that compression and noise buried, at the new size, in a single step. Sharpening a plain resize afterwards mostly sharpens the damage."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Test 30 seconds before the whole thing",
+            "text": "Pick a short section with a face, some motion and a dark corner. If that looks natural, run the rest with the same settings."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Export at the size you will watch it",
+            "text": "1080p suits most screens. Go to 4K for a big TV when the source is decent. Much past four times the original size you are mostly making bigger files."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Phoenix Labs",
+            "item": "https://phoenixlabs.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phoenix Upscaler",
+            "item": "https://phoenixlabs.space/upscaler.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How to restore old video",
+            "item": "https://phoenixlabs.space/restore-old-video.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can you really improve old, low-quality video?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, up to a point. Noise, interlacing and compression damage can be cleaned up, and the detail they buried can be rebuilt, so the picture holds up on a modern screen. Detail that was never recorded can't come back."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What resolution should I upscale old video to?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1080p for most screens. 4K is worth it for a big TV when the source is reasonably clean. From standard definition, going much past four times the original size mostly makes bigger files, not a better picture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I denoise before upscaling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lightly, if at all. Current restoration models are trained on noisy footage and use that texture. Heavy denoising first leaves them less to work with and makes skin look waxy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I restore video without uploading it anywhere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Phoenix Upscaler does all its work on your own computer, and once activated it doesn't need an internet connection."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="32" height="32" /><span>Phoenix Labs</span></a>
-    <nav><a href="./#proof">See it</a><a href="./#how">How it works</a><a href="./#price">Price</a><a href="./#faq">FAQ</a></nav>
-    <a class="btn btn-sm" href="./#price">Get Phoenix — $129</a>
-  </header>
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="upscaler.html">Upscaler</a>
+    <a href="studio.html">Cloud Restore</a>
+    <a href="motion.html">Motion</a>
+    <a href="editor.html">Editor</a>
+  </nav>
+  <a class="btn btn-sm nav-cta" href="upscaler.html#download">Download Phoenix</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+</header>
   <main class="content-page">
-    <p class="badge">Restore old video</p>
-    <h1>How to restore old video from tapes, DVDs, and camcorders</h1>
-    <p class="lead">The best old-video restoration workflow is simple: start with a safe cleanup pass, inspect a short preview, then upscale only after the footage is stable and clean.</p>
-    <h2>Common old-video problems</h2>
-    <p>Old SD footage can be interlaced, noisy, compressed, color-shifted, soft, or shaky. Trying to upscale first often makes those flaws more visible.</p>
-    <h2>A practical restoration order</h2>
+    <p class="badge">Guide</p>
+    <h1>How to restore old video, whatever it was shot on</h1>
+    <p class="lead">Tapes, DVDs, film scans and the phone clips you shot ten years ago all go soft in different ways. Fix the damage in the right order and they can look good on a modern screen. Fix it in the wrong order and you mostly get sharper noise.</p>
+
+    <h2>First, work out what's actually wrong</h2>
+    <p>Most old footage has two or three of these at once, and each needs a different fix, so it's worth a minute of looking before you touch anything.</p>
+    <ul>
+      <li><strong>Combed edges on anything that moves.</strong> That's interlacing, from tape, camcorders, DVDs and TV recordings.</li>
+      <li><strong>Crawling speckle or a gritty veil.</strong> Tape noise, or sensor noise from a small phone camera in poor light.</li>
+      <li><strong>Blocks, smears and mushy faces.</strong> Compression. Early phones, DVDs and old uploads all threw detail away to save space.</li>
+      <li><strong>It's just small.</strong> 480p or 720p looks soft on a 4K TV even when the recording itself is clean.</li>
+      <li><strong>Grain.</strong> On film scans, grain is part of the picture, not damage. Keep it.</li>
+    </ul>
+
+    <h2>Then fix it in this order</h2>
     <ol>
-      <li>Deinterlace when the source came from tape, DVD, or broadcast video.</li>
-      <li>Denoise and clean compression artifacts.</li>
-      <li>Sharpen lightly so faces and edges stay natural.</li>
-      <li>Upscale to a modern delivery size such as 1080p.</li>
-      <li>Use AI detail restoration only after checking a short preview.</li>
+      <li><strong>Start from the best copy you have.</strong> A clean capture of the tape, the original file off the old phone, the DVD's own files. A clip that went through a messaging app or a social network was compressed again on the way, and that damage stacks.</li>
+      <li><strong>Deinterlace first, if the footage is interlaced.</strong> Tape, camcorder, DVD and TV footage usually is. Undo it before anything else, or every later step sharpens the comb teeth.</li>
+      <li><strong>Go easy on denoising before you upscale.</strong> Modern restoration models learned on noisy, compressed footage. Scrub it clean first and you strip the texture they work from, and faces come out waxy.</li>
+      <li><strong>Restore and upscale in one pass.</strong> Rebuild the detail that compression and noise buried, at the new size, in a single step. Sharpening a plain resize afterwards mostly sharpens the damage.</li>
+      <li><strong>Test 30 seconds before the whole thing.</strong> Pick a short section with a face, some motion and a dark corner. If that looks natural, run the rest with the same settings.</li>
+      <li><strong>Export at the size you will watch it.</strong> 1080p suits most screens. Go to 4K for a big TV when the source is decent. Much past four times the original size you are mostly making bigger files.</li>
     </ol>
-    <h2>Who Phoenix is for</h2>
-    <p>Phoenix is for anyone with old footage worth watching again: creators reviving a back catalogue, editors pulling archive clips, collectors, archivists and small transfer shops. It is a low-cost local tool instead of a complex professional video pipeline.</p>
-    <p class="muted">Related: <a href="vhs-restoration-software.html">VHS restoration software</a> &middot; <a href="topaz-video-ai-alternative.html">A cheaper Topaz Video AI alternative</a></p>
-    <div class="content-cta"><h2>Restore a short test clip</h2><p>Use a 30-90 second clip first. If the preview looks natural, process the longer video with the same settings.</p><a class="btn btn-primary" href="./#download">Download Phoenix</a></div>
+
+    <h2>Old phone video</h2>
+    <p>Phone clips from the early 2010s are the most common thing people want fixed, and often the most rewarding, because the subject is usually someone you know. They're progressive, so there's nothing to deinterlace, but they're small, compressed hard, and noisy anywhere the light was poor. Hunt down the original file if you can: the copy in your chat history or on a social site has been squeezed at least once more.</p>
+
+    <h2>Tapes: VHS, Hi8, MiniDV</h2>
+    <p>Tape needs deinterlacing and noise removal before anything else, and the capture matters as much as the restore. The <a href="vhs-restoration-software.html">VHS restoration guide</a> covers capturing and checking a tape before you commit hours to it.</p>
+
+    <h2>Film scans</h2>
+    <p>8mm and Super 8 transfers are usually progressive and far more detailed than tape, but grain is part of how film looks. A restore that smooths it away turns people into plastic. Clean up dust and flicker, keep the grain.</p>
+
+    <h2>DVDs, old uploads and screen recordings</h2>
+    <p>These are mostly compression problems, and DVDs are often interlaced too. Old uploads, gameplay captures and webcam footage were fine on a 2012 monitor and fall apart on a 4K one, which is exactly the damage a restoration model is good at.</p>
+
+    <h2>What restoration can't do</h2>
+    <p>It can't recover detail the camera never recorded. A shot that was out of focus stays out of focus, and a face that was six pixels wide can only be guessed at. A good restore gives you a clean, stable picture of what was there. Anything promising to make a 1995 tape look like it was shot yesterday is inventing the difference.</p>
+
+    <h2>Doing it with Phoenix</h2>
+    <p><a href="upscaler.html">Phoenix Upscaler</a> does steps two to six for you. It reads the footage, deinterlaces when it needs to, and picks its own settings for the source. It runs on your own PC for $129 once, and the free download restores 60-second clips so you can try your own footage first. No gaming PC? <a href="studio.html">Cloud Restore</a> does the same restoration on our GPUs, from $2.99 a clip.</p>
+
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Can you really improve old, low-quality video?</summary>
+        <p>Yes, up to a point. Noise, interlacing and compression damage can be cleaned up, and the detail they buried can be rebuilt, so the picture holds up on a modern screen. Detail that was never recorded can't come back.</p>
+      </details>
+      <details>
+        <summary>What resolution should I upscale old video to?</summary>
+        <p>1080p for most screens. 4K is worth it for a big TV when the source is reasonably clean. From standard definition, going much past four times the original size mostly makes bigger files, not a better picture.</p>
+      </details>
+      <details>
+        <summary>Should I denoise before upscaling?</summary>
+        <p>Lightly, if at all. Current restoration models are trained on noisy footage and use that texture. Heavy denoising first leaves them less to work with and makes skin look waxy.</p>
+      </details>
+      <details>
+        <summary>Can I restore video without uploading it anywhere?</summary>
+        <p>Yes. Phoenix Upscaler does all its work on your own computer, and once activated it doesn't need an internet connection.</p>
+      </details>
+    </div>
+
+    <p class="muted">Related: <a href="vhs-restoration-software.html">VHS restoration software</a> &middot; <a href="topaz-video-ai-alternative.html">Topaz Video AI alternative</a> &middot; <a href="upscaler-guide.html">Phoenix Upscaler guide</a></p>
+    <div class="content-cta"><h2>Try it on your own footage</h2><p>The free download restores 60-second clips with a small watermark. Pick a short section with a face in it and judge the result yourself.</p><a class="btn btn-primary" href="upscaler.html#download">Download Phoenix</a></div>
   </main>
-  <footer class="foot">
-    <p>&copy; 2026 Phoenix Labs &middot; <a href="./">Desktop</a> &middot; <a href="studio.html">Cloud</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="refund.html">Refunds</a></p>
-  </footer>
+  <footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><h4>Restore</h4><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a><a href="restore-old-video.html">Restoring old video</a></div>
+    <div class="foot-col"><h4>Create</h4><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
+    <div class="foot-col"><h4>Compare</h4><a href="topaz-video-ai-alternative.html">Topaz alternative</a><a href="vhs-restoration-software.html">VHS restoration</a></div>
+    <div class="foot-col"><h4>Company</h4><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>

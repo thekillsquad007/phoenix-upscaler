@@ -1,33 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="How to set up Phoenix Editor and make your first edit: install it, drop in a VOD, review the cuts it found, and export a long-form edit plus captioned Shorts." />
+  <title>Phoenix Editor guide: setup and your first edit</title>
+  <meta name="description" content="How to set up Phoenix Editor and make your first edit: install it, drop in a VOD, review the cuts it found, and export a long edit plus captioned Shorts." />
   <link rel="canonical" href="https://phoenixlabs.space/editor-guide.html" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta property="og:site_name" content="Phoenix Labs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Phoenix Editor guide: setup and your first edit" />
+  <meta property="og:description" content="How to set up Phoenix Editor and make your first edit: install it, drop in a VOD, review the cuts it found, and export a long edit plus captioned Shorts." />
+  <meta property="og:url" content="https://phoenixlabs.space/editor-guide.html" />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/social/editor-guide.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Phoenix Editor: your first edit" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <meta name="theme-color" content="#0b0c0e" />
-  <meta property="og:title" content="Phoenix Editor — setup and your first edit" />
-  <meta property="og:description" content="Install Phoenix Editor, drop in a stream recording, review what it cut, and export a long-form edit plus captioned Shorts." />
-  <meta property="og:url" content="https://phoenixlabs.space/editor-guide.html" />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <title>Phoenix Editor — setup and your first edit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="manifest" href="site.webmanifest" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "Set up Phoenix Editor and make your first edit",
-    "step": [
-      { "@type": "HowToStep", "name": "Install", "text": "Download the installer and run it. Windows may warn about an unrecognised app; choose More info then Run anyway." },
-      { "@type": "HowToStep", "name": "Add a recording", "text": "Drag your VOD onto the window, or use Choose video." },
-      { "@type": "HowToStep", "name": "Analyze", "text": "Phoenix transcribes the audio and finds dead air, filler words and scene changes." },
-      { "@type": "HowToStep", "name": "Review", "text": "Untick any cut you disagree with and trim the suggested Shorts." },
-      { "@type": "HowToStep", "name": "Export", "text": "Render the long-form edit and the captioned Shorts." }
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "name": "Set up Phoenix Editor and make your first edit",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Install",
+            "text": "Download the installer and run it. Windows may warn about an unrecognised app; choose More info then Run anyway."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Add a recording",
+            "text": "Drag your VOD onto the window, or use Choose video."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Analyze",
+            "text": "Phoenix transcribes the audio and finds dead air, filler words and scene changes."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Review",
+            "text": "Untick any cut you disagree with and trim the suggested Shorts."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Export",
+            "text": "Render the long-form edit and the captioned Shorts."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Phoenix Labs",
+            "item": "https://phoenixlabs.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phoenix Editor",
+            "item": "https://phoenixlabs.space/editor.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Guide",
+            "item": "https://phoenixlabs.space/editor-guide.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Windows blocked the installer",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click More info and then Run anyway . This is SmartScreen reacting to an installer that has not yet been signed with a paid certificate, not to anything it found in the file."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "It is cutting pauses I wanted to keep",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Untick those cuts in the review step before rendering. Phoenix only removes silences longer than a set minimum, so a beat for effect should survive, but a genuinely long pause is treated as dead air."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "It left in an “um” or missed one",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Filler detection works from the transcript, so a word the transcriber misheard cannot be cut. It is deliberately conservative and only removes unambiguous disfluencies, because wrongly cutting a real word is far more damaging to an edit than leaving one in."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "It is much slower than expected",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check the chips at the top of the window. They show which GPU was detected and which transcription and encoding backends were chosen. If they say CPU, Phoenix did not find a usable GPU and is falling back, which is functional but much slower. Updating your graphics driver is the usual fix."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "My recording has no audio track",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Phoenix needs audio to find dead air and filler words, since both come from what you said. A silent source can still be used as the source video in Reactor, where your commentary track is the one being cut."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The app showed an error screen",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use Copy error details and send them to support@phoenixlabs.space . Your files are not touched when this happens, and reloading usually clears it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "It is taking up a lot of disk space",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Phoenix keeps working files next to your exports so a re-render does not have to redo everything. If your source is a format that needs converting first, such as MKV from OBS, that copy is the bulk of it. Delete the files beginning with an underscore in the output folder once you are happy with the result."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -35,14 +152,15 @@
 <body>
 
 <header class="nav">
-  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="32" height="32" /><span>Phoenix Labs</span></a>
-  <nav>
-    <a href="editor.html#features">Features</a>
-    <a href="editor.html#price">Price</a>
-    <a href="editor.html#download">Download</a>
-    <a href="#troubleshooting">Troubleshooting</a>
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="upscaler.html">Upscaler</a>
+    <a href="studio.html">Cloud Restore</a>
+    <a href="motion.html">Motion</a>
+    <a href="editor.html" aria-current="page">Editor</a>
   </nav>
-  <a class="btn btn-sm" href="editor.html#download">Download</a>
+  <a class="btn btn-sm nav-cta" href="editor.html#download">Download Editor</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
 </header>
 
 <main id="top">
@@ -197,9 +315,18 @@
 
 </main>
 
-<footer class="foot">
-  <p>Phoenix Editor is a product of Phoenix Labs. © 2026 Phoenix Labs.</p>
-  <p><a href="./">Phoenix Upscaler</a> · <a href="studio.html">Cloud studio</a> · <a href="editor.html">Phoenix Editor</a> · <a href="motion.html">Phoenix Motion</a> · <a href="editor-guide.html">Editor guide</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@phoenixlabs.space">support@phoenixlabs.space</a></p>
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><h4>Restore</h4><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a><a href="restore-old-video.html">Restoring old video</a></div>
+    <div class="foot-col"><h4>Create</h4><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
+    <div class="foot-col"><h4>Compare</h4><a href="topaz-video-ai-alternative.html">Topaz alternative</a><a href="vhs-restoration-software.html">VHS restoration</a></div>
+    <div class="foot-col"><h4>Company</h4><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>
 
 <script src="site.js"></script>
