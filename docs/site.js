@@ -158,6 +158,79 @@ document.querySelectorAll("[data-copy]").forEach((btn) => {
   });
 });
 
+// ── WebMCP: the site's own tools for AI agents working in a browser ────────
+// Where the browser offers navigator.modelContext (WebMCP), expose a few free,
+// read-only tools. Paid work goes through the full MCP server, which
+// get_agent_setup points to. The API is a draft, so never let it break the page.
+(() => {
+  const mc = navigator.modelContext;
+  if (!mc) return;
+  const API = "https://api.phoenixlabs.space";
+  const QUALITY = { standard: "faithful", enhanced: "enhanced", studio_max: "enhanced_max" };
+  const reply = (data) => ({ content: [{ type: "text", text: typeof data === "string" ? data : JSON.stringify(data, null, 2) }] });
+  const tools = [
+    {
+      name: "get_prices",
+      description: "Current Phoenix Labs prices in US dollars: Phoenix Motion clips (image to five-second video with sound) and the Phoenix balance top-up range.",
+      inputSchema: { type: "object", properties: {} },
+      annotations: { readOnlyHint: true },
+      async execute() {
+        const cfg = await (await fetch(`${API}/motion/config`)).json();
+        return reply({
+          motion_clip: Object.fromEntries(cfg.sizes.map((s) => [s.size, s.display])),
+          upscaler_desktop_app: "$129 once",
+          editor_desktop_app: "$99 with a year of updates",
+          cloud_restore: "from $2.99; use quote_restore for an exact price",
+          top_up_usd: `${cfg.topup.min_cents / 100} to ${cfg.topup.max_cents / 100} by card; USDC on Base from $1`,
+        });
+      },
+    },
+    {
+      name: "quote_restore",
+      description: "Exact price in US dollars to restore one old video in the cloud with Phoenix Cloud Restore, from its length and frame size.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          duration_seconds: { type: "number", description: "Length of the video in seconds." },
+          quality: { type: "string", enum: ["standard", "enhanced", "studio_max"], description: "standard: clean-up and 2x upscale. enhanced: adds AI detail reconstruction. studio_max: enhanced at up to 4K." },
+          width: { type: "integer", description: "Frame width in pixels, if known." },
+          height: { type: "integer", description: "Frame height in pixels, if known." },
+        },
+        required: ["duration_seconds"],
+      },
+      annotations: { readOnlyHint: true },
+      async execute({ duration_seconds, quality = "enhanced", width, height } = {}) {
+        const res = await fetch(`${API}/cloud/quote`, {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ duration_sec: Number(duration_seconds), quality: QUALITY[quality] || "enhanced", width, height }),
+        });
+        const q = await res.json();
+        return reply(res.ok ? { price: q.display, amount_cents: q.amount_cents } : q.detail || "Couldn't price that clip.");
+      },
+    },
+    {
+      name: "get_agent_setup",
+      description: "How an AI agent can restore videos and make clips with Phoenix for a user: the MCP server, REST API, how agent keys and payment (card balance or USDC via x402) work.",
+      inputSchema: { type: "object", properties: {} },
+      annotations: { readOnlyHint: true },
+      async execute() {
+        return reply({
+          mcp_server: `${API}/mcp`,
+          openapi: `${API}/openapi.json`,
+          guide: "https://phoenixlabs.space/developers",
+          agent_skill: "https://phoenixlabs.space/.well-known/agent-skills/phoenix-labs/SKILL.md",
+          paying: "Paid tools need an agent key (pak_...) with a spending limit, made by the user in Phoenix Motion (balance, then Agent keys). Agents with a crypto wallet can add USDC on Base with x402.",
+        });
+      },
+    },
+  ];
+  try {
+    if (typeof mc.provideContext === "function") mc.provideContext({ tools });
+    else if (typeof mc.registerTool === "function") tools.forEach((t) => mc.registerTool(t));
+  } catch { /* draft API: ignore */ }
+})();
+
 // ── One demo with sound at a time ──────────────────────────────────────────
 // Only for clips the visitor starts themselves (they have controls and aren't
 // the ambient loops): starting one pauses the others, so two never talk over

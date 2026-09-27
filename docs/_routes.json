@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "include": [
+    "/",
+    "/developers",
+    "/developers.html",
+    "/editor-guide",
+    "/editor-guide.html",
+    "/editor",
+    "/editor.html",
+    "/motion",
+    "/motion.html",
+    "/privacy",
+    "/privacy.html",
+    "/refund",
+    "/refund.html",
+    "/restore-old-video",
+    "/restore-old-video.html",
+    "/studio",
+    "/studio.html",
+    "/terms",
+    "/terms.html",
+    "/topaz-video-ai-alternative",
+    "/topaz-video-ai-alternative.html",
+    "/upscaler-guide",
+    "/upscaler-guide.html",
+    "/upscaler",
+    "/upscaler.html",
+    "/vhs-restoration-software",
+    "/vhs-restoration-software.html"
+  ],
+  "exclude": []
+}

@@ -1,0 +1,65 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Phoenix Labs",
+    "identifier": "phoenixlabs.space",
+    "documentationUrl": "https://phoenixlabs.space/developers",
+    "logoUrl": "https://phoenixlabs.space/assets/brand/phoenix-mark.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:phoenixlabs.space:mcp:phoenix-labs",
+      "displayName": "Phoenix Labs MCP server",
+      "type": "application/mcp-server-card+json",
+      "url": "https://phoenixlabs.space/.well-known/mcp/server-card.json",
+      "description": "Restore old video and turn still images into video clips with sound; paid tools spend a prepaid balance through capped agent keys, or USDC over x402.",
+      "tags": [
+        "video",
+        "restoration",
+        "upscaling",
+        "image-to-video",
+        "x402"
+      ],
+      "representativeQueries": [
+        "restore and upscale an old VHS video",
+        "make my old phone video sharper",
+        "turn this photo into a short video with sound",
+        "animate a logo into a seamless loop"
+      ]
+    },
+    {
+      "identifier": "urn:air:phoenixlabs.space:api:phoenix-labs",
+      "displayName": "Phoenix Labs REST API",
+      "type": "application/vnd.oai.openapi+json",
+      "url": "https://api.phoenixlabs.space/openapi.json",
+      "description": "OpenAPI 3.1 description of the Cloud Restore, Phoenix Motion and balance endpoints.",
+      "representativeQueries": [
+        "API to restore old video programmatically",
+        "image to video API with sound",
+        "pay for an API with USDC using x402"
+      ]
+    },
+    {
+      "identifier": "urn:air:phoenixlabs.space:skill:phoenix-labs",
+      "displayName": "Phoenix Labs agent skill",
+      "type": "application/ai-skill+md",
+      "url": "https://phoenixlabs.space/.well-known/agent-skills/phoenix-labs/SKILL.md",
+      "description": "How an agent restores video and makes clips with Phoenix, and pays for them on a user's behalf.",
+      "representativeQueries": [
+        "how do I restore a video for a user with Phoenix",
+        "how does an agent pay for Phoenix Motion clips"
+      ]
+    },
+    {
+      "identifier": "urn:air:phoenixlabs.space:docs:llms",
+      "displayName": "Phoenix Labs llms.txt",
+      "type": "text/markdown",
+      "url": "https://phoenixlabs.space/llms.txt",
+      "description": "Plain-language facts about Phoenix Labs' products, prices, limits and policies.",
+      "representativeQueries": [
+        "what does Phoenix Labs make",
+        "how much does Phoenix Upscaler cost"
+      ]
+    }
+  ]
+}

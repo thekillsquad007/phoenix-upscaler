@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "phoenix-labs",
+      "type": "skill-md",
+      "description": "Restore old video (tapes, DVDs, film scans, old phone clips) and turn still images into five-second video clips with sound, using the Phoenix Labs MCP server or REST API, paid from the user's prepaid balance with a capped agent key or in USDC over x402. Use when a user wants old footage cleaned up or upscaled, or a photo, logo or artwork animated into a short clip.",
+      "url": "/.well-known/agent-skills/phoenix-labs/SKILL.md",
+      "digest": "sha256:378eeeaa90effb3aebae3c24607505e990dd7589e69daf679a18ed95b32721e4"
+    }
+  ]
+}

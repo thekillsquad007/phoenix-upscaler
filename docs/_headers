@@ -6,3 +6,19 @@
 
 /assets/*
   Cache-Control: public, max-age=86400, must-revalidate
+
+# Files for AI agents (scripts/build_site_agents.py). Readable from any origin.
+/.well-known/*
+  Access-Control-Allow-Origin: *
+
+/.well-known/api-catalog
+  Content-Type: application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"
+
+/.well-known/agent-skills/*
+  Cache-Control: public, max-age=3600
+
+# Markdown twins of the pages: for agents, not search results (the HTML is canonical).
+/md/*
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex
+  Access-Control-Allow-Origin: *

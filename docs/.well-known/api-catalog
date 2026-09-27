@@ -1,0 +1,40 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://api.phoenixlabs.space/",
+      "service-desc": [
+        {
+          "href": "https://api.phoenixlabs.space/openapi.json",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://phoenixlabs.space/developers",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://api.phoenixlabs.space/health",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://api.phoenixlabs.space/mcp",
+      "service-desc": [
+        {
+          "href": "https://phoenixlabs.space/.well-known/mcp/server-card.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://phoenixlabs.space/developers",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}

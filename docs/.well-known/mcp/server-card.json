@@ -1,0 +1,422 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/mcp-server-card/v1.json",
+  "version": "1.0",
+  "protocolVersion": "2025-06-18",
+  "serverInfo": {
+    "name": "phoenix-labs",
+    "title": "Phoenix Labs",
+    "version": "1.1.0",
+    "description": "Restore old video in the cloud and turn still images into five-second clips with sound, paid from a prepaid US dollar balance through agent keys with spending limits, by card or in USDC (x402).",
+    "websiteUrl": "https://phoenixlabs.space/developers",
+    "icons": [
+      {
+        "src": "https://phoenixlabs.space/assets/brand/phoenix-mark.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "512x512"
+        ]
+      }
+    ]
+  },
+  "description": "Restore old video in the cloud and turn still images into five-second clips with sound, paid from a prepaid US dollar balance through agent keys with spending limits, by card or in USDC (x402).",
+  "documentationUrl": "https://phoenixlabs.space/developers",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "/mcp",
+    "url": "https://api.phoenixlabs.space/mcp"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "authentication": {
+    "required": false,
+    "schemes": [
+      "bearer"
+    ],
+    "description": "Free tools need no key. Paid tools need an agent key (pak_…) as `Authorization: Bearer pak_…`, or `?key=pak_…` on the URL."
+  },
+  "instructions": "Phoenix Labs tools: restore old video in the cloud (Cloud Restore) and turn a still image into a five-second video clip with sound (Phoenix Motion).\n\nMoney: prices are real US dollars. Paid tools spend the Phoenix balance behind the agent key on this connection, never more than the key's limit. Tell the user what something costs (get_prices, quote_restore) before spending, unless they have already agreed to it. If the balance is short, create_top_up_link gives the user a checkout link to add more; an assistant with its own crypto wallet can instead add USDC on Base itself with top_up_with_usdc (x402). Without a key, create_restore can still make a restore the user pays for through a checkout link.\n\nFiles: for clips, pass image_url (a public JPEG, PNG or WebP link). Otherwise the create tool returns an upload_url: send the file there with HTTP PUT and the Content-Type it gives, then call the matching start tool. Poll the get tool every 10 seconds or so: clips usually finish in under a minute, restores take minutes. Download links last 24 hours.\n\nContent rule for clips: no sexual or nude content, and nothing sexual or suggestive involving a minor. Prompts that break it are refused before anything is charged.",
+  "tools": [
+    {
+      "name": "get_prices",
+      "title": "Get prices",
+      "description": "Current prices and limits for Phoenix Motion clips and Cloud Restore, in US dollars. Free, no key needed.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "annotations": {
+        "title": "Get prices",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "quote_restore",
+      "title": "Quote a restore",
+      "description": "Exact price in US dollars to restore one video clip in the cloud, from its length and resolution. Free, no key needed.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "duration_seconds": {
+            "type": "number",
+            "description": "Length of the clip in seconds."
+          },
+          "quality": {
+            "type": "string",
+            "enum": [
+              "standard",
+              "enhanced",
+              "studio_max"
+            ],
+            "default": "enhanced",
+            "description": "standard: denoise, deinterlace, 2x upscale. enhanced: adds AI detail reconstruction, for badly degraded footage. studio_max: enhanced, delivered at up to 4K."
+          },
+          "width": {
+            "type": "integer",
+            "description": "Frame width in pixels, if known (default: standard definition)."
+          },
+          "height": {
+            "type": "integer",
+            "description": "Frame height in pixels, if known (default: standard definition)."
+          }
+        },
+        "required": [
+          "duration_seconds"
+        ]
+      },
+      "annotations": {
+        "title": "Quote a restore",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "create_restore",
+      "title": "Create a restore",
+      "description": "Start a cloud restore of an old video (tape, DVD, film scan, old phone clip): denoise, deinterlace, rebuild detail and upscale. Returns an upload_url; PUT the video there, then call start_restore. With an agent key it is paid from the balance now (pay_with 'balance'), and refunded to the balance if it fails. With pay_with 'checkout' (or no key) the user pays through a checkout link that start_restore returns. Up to 2 GB; standard up to 30 minutes, enhanced and studio_max up to 6 minutes.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "The video's file name, e.g. wedding-1994.mp4."
+          },
+          "content_type": {
+            "type": "string",
+            "description": "The video's MIME type, e.g. video/mp4."
+          },
+          "duration_seconds": {
+            "type": "number",
+            "description": "Length in seconds. The GPU checks it; a file much longer than declared is refused and refunded."
+          },
+          "width": {
+            "type": "integer",
+            "description": "Frame width in pixels. Bigger frames cost more; the GPU checks the real file."
+          },
+          "height": {
+            "type": "integer",
+            "description": "Frame height in pixels."
+          },
+          "size_bytes": {
+            "type": "integer",
+            "description": "File size in bytes, up to 2 GB."
+          },
+          "quality": {
+            "type": "string",
+            "enum": [
+              "standard",
+              "enhanced",
+              "studio_max"
+            ],
+            "default": "enhanced",
+            "description": "standard: denoise, deinterlace, 2x upscale. enhanced: adds AI detail reconstruction, for badly degraded footage. studio_max: enhanced, delivered at up to 4K."
+          },
+          "pay_with": {
+            "type": "string",
+            "enum": [
+              "balance",
+              "checkout"
+            ],
+            "description": "Default: balance when this connection has a key, otherwise checkout."
+          },
+          "email": {
+            "type": "string",
+            "description": "Needed for pay_with 'checkout': where the receipt goes."
+          }
+        },
+        "required": [
+          "filename",
+          "content_type",
+          "duration_seconds"
+        ]
+      },
+      "annotations": {
+        "title": "Create a restore",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "start_restore",
+      "title": "Start a restore",
+      "description": "After the video is uploaded: starts a balance-paid restore on the GPU, or returns the checkout_url the user must open to pay for a checkout restore (it starts once they have paid).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "job_id": {
+            "type": "string",
+            "description": "The job_id create_restore returned (cloud_…)."
+          }
+        },
+        "required": [
+          "job_id"
+        ]
+      },
+      "annotations": {
+        "title": "Start a restore",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_restore",
+      "title": "Check a restore",
+      "description": "Status of a restore. When status is 'done', download_url is the restored video (valid 24 hours).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "job_id": {
+            "type": "string",
+            "description": "The job_id create_restore returned (cloud_…)."
+          }
+        },
+        "required": [
+          "job_id"
+        ]
+      },
+      "annotations": {
+        "title": "Check a restore",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "make_clip",
+      "title": "Make a clip",
+      "description": "Phoenix Motion: turn one still image into a five-second video clip at 24 fps, with sound made in the same pass, from a prompt describing the motion, camera and sound. Costs the listed price (see get_prices) from the balance; a clip that fails or is refused costs nothing. Pass image_url to start at once; otherwise PUT the image to the returned upload_url and call start_clip.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "What moves, how, and what the camera and sound do. Up to 800 characters."
+          },
+          "image_url": {
+            "type": "string",
+            "description": "Public link to a JPEG, PNG or WebP image, up to 20 MB."
+          },
+          "content_type": {
+            "type": "string",
+            "enum": [
+              "image/jpeg",
+              "image/png",
+              "image/webp"
+            ],
+            "description": "Needed only when uploading instead of image_url."
+          },
+          "size": {
+            "type": "string",
+            "enum": [
+              "480p",
+              "720p"
+            ],
+            "default": "480p",
+            "description": "480p costs $0.59 and is quicker; 720p costs $0.99 and is sharper."
+          },
+          "loop": {
+            "type": "boolean",
+            "default": false,
+            "description": "Seamless loop: only what the prompt names moves, and the clip ends where it starts."
+          },
+          "seed": {
+            "type": "integer",
+            "description": "Reuse a clip's seed to get the same take again."
+          }
+        },
+        "required": [
+          "prompt"
+        ]
+      },
+      "annotations": {
+        "title": "Make a clip",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "start_clip",
+      "title": "Start a clip",
+      "description": "After uploading the image to make_clip's upload_url: start making the clip.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "clip_id": {
+            "type": "string",
+            "description": "The clip_id make_clip returned (motion_…)."
+          }
+        },
+        "required": [
+          "clip_id"
+        ]
+      },
+      "annotations": {
+        "title": "Start a clip",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_clip",
+      "title": "Check a clip",
+      "description": "Status of a clip. When status is 'done', video_url plays it and download_url saves it (both valid 24 hours).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "clip_id": {
+            "type": "string",
+            "description": "The clip_id make_clip returned (motion_…)."
+          }
+        },
+        "required": [
+          "clip_id"
+        ]
+      },
+      "annotations": {
+        "title": "Check a clip",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "list_clips",
+      "title": "List clips",
+      "description": "The most recent clips made with this key, newest first.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "annotations": {
+        "title": "List clips",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "cancel_job",
+      "title": "Cancel an unstarted job",
+      "description": "Cancel a restore or clip whose file was never uploaded, and get its price back on the balance at once.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "job_id": {
+            "type": "string",
+            "description": "A restore's job_id (cloud_…) or a clip_id (motion_…)."
+          }
+        },
+        "required": [
+          "job_id"
+        ]
+      },
+      "annotations": {
+        "title": "Cancel an unstarted job",
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_balance",
+      "title": "Check the balance",
+      "description": "The Phoenix balance this key can spend: the balance, and this key's limit, amount spent and amount left.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "annotations": {
+        "title": "Check the balance",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "create_top_up_link",
+      "title": "Top-up link",
+      "description": "A checkout link the user opens to add money to the balance (US$5 to $200). Nothing is charged until they pay.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "amount_usd": {
+            "type": "number",
+            "description": "Dollars to add, 5 to 200."
+          },
+          "email": {
+            "type": "string",
+            "description": "For the receipt, if the balance doesn't have one yet."
+          }
+        },
+        "required": [
+          "amount_usd"
+        ]
+      },
+      "annotations": {
+        "title": "Top-up link",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "top_up_with_usdc",
+      "title": "Top up with USDC",
+      "description": "Add money to the balance by paying USDC on Base yourself, with x402 (for assistants that hold a crypto wallet). Call it without a payment to get the payment requirements back (an x402 PaymentRequired error), sign the EIP-3009 transfer, then call it again with the signed payment in _meta['x402/payment']. $1 to $200; 1 USDC adds $1. No gas needed: the facilitator pays it.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "amount_usd": {
+            "type": "number",
+            "description": "Dollars to add, 1 to 200."
+          }
+        },
+        "required": [
+          "amount_usd"
+        ]
+      },
+      "annotations": {
+        "title": "Top up with USDC",
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": true
+      }
+    }
+  ]
+}

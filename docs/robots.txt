@@ -1,4 +1,8 @@
+# Phoenix Labs welcomes search engines and AI agents.
+# Content signals (https://contentsignals.org): search results, AI answers and
+# AI training may all use this site's content.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 Disallow: /studio-app.html
 
