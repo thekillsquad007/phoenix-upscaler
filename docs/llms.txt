@@ -6,6 +6,8 @@ Prices are in US dollars. Payments are handled by Lemon Squeezy, the Merchant of
 
 Not to be confused with Phoenix Labs, the video game studio: this Phoenix Labs is the video software company at phoenixlabs.space. Phoenix Cloud Restore was earlier called Phoenix Cloud Studio.
 
+[About Phoenix Labs](https://phoenixlabs.space/about): started by a computer science engineering graduate from a developing country, who stays anonymous, after a paid restoration of old concert tapes barely changed anything. Why the desktop app is sold once and the cloud is paid per clip.
+
 The full text of every page, in one file: https://phoenixlabs.space/llms-full.txt
 
 ## For AI agents: using Phoenix on someone's behalf

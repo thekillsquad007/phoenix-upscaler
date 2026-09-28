@@ -2,6 +2,8 @@
   "version": 1,
   "include": [
     "/",
+    "/about",
+    "/about.html",
     "/developers",
     "/developers.html",
     "/editor-guide",
