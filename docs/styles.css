@@ -365,7 +365,8 @@ p { margin: 0 0 1em; }
 }
 .dl:hover { border-color: var(--accent); }
 .dl span { color: var(--ink-faint); font-size: 14px; }
-.dl-soon { opacity: 0.5; }
+.dl-soon { border-style: dashed; background: transparent; }
+.dl-soon strong { color: var(--ink-dim); }
 .dl-soon:hover { border-color: var(--line); }
 .dl-grid + .fineprint { max-width: 72ch; margin-top: -22px; }
 .fineprint + .req { margin-top: 44px; }
