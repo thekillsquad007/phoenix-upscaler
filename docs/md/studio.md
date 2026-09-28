@@ -6,7 +6,7 @@ url: https://phoenixlabs.space/studio
 
 # No gaming PC? Restore it in the cloud.
 
-Upload an old clip, see exactly what it costs in dollars, pay for that one job, and download the result. It runs on our datacenter GPUs — so it works from a Mac, a laptop, or a phone.
+Phoenix Cloud Restore cleans up and upscales old video on our datacenter GPUs, so it works from a Mac, a laptop or a phone. Upload a clip, see exactly what it costs in dollars, pay for that one job, and download the result.
 
 No account. No subscription. No credits. A failed job is refunded.
 

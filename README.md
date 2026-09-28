@@ -1,148 +1,74 @@
 # Phoenix Upscaler
 
-**Bring VHS tapes, camcorder footage, and old DVDs back to life.**
+**Restore and upscale old video on your own PC.**
 
-Phoenix is built for people who care about family history, not Hollywood budgets. Drop in a clip, pick a preset, get back restored video. Run it on your own computer for a one-time $129, or use the cloud studio and pay only for the clips you restore.
+Phoenix Upscaler is a desktop app for Windows and Linux that makes old footage watchable on a modern screen. It removes tape and sensor noise, fixes the combed edges of interlaced video, and rebuilds the detail that compression threw away, then upscales up to 4K. It runs on your own graphics card, so nothing uploads. $129 once, every update included. Made by [Phoenix Labs](https://phoenixlabs.space/).
 
-**[Try it free →](https://phoenixlabs.space/)** · **[Get the desktop app ($129 once) →](https://phoenixlabs.space/#price)** · **[Open the cloud studio →](https://phoenixlabs.space/studio.html)**
+**[Download it free](https://github.com/thekillsquad007/phoenix-upscaler/releases/latest)** · **[Website](https://phoenixlabs.space/upscaler)** · **[No suitable PC? Restore in the cloud](https://phoenixlabs.space/studio)**
 
----
+![A frame from a 1952 home movie, restored with Phoenix Upscaler](docs/assets/demo/enhanced_after.jpg)
 
-## Why Phoenix exists
-
-You found a box of tapes. Maybe your parents' wedding, maybe an old camcorder recording, maybe a concert you rented a VHS off someone for years ago. The footage matters, but it's fuzzy, interlaced, and stuck at VHS quality.
-
-Topaz Video AI is the usual answer, and it's good, but as of late 2025 they stopped selling a one-time license entirely. It's $299/yr now, subscription only, for restoration that's largely built on the same open models anyone can access.
-
-Phoenix does the same job (denoise, deinterlace, rebuild lost detail) for $129 once. You own it. No renewal, no credits, no upsell.
+*A frame from* Texas Farm Family *(1952, public domain, via the Prelinger Archives), restored with Phoenix. Drag-to-compare before and afters are on the [website](https://phoenixlabs.space/upscaler#proof).*
 
 ---
 
-## Two ways to restore a tape
+## At a glance
 
-|  | **Desktop app** | **Cloud studio** |
-|---|---|---|
-| **Price** | $129 once | Pay per clip, from $2.99 |
-| **Requires** | Your own NVIDIA GPU | Nothing — any OS, any device |
-| **Privacy** | Fully local, nothing uploads | Uploaded only for the job, deleted after |
-| **Best for** | A whole shoebox of tapes | An occasional clip |
+| | |
+|---|---|
+| **What it fixes** | Noise, interlacing, compression damage and low resolution. Output up to 4K. |
+| **Footage** | VHS, Hi8 and MiniDV tapes, DVDs, 8mm and Super 8 film scans, phone clips from the 2010s, old uploads, gameplay and webcam recordings |
+| **Runs on** | Windows 10 and 11, and Linux, on your own graphics card. No macOS version yet. |
+| **Price** | $129 once. Every future update included, nothing renews, installs on up to three of your own computers. |
+| **Free trial** | The download restores 60-second clips with a small watermark. |
+| **Privacy** | All work happens on your PC. Works offline once activated. |
+| **Opens** | MP4, MOV, MKV and AVI |
 
-Same restoration engine either way. If you have an NVIDIA GPU and tapes to get through, the desktop app is the better value. If you don't, or you've just got one clip, the [cloud studio](https://phoenixlabs.space/studio.html) does the same job with no install and no hardware requirements.
+## Why pay once
 
----
+Topaz Video, the best-known tool for this job, has been sold only as a subscription since 2025: $299 a year. Phoenix does one job, making old footage look right again, and it costs $129 once. The [side-by-side comparison](https://phoenixlabs.space/topaz-video-ai-alternative) covers price, platforms and when Topaz is the better pick.
 
-## See it in action
+## No suitable PC?
 
-Real restoration on a public-domain 1952 home movie, print damage and all:
+[Phoenix Cloud Restore](https://phoenixlabs.space/studio) runs the same restoration on our GPUs, so it works from a Mac, a laptop or a phone. Upload a clip, see the price in dollars, pay for that one job, and download the result. From $2.99 a clip, and a job that fails is refunded.
 
-![Before and after](docs/assets/demo/enhanced_after.jpg)
+## What it won't do
 
-More before/afters, including a second clip from 1938, on the **[official site](https://phoenixlabs.space/#proof)**.
+Phoenix restores what the camera recorded. It can't bring back detail that was never there: a shot that was out of focus stays out of focus, and a face a few pixels wide can only be guessed at. It's built for old footage, not for Hollywood VFX pipelines or real-time upscaling of a stream.
 
----
+## Guides
+
+- [How to restore old video](https://phoenixlabs.space/restore-old-video): working out what's wrong and fixing it in the right order
+- [How to restore VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software): capturing well, and what software can and can't fix
+- [How to make old phone videos look better](https://phoenixlabs.space/old-phone-video): finding the best copy and what size to export
+- [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide): setup, quality modes and troubleshooting
 
 ## Download
 
-Get the latest desktop build from **[Releases](https://github.com/thekillsquad007/phoenix-upscaler/releases/latest)**.
+Get the latest build from **[Releases](https://github.com/thekillsquad007/phoenix-upscaler/releases/latest)**: a Windows installer and a Linux AppImage. No Python or command line needed. System requirements are on the [website](https://phoenixlabs.space/upscaler#download).
 
-| Platform | Installer |
-|---|---|
-| **Windows** | `PhoenixUpscaler-Setup.exe` — double-click, Next, done |
-| **Linux** | `PhoenixUpscaler.AppImage` — chmod +x, run |
-| **macOS** | Not available yet — use the [cloud studio](https://phoenixlabs.space/studio.html) instead |
+## Questions
 
-No Python, no command line. AI models are included and it works fully offline after install.
+**Is Phoenix Upscaler a subscription?**
+No. It's $129 once, with every future update included. Cloud Restore is paid per clip, in dollars, with no subscription or credits.
 
-No NVIDIA card at all? Skip the download and use the **[cloud studio](https://phoenixlabs.space/studio-app.html)** instead.
+**Does my video get uploaded?**
+Not with the desktop app. Cloud Restore uploads a clip only to process it, deletes it automatically afterwards, and never uses it to train a model.
 
----
+**Does it run on a Mac?**
+Not yet. On a Mac, use Cloud Restore in the browser.
 
-## What you get
+**What graphics card do I need?**
+On Windows, any modern NVIDIA, AMD or Intel card runs it. Generative, the mode that rebuilds the most detail, needs a stronger NVIDIA or AMD card, and the app sets it up for you. The full list is on the website.
 
-- **Denoise** — kills the crawling speckle VHS tape leaves behind
-- **Deinterlace** — fixes the torn, striped edge on anything that moves
-- **Detail reconstruction** — hair, fabric, signage, things the tape blurred into a smudge come back readable
-- **Auto mode** — Phoenix reads the footage and picks its own settings
-- **Free tier** — restore 60-second clips with a small watermark, no purchase required to try it
+## Also from Phoenix Labs
 
-### Three quality modes
+- **[Phoenix Motion](https://phoenixlabs.space/motion)** turns a still image into a five-second video with sound, from $0.59 a clip.
+- **[Phoenix Editor](https://phoenixlabs.space/editor)** cuts the dead air out of streams and recordings and makes captioned Shorts, $99 with a year of updates.
+- AI assistants such as Claude, ChatGPT and Cursor can use Cloud Restore and Phoenix Motion through our MCP server, with a spending limit you set: [phoenixlabs.space/developers](https://phoenixlabs.space/developers).
 
-- **Standard** — fast and compatible, runs anywhere
-- **Enhanced** — a stronger restore on any modern Windows GPU (AMD, Intel or NVIDIA), no extra setup
-- **Generative** — diffusion-based detail reconstruction for badly degraded tape. Runs on NVIDIA out of the box, and on **AMD** after a one-time **Install Generative** click inside the app
-
-If your machine can't run Generative locally, the [cloud studio](https://phoenixlabs.space/studio.html) runs it on our GPUs.
+(Phoenix Labs here is the video software company at phoenixlabs.space, not the video game studio of the same name.)
 
 ---
 
-## Pricing
-
-**Desktop — $129 once.** Yours permanently, every future update included free, no watermark, any clip length, install on up to 3 of your own computers, works offline once activated.
-
-**Cloud studio — pay per job, from $2.99.** Standard quality matches the desktop app. Enhanced and Studio Max modes add AI detail reconstruction for badly degraded tape. Exact price shown before you pay. A failed job is refunded automatically.
-
-Card and UPI payments are handled by Lemon Squeezy, our merchant of record. A license key for the desktop app arrives by email immediately after purchase.
-
----
-
-## Who Phoenix is for
-
-- Families digitizing VHS and camcorder tapes
-- Anyone restoring old TV captures or personal concert/event recordings
-- People who want Topaz-class results without a Topaz-class subscription
-- Anyone who'd rather their footage never touch a server (desktop mode)
-
-## Who Phoenix is not for
-
-- Hollywood VFX pipelines — use Topaz + DaVinci
-- Real-time streaming upscaling
-- Expecting detail the original tape never recorded — Phoenix restores what's there, it doesn't invent footage
-
----
-
-## GPU compatibility (desktop app)
-
-|  | **NVIDIA** | **AMD** | **Intel / integrated** |
-|---|---|---|---|
-| **Standard** (denoise, deinterlace, upscale) | Full speed, CUDA | Supported via DirectML | CPU fallback, slow |
-| **Enhanced** (DirectML video restore) | Supported | Supported | Supported on modern GPUs |
-| **Generative** (diffusion detail) | 8GB+ VRAM, works out of the box | 16GB+ VRAM, one-time in-app setup | Not supported — use the cloud studio |
-
-AMD Generative runs FlashVSR on ROCm through Windows Subsystem for Linux. The app installs and configures all of that for you when you click **Install Generative**; the first run takes a while, after that it's just another quality mode in the dropdown.
-
-Can't run Generative locally? The [cloud studio](https://phoenixlabs.space/studio.html) runs the same restoration on our GPUs instead.
-
----
-
-## FAQ
-
-**Does my video get uploaded anywhere?**
-Not with the desktop app. Everything happens on your machine, and once activated it doesn't need an internet connection to run. The cloud studio uploads a clip only for the duration of that job, then deletes both the source and the result.
-
-**Is this a subscription?**
-No. The desktop app is $129 once, forever, including future updates. The cloud studio has no subscription either, you pay per job in dollars with no credits.
-
-**How is this different from Topaz?**
-Same tier of restoration problem (interlacing, noise, lost detail), a fraction of the price, and you actually own it, Topaz no longer sells a one-time license at all.
-
-**What formats work?**
-MP4, MOV, MKV, and AVI.
-
-**Will it make a bad tape look brand new?**
-No, and be wary of anything claiming otherwise. Detail the tape never recorded can't be recovered, only what's genuinely there gets pulled out and cleaned up.
-
----
-
-## Official website
-
-Full showcase, before/after demos, pricing, and both download paths:
-
-**https://phoenixlabs.space/**
-
----
-
-## Repository
-
-This repo contains the **marketing site**, **release installers**, and **demo assets**. Application source is proprietary.
-
-© 2026 Phoenix Labs.
+This repository holds the website (`docs/`), release installers and demo assets. The application source is proprietary. Support: support@phoenixlabs.space. © 2026 Phoenix Labs.

@@ -8,7 +8,7 @@ Phoenix Motion · image to video
 
 # Give any image five seconds of motion.
 
-Drop in a picture, say what should happen, and get a short video back, sound included. Logos, concept art, product shots, portraits, paintings, screenshots. If it's a still, it can move.
+Phoenix Motion turns a still image into a five-second video, sound included. Drop in a picture and say what should happen. Logos, concept art, product shots, portraits, paintings, screenshots. If it's a still, it can move.
 
 [Make a clip](https://phoenixlabs.space/motion-app) [See what it makes](https://phoenixlabs.space/motion#examples)
 

@@ -442,6 +442,11 @@ p { margin: 0 0 1em; }
 .content-page li { margin: 6px 0; }
 .content-page a { color: var(--accent); }
 .content-page .muted { color: var(--ink-faint); font-size: 14.5px; }
+.content-page .page-date { margin: 0 0 8px; font-size: 13.5px; }
+.damage-table { max-width: none; }
+.damage-table tbody th { white-space: normal; width: 34%; font-weight: 500; }
+.damage-table th, .damage-table td { vertical-align: top; }
+.damage-table td:last-child { color: var(--ink); }
 .content-page .btn, .content-page .btn-primary { color: #170903; }
 
 /* ---------- code ---------- */

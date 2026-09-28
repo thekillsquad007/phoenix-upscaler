@@ -55,7 +55,7 @@
       "displayName": "Phoenix Labs llms.txt",
       "type": "text/markdown",
       "url": "https://phoenixlabs.space/llms.txt",
-      "description": "Plain-language facts about Phoenix Labs' products, prices, limits and policies.",
+      "description": "Plain-language facts about Phoenix Labs' products, prices, limits and policies. The full text of every page is at /llms-full.txt.",
       "representativeQueries": [
         "what does Phoenix Labs make",
         "how much does Phoenix Upscaler cost"

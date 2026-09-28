@@ -10,6 +10,8 @@ Guide
 
 Tapes, DVDs, film scans and the phone clips you shot ten years ago all go soft in different ways. Fix the damage in the right order and they can look good on a modern screen. Fix it in the wrong order and you mostly get sharper noise.
 
+Updated 28 September 2026
+
 ## First, work out what's actually wrong
 
 Most old footage has two or three of these at once, and each needs a different fix, so it's worth a minute of looking before you touch anything.
@@ -31,7 +33,7 @@ Most old footage has two or three of these at once, and each needs a different f
 
 ## Old phone video
 
-Phone clips from the early 2010s are the most common thing people want fixed, and often the most rewarding, because the subject is usually someone you know. They're progressive, so there's nothing to deinterlace, but they're small, compressed hard, and noisy anywhere the light was poor. Hunt down the original file if you can: the copy in your chat history or on a social site has been squeezed at least once more.
+Phone clips from the early 2010s are the most common thing people want fixed, and often the most rewarding, because the subject is usually someone you know. They're progressive, so there's nothing to deinterlace, but they're small, compressed hard, and noisy anywhere the light was poor. Hunt down the original file if you can: the copy in your chat history or on a social site has been squeezed at least once more. The [old phone video guide](https://phoenixlabs.space/old-phone-video) covers where originals hide and what to expect.
 
 ## Tapes: VHS, Hi8, MiniDV
 
@@ -71,7 +73,7 @@ Lightly, if at all. Current restoration models are trained on noisy footage and 
 
 Yes. Phoenix Upscaler does all its work on your own computer, and once activated it doesn't need an internet connection.
 
-Related: [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own footage
 

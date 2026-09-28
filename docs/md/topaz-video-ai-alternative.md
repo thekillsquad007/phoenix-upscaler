@@ -10,6 +10,8 @@ Topaz alternative
 
 Topaz Video is a good tool, and since 2025 it's only sold as a subscription. If what you mostly need is to rescue old footage rather than finish commercial work, Phoenix Upscaler does that job on your own PC for $129, once, with every update included.
 
+Updated 28 September 2026
+
 ## Side by side
 
 |  | Phoenix Upscaler | Topaz Video |
@@ -60,7 +62,7 @@ Not yet. On a Mac, use Cloud Restore: upload a clip, see the price in dollars, p
 
 On old, low-resolution footage, judge it on your own clip. The free download is there so you can compare the two side by side before paying anything. Phoenix aims for a clean, faithful picture rather than invented detail.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Old phone videos](https://phoenixlabs.space/old-phone-video)
 
 ## Compare on your own clip
 

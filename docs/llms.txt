@@ -4,6 +4,10 @@
 
 Prices are in US dollars. Payments are handled by Lemon Squeezy, the Merchant of Record. Support: support@phoenixlabs.space.
 
+Not to be confused with Phoenix Labs, the video game studio: this Phoenix Labs is the video software company at phoenixlabs.space. Phoenix Cloud Restore was earlier called Phoenix Cloud Studio.
+
+The full text of every page, in one file: https://phoenixlabs.space/llms-full.txt
+
 ## For AI agents: using Phoenix on someone's behalf
 
 - MCP server (Streamable HTTP): https://api.phoenixlabs.space/mcp. Tools: get_prices, quote_restore, create_restore, start_restore, get_restore, make_clip, start_clip, get_clip, list_clips, cancel_job, get_balance, create_top_up_link, top_up_with_usdc.
@@ -54,7 +58,8 @@ Prices are in US dollars. Payments are handled by Lemon Squeezy, the Merchant of
 ## Guides and comparisons
 
 - [How to restore old video](https://phoenixlabs.space/restore-old-video): diagnosing old footage and fixing it in the right order, for tapes, DVDs, film scans and old phone clips
-- [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software): capturing and restoring VHS, Hi8 and MiniDV tapes at home
+- [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software): how to restore VHS tapes at home: what's wrong with the picture and where each problem gets fixed, capturing well, restoring, and what to expect
+- [How to make old phone videos look better](https://phoenixlabs.space/old-phone-video): finding the best copy, restoring instead of sharpening, what size to export, and what can't be saved
 - [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative): Phoenix Upscaler and Topaz Video compared on price, licence and platforms
 
 ## Policies

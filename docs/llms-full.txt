@@ -1,0 +1,1648 @@
+# Phoenix Labs: full text of phoenixlabs.space
+
+> Every public page of phoenixlabs.space as Markdown, in one file. The short version, with links, is https://phoenixlabs.space/llms.txt. Phoenix Labs is the video software company at phoenixlabs.space (Phoenix Upscaler, Cloud Restore, Phoenix Motion, Phoenix Editor), not the video game studio of the same name.
+
+---
+title: "Phoenix Labs: video tools that bring footage back to life"
+description: "Restore and upscale old video on your PC or in the cloud, turn still images into clips with sound, and cut long streams into Shorts. No subscriptions."
+url: https://phoenixlabs.space/
+---
+
+![](https://phoenixlabs.space/assets/site/hero-reel.jpg)
+
+Phoenix Labs
+
+# Video, brought *back to life.*
+
+Restore footage the years have been hard on. Turn a still into a moving clip with sound. Cut a four-hour stream down to the moments worth watching. On your own PC, or in our cloud where you pay only for what you make.
+
+[See the tools](https://phoenixlabs.space/#products) [Make a clip, from $0.59](https://phoenixlabs.space/motion-app)
+
+ [**Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**Phoenix Motion**Any image into a 5-second clip, with sound.From $0.59 a clip](https://phoenixlabs.space/motion) [**Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor)
+
+The tools
+
+## Four tools. The tedious parts of video, done for you.
+
+Each one does a job people used to lose whole evenings to. Two run on your own machine and are yours to keep. Two run in our cloud, and you see the price in dollars before anything starts.
+
+### Phoenix Upscaler
+
+Windows & Linux
+
+Tapes, DVDs, film scans, and phone clips from 2012 that look like a postage stamp now. Strips the noise, fixes combed motion, and rebuilds the detail compression threw away. On your own graphics card; nothing uploads.
+
+$129 once, every update included[Explore](https://phoenixlabs.space/upscaler)
+
+![A farmhouse from a 1950s colour film, restored: crisp boards, clean sky](https://phoenixlabs.space/assets/site/cloud-after.jpg)
+
+![The same frame as it was: soft, noisy and small](https://phoenixlabs.space/assets/site/cloud-before.jpg)
+
+### Cloud Restore
+
+In your browser
+
+The same restoration, run on our datacenter GPUs. Works from a Mac, a laptop or a phone. Upload a clip, see the exact price, pay for that one job, download the result. A job that fails is refunded.
+
+From $2.99 a clip[Explore](https://phoenixlabs.space/studio)
+
+### Phoenix Motion
+
+In your browser
+
+Drop in an image, say what should happen, and get five seconds of video back with sound made in the same pass. Logos, concept art, product shots, portraits. Or make a seamless loop where only the part you name moves.
+
+From $0.59 a clip[Explore](https://phoenixlabs.space/motion)
+
+![Phoenix Editor's review screen: the detected cuts and Shorts candidates beside the video](https://phoenixlabs.space/assets/site/editor-review.jpg)
+
+### Phoenix Editor
+
+Windows & Linux
+
+Give it a VOD or a Let's Play. It cuts the dead air and filler words, finds the moments worth clipping, and turns them into captioned vertical Shorts. You check every cut before anything renders.
+
+$99 with a year of updates[Explore](https://phoenixlabs.space/editor)
+
+Upscaler & Cloud Restore
+
+## The detail was in there. It just needed finding.
+
+A frame from a 1952 home movie, restored with Phoenix Enhanced. Drag across it. Skin, hair and the painted boards behind her come back from under the noise, without the waxy look of a filter that just smooths everything.
+
+Phoenix rebuilds what compression and tape destroyed. It won't invent what was never recorded.
+
+[Restore on your PC](https://phoenixlabs.space/upscaler) [Or in the cloud](https://phoenixlabs.space/studio)
+
+Footage: *Texas Farm Family* (1952), public domain, via the Prelinger Archives.
+
+Phoenix Motion
+
+## A still, a sentence, five seconds of motion.
+
+Every clip below started as one image and the prompt under it, and every one is the first take. Unmute them: the wind and the birdsong came out of the same pass as the picture.
+
+“Slow cinematic push-in toward the house. Wind through dry grass.”
+
+“She turns toward the camera and smiles. Soft wind and distant birdsong.”
+
+Loop: “The logo stays still. Only embers drift upward.” It ends where it starts.
+
+[Make a clip](https://phoenixlabs.space/motion-app) [How Motion works](https://phoenixlabs.space/motion)
+
+Phoenix Editor
+
+## Cut the dead air. Keep the moments.
+
+Phoenix Editor listens to your recording, marks every silence and filler word, and scores the stretches worth clipping. Then it reframes them for vertical and burns in captions.
+
+- Every cut and every Short shown on the timeline before rendering.
+- Reactor template for reaction and commentary videos.
+- Runs on your own AMD or NVIDIA card. Nothing uploads.
+- Seven-day free trial, every feature unlocked.
+
+[See Phoenix Editor](https://phoenixlabs.space/editor)
+
+![Phoenix Editor's review step: the video with its detected cuts and Shorts candidates listed beside it](https://phoenixlabs.space/assets/site/editor-review.jpg)
+
+How we work
+
+## Straight prices. Your footage stays yours.
+
+Own it
+
+### Desktop apps you keep
+
+The Upscaler is $129 once, with every update. Editor is $99 with a year of updates, and keeps working if you never renew. No monthly rent.
+
+Pay per use
+
+### Cloud jobs in dollars
+
+Cloud Restore and Motion show the price in dollars before anything runs. No credits to decode, and a job that fails costs nothing.
+
+Private
+
+### Your files, not our dataset
+
+The desktop apps never upload anything. Cloud files are used for your job only and deleted within days. None of it trains a model.
+
+Questions
+
+## The things people ask first
+
+### What does Phoenix Labs make?
+
+Four video tools. Phoenix Upscaler restores and upscales old video on your own PC, for $129 once. Cloud Restore does the same restoration on our GPUs, paid per clip from $2.99. Phoenix Motion turns a still image into a five-second clip with sound, from $0.59 a clip. Phoenix Editor cuts long streams and recordings down and makes captioned Shorts, $99 with a year of updates.
+
+### Is anything a subscription?
+
+No. The Upscaler is $129 once, with every update included. Editor is $99 with a year of updates and keeps working after that year; renewing at $49 a year only brings new features. Cloud Restore and Motion are paid per clip in dollars, with no credits and no monthly plan.
+
+### Upscaler or Cloud Restore: which one do I need?
+
+If you have a Windows or Linux PC with a decent graphics card and more than a few clips, the $129 desktop app pays for itself quickly and nothing leaves your computer. On a Mac, a laptop or a phone, or for one or two clips, upload them to Cloud Restore and pay per clip.
+
+### What kind of old video can Phoenix fix?
+
+Anything that looked fine on the screen it was made for and doesn't now: VHS, Hi8 and MiniDV tapes, DVDs, 8mm film scans, phone clips from the 2010s, old uploads, gameplay and webcam recordings. It removes noise, untangles interlaced motion and rebuilds detail lost to compression. It can't recover detail the camera never recorded.
+
+### Does my footage get uploaded?
+
+Not with the desktop apps: the Upscaler and Editor do all their work on your own computer. Cloud Restore and Motion upload your file to process it and delete it automatically afterwards. Nothing you upload is used to train a model.
+
+### Can an AI assistant use Phoenix for me?
+
+Yes. Cloud Restore and Phoenix Motion work with AI assistants such as Claude, ChatGPT and Cursor, through our MCP server and API. Add Phoenix to the assistant, approve it once with a spending limit, and it pays from your balance, never past that limit. [How to set it up](https://phoenixlabs.space/developers).
+
+## Start with the one you need.
+
+The Upscaler and Editor both have free trials, and a Motion clip costs less than a coffee.
+
+[Try the Upscaler free](https://phoenixlabs.space/upscaler#download) [Make a Motion clip](https://phoenixlabs.space/motion-app) [Try Editor free](https://phoenixlabs.space/editor#download)
+
+---
+title: "Phoenix Upscaler: restore and upscale old video on your PC"
+description: "Restore and upscale old video on your own PC: tapes, DVDs, film scans and old phone clips. Removes noise, fixes interlacing, rebuilds detail. $129 once."
+url: https://phoenixlabs.space/upscaler
+---
+
+Phoenix Upscaler
+
+# Old video looks old. This fixes that.
+
+Tapes, DVDs, film scans, and the phone videos you shot in 2012 that looked fine then and look like a postage stamp now. Phoenix strips the noise, sorts out combed motion, and rebuilds the detail that compression and cheap sensors threw away.
+
+It runs on your own computer. The footage never leaves it.
+
+[Get Phoenix, $129](https://phoenixlabs.space/upscaler#price) [Watch a before & after](https://phoenixlabs.space/upscaler#proof)
+
+One payment. Every update included. Try it free on 60-second clips first.
+
+Drag across it. A 1952 home movie, restored with Phoenix Enhanced.
+
+**Nothing uploads.** Your video stays on your machine.
+
+**No subscription.** Pay once, keep it.
+
+**Runs on your own GPU.** NVIDIA or AMD. No gaming PC? Use the [cloud studio](https://phoenixlabs.space/studio).
+
+## It is not just tapes
+
+Phoenix was built for VHS, and tape is still the hardest case it handles. But lost resolution, compression, noise and combed motion are the same problems on almost any old footage, whatever recorded it.
+
+### Phone video from the 2010s
+
+480p and 720p clips, compressed hard by a phone with a tiny sensor. The most common thing people bring Phoenix, and often the most rewarding, because the subject is usually someone you know.
+
+### Tape, DVD and camcorder
+
+VHS, Hi8, MiniDV, wedding DVDs. Interlaced, noisy, colour-bled. Deinterlacing and noise removal are on by default for these, and the detail underneath is usually better than the tape suggests.
+
+### Film scans
+
+8mm and Super 8 transfers, where grain is part of the image rather than a defect. The Film preset keeps it instead of smoothing the picture into plastic.
+
+### Your own back catalogue
+
+Old uploads, gameplay captures, screen recordings, webcam footage. Anything that was fine on a 2012 monitor and is not fine on a 4K television.
+
+What it will not do is invent a picture that was never recorded. Footage that is genuinely out of focus stays out of focus. Phoenix rebuilds detail that compression and tape destroyed, which is a different problem and a solvable one. [See the full guide](https://phoenixlabs.space/upscaler-guide).
+
+## Two ways to run it
+
+Same restoration engine either way. The only question is whether the work happens on your computer or on ours.
+
+For gaming PC owners
+
+### Desktop app — $129 once
+
+Install it, drag in your footage, and restore as much as you like: forever, with no per-clip cost. Everything runs on your own graphics card, so nothing ever leaves your computer. Best if you've got a backlog to get through, or you just don't want your footage touching the internet.
+
+[Get the desktop app](https://phoenixlabs.space/upscaler#price)
+
+For everyone else
+
+### Cloud studio — pay per clip
+
+Works from a Mac, a laptop, a Chromebook, even a phone — no gaming PC, no install. Upload a clip, see the exact price in dollars before you pay, and download the result. Datacenter GPUs mean the heaviest detail-rebuilding modes run here without a 16 GB card of your own. Best for an occasional clip or if you don't own a gaming PC.
+
+[Open the cloud studio](https://phoenixlabs.space/studio)
+
+## The same clip, twice
+
+Left is the untouched 1952 home movie, with real print damage, not a clean transfer. Right is what Phoenix gave back. Play both, then judge it full screen.
+
+Straight off the film
+
+After Phoenix Enhanced
+
+![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_3.jpg)
+
+![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_3.jpg)
+
+![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_13.jpg)
+
+![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_13.jpg)
+
+Footage: *Texas Farm Family* (1952), public domain, via the Prelinger Archives. Restored with Phoenix Enhanced.
+
+## One more, so it's not a fluke
+
+A different film, a different decade — this one black and white. Same engine, same settings.
+
+Straight off the film
+
+After Phoenix Enhanced
+
+![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_1_crop.jpg)
+
+![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_1_fresh.jpg)
+
+![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_2_crop.jpg)
+
+![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_2_fresh.jpg)
+
+Footage: *Ivan Besse collection, Britton, South Dakota* (1938–39), public domain, via the Prelinger Archives. Restored with Phoenix Enhanced.
+
+## What it does to the picture
+
+### Kills the tape noise
+
+That crawling speckle VHS leaves behind, without smearing faces into wax.
+
+### Fixes combed motion
+
+Old tape and TV footage is interlaced, so anything that moves gets a torn, striped edge. Phoenix untangles it.
+
+### Rebuilds lost detail
+
+Hair, fabric, the lettering on a sign. Things the tape blurred into a smudge come back readable.
+
+### Keeps the grain
+
+Film should still look like film. Phoenix puts texture back so the result doesn't go plastic.
+
+1. 1 Drag your video onto the window.
+2. 2 Phoenix reads the footage and picks its own settings.
+3. 3 Go and make a cup of tea.
+4. 4 Save the result wherever you like.
+
+## One price
+
+Phoenix Upscaler
+
+$129once
+
+- Yours permanently. Nothing renews.
+- Every future update included, free.
+- No watermark, any clip length.
+- Upscale up to 4K resolution.
+- Install on 3 of your own computers.
+- Works offline once activated.
+
+[Buy Phoenix, $129](https://phoenixlabs.space/upscaler#download) [Or try it free first](https://phoenixlabs.space/upscaler#download)
+
+Card payment handled by Lemon Squeezy. Your key arrives by email immediately.
+
+### Try it first
+
+The free download restores 60-second clips with a small watermark, so you can point it at your own tape and see the result before paying anything.
+
+### Compared to the alternative
+
+Topaz Video AI is where most people end up. It's good, and it's built for film crews. It's also subscription-only now, at $59 a month for the video app or $399 a year for their bundle, and they stopped selling a one-time licence in 2025. If you're fixing up a drive full of old clips rather than grading a feature, that's a lot of rent for something you'll open a few times a year.
+
+## Download
+
+[**Windows**10 and 11, 64-bit](https://github.com/thekillsquad007/phoenix-upscaler/releases/latest)   [**Linux**AppImage](https://github.com/thekillsquad007/phoenix-upscaler/releases/latest)  **macOS**Coming later
+
+### System requirements
+
+Phoenix leans on the GPU for the actual restoration work, so what matters most is your graphics card. A full-length tape is hours of processing either way — most people set it going overnight.
+
+|  | Minimum | Recommended |
+| --- | --- | --- |
+| Graphics card | Any modern GPU, 4 GB VRAM NVIDIA, AMD or Intel | NVIDIA 8 GB+ or AMD 16 GB+ e.g. RTX 3060 / RX 7800 XT |
+| Memory | 8 GB RAM | 16 GB RAM 32 GB for AMD Generative |
+| OS | Windows 10/11 (64-bit) or Linux | |
+| Storage | Free space roughly equal to your source footage | |
+
+Standard and Enhanced restoration run on any modern graphics card. Generative mode, the deepest detail reconstruction, needs an 8 GB+ NVIDIA card, or a 16 GB+ AMD card after a one-time setup the app runs for you. Below that, or on a Mac? The [cloud studio](https://phoenixlabs.space/studio) does the same restoration on our GPUs with no hardware requirements at all.
+
+## Don't have a gaming PC?
+
+No install, no waiting on a download — [the cloud studio](https://phoenixlabs.space/studio) does the same restoration on our GPUs. Upload, see the exact price, pay for that one clip.
+
+[Upload a clip now](https://phoenixlabs.space/studio-app)
+
+## Questions
+
+### Does my video get uploaded anywhere?
+
+No. Everything happens on your machine. Once activated, Phoenix doesn't need an internet connection at all.
+
+### Is this a subscription?
+
+No. You pay $129 once and it's yours, including every update afterwards. Nothing expires, nothing renews.
+
+### What files can it open?
+
+MP4, MOV, MKV and AVI. If you've captured a tape with a USB capture stick, whatever it produced will almost certainly work.
+
+### How long does a tape take?
+
+Longer than you'd like. A two-hour tape is an overnight job on most machines. It's doing real work on every frame, and there are around 180,000 of them.
+
+### What happens if it crashes or I close the app partway through?
+
+It doesn't start over. Long Generative restores save progress as they go, so a crash, a driver hiccup, or closing the app mid-job just means picking up where it stopped next time you open Phoenix, not redoing the whole tape.
+
+### Can I put it on my other computer?
+
+Yes, up to three at a time. Release one from inside the app and move it to a new machine whenever you want.
+
+### Will it make a bad tape look like it was shot yesterday?
+
+No, and be wary of anything claiming otherwise. Detail the tape never recorded can't be recovered, only guessed at. Phoenix aims for a clean, honest picture rather than an invented one.
+
+### Does the 4K output actually reach 3840×2160?
+
+Depends on your source. Most VHS is 4:3, so a 4K pass lands around 2880×2160 — full height, no black bars, no stretching, just not the same shape as a widescreen 4K frame. Widescreen camcorder footage upscales to true 3840×2160. Either way it's a real 4x increase over the source, not a resize with nothing behind it.
+
+## Give your old footage a second life
+
+[Get Phoenix, $129](https://phoenixlabs.space/upscaler#price)
+
+---
+title: "Phoenix Cloud Restore: restore old video online, pay per clip"
+description: "Restore old video online with no gaming PC and no install. Upload a clip, see the price in dollars, pay for that one job, download it. From $2.99."
+url: https://phoenixlabs.space/studio
+---
+
+# No gaming PC? Restore it in the cloud.
+
+Phoenix Cloud Restore cleans up and upscales old video on our datacenter GPUs, so it works from a Mac, a laptop or a phone. Upload a clip, see exactly what it costs in dollars, pay for that one job, and download the result.
+
+No account. No subscription. No credits. A failed job is refunded.
+
+[Upload a clip](https://phoenixlabs.space/studio-app) [Prefer to run it locally? $129 desktop app](https://phoenixlabs.space/upscaler#price)
+
+Your file is used only for the job, then deleted automatically.
+
+![A restored face, sharp and detailed, in color](https://phoenixlabs.space/assets/demo/enhanced_after.jpg)
+
+![The same face before restoration, soft and faded](https://phoenixlabs.space/assets/demo/enhanced_before.jpg)
+
+Phoenix Enhanced — the diffusion-based mode, run on our GPUs.
+
+**Pay per job.** A dollar price, shown before you pay.
+
+**No account.** Just your email for the receipt.
+
+**Refunded if it fails.** You only pay for a good result.
+
+## Three steps
+
+1
+
+### Upload
+
+Drop in a photo or old video clip and pick a quality level.
+
+2
+
+### Pay the exact price
+
+Shown up front, before you commit — a normal card charge, no credit balance.
+
+3
+
+### Download
+
+Get the restored file. Your upload is deleted automatically right after.
+
+## What it costs
+
+You always see the exact dollar total in the studio before you pay — it scales with the clip's length and the quality you choose. There are no credits and nothing recurring.
+
+Cloud restore
+
+from $2.99per job
+
+- **Standard** — denoise, deinterlace, upscale 2×. From $2.99.
+- **Enhanced** — adds AI detail reconstruction on top, for badly degraded footage where Standard still looks soft. From $5.99.
+- **Studio Max** — the same restore as Enhanced, delivered at up to 4K for editing or big screens. From $5.99.
+- Exact total shown before payment. Failed jobs refunded.
+
+[Open the studio](https://phoenixlabs.space/studio-app)
+
+Card payments handled by Lemon Squeezy. Tax handled for you.
+
+### Desktop vs cloud
+
+The [$129 desktop app](https://phoenixlabs.space/upscaler#price) is the best value if you have a gaming GPU (NVIDIA or AMD) and a lot of footage — one payment, unlimited local restores, nothing leaves your PC. The cloud studio is for everyone else, or for a one-off job you'd rather not install anything for.
+
+### Your privacy
+
+A cloud job uploads your file only to process it. The source and the result are removed automatically after you download — see our [privacy policy](https://phoenixlabs.space/privacy).
+
+## Questions
+
+### How much does a cloud restore cost?
+
+You see the exact price in dollars before you pay. It depends on how long the clip is and the mode you pick: Standard starts at $2.99, Enhanced and Studio Max at $5.99. There are no credits and nothing recurring.
+
+### How long can a clip be?
+
+Uploads can be up to 2 GB. Standard restores clips up to 30 minutes long; Enhanced and Studio Max take up to 6 minutes per clip for now, a little less for very high resolution or frame rates. Split longer videos into parts.
+
+### What happens to my file?
+
+It's used for your job and nothing else. The upload and the result are deleted automatically, typically within 48 hours, so download the result when it's ready. We don't look at it, share it, or train on it.
+
+### What if the restore fails?
+
+You get your money back automatically. You only pay for a result you can download.
+
+### Do I need an account?
+
+No. Just an email address, for the receipt and so you can come back to the download.
+
+### Can it restore old photos too?
+
+Yes. Drop in a photo instead of a clip and it's priced and restored the same way.
+
+### Can an AI assistant restore videos for me?
+
+Yes. Connect it to our MCP server and approve it with a spending limit (it shares the balance you use in Phoenix Motion), and it can run restores paid from your balance. Or it can start a restore and hand you the checkout link. [How it works](https://phoenixlabs.space/developers).
+
+## Try one clip
+
+[Open the cloud studio](https://phoenixlabs.space/studio-app)
+
+---
+title: "Phoenix Motion: turn any image into a video with sound"
+description: "Upload an image, say what should happen, and get a five-second video with sound. Logos, art, product shots, portraits and loops. From $0.59 a clip."
+url: https://phoenixlabs.space/motion
+---
+
+Phoenix Motion · image to video
+
+# Give any image five seconds of motion.
+
+Phoenix Motion turns a still image into a five-second video, sound included. Drop in a picture and say what should happen. Logos, concept art, product shots, portraits, paintings, screenshots. If it's a still, it can move.
+
+[Make a clip](https://phoenixlabs.space/motion-app) [See what it makes](https://phoenixlabs.space/motion#examples)
+
+From $0.59 a clip, paid from a balance. No subscription, no watermark.
+
+Our own logo, one prompt, first take. Unmute it: the fire is part of the clip.
+
+**Pay per clip.** Top up once, spend it clip by clip. The balance doesn't expire.
+
+**Few rules.** Action, horror, the weird stuff. The one thing we don't make is sexual content.
+
+**It's yours.** No watermark. Use your clips however you like, commercially too.
+
+## One image, one sentence
+
+Each of these started as a single still and the prompt under it. No editing afterwards, and each is the first take. The sound came out of the same pass as the picture.
+
+“The phoenix beats its wings and bursts into flame. Fire ripples along its feathers and glowing embers drift upward into the darkness. Static camera. The roar and crackle of fire.”
+
+“Slow cinematic push-in toward the house. The tree's branches sway in the wind and clouds drift across the sky. Wind through dry grass.”
+
+“The woman turns her head slightly toward the camera and smiles, her hair moving in a light breeze. Handheld camera, natural light. Soft wind and distant birdsong.”
+
+**Loop:** “The phoenix logo stays completely still. Only glowing embers drift slowly upward around it and its edges shimmer with heat.” Everything else holds still, and the clip ends where it starts.
+
+Stills: the Phoenix Labs logo, and frames from *Color Harmony* and *Texas Farm Family* (public domain, Prelinger Archives).
+
+## How it works
+
+1
+
+### Drop an image
+
+JPEG, PNG or WebP, any shape. Your photo's location data is stripped in your browser before it uploads.
+
+2
+
+### Say what should happen
+
+What moves, how, and what the camera does. "Slow push-in, wind in her hair, she turns to the camera" beats "make it cinematic".
+
+3
+
+### Download the clip
+
+Usually ready in well under a minute, with sound. Don't like it? Make another take. Every take is different unless you reuse its seed.
+
+## What it costs
+
+Per 5-second clip
+
+|  |  |  |
+| --- | --- | --- |
+| 480p | $0.59 | Fastest. Drafts, social posts, trying ideas. |
+| 720p | $0.99 | Sharper. For the take you keep. |
+
+- Add $10, $25, $50, or any amount from $5 to $200.
+- Your balance doesn't expire.
+- A failed or refused clip costs nothing. The price goes straight back.
+- No subscription, no watermark, no account to make.
+
+[Make a clip](https://phoenixlabs.space/motion-app)
+
+Card payments handled by Lemon Squeezy. Tax handled for you.
+
+### Why a balance and not a charge per clip
+
+You rarely keep the first take. A card payment per 59-cent clip would cost more in fees than the clip itself, so you add money once and spend it clip by clip. It's plain dollars at the prices on this page. Unused balance can be refunded on request.
+
+### No login
+
+Your balance lives behind a private wallet key that your browser keeps. Every top-up receipt has a link back to it, so you can pick it up on another device or after clearing your browser.
+
+## What you can make
+
+Almost anything. Fight scenes, monsters, fantasy, dark and strange ideas, parody. We don't police taste, and we don't water down prompts behind your back.
+
+### No sexual or nude content
+
+Our payment provider doesn't allow sexual content for any business it works with, and breaking that rule would stop every Phoenix product from selling. Prompts and images that ask for it are refused before you're charged.
+
+### Nothing illegal
+
+And nothing sexual or suggestive involving a child, ever. You need the right to use the image you upload, and you're responsible for what you do with the clip. Each clip's file notes that it's AI-generated.
+
+## Questions
+
+### How long does a clip take?
+
+Usually well under a minute. The first clip after a quiet spell takes a minute or two longer while a GPU loads the model.
+
+### How long are the clips?
+
+Five seconds at 24 frames per second, with sound made in the same pass as the picture. Tick "Make it a loop" and the clip ends where it starts, ready to repeat forever.
+
+### Can I use the clips commercially?
+
+Yes, within the rules on this page. Phoenix Motion runs LTX-2.5, an open video model from Lightricks, whose licence claims no rights in what you make with it.
+
+### Do you keep my images?
+
+No. Your image is deleted as soon as the clip is made, and finished clips are deleted after two days. Download the ones you want to keep.
+
+### What if I don't like a clip?
+
+Make another take with a sharper prompt. A clip that fails or gets refused costs nothing, but a clip that was made used real GPU time, so we can't refund it because it wasn't the one you pictured.
+
+### What's a wallet key?
+
+A private code that stands for your balance, so there's no account or password. Your browser keeps it, and your top-up receipt links back to it. Anyone with the key can spend the balance, so don't share it.
+
+### Can an AI assistant make clips for me?
+
+Yes. Add our MCP server to your assistant and approve it once with a spending limit (or make it an agent key in the app, under your balance), and it can make clips from your balance up to that limit. [Setup for Claude, ChatGPT, Cursor and others](https://phoenixlabs.space/developers).
+
+## Pick an image. Make it move.
+
+[Make a clip](https://phoenixlabs.space/motion-app)
+
+---
+title: "Phoenix Editor: automatic video editing for streamers"
+description: "Phoenix Editor cuts dead air and filler words from long recordings and turns the best moments into captioned Shorts, on your own GPU. $99 with updates."
+url: https://phoenixlabs.space/editor
+---
+
+# Stop editing your VODs by hand.
+
+Phoenix Editor watches your Let's Play or stream recording, cuts the dead air and filler words, and turns your best moments into captioned, vertically-cropped Shorts automatically.
+
+Reacting to someone else's video? The [Reactor template](https://phoenixlabs.space/editor#reactor) composites your cam over their footage, cuts your own dead air, and ducks their audio under your commentary — no manual timeline work.
+
+[Get Phoenix Editor, $99](https://phoenixlabs.space/editor#price) [See what it does](https://phoenixlabs.space/editor#features)
+
+Available now for Windows and Linux. GPU-accelerated on AMD and NVIDIA.
+
+ ![Phoenix Editor's review screen: video preview, waveform timeline with detected cuts and Shorts highlights, and a checklist of what will render](https://phoenixlabs.space/assets/demo/editor_review_ui.jpg)
+
+Real detection, before you render — see every cut and Shorts candidate on the timeline first.
+
+**Runs on your own GPU.** AMD or NVIDIA, nothing uploads.
+
+**Auto-cuts dead air and filler words.** No manual scrubbing.
+
+**Reactor template built in.** For reaction and commentary content.
+
+## What it does
+
+### Auto-cut long-form VODs
+
+Transcribes your recording, then removes silence, dead air and filler words automatically — a tightened edit without touching a timeline.
+
+### Auto-generate Shorts
+
+Scores your VOD for highlight moments, then reframes, crops and burns in captions for vertical Shorts/TikTok/Reels — subject-tracking crop follows the action, not the center of the frame.
+
+### Reactor template
+
+Give it your reaction cam and the source video. It composites your cam as a positioned, scaled, optionally mirrored or transparent overlay, cuts dead air from your own commentary, and mutes, ducks or muffles the source audio underneath it.
+
+### GPU-accelerated, either vendor
+
+Hardware encode/decode and transcription on AMD (VAAPI/Vulkan) or NVIDIA (NVENC/CUDA) — picked automatically for your machine.
+
+1. 1 Drop in your recording (or your reaction cam + source, for Reactor).
+2. 2 Phoenix detects dead air, filler words and highlight moments.
+3. 3 Review the detected cuts and Shorts before anything renders.
+4. 4 Render — GPU-accelerated, on your own machine.
+
+## Pricing
+
+Phoenix Editor
+
+$99 first year
+
+- Auto-cut long-form VODs.
+- Auto-generate captioned Shorts.
+- Reactor template included.
+- GPU-accelerated on AMD or NVIDIA.
+- Nothing uploads — runs on your machine.
+
+[Get Phoenix Editor](mailto:support@phoenixlabs.space?subject=Phoenix%20Editor)
+
+**Try it free for 7 days first** — every feature unlocked, exports with no watermark, no card needed. After that it keeps working; exports just carry a small mark until you buy.
+
+$99 covers a full year of updates, then renews at $49/year to keep new features coming. Cancel anytime — you keep using the version you have, full quality, no watermark, no expiry. Billed and handled by Lemon Squeezy.
+
+### Not a subscription trap
+
+It runs on your own GPU, so you're not paying for our hosting or compute — $99 unlocks everything and includes a year of new detection models and templates (Reactor was the first). If you cancel, Phoenix Editor keeps working exactly as it is: full quality, no watermark, forever. Renewing at $49/year just keeps new features coming.
+
+### Same house rules
+
+Detection, transcription and rendering all happen on your own GPU. Your footage isn't uploaded anywhere to use the app.
+
+## Download
+
+[**Windows**10 and 11, 64-bit](https://github.com/thekillsquad007/phoenix-editor-releases/releases/latest)   [**Linux**.deb and .rpm, 64-bit](https://github.com/thekillsquad007/phoenix-editor-releases/releases/latest)  **macOS**Coming later
+
+The download is the full app. The first 7 days are a free trial with every feature unlocked and no watermark, so you can put a real VOD through it before deciding. New to it? Start with the [setup and first edit guide](https://phoenixlabs.space/editor-guide).
+
+### What it needs
+
+Transcription and rendering both lean on the GPU, so that is what matters most. A long stream is still a long job, and most people set it going and come back to it.
+
+|  | Minimum | Recommended |
+| --- | --- | --- |
+| Graphics card | Any GPU with Vulkan AMD, Intel or NVIDIA | NVIDIA (CUDA) or AMD 8 GB+ roughly 3-5x faster transcription |
+| Memory | 8 GB RAM | 16 GB RAM |
+| OS | Windows 10/11 (64-bit) | |
+| Storage | A few GB free, plus room for what you export | |
+
+No GPU at all? It still runs on the processor, just slower. Nothing is uploaded either way, so the only limit is your own hardware.
+
+## Questions
+
+### Is Phoenix Editor available yet?
+
+Yes. Phoenix Editor is available now for Windows and Linux. A macOS version is planned.
+
+### Can I try Phoenix Editor before buying?
+
+Yes. The first 7 days are a full free trial — every feature unlocked and exports carry no watermark, with no card required. After the trial Phoenix Editor keeps working; exports just carry a small “Made with Phoenix Editor” mark until you buy.
+
+### Is this a subscription?
+
+It's a $99 one-time payment that includes a full year of updates. It renews at $49/year after that if you want to keep getting new features — cancel anytime and keep using the version you have, full quality, no watermark, no expiry.
+
+### Does my footage get uploaded anywhere?
+
+No. Detection, transcription and rendering all run on your own machine and your own GPU.
+
+### What is the Reactor template, exactly?
+
+A composite of your reaction cam over a source video: your cam becomes a positioned, scaled, optionally mirrored or semi-transparent overlay window. Phoenix cuts dead air from your own commentary track and mutes, ducks or muffles the source's audio underneath it. It's built to help make a reaction video a transformative edit rather than a straight re-upload — that's a creative and editorial choice, not a legal guarantee, so you're still responsible for how you use the source material.
+
+### Which platforms will it run on?
+
+Windows 10 and 11, and Linux (.deb and .rpm packages). A macOS version is planned. GPU acceleration works on both AMD and NVIDIA.
+
+## Stop editing your VODs by hand
+
+[Get Phoenix Editor, $99](mailto:support@phoenixlabs.space?subject=Phoenix%20Editor)
+
+---
+title: "How to restore old video: tapes, DVDs, film and phone clips"
+description: "How to restore old video from tapes, DVDs, film scans or an old phone: work out what's wrong, fix it in the right order, and know what restoration can't do."
+url: https://phoenixlabs.space/restore-old-video
+---
+
+Guide
+
+# How to restore old video, whatever it was shot on
+
+Tapes, DVDs, film scans and the phone clips you shot ten years ago all go soft in different ways. Fix the damage in the right order and they can look good on a modern screen. Fix it in the wrong order and you mostly get sharper noise.
+
+Updated 28 September 2026
+
+## First, work out what's actually wrong
+
+Most old footage has two or three of these at once, and each needs a different fix, so it's worth a minute of looking before you touch anything.
+
+- **Combed edges on anything that moves.** That's interlacing, from tape, camcorders, DVDs and TV recordings.
+- **Crawling speckle or a gritty veil.** Tape noise, or sensor noise from a small phone camera in poor light.
+- **Blocks, smears and mushy faces.** Compression. Early phones, DVDs and old uploads all threw detail away to save space.
+- **It's just small.** 480p or 720p looks soft on a 4K TV even when the recording itself is clean.
+- **Grain.** On film scans, grain is part of the picture, not damage. Keep it.
+
+## Then fix it in this order
+
+1. **Start from the best copy you have.** A clean capture of the tape, the original file off the old phone, the DVD's own files. A clip that went through a messaging app or a social network was compressed again on the way, and that damage stacks.
+2. **Deinterlace first, if the footage is interlaced.** Tape, camcorder, DVD and TV footage usually is. Undo it before anything else, or every later step sharpens the comb teeth.
+3. **Go easy on denoising before you upscale.** Modern restoration models learned on noisy, compressed footage. Scrub it clean first and you strip the texture they work from, and faces come out waxy.
+4. **Restore and upscale in one pass.** Rebuild the detail that compression and noise buried, at the new size, in a single step. Sharpening a plain resize afterwards mostly sharpens the damage.
+5. **Test 30 seconds before the whole thing.** Pick a short section with a face, some motion and a dark corner. If that looks natural, run the rest with the same settings.
+6. **Export at the size you will watch it.** 1080p suits most screens. Go to 4K for a big TV when the source is decent. Much past four times the original size you are mostly making bigger files.
+
+## Old phone video
+
+Phone clips from the early 2010s are the most common thing people want fixed, and often the most rewarding, because the subject is usually someone you know. They're progressive, so there's nothing to deinterlace, but they're small, compressed hard, and noisy anywhere the light was poor. Hunt down the original file if you can: the copy in your chat history or on a social site has been squeezed at least once more. The [old phone video guide](https://phoenixlabs.space/old-phone-video) covers where originals hide and what to expect.
+
+## Tapes: VHS, Hi8, MiniDV
+
+Tape needs deinterlacing and noise removal before anything else, and the capture matters as much as the restore. The [VHS restoration guide](https://phoenixlabs.space/vhs-restoration-software) covers capturing and checking a tape before you commit hours to it.
+
+## Film scans
+
+8mm and Super 8 transfers are usually progressive and far more detailed than tape, but grain is part of how film looks. A restore that smooths it away turns people into plastic. Clean up dust and flicker, keep the grain.
+
+## DVDs, old uploads and screen recordings
+
+These are mostly compression problems, and DVDs are often interlaced too. Old uploads, gameplay captures and webcam footage were fine on a 2012 monitor and fall apart on a 4K one, which is exactly the damage a restoration model is good at.
+
+## What restoration can't do
+
+It can't recover detail the camera never recorded. A shot that was out of focus stays out of focus, and a face that was six pixels wide can only be guessed at. A good restore gives you a clean, stable picture of what was there. Anything promising to make a 1995 tape look like it was shot yesterday is inventing the difference.
+
+## Doing it with Phoenix
+
+[Phoenix Upscaler](https://phoenixlabs.space/upscaler) does steps two to six for you. It reads the footage, deinterlaces when it needs to, and picks its own settings for the source. It runs on your own PC for $129 once, and the free download restores 60-second clips so you can try your own footage first. No gaming PC? [Cloud Restore](https://phoenixlabs.space/studio) does the same restoration on our GPUs, from $2.99 a clip.
+
+## Questions
+
+### Can you really improve old, low-quality video?
+
+Yes, up to a point. Noise, interlacing and compression damage can be cleaned up, and the detail they buried can be rebuilt, so the picture holds up on a modern screen. Detail that was never recorded can't come back.
+
+### What resolution should I upscale old video to?
+
+1080p for most screens. 4K is worth it for a big TV when the source is reasonably clean. From standard definition, going much past four times the original size mostly makes bigger files, not a better picture.
+
+### Should I denoise before upscaling?
+
+Lightly, if at all. Current restoration models are trained on noisy footage and use that texture. Heavy denoising first leaves them less to work with and makes skin look waxy.
+
+### Can I restore video without uploading it anywhere?
+
+Yes. Phoenix Upscaler does all its work on your own computer, and once activated it doesn't need an internet connection.
+
+Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+
+## Try it on your own footage
+
+The free download restores 60-second clips with a small watermark. Pick a short section with a face in it and judge the result yourself.
+
+[Download Phoenix](https://phoenixlabs.space/upscaler#download)
+
+---
+title: "VHS restoration software: how to restore old tapes at home"
+description: "How to restore VHS tapes at home: capture them well, then deinterlace, clean and upscale on your own PC. What software can fix, and what it can't."
+url: https://phoenixlabs.space/vhs-restoration-software
+---
+
+VHS restoration software
+
+# How to restore VHS tapes at home
+
+Restoring a tape has two halves. First you capture it, playing it into a computer as cleanly as your VCR allows. Then restoration software fixes what the tape did to the picture: it deinterlaces, removes tape noise and rebuilds detail at a size that suits a modern screen. Phoenix Upscaler does the second half on your own Windows or Linux PC, for $129 once, and the tape never leaves your computer.
+
+Updated 28 September 2026
+
+## What's wrong with the picture, and where it gets fixed
+
+Most tapes show several of these at once. Some are fixed in software and some only at capture, so it's worth knowing which is which before you spend an evening on it.
+
+| What you see | What causes it | Where it gets fixed |
+| --- | --- | --- |
+| Combed, striped edges on anything that moves | Interlacing: each frame is two half-pictures taken a moment apart | Restoration software |
+| Speckle that crawls, blotchy colour | Tape noise and colour noise | Restoration software |
+| A soft picture that falls apart on a big TV | Low resolution: VHS records less detail than a DVD | Restoration software, within limits |
+| Colour smearing past the edges of things | VHS stores colour at a very low resolution | Partly, in software |
+| Wobbling verticals, a jittery picture | Timing errors in playback | At capture, with a time base corrector |
+| White streaks and flashes | Dropouts, where the tape's coating is worn or damaged | At capture, with a clean, well-adjusted deck |
+| Bands of noise, a rolling picture | Tracking | At capture, with the VCR's tracking control |
+| A ragged strip along the bottom edge | Head-switching noise, normally hidden by a TV's overscan | Crop or mask it when you edit |
+
+## Capture: the half software can't redo
+
+Restoration works from whatever the capture gives it. A wobbly, badly tracked capture, restored well, is still wobbly.
+
+- **Use the best VCR you can get, with clean heads.** Snow on every tape usually means dirty heads, not bad tapes.
+- **Use S-Video if the VCR and capture device both have it.** It keeps brightness and colour apart and gives a cleaner picture than the yellow composite cable.
+- **A time base corrector steadies the picture.** It removes wobble and helps the capture device hold sync. Some higher-end S-VHS decks have one built in; otherwise it's a separate box.
+- **Capture at the tape's own size**, 720×480 for NTSC or 720×576 for PAL, to a lossless or high-bitrate file. Don't let the capture software shrink, crop or heavily compress it.
+- **Leave it interlaced.** Deinterlacing is best done once, by the restoration, not first by the capture software.
+- **Capture the whole tape in one go**, adjusting tracking as you watch. You can restore just the parts you want later.
+
+## Then restore it
+
+1. **Preview.** Pick a stretch with a face, some motion and a dark corner. Run a short Phoenix preview using Standard Restore first.
+2. **Check the preview.** Check faces, text, motion, and noisy shadows before exporting a long tape.
+3. **Choose a restoration mode.** Standard and Enhanced run on any modern AMD, Intel or NVIDIA Windows GPU. Generative rebuilds the most detail and runs on 8 GB+ NVIDIA cards, or on 16 GB+ AMD cards after a one-time in-app setup. Pick Generative when the preview looks better.
+4. **Export at the size you'll watch.** 1080p suits most screens. VHS holds too little detail to gain much from 4K unless you'll watch on a big 4K TV.
+
+## What a restored tape looks like
+
+Cleaner, steadier and sharper, but still recognisably a tape. Faces close to the camera improve the most, because that's where the tape recorded the most real detail. People in the distance, background text and anything out of focus can only be guessed at, and Phoenix aims to stay faithful to the tape rather than invent a new face where the tape had a smudge. Dropouts and tracking damage that made it into the capture mostly stay.
+
+## Why do it on your own PC
+
+Old tapes hold things you may not want online: private conversations, addresses, people who never agreed to be filmed for the internet. Phoenix keeps restoration on your PC instead of requiring a cloud upload, and works offline once it's activated.
+
+## Doing it with Phoenix
+
+[Phoenix Upscaler](https://phoenixlabs.space/upscaler) reads each capture, deinterlaces it, cleans up the tape noise and picks its own settings for the source. It opens MP4, MOV, MKV and AVI files, runs on Windows and Linux for $129 once with every update included, and the free download restores 60-second clips so you can test your own tape first. No suitable PC? [Cloud Restore](https://phoenixlabs.space/studio) runs the same restoration on our GPUs, from $2.99 a clip.
+
+## Questions
+
+### What is the best software for restoring VHS tapes?
+
+It depends on what you want to pay and how much you want to tinker. Phoenix Upscaler runs on your own Windows or Linux PC for $129 once and picks its settings for you. Topaz Video is the best-known alternative, on Windows and Mac, and is sold only as a subscription, $299 a year. If you're happy with scripts, free tools such as QTGMC for deinterlacing and Video2X for upscaling do a lot, with more setup. Whichever you choose, a good capture matters as much as the software.
+
+### Can VHS be upscaled to 4K?
+
+Yes, but 1080p gets you most of the improvement. VHS holds less detail than a DVD, so going to 4K mainly makes bigger files. It's worth it if you'll watch on a large 4K TV and would rather not leave the upscaling to the TV.
+
+### Should I deinterlace VHS captures?
+
+Yes, once. Capture the tape interlaced and deinterlace as the first step of the restore. Sharpening or upscaling before deinterlacing turns the combed edges into permanent jagged lines.
+
+### Can software fix tracking lines and a wobbly picture?
+
+Mostly not. Tracking noise, rolling and wobble come from playback, so they're fixed at capture, with the VCR's tracking control, clean heads and a time base corrector. Software is good at what's left: interlacing, noise and softness.
+
+### How long does it take to restore a whole tape?
+
+It depends on your graphics card and the mode. Time a 30-second test and multiply: a two-hour tape is 240 of those. You can also restore just the parts you care about rather than every minute.
+
+### Do I have to upload my tapes to restore them?
+
+No. Phoenix Upscaler works entirely on your own computer and doesn't need an internet connection once it's activated. Cloud Restore is there if you'd rather not use your own PC.
+
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative)
+
+## Try it on your own tape
+
+The free download restores 60-second clips with a small watermark. Restore a stretch with a face in it, then decide.
+
+[Download Phoenix](https://phoenixlabs.space/upscaler#download)
+
+---
+title: "How to make old phone videos look better | Phoenix Upscaler"
+description: "Old phone clips look soft, blocky and noisy on today's screens. Find the best copy, fix the compression, upscale once, and know what can't be saved."
+url: https://phoenixlabs.space/old-phone-video
+---
+
+Old phone video
+
+# How to make old phone videos look better
+
+Find the original file, not a copy that went through a chat app. Clean up the compression and noise with a restoration model instead of a sharpening filter. Then upscale it once, to 1080p. Most clips from the early 2010s come out clean and steady enough for a modern screen, and faces that filled the frame improve the most.
+
+Updated 28 September 2026
+
+## Why old phone videos look so bad now
+
+They looked fine on the phone that shot them. Four things have caught up with them since.
+
+- **They're small.** Plenty of phones from before about 2012 filmed at 480p or 720p, and front cameras at less. That's a small picture to spread across a 4K TV.
+- **They're heavily compressed.** To save space, phones threw away most of the detail as they recorded. It shows up as blocks in dark areas and smeared faces whenever anything moves.
+- **The sensors were tiny.** In poor light a phone sensor makes noise, and the compression turns that noise into crawling mush.
+- **Copies of copies.** Every trip through a messaging app or a social site compresses the clip again, and the damage stacks.
+
+## 1. Find the best copy you have
+
+This matters more than any setting. Look wherever the original might still be:
+
+- the old phone itself, or its memory card;
+- a computer you synced or backed the phone up to;
+- a cloud photo backup, if it kept the original quality. Space-saving settings compress videos again.
+
+If you find several copies at the same resolution, the bigger file is usually the less compressed one. Anything saved out of WhatsApp, Messenger or a social network has been compressed at least once more.
+
+## 2. Restore it instead of sharpening it
+
+The sharpen and “enhance” sliders in phone and photo apps can't tell compression blocks from real detail, so they make both crisper. A restoration model has learned what compression and noise look like and rebuilds the detail underneath instead. Go easy on separate noise reduction first: the model works from that texture, and a scrubbed clip comes out waxy.
+
+## 3. Upscale once, to the size you'll watch
+
+1080p suits most screens and is a comfortable step up from 480p or 720p. 4K is worth it for a clean 720p or better clip you'll watch on a big TV. Do it in the same pass as the restore: upscaling, then restoring, then upscaling again stacks each step's artifacts.
+
+## 4. Keep vertical clips vertical
+
+A lot of phone video from the 2010s is portrait. Restore it as it is. A crop to widescreen or blurred side bars are choices for when you put it on a TV, and easy to add afterwards, but a crop throws away picture you can't get back.
+
+## 5. Test 30 seconds first
+
+Pick a stretch with a face, some movement and a dark corner, restore just that, and watch it full screen. If it looks natural, run the whole clip with the same settings.
+
+## What restoration can and can't do for a phone clip
+
+It can clean up compression blocks, noise and softness, and give you a steady picture at a size that holds up on a big screen. It can't sharpen a shot that was out of focus, undo heavy motion blur, or bring back a face that was a handful of pixels across. Clips shot in daylight improve the most. Very dark ones improve less, because there was little real detail under the noise.
+
+## Doing it with Phoenix
+
+[Phoenix Upscaler](https://phoenixlabs.space/upscaler) handles the restoring and upscaling for you: it reads each clip, deinterlaces only when it needs to, and picks its own settings for the source. It runs on your own Windows or Linux PC for $129 once, nothing uploads, and the free download restores 60-second clips so you can try your own footage first. On a Mac, or straight from your phone's browser, [Cloud Restore](https://phoenixlabs.space/studio) does the same restoration on our GPUs, from $2.99 a clip.
+
+## Questions
+
+### Can AI fix a blurry old phone video?
+
+Partly. Blur from low resolution and compression is exactly what restoration models are good at, and that's most of what makes old phone clips look soft. Blur from missed focus or a shaky hand in low light can only be reduced a little.
+
+### What resolution should I upscale an old phone video to?
+
+1080p for most clips. 4K is worth it when the original is 720p or better, fairly clean, and you'll watch it on a big TV. Going much further mostly makes bigger files.
+
+### Why does my video look worse after sending it on WhatsApp?
+
+Messaging apps compress videos again to save data, on top of the compression the phone already did. Restore from the original file on the phone or your computer if you still have it, not the copy from the chat.
+
+### Can I improve an old video on my phone?
+
+Phone editing apps can brighten a clip and sharpen it a little, but that sharpens the damage too. Real restoration needs a strong graphics card, which is why [Cloud Restore](https://phoenixlabs.space/studio) runs it on ours: open it in your phone's browser, upload the clip and pay for that one job.
+
+### Is there a free way to restore old phone videos?
+
+Phoenix Upscaler's free download restores 60-second clips with a small watermark, which is enough to judge the result on your own footage. Open-source tools such as Video2X are free for any length if you're comfortable setting them up yourself.
+
+### Will it make my old videos look like they were shot on a new phone?
+
+No. It gets you a clean, stable picture of what the old phone recorded, at a size that suits a modern screen. Anything promising to turn a 2010 clip into new-phone footage is inventing the difference.
+
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes](https://phoenixlabs.space/vhs-restoration-software) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+
+## Try it on one of your clips
+
+The free download restores 60-second clips with a small watermark. Pick one with a face in it and judge the result yourself.
+
+[Download Phoenix](https://phoenixlabs.space/upscaler#download)
+
+---
+title: "Topaz Video AI alternative: $129 once, no subscription"
+description: "Topaz Video is now subscription-only at $299 a year. Phoenix Upscaler restores and upscales old video on your own PC for $129 once, updates included."
+url: https://phoenixlabs.space/topaz-video-ai-alternative
+---
+
+Topaz alternative
+
+# A Topaz Video AI alternative you pay for once
+
+Topaz Video is a good tool, and since 2025 it's only sold as a subscription. If what you mostly need is to rescue old footage rather than finish commercial work, Phoenix Upscaler does that job on your own PC for $129, once, with every update included.
+
+Updated 28 September 2026
+
+## Side by side
+
+|  | Phoenix Upscaler | Topaz Video |
+| --- | --- | --- |
+| Price | $129 once | $59 a month, or $299 a year |
+| One-time licence | Yes. Every update included, nothing renews. | No. Subscription only since 2025. |
+| Runs on | Windows and Linux | Windows and Mac |
+| Where the work happens | On your own PC. Nothing uploads. | On your own computer |
+| Built for | Old footage: tapes, DVDs, film scans, old phone clips | A wide pro toolkit: upscaling, frame interpolation, slow motion, stabilisation |
+
+Topaz prices from topazlabs.com, checked September 2026. Their Topaz Studio bundle, with their photo apps, is $399 a year.
+
+## When Phoenix is the better pick
+
+- You'd rather own the software than rent it.
+- Your footage is old: VHS or camcorder tape, DVDs, 8mm scans, phone clips from the 2010s, old uploads.
+- You're on Linux.
+- You want the restore to stay faithful to what was filmed, not invent a new face.
+- You don't own a gaming PC and just want a few clips done: [Cloud Restore](https://phoenixlabs.space/studio) runs the same restoration on our GPUs and charges per clip.
+
+## When Topaz is the better pick
+
+- You work on a Mac and want a desktop app. Phoenix doesn't have a macOS version yet.
+- You need frame interpolation, slow motion or stabilisation alongside upscaling.
+- You finish paid work and want a lot of manual control over every model.
+
+If those are your jobs, Topaz earns its subscription. If the job is making old video watchable again, paying $299 every year for it is a lot of rent.
+
+## The honest test
+
+Run the same short clip through both. Phoenix's free download restores 60-second clips, so pick a section with a face, some motion and a dark corner, and compare them full screen. That tells you more than any comparison page, this one included.
+
+## Questions
+
+### Is Topaz Video AI still a one-time purchase?
+
+No. Topaz moved to subscriptions in 2025. Topaz Video is $59 a month or $299 a year, and the Topaz Studio bundle is $399 a year (topazlabs.com, September 2026). Older perpetual licences keep working but no longer get new models.
+
+### Is Phoenix Upscaler a subscription?
+
+No. It's $129 once, every future update is included, and you can install it on up to three of your own computers.
+
+### Does Phoenix run on a Mac?
+
+Not yet. On a Mac, use Cloud Restore: upload a clip, see the price in dollars, pay for that one clip, and download the result.
+
+### Is Phoenix as good as Topaz?
+
+On old, low-resolution footage, judge it on your own clip. The free download is there so you can compare the two side by side before paying anything. Phoenix aims for a clean, faithful picture rather than invented detail.
+
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Old phone videos](https://phoenixlabs.space/old-phone-video)
+
+## Compare on your own clip
+
+The right test is your footage. Restore a minute of it for free and decide from what you see.
+
+[Download Phoenix](https://phoenixlabs.space/upscaler#download)
+
+---
+title: "Phoenix for AI agents: MCP server, API and agent keys"
+description: "Let Claude, ChatGPT, Cursor or your own code restore old video and make clips with Phoenix, paid from a balance you control with a capped agent key."
+url: https://phoenixlabs.space/developers
+---
+
+For AI agents and developers
+
+# Let your AI assistant use Phoenix
+
+Claude, ChatGPT, Cursor or your own code can restore old video and make clips with Phoenix, and pay for them from a balance you control. You approve each assistant once, with a spending limit. It can never spend more than that, and you can switch it off at any time.
+
+MCP server
+:   `https://api.phoenixlabs.space/mcp`
+
+REST API
+:   [OpenAPI description](https://api.phoenixlabs.space/openapi.json)
+
+Paying
+:   A prepaid US dollar balance, added by card or in USDC (x402)
+
+## Connect in one click
+
+Apps that sign in to MCP servers, such as Claude, ChatGPT and Cursor, need only the address:
+
+MCP server
+
+```
+https://api.phoenixlabs.space/mcp
+```
+
+1. **Add it as a connector** (in Claude or ChatGPT, a custom connector in settings) and click *Connect*.
+2. **Approve it on Phoenix.** A Phoenix page opens showing which app is asking and where it will send you back to. Set a spending limit, say $10, and click *Allow*. If this browser has no Phoenix balance yet, the page makes one.
+3. **Add money when you need to**, in [Phoenix Motion](https://phoenixlabs.space/motion-app) or from a top-up link the assistant gives you.
+
+The connection shows up in Phoenix Motion under your balance, then *Agent keys*, marked as a connected app. Revoke it there to disconnect the app at once.
+
+## Or use an agent key
+
+For apps and scripts that don't sign in: click your balance in [Phoenix Motion](https://phoenixlabs.space/motion-app), then *Agent keys*, set a limit, and copy the `pak_…` key it shows (you see it only once). Then connect with one of these.
+
+### Claude Code
+
+Terminal
+
+```
+claude mcp add --transport http phoenix https://api.phoenixlabs.space/mcp --header "Authorization: Bearer pak_your_key"
+```
+
+### Cursor, Windsurf and other apps with an MCP config file
+
+mcp.json
+
+```
+{
+  "mcpServers": {
+    "phoenix": {
+      "url": "https://api.phoenixlabs.space/mcp",
+      "headers": { "Authorization": "Bearer pak_your_key" }
+    }
+  }
+}
+```
+
+### Apps that only take an address and don't sign in
+
+Put the key on the end of it:
+
+Server URL
+
+```
+https://api.phoenixlabs.space/mcp?key=pak_your_key
+```
+
+Only ever use an agent key this way, never your wallet key: a URL can end up in logs and settings screens. The server refuses a wallet key in a URL for that reason.
+
+## What your assistant can do
+
+| Tool | What it does | Cost |
+| --- | --- | --- |
+| `get_prices` | Current prices and limits | Free |
+| `quote_restore` | Exact price to restore a clip of a given length and size | Free |
+| `create_restore` | Start a cloud restore and get an upload link | From $2.99, by length |
+| `start_restore` | Run the restore once the video is uploaded, or get a checkout link for you | Paid at create |
+| `get_restore` | Progress, and the download link when it's done | Free |
+| `make_clip` | Turn an image into a five-second clip with sound, from a prompt | $0.59 (480p), $0.99 (720p) |
+| `start_clip` | Start a clip once its image is uploaded | Paid at make |
+| `get_clip` | Progress, and the video when it's done | Free |
+| `list_clips` | Clips this key has made | Free |
+| `cancel_job` | Cancel a job whose file never arrived, with an instant refund | Refunds |
+| `get_balance` | The balance, and how much of the key's limit is left | Free |
+| `create_top_up_link` | A checkout link for you to add money | Nothing until you pay |
+| `top_up_with_usdc` | Add money itself, in USDC on Base, from its own crypto wallet (x402) | $1 to $200 |
+
+Assistants usually send files one of two ways. For a clip, they can pass a link to a public image and Phoenix fetches it. Otherwise the create tool returns an upload link: the assistant sends the file there with an HTTP `PUT`, then calls the matching start tool. Coding assistants such as Claude Code and Cursor can upload a video from your disk this way.
+
+## Money, limits and safety
+
+- **A key can't spend past its limit.** The limit is checked on the server in the same step that takes the money, so two requests at once can't slip past it.
+- **It can't do more than spend.** An agent key can't see your wallet key or your email, can't make other keys, and only sees the jobs it started itself.
+- **Failures cost nothing.** A clip or restore that fails, or a prompt that's refused, is refunded to the balance straight away, and to the key's allowance too.
+- **It can't use your card.** When the balance runs low, an assistant can hand you a checkout link, and nothing is charged until you pay it. An assistant with its own crypto wallet can add USDC itself, but it still can't spend past its key's limit.
+- **Assistants are asked to confirm prices.** The server tells every connected assistant to say what something costs before spending, unless you've already agreed to it.
+- **Same rules as the website.** Clips follow the same content rule: no sexual or nude content, and nothing sexual or suggestive involving a minor.
+- **Switch it off any time.** Revoke a key from the *Agent keys* list and it stops working at once.
+
+## Paying with USDC (x402)
+
+Assistants that hold their own crypto wallet can add money to the balance themselves, in USDC on Base, using [x402](https://www.x402.org/), the open standard for paying over HTTP. They need USDC and nothing else: no gas, no account. 1 USDC adds $1, from $1 to $200 at a time, and it's spent exactly like balance added by card, with the same key limits and refunds.
+
+- **Over MCP:** call `top_up_with_usdc`. It answers with the payment terms; sign the USDC transfer and call it again with the payment in `_meta["x402/payment"]`.
+- **Over HTTP:** `POST /wallet/topup/crypto` with `{"amount_cents": 500}` answers `402` with the terms in the `PAYMENT-REQUIRED` header. Send the same request again with the signed payment in `PAYMENT-SIGNATURE`. Any x402 client library does this for you.
+- **In the browser:** people can pay the same way from *Add balance* in [Phoenix Motion](https://phoenixlabs.space/motion-app), with MetaMask, Coinbase Wallet or Rabby.
+
+We credit a payment only after reading the transfer back from the Base network ourselves. USDC payments go straight to Phoenix Labs, not through our card processor, and unused USDC balance is refunded in USDC to the address that paid.
+
+## Using the API directly
+
+Everything the MCP tools do is plain HTTP and JSON, described in the [OpenAPI file](https://api.phoenixlabs.space/openapi.json). Make a clip from an image link:
+
+curl
+
+```
+curl https://api.phoenixlabs.space/motion/jobs \
+  -H "Authorization: Bearer pak_your_key" \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "Slow push-in, wind in the trees", "image_url": "https://example.com/photo.jpg", "size": "480p"}'
+
+# then poll until status is "done" and use download_url
+curl https://api.phoenixlabs.space/motion/jobs/CLIP_ID -H "Authorization: Bearer pak_your_key"
+```
+
+Restore a video paid from the balance:
+
+curl
+
+```
+# 1. Create the job (the price comes off the balance now)
+curl https://api.phoenixlabs.space/cloud/jobs \
+  -H "Authorization: Bearer pak_your_key" -H "Content-Type: application/json" \
+  -d '{"filename": "tape.mp4", "content_type": "video/mp4", "duration_sec": 95, "width": 720, "height": 480, "quality": "enhanced"}'
+
+# 2. Upload the file to the upload_url it returns
+curl -X PUT -H "Content-Type: video/mp4" --upload-file tape.mp4 "UPLOAD_URL"
+
+# 3. Start it, then poll GET /cloud/jobs/JOB_ID until status is "done"
+curl -X POST https://api.phoenixlabs.space/cloud/jobs/JOB_ID/start -H "Authorization: Bearer pak_your_key"
+```
+
+The GPU checks the real length of every video. One that's much longer than declared is refused and refunded rather than charged extra, so quote what the file really is.
+
+## Questions
+
+### Can an AI assistant spend more than I allow?
+
+No. Each agent key has a total it may spend, checked on the server in the same step that takes the money. When a job fails, the amount goes back to both the balance and the key's allowance.
+
+### Which assistants work with Phoenix?
+
+Anything that can connect to a remote MCP server over HTTP. Apps that support MCP sign-in, such as Claude, ChatGPT and Cursor, connect in one click and ask you to approve a spending limit; others use an agent key. Anything that can make HTTP requests can use the REST API directly.
+
+### Can the assistant pay with my card?
+
+No. It can only spend the balance you've added, up to its key's limit. To add more, it gives you a checkout link, and nothing is charged until you pay it yourself.
+
+### Can an assistant pay with crypto?
+
+Yes. An assistant with its own wallet can add USDC on Base to your balance with x402, from $1 to $200 at a time, and it can still only spend up to its key's limit. You can pay with USDC from the Motion app too.
+
+### What happens to the files an assistant sends?
+
+The same as on the website. Images are deleted as soon as the clip is made, and uploaded videos and results are deleted automatically, typically within 48 hours. Nothing is used to train a model.
+
+### Is there an API for the desktop apps?
+
+Not yet. Phoenix Upscaler and Phoenix Editor run on your own computer; the API covers the cloud services, Cloud Restore and Phoenix Motion.
+
+## Make your first agent key
+
+Add a few dollars of balance, set a limit you're comfortable with, and connect your assistant.
+
+[Open Phoenix Motion](https://phoenixlabs.space/motion-app)
+
+---
+title: "Phoenix Upscaler guide: setup, quality modes and fixes"
+description: "How to use Phoenix Upscaler: install it, pick the right mode for your footage, set up Generative, and fix the problems people actually run into."
+url: https://phoenixlabs.space/upscaler-guide
+---
+
+# How to use Phoenix Upscaler
+
+Everything from installing it to getting a finished file, plus the problems people actually run into and what to do about each one. Your first restore takes about five minutes of attention.
+
+[Get the installer](https://phoenixlabs.space/index#download) [Skip to troubleshooting](https://phoenixlabs.space/upscaler-guide#troubleshooting)
+
+## What Phoenix can work with
+
+Anything you can play. Phoenix reads whatever ffmpeg reads, which in practice means MP4, MKV, MOV, AVI, WMV, MPG, VOB and the rest. It does not care where the footage came from, only what state it is in.
+
+Footage people bring it, roughly in order of how common it is:
+
+- **Phone video from 2010 to 2016.** 480p or 720p, heavily compressed, shot on a phone with a tiny sensor. The single most common thing people restore, and often the most rewarding, because the subject matter is usually people you know.
+- **VHS and camcorder captures.** Interlaced, noisy, colour-bled. Phoenix was built for these first.
+- **DVD rips and wedding videos.** 720×480 squeezed onto a disc, usually interlaced, often with a soft transfer on top.
+- **Old downloads and archive clips.** Anything that was 240p or 360p when you saved it and now looks like a postage stamp on a 4K screen.
+- **Film scans.** 8mm and Super 8 transfers, where the grain is real and worth keeping rather than smoothing away.
+- **Your own back catalogue.** Old uploads, gameplay captures, screen recordings and webcam footage that were fine on a 2012 monitor and are not fine now.
+
+What it cannot do is invent a picture that was never recorded. A clip that is genuinely out of focus stays out of focus; a face that is twelve pixels wide has no detail to recover. Phoenix rebuilds detail that compression, tape and scaling destroyed, which is a different problem and a solvable one.
+
+## 1. Install it
+
+Download the installer from the [download section](https://phoenixlabs.space/index#download) and run it. It installs for your user account, so it never asks for an administrator password.
+
+Windows will show a blue “Windows protected your PC” box the first time. That appears for any installer without a paid code signing certificate. Click **More info**, then **Run anyway**.
+
+ffmpeg and the restoration models are inside the installer. There is no second download, no account and nothing to configure before your first restore.
+
+## 2. Add a video and pick a preset
+
+Drag the file onto the window, or click to browse. Phoenix reads the resolution, the frame rate and whether the footage is interlaced, and shows you what it found.
+
+The preset tells it what kind of damage to expect:
+
+- **Auto** inspects the file and chooses. Right almost always, and the right place to start.
+- **VHS** for tape and broadcast captures: heavier noise reduction, and deinterlacing on by default.
+- **Film** for scans and archive footage, where grain is part of the picture and should survive.
+- **Faces** for interviews, weddings, anything where people are the subject and their faces are what you will actually look at.
+- **Max** runs the full stack. Slowest, and the one to reach for on a short clip that matters.
+
+If you are not sure, leave it on Auto and restore a 30-second section first. Judging a preset on a short clip costs minutes; judging it on a two-hour tape costs an evening.
+
+## 3. Choose a quality mode
+
+The preset says what kind of footage it is. The quality mode says how hard your GPU should work on it. This is the setting that changes both the result and the wait, so it is worth understanding.
+
+### Standard
+
+Fast and compatible. Cleans, deinterlaces and scales without any neural detail work. Runs on anything, including laptops with no usable GPU. Use it to check a file is what you think it is before committing to a long restore.
+
+### Enhanced
+
+Neural video restoration on any modern GPU, using paired frames so motion stays consistent instead of shimmering. This is the mode most people should use most of the time. It needs no setup beyond installing Phoenix.
+
+### Generative
+
+Diffusion-based detail reconstruction: it rebuilds texture rather than sharpening what is there. The biggest visible jump, and by far the slowest. Needs a one-time setup step and a card with 8 GB or more.
+
+Phoenix picks a sensible default for your machine on first launch, and it will never quietly give you a lesser mode than the one you chose. If Generative is not set up, it says so and tells you what to do rather than silently running Standard and handing you a disappointing file.
+
+## 4. Set up Generative (optional, one time)
+
+Generative is the only mode with an extra step, because it needs a several-gigabyte model and a GPU compute stack that the installer would otherwise force on everyone.
+
+Click **Install Generative** in the app and leave it. It downloads the models and sets up the runtime, which takes a while on a normal connection and needs roughly 20 GB free. On AMD cards it installs into WSL, which Windows may ask to enable and which may want a restart. This happens once; after it finishes, Generative is just another option in the dropdown.
+
+Restores are chunked, so a failure part-way through is not fatal. If a Generative job stops, Phoenix keeps the chunks it finished and offers **Resume** next time you open it, including after closing the app entirely.
+
+## 5. Restore, and what to expect
+
+Press **Restore**. Phoenix shows progress and the folder your finished file will land in.
+
+How long it takes depends almost entirely on the quality mode. Standard runs at something close to playback speed. Enhanced is several times slower than that. Generative is slower again by a wide margin, and a long clip in Generative is genuinely an overnight job. None of this is a fault to work around; rebuilding a picture frame by frame is simply expensive.
+
+Two practical notes. Working files can run to several gigabytes for a long restore, and Phoenix puts them on the largest fixed drive it can find rather than filling your system drive. And the output is a new file next to the original, so your source is never touched.
+
+## If something goes wrong
+
+### The result looks soft, or barely different
+
+Almost always the quality mode. Standard does no neural work at all, so on badly damaged footage the difference can be small. Try Enhanced first, then Generative. If you are already on Generative and the picture is still soft, the source may be out of focus rather than low resolution, which is not something any restoration can fix.
+
+### Faces look smooth or waxy
+
+Too much restoration for the amount of real detail in the source. Try the Faces preset, which is tuned to keep skin texture, or drop from Generative to Enhanced. On a face that was only a few dozen pixels wide to begin with, a slightly soft result is the honest one.
+
+### Motion shimmers or flickers
+
+Usually interlaced footage that was not detected. Set the preset to VHS, which turns deinterlacing on explicitly. Anything captured from tape or broadcast is interlaced far more often than people expect.
+
+### “Generative isn't set up on this PC yet”
+
+Exactly what it says: the models and runtime have not been installed. Click **Install Generative**, or use Enhanced, which needs no setup and is a real improvement over Standard.
+
+### The job ran out of memory
+
+Phoenix already steps itself down through smaller chunk sizes when a card runs short of memory, so seeing this means it reached the bottom of that ladder. Close other GPU-heavy applications, especially browsers with hardware acceleration and anything running a game. Failing that, restore in shorter sections.
+
+### It failed part-way through a long job
+
+Reopen Phoenix. If the job was Generative, it offers to resume from the chunks that already finished rather than starting again. This survives closing the app and rebooting.
+
+### The app will not start, or the page is blank
+
+Phoenix runs a small local server and shows its interface in a window pointed at it. If something else on your machine has taken the port, or a security tool is blocking local connections, the window can come up empty. Allow Phoenix through your firewall for private networks. Nothing is being sent anywhere; the connection is your computer talking to itself.
+
+### Windows says the file is unrecognised
+
+SmartScreen again, on the installer. **More info** → **Run anyway**. It is the absence of a paid signing certificate, not a judgement about the file.
+
+### My drive filled up
+
+A long restore writes large intermediates. Phoenix cleans them when a job finishes, but a job that was cancelled or crashed can leave them behind. The app shows where its working files live and how much space they are using, and will clear them for you.
+
+## Things worth knowing
+
+- **Nothing is uploaded.** Restoration happens on your own GPU. Phoenix contacts the internet to check for updates and to validate your licence, and for nothing else. Your video never leaves the machine.
+- **The trial restores 60-second clips** with a watermark, so you can see exactly what your own footage looks like before paying. Generative needs a licence.
+- **One payment, $129.** No subscription, no per-clip charge, no export limit. Updates are included.
+- **Your originals are never modified.** Every restore writes a new file.
+- **No gaming PC?** The [cloud studio](https://phoenixlabs.space/studio) runs the same engine on rented GPUs, priced per clip, with the price shown before you pay.
+
+## Try it on something that matters to you
+
+The trial runs on 60-second clips, so pick the video you most want back and see what happens to it.
+
+[Download Phoenix](https://phoenixlabs.space/index#download)
+
+---
+title: "Phoenix Editor guide: setup and your first edit"
+description: "How to set up Phoenix Editor and make your first edit: install it, drop in a VOD, review the cuts it found, and export a long edit plus captioned Shorts."
+url: https://phoenixlabs.space/editor-guide
+---
+
+# Setup and your first edit
+
+Start to finish, from installing Phoenix Editor to exporting a finished long-form cut and a set of captioned Shorts. About ten minutes of your attention, plus however long your recording takes to process.
+
+[Get the installer](https://phoenixlabs.space/editor#download)
+
+## 1. Install it
+
+Download the installer from the [download section](https://phoenixlabs.space/editor#download) and run it. Phoenix Editor installs for your user account, so it does not ask for an administrator password.
+
+Windows will probably show a blue “Windows protected your PC” box the first time. That appears for any installer without a paid code signing certificate, not because anything is wrong with the file. Click **More info**, then **Run anyway**.
+
+Everything the app needs is inside the installer, including the transcription models and ffmpeg. There is no second download and no account to create. The first 7 days are a full free trial with no watermark and no card required.
+
+## 2. Add a recording
+
+Drag your VOD straight onto the window, or use **Choose video**. MP4, MKV, MOV, WebM, AVI, FLV and TS all work, which covers what OBS and most capture software produce.
+
+Phoenix picks an output folder next to your source file and shows it under the video. Change it with **Change** if you would rather the exports landed somewhere else, like a faster drive.
+
+Nothing is uploaded at any point. Transcription, detection and rendering all happen on your own machine.
+
+## 3. Let it analyze
+
+Press **Detect cuts + highlights**. Phoenix transcribes the audio, then looks for three things: dead air, filler words like “um” and “uh”, and the points where the picture changes.
+
+This is the slow part, and it scales with the length of your recording and the speed of your GPU. The progress bar shows elapsed time and an estimate once it has enough to go on. You can leave it running and come back.
+
+A rough guide: on a recent GPU, expect somewhere around a tenth of the recording's own length. A two hour stream is normally a coffee break, not an overnight job. Without a GPU it is considerably slower but still works.
+
+## 4. Review before it renders
+
+Nothing is exported until you say so. You get a list of every cut Phoenix wants to make, with the reason next to it, and a list of the moments it thinks would make good Shorts.
+
+- Untick any cut you disagree with and that footage stays in.
+- Untick a Short you do not want and it will not be rendered.
+- Drag the handles on a Short to trim exactly where it starts and ends.
+- Pick a caption style, or turn captions off.
+
+It is worth skimming this on your first recording. It is the fastest way to learn how aggressive the detection is on your particular audio setup, and whether you want to keep more of your natural pauses.
+
+## 5. Export
+
+Press **Render**. Phoenix writes the long-form edit and each Short you kept into the output folder, with captions burned in where you asked for them. Open the folder straight from the app when it finishes.
+
+During the trial, and after it if you have not bought a licence, exports carry a small “Made with Phoenix Editor” mark. Everything else is identical, including quality and length.
+
+## If something goes wrong
+
+### Windows blocked the installer
+
+Click **More info** and then **Run anyway**. This is SmartScreen reacting to an installer that has not yet been signed with a paid certificate, not to anything it found in the file.
+
+### It is cutting pauses I wanted to keep
+
+Untick those cuts in the review step before rendering. Phoenix only removes silences longer than a set minimum, so a beat for effect should survive, but a genuinely long pause is treated as dead air.
+
+### It left in an “um” or missed one
+
+Filler detection works from the transcript, so a word the transcriber misheard cannot be cut. It is deliberately conservative and only removes unambiguous disfluencies, because wrongly cutting a real word is far more damaging to an edit than leaving one in.
+
+### It is much slower than expected
+
+Check the chips at the top of the window. They show which GPU was detected and which transcription and encoding backends were chosen. If they say CPU, Phoenix did not find a usable GPU and is falling back, which is functional but much slower. Updating your graphics driver is the usual fix.
+
+### My recording has no audio track
+
+Phoenix needs audio to find dead air and filler words, since both come from what you said. A silent source can still be used as the source video in Reactor, where your commentary track is the one being cut.
+
+### The app showed an error screen
+
+Use **Copy error details** and send them to [support@phoenixlabs.space](mailto:support@phoenixlabs.space). Your files are not touched when this happens, and reloading usually clears it.
+
+### It is taking up a lot of disk space
+
+Phoenix keeps working files next to your exports so a re-render does not have to redo everything. If your source is a format that needs converting first, such as MKV from OBS, that copy is the bulk of it. Delete the files beginning with an underscore in the output folder once you are happy with the result.
+
+## Ready to try it on a real VOD?
+
+[Download Phoenix Editor](https://phoenixlabs.space/editor#download)
+
+---
+title: "Privacy Policy | Phoenix Labs"
+description: "Phoenix Labs privacy policy: what the desktop apps and cloud services collect, how uploaded files are handled, and how long anything is kept."
+url: https://phoenixlabs.space/privacy
+---
+
+# Privacy Policy
+
+Last updated 27 September 2026. Phoenix Upscaler, Phoenix Cloud Studio and Phoenix Motion are products of Phoenix Labs (“we”, “us”).
+
+## The short version
+
+The desktop app processes your video entirely on your own computer — your footage never reaches us. The cloud studio only receives a file when you choose to upload one, uses it to run that single job, and deletes it shortly afterwards. We don’t sell your data.
+
+## Desktop app
+
+Restoration runs locally; your video files are never uploaded. To activate a licence, the app sends your licence key and a device identifier to our payment provider, Lemon Squeezy, to confirm the purchase and count activations. It does not send your files, their contents, or their filenames.
+
+## Cloud studio
+
+- **Your email** — collected so we can attach a receipt to the job and let you return to it. We do not send marketing email.
+- **Your uploaded file** — stored only to run the restore and to let you download the result, then deleted automatically (typically within 48 hours). We do not view, share, or use it to train models.
+- **Payment details** — entered directly with Lemon Squeezy, our Merchant of Record. We never see or store your card details.
+
+## Phoenix Motion
+
+- **Your image**: in the web app, re-encoded in your browser before upload, which removes its metadata (including any GPS location). Images sent through the API are stored as sent, and when an assistant gives us a link we download that image once. Either way it is used to make the clip you asked for and deleted as soon as that clip is made. We do not view, share, or use it to train models.
+- **Your prompt and finished clips**: kept so you can see and download your clips. Clips are deleted after about two days; the prompt stays in your clip history.
+- **USDC payments**: your wallet address and the transaction are public on the Base blockchain. We keep them with the top-up so we can match refunds and answer support questions.
+- **Connected apps**: when you approve an app with “Connect Phoenix”, we store the app’s name and the addresses it asked to be sent back to, and one-way hashes of the tokens it holds. It never sees your wallet key or email.
+- **Agent keys**: we store a one-way hash of each key, the name you gave it, its limit, what it has spent and when it was last used, so you can see and revoke them.
+- **Your wallet key**: kept in your browser. We store only a one-way hash of it. Your top-up receipt from Lemon Squeezy includes a link carrying the key, so you can reopen your balance from your email.
+- **Your email**: given to Lemon Squeezy for the receipt when you top up, and kept with your balance so we can help if you contact us. We do not send marketing email.
+
+## Payments
+
+Purchases (the desktop licence, each cloud job, and Phoenix Motion top-ups) are processed by [Lemon Squeezy](https://www.lemonsqueezy.com/privacy), which acts as the Merchant of Record and handles billing, tax, and card data under its own privacy policy.
+
+## Analytics
+
+We may use privacy-preserving, cookie-free website analytics (aggregate page counts only) to understand traffic. This does not identify you or track you across other sites.
+
+## Your choices
+
+You can ask us to delete any cloud job data we still hold, or ask what we hold about you, by emailing [support@phoenixlabs.space](mailto:support@phoenixlabs.space). Because uploads are deleted automatically, there is usually nothing left to remove.
+
+## Contact
+
+Questions about this policy: [support@phoenixlabs.space](mailto:support@phoenixlabs.space).
+
+[← Back to Phoenix Labs](https://phoenixlabs.space/)
+
+---
+title: "Terms of Service | Phoenix Labs"
+description: "Terms of service for Phoenix Labs' desktop apps and cloud services, including Phoenix Upscaler, Cloud Restore and Phoenix Motion."
+url: https://phoenixlabs.space/terms
+---
+
+# Terms of Service
+
+Last updated 27 September 2026. By buying or using Phoenix Upscaler, Phoenix Cloud Studio or Phoenix Motion (“the products”), you agree to these terms with Phoenix Labs (“we”, “us”).
+
+## Desktop licence
+
+The desktop app is sold as a one-time purchase for a perpetual licence, including future updates, activatable on up to three computers you own or control at a time. The licence is for your own use; you may not resell, redistribute, or share your licence key. We grant you a non-exclusive, non-transferable right to use the software; we retain all intellectual-property rights in it.
+
+## Cloud studio
+
+The cloud studio is a pay-per-job service. You can pay for each job separately at the price shown before you pay, or from your Phoenix balance (see below). There is no subscription. You must have the right to upload and process any file you submit, and you must not submit unlawful content or content you do not own or have permission to use.
+
+## Phoenix Motion
+
+Phoenix Motion makes short videos from images you upload. You pay for clips from a prepaid balance held in US dollars. Each clip costs the price shown before you make it, taken from your balance when the clip starts and returned in full if it fails or is refused. The balance doesn’t expire and is not a currency or credit: it can only be spent on Phoenix Motion clips and cloud studio restores, at their listed prices, and unused balance can be refunded to your original payment method on request.
+
+Your balance is tied to a private wallet key rather than an account. Anyone with the key can spend the balance, so keep it private; we can’t restore a balance whose key and receipts are both lost.
+
+### Paying with USDC
+
+You can add to your balance with USDC on the Base network, from the Phoenix Motion app or through the API. These payments are made directly to Phoenix Labs, not through Lemon Squeezy, and are credited at 1 USDC to US$1 once we have confirmed the transfer on the network. Blockchain transfers can’t be reversed, so check the amount before you approve one. Unused balance you added in USDC can be refunded in USDC to the address it came from. Balance added by card is only ever refunded to that card: we don’t exchange, sell or pay out cryptocurrency, and a balance can’t be used to turn one into the other. You are responsible for your own wallet and its keys.
+
+### Agent keys and the API
+
+You can make agent keys that let software, including AI assistants, use our API and MCP server to spend your balance, up to a limit you set for each key. Approving an app with “Connect Phoenix” makes one of these keys for that app, with the limit you choose. Anything done with one of your keys is done on your behalf, and you are responsible for it as if you had done it yourself, up to that key’s limit. Keep agent keys private, and revoke any you no longer trust: a revoked key stops working at once. The same rules apply to everything made through the API as through the website. We may limit or suspend keys used to abuse the service.
+
+You must have the right to use any image you upload. Phoenix Motion won’t make sexual or nude content, anything sexual or suggestive involving a minor, or anything unlawful, and prompts or images that ask for these are refused. You are responsible for how you use the clips you make, including not using them to deceive people about real events or to impersonate someone. As between you and us, the clips you make are yours to use, including commercially. Clips are marked as AI-generated in their file metadata. We may pause a balance that repeatedly requests refused content.
+
+### Rules that come with the model
+
+Phoenix Motion runs LTX-2.5, a video model from Lightricks. Its licence requires everyone who uses it through us to follow its use restrictions, so these are part of your agreement with us too. You must not use Phoenix Motion or the clips it makes:
+
+- in any way that breaks the law;
+- to exploit or harm minors in any way;
+- to knowingly create or spread false information meant to deceive, defraud or unlawfully harm others;
+- to create or spread personal information that can be used to harm someone;
+- to publish clips in any context without clearly saying they are machine-generated;
+- to defame, harass, abuse, threaten or bully anyone;
+- to impersonate anyone without their consent, including deepfakes;
+- for fully automated decisions that harm someone's legal rights or create binding obligations;
+- to discriminate against or harm people based on their behaviour, personal characteristics or legally protected characteristics, including in employment, credit, housing or other essential services;
+- to exploit people's vulnerabilities because of their age or social, physical or mental circumstances;
+- to give medical advice or interpret medical results;
+- for law enforcement, justice, immigration or asylum decisions, such as predicting who will commit a crime;
+- to create malware or anything meant to harm computer systems;
+- for military, weapons, nuclear or other uses that may cause death, injury or serious damage;
+- to train, improve or fine-tune other AI models;
+- to get around any safety feature, content filter, watermark or provenance marking.
+
+Lightricks' [acceptable use policy](https://static.lightricks.com/legal/ltx-acceptable-use-policy.pdf) also applies. The full restrictions are in Attachment A of the [LTX-2.x Community License](https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x).
+
+## Payments and tax
+
+All purchases are sold and fulfilled by Lemon Squeezy, our Merchant of Record. Lemon Squeezy handles the transaction, invoicing, and any applicable taxes, and its terms also apply to the sale.
+
+## Acceptable use
+
+Don’t use the products to break the law, infringe others’ rights, or attempt to disrupt, reverse-engineer for redistribution, or resell the service. We may suspend access that violates these terms.
+
+## No warranty
+
+Restoration is a best-effort enhancement, not a guarantee of any particular result: detail a source never recorded cannot be recovered. Generated clips vary from take to take and may not match what you pictured. The products are provided “as is,” without warranties of any kind to the extent permitted by law.
+
+## Limitation of liability
+
+To the maximum extent permitted by law, our total liability arising from the products is limited to the amount you paid for the purchase in question. We are not liable for indirect or consequential losses, or for loss of data you did not keep a copy of.
+
+## Changes
+
+We may update these terms; material changes will be posted here with a new date. Continued use after a change means you accept it.
+
+## Contact
+
+[support@phoenixlabs.space](mailto:support@phoenixlabs.space)
+
+[← Back to Phoenix Labs](https://phoenixlabs.space/)
+
+---
+title: "Refund Policy | Phoenix Labs"
+description: "Phoenix Labs refund policy: a 14-day refund on the desktop app, and automatic refunds for cloud jobs that fail."
+url: https://phoenixlabs.space/refund
+---
+
+# Refund Policy
+
+Last updated 27 September 2026.
+
+## Desktop app ($129)
+
+If the desktop app doesn’t work for you, email us within **14 days** of purchase for a full refund. There’s a free trial on short clips so you can confirm it runs on your machine before buying, but we’ll still honour the 14-day window if something goes wrong.
+
+## Cloud jobs (pay per job)
+
+- **Failed jobs are refunded automatically.** If a restore fails to complete, you are refunded, so you only pay for a result you can download. A restore paid from your Phoenix balance is refunded to the balance.
+- If a completed job clearly went wrong (for example, a corrupted output), email us and we’ll make it right or refund it.
+- Because each job consumes GPU time the moment it runs, a successful, correctly delivered restore is generally not refundable — but talk to us if you’re unhappy.
+
+## Phoenix balance (Motion clips and restores)
+
+- **Failed or refused clips cost nothing.** The price goes straight back on your balance, and on the agent key that spent it, if one did.
+- **Unused balance can be refunded.** Email us with your receipt and we’ll refund what you haven’t spent to your original payment method.
+- **Balance added in USDC is refunded in USDC**, to the address that paid it. Balance added by card goes back to the card. We don’t convert one into the other.
+- A clip that was made used real GPU time, so we don’t refund clips because they weren’t the take you wanted. If one is clearly broken (a corrupted file, say), tell us and we’ll put it right.
+
+## How to request a refund
+
+Email [support@phoenixlabs.space](mailto:support@phoenixlabs.space) with your purchase receipt or the email you used. Purchases are processed by Lemon Squeezy (our Merchant of Record), and refunds are issued through it to your original payment method.
+
+[← Back to Phoenix Labs](https://phoenixlabs.space/)
