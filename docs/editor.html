@@ -21,10 +21,8 @@
   <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <meta name="theme-color" content="#0b0c0e" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=44960459" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=c1d6d4d1" />
   <link rel="manifest" href="site.webmanifest" />
   <script type="application/ld+json">
   {
@@ -125,7 +123,7 @@
 <body>
 
 <header class="nav">
-  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
   <nav class="nav-links" id="site-menu" aria-label="Products">
     <a href="upscaler.html">Upscaler</a>
     <a href="studio.html">Cloud Restore</a>
@@ -159,7 +157,7 @@
     </div>
 
     <figure class="hero-shot">
-      <img width="1360" height="637" src="assets/demo/editor_review_ui.jpg" alt="Phoenix Editor's review screen: video preview, waveform timeline with detected cuts and Shorts highlights, and a checklist of what will render" />
+      <img width="1360" height="637" src="assets/demo/editor_review_ui.webp" alt="Phoenix Editor's review screen: video preview, waveform timeline with detected cuts and Shorts highlights, and a checklist of what will render" />
       <figcaption>Real detection, before you render — see every cut and Shorts candidate on the timeline first.</figcaption>
     </figure>
   </section>
@@ -325,13 +323,13 @@
 <footer class="site-foot">
   <div class="foot-grid">
     <div class="foot-brand">
-      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
       <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
     </div>
-    <div class="foot-col"><h4>Restore</h4><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a></div>
-    <div class="foot-col"><h4>Create</h4><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
-    <div class="foot-col"><h4>Guides</h4><a href="restore-old-video.html">Restoring old video</a><a href="vhs-restoration-software.html">VHS tapes</a><a href="old-phone-video.html">Old phone video</a><a href="topaz-video-ai-alternative.html">Topaz alternative</a></div>
-    <div class="foot-col"><h4>Company</h4><a href="about.html">About</a><a href="developers.html">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+    <div class="foot-col"><p class="foot-h">Restore</p><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="restore-old-video.html">Restoring old video</a><a href="vhs-restoration-software.html">VHS tapes</a><a href="old-phone-video.html">Old phone video</a><a href="topaz-video-ai-alternative.html">Topaz alternative</a></div>
+    <div class="foot-col"><p class="foot-h">Company</p><a href="about.html">About</a><a href="developers.html">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
   </div>
   <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>

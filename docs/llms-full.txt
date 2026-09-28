@@ -3,12 +3,12 @@
 > Every public page of phoenixlabs.space as Markdown, in one file. The short version, with links, is https://phoenixlabs.space/llms.txt. Phoenix Labs is the video software company at phoenixlabs.space (Phoenix Upscaler, Cloud Restore, Phoenix Motion, Phoenix Editor), not the video game studio of the same name.
 
 ---
-title: "Phoenix Labs: video tools that bring footage back to life"
+title: "Phoenix Labs: restore old video and turn images into video"
 description: "Restore and upscale old video on your PC or in the cloud, turn still images into clips with sound, and cut long streams into Shorts. No subscriptions."
 url: https://phoenixlabs.space/
 ---
 
-![](https://phoenixlabs.space/assets/site/hero-reel.jpg)
+![](https://phoenixlabs.space/assets/site/hero-reel.webp)
 
 Phoenix Labs
 
@@ -34,9 +34,9 @@ Tapes, DVDs, film scans, and phone clips from 2012 that look like a postage stam
 
 $129 once, every update included[Explore](https://phoenixlabs.space/upscaler)
 
-![A farmhouse from a 1950s colour film, restored: crisp boards, clean sky](https://phoenixlabs.space/assets/site/cloud-after.jpg)
+![A farmhouse from a 1950s colour film, restored: crisp boards, clean sky](https://phoenixlabs.space/assets/site/cloud-after.webp)
 
-![The same frame as it was: soft, noisy and small](https://phoenixlabs.space/assets/site/cloud-before.jpg)
+![The same frame as it was: soft, noisy and small](https://phoenixlabs.space/assets/site/cloud-before.webp)
 
 ### Cloud Restore
 
@@ -54,7 +54,7 @@ Drop in an image, say what should happen, and get five seconds of video back wit
 
 From $0.59 a clip[Explore](https://phoenixlabs.space/motion)
 
-![Phoenix Editor's review screen: the detected cuts and Shorts candidates beside the video](https://phoenixlabs.space/assets/site/editor-review.jpg)
+![Phoenix Editor's review screen: the detected cuts and Shorts candidates beside the video](https://phoenixlabs.space/assets/site/editor-review.webp)
 
 ### Phoenix Editor
 
@@ -103,7 +103,7 @@ Phoenix Editor listens to your recording, marks every silence and filler word, a
 
 [See Phoenix Editor](https://phoenixlabs.space/editor)
 
-![Phoenix Editor's review step: the video with its detected cuts and Shorts candidates listed beside it](https://phoenixlabs.space/assets/site/editor-review.jpg)
+![Phoenix Editor's review step: the video with its detected cuts and Shorts candidates listed beside it](https://phoenixlabs.space/assets/site/editor-review.webp)
 
 How we work
 
@@ -162,7 +162,7 @@ The Upscaler and Editor both have free trials, and a Motion clip costs less than
 [Try the Upscaler free](https://phoenixlabs.space/upscaler#download) [Make a Motion clip](https://phoenixlabs.space/motion-app) [Try Editor free](https://phoenixlabs.space/editor#download)
 
 ---
-title: "Phoenix Upscaler: restore and upscale old video on your PC"
+title: "Phoenix Upscaler: the AI video upscaler you pay for once"
 description: "Restore and upscale old video on your own PC: tapes, DVDs, film scans and old phone clips. Removes noise, fixes interlacing, rebuilds detail. $129 once."
 url: https://phoenixlabs.space/upscaler
 ---
@@ -237,13 +237,13 @@ Straight off the film
 
 After Phoenix Enhanced
 
-![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_3.jpg)
+![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_3.webp)
 
-![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_3.jpg)
+![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_3.webp)
 
-![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_13.jpg)
+![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_13.webp)
 
-![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_13.jpg)
+![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_13.webp)
 
 Footage: *Texas Farm Family* (1952), public domain, via the Prelinger Archives. Restored with Phoenix Enhanced.
 
@@ -255,13 +255,13 @@ Straight off the film
 
 After Phoenix Enhanced
 
-![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_1_crop.jpg)
+![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_1_crop.webp)
 
-![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_1_fresh.jpg)
+![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_1_fresh.webp)
 
-![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_2_crop.jpg)
+![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_2_crop.webp)
 
-![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_2_fresh.jpg)
+![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_2_fresh.webp)
 
 Footage: *Ivan Besse collection, Britton, South Dakota* (1938–39), public domain, via the Prelinger Archives. Restored with Phoenix Enhanced.
 
@@ -390,9 +390,9 @@ No account. No subscription. No credits. A failed job is refunded.
 
 Your file is used only for the job, then deleted automatically.
 
-![A restored face, sharp and detailed, in color](https://phoenixlabs.space/assets/demo/enhanced_after.jpg)
+![A restored face, sharp and detailed, in color](https://phoenixlabs.space/assets/demo/enhanced_after.webp)
 
-![The same face before restoration, soft and faded](https://phoenixlabs.space/assets/demo/enhanced_before.jpg)
+![The same face before restoration, soft and faded](https://phoenixlabs.space/assets/demo/enhanced_before.webp)
 
 Phoenix Enhanced — the diffusion-based mode, run on our GPUs.
 
@@ -482,7 +482,7 @@ Yes. Connect it to our MCP server and approve it with a spending limit (it share
 [Open the cloud studio](https://phoenixlabs.space/studio-app)
 
 ---
-title: "Phoenix Motion: turn any image into a video with sound"
+title: "Phoenix Motion: image to video AI with sound, from $0.59"
 description: "Upload an image, say what should happen, and get a five-second video with sound. Logos, art, product shots, portraits and loops. From $0.59 a clip."
 url: https://phoenixlabs.space/motion
 ---
@@ -627,7 +627,7 @@ Reacting to someone else's video? The [Reactor template](https://phoenixlabs.spa
 
 Available now for Windows and Linux. GPU-accelerated on AMD and NVIDIA.
 
- ![Phoenix Editor's review screen: video preview, waveform timeline with detected cuts and Shorts highlights, and a checklist of what will render](https://phoenixlabs.space/assets/demo/editor_review_ui.jpg)
+ ![Phoenix Editor's review screen: video preview, waveform timeline with detected cuts and Shorts highlights, and a checklist of what will render](https://phoenixlabs.space/assets/demo/editor_review_ui.webp)
 
 Real detection, before you render — see every cut and Shorts candidate on the timeline first.
 

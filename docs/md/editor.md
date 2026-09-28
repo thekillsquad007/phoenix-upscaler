@@ -14,7 +14,7 @@ Reacting to someone else's video? The [Reactor template](https://phoenixlabs.spa
 
 Available now for Windows and Linux. GPU-accelerated on AMD and NVIDIA.
 
- ![Phoenix Editor's review screen: video preview, waveform timeline with detected cuts and Shorts highlights, and a checklist of what will render](https://phoenixlabs.space/assets/demo/editor_review_ui.jpg)
+ ![Phoenix Editor's review screen: video preview, waveform timeline with detected cuts and Shorts highlights, and a checklist of what will render](https://phoenixlabs.space/assets/demo/editor_review_ui.webp)
 
 Real detection, before you render — see every cut and Shorts candidate on the timeline first.
 

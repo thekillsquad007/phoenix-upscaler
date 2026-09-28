@@ -1,5 +1,5 @@
 ---
-title: "Phoenix Motion: turn any image into a video with sound"
+title: "Phoenix Motion: image to video AI with sound, from $0.59"
 description: "Upload an image, say what should happen, and get a five-second video with sound. Logos, art, product shots, portraits and loops. From $0.59 a clip."
 url: https://phoenixlabs.space/motion
 ---

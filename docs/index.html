@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Phoenix Labs: video tools that bring footage back to life</title>
+<title>Phoenix Labs: restore old video and turn images into video</title>
 <meta name="description" content="Restore and upscale old video on your PC or in the cloud, turn still images into clips with sound, and cut long streams into Shorts. No subscriptions." />
 <link rel="canonical" href="https://phoenixlabs.space/" />
 <meta name="robots" content="max-image-preview:large" />
 <meta property="og:site_name" content="Phoenix Labs" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Phoenix Labs: video tools that bring footage back to life" />
+<meta property="og:title" content="Phoenix Labs: restore old video and turn images into video" />
 <meta property="og:description" content="Restore and upscale old video on your PC or in the cloud, turn still images into clips with sound, and cut long streams into Shorts. No subscriptions." />
 <meta property="og:url" content="https://phoenixlabs.space/" />
 <meta property="og:image" content="https://phoenixlabs.space/assets/social/phoenix-labs.jpg" />
@@ -21,10 +21,8 @@
 <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 <meta name="theme-color" content="#0b0c0e" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=44960459" />
+<link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="styles.css?v=c1d6d4d1" />
 <link rel="manifest" href="site.webmanifest" />
 <link rel="preload" as="image" href="assets/site/hero-reel.jpg" />
 <script type="application/ld+json">
@@ -146,7 +144,7 @@
 <body>
 
 <header class="nav nav-over">
-  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
   <nav class="nav-links" id="site-menu" aria-label="Products">
     <a href="upscaler.html">Upscaler</a>
     <a href="studio.html">Cloud Restore</a>
@@ -160,8 +158,8 @@
 <main id="top">
 
   <section class="home-hero" aria-labelledby="hero-title">
-    <img class="hero-poster" src="assets/site/hero-reel.jpg" alt="" width="1920" height="1080" fetchpriority="high" />
-    <video width="1280" height="720" poster="assets/site/hero-reel.jpg" autoplay muted loop playsinline preload="auto" data-inview data-ambient aria-hidden="true">
+    <img class="hero-poster" src="assets/site/hero-reel.webp" alt="" width="1920" height="1080" fetchpriority="high" />
+    <video width="1280" height="720" poster="assets/site/hero-reel.webp" autoplay muted loop playsinline preload="auto" data-inview data-ambient aria-hidden="true">
       <source src="assets/site/hero-reel-720.mp4" type="video/mp4" media="(max-width: 760px)" />
       <source src="assets/site/hero-reel.mp4" type="video/mp4" />
     </video>
@@ -202,7 +200,7 @@
     <div class="products">
       <article class="product-card reveal">
         <div class="product-media">
-          <video width="1280" height="960" src="assets/site/upscaler-split.mp4" poster="assets/site/upscaler-split.jpg" muted loop playsinline preload="none" data-inview aria-label="A 1952 film frame: the left half as it was, the right half after Phoenix restored it"></video>
+          <video width="1280" height="960" src="assets/site/upscaler-split.mp4" poster="assets/site/upscaler-split.webp" muted loop playsinline preload="none" data-inview aria-label="A 1952 film frame: the left half as it was, the right half after Phoenix restored it"></video>
           <span class="vc-tag vc-tag-l">Before</span><span class="vc-tag vc-tag-r">After</span>
         </div>
         <div class="product-body">
@@ -215,8 +213,8 @@
       <article class="product-card reveal reveal-d1">
         <div class="product-media">
           <div class="ba" data-ba>
-            <img width="1280" height="960" decoding="async" class="ba-after" src="assets/site/cloud-after.jpg" alt="A farmhouse from a 1950s colour film, restored: crisp boards, clean sky" loading="lazy" />
-            <div class="ba-clip"><img width="1280" height="960" decoding="async" src="assets/site/cloud-before.jpg" alt="The same frame as it was: soft, noisy and small" loading="lazy" /></div>
+            <img width="1280" height="960" decoding="async" class="ba-after" src="assets/site/cloud-after.webp" alt="A farmhouse from a 1950s colour film, restored: crisp boards, clean sky" loading="lazy" />
+            <div class="ba-clip"><img width="1280" height="960" decoding="async" src="assets/site/cloud-before.webp" alt="The same frame as it was: soft, noisy and small" loading="lazy" /></div>
             <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
             <span class="ba-handle" aria-hidden="true"></span>
             <span class="ba-tag ba-tag-l">Before</span><span class="ba-tag ba-tag-r">After</span>
@@ -231,7 +229,7 @@
 
       <article class="product-card reveal">
         <div class="product-media">
-          <video width="1280" height="704" src="assets/motion/logo.mp4" poster="assets/motion/logo-still.jpg" muted loop playsinline preload="none" data-inview aria-label="The Phoenix logo, animated by Phoenix Motion: its wings catch fire"></video>
+          <video width="1280" height="704" src="assets/motion/logo.mp4" poster="assets/motion/logo-still.webp" muted loop playsinline preload="none" data-inview aria-label="The Phoenix logo, animated by Phoenix Motion: its wings catch fire"></video>
           <span class="vc-tag vc-tag-r">With sound</span>
         </div>
         <div class="product-body">
@@ -243,7 +241,7 @@
 
       <article class="product-card reveal reveal-d1">
         <div class="product-media">
-          <img width="1326" height="637" decoding="async" class="pan" src="assets/site/editor-review.jpg" alt="Phoenix Editor's review screen: the detected cuts and Shorts candidates beside the video" loading="lazy" />
+          <img width="1326" height="637" decoding="async" class="pan" src="assets/site/editor-review.webp" alt="Phoenix Editor's review screen: the detected cuts and Shorts candidates beside the video" loading="lazy" />
         </div>
         <div class="product-body">
           <div class="product-top"><h3>Phoenix Editor</h3><span class="tag">Windows &amp; Linux</span></div>
@@ -273,7 +271,7 @@
       </div>
       <div class="reveal reveal-d1">
         <div class="vcompare" data-vcompare>
-          <video width="1280" height="960" class="vc-after" src="assets/site/compare-after.mp4" poster="assets/site/compare.jpg" muted loop playsinline preload="none" data-inview aria-label="Restored footage"></video>
+          <video width="1280" height="960" class="vc-after" src="assets/site/compare-after.mp4" poster="assets/site/compare.webp" muted loop playsinline preload="none" data-inview aria-label="Restored footage"></video>
           <video width="1280" height="960" class="vc-before" src="assets/site/compare-before.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
           <span class="vc-line" aria-hidden="true"></span>
           <input class="vc-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the original and the restore" />
@@ -297,15 +295,15 @@
     </div>
     <div class="clip-row">
       <figure class="reveal">
-        <video width="936" height="704" src="assets/site/motion-house.mp4" poster="assets/site/motion-house.jpg" muted loop playsinline preload="none" data-inview controls></video>
+        <video width="936" height="704" src="assets/site/motion-house.mp4" poster="assets/site/motion-house.webp" muted loop playsinline preload="none" data-inview controls></video>
         <figcaption>“Slow cinematic push-in toward the house. Wind through dry grass.”</figcaption>
       </figure>
       <figure class="reveal reveal-d1">
-        <video width="1088" height="768" src="assets/motion/portrait.mp4" poster="assets/motion/portrait-still.jpg" muted loop playsinline preload="none" data-inview controls></video>
+        <video width="1088" height="768" src="assets/motion/portrait.mp4" poster="assets/motion/portrait-still.webp" muted loop playsinline preload="none" data-inview controls></video>
         <figcaption>“She turns toward the camera and smiles. Soft wind and distant birdsong.”</figcaption>
       </figure>
       <figure class="reveal reveal-d2">
-        <video width="1280" height="704" src="assets/motion/loop.mp4" poster="assets/motion/loop-still.jpg" muted loop playsinline preload="none" data-inview controls></video>
+        <video width="1280" height="704" src="assets/motion/loop.mp4" poster="assets/motion/loop-still.webp" muted loop playsinline preload="none" data-inview controls></video>
         <figcaption>Loop: “The logo stays still. Only embers drift upward.” It ends where it starts.</figcaption>
       </figure>
     </div>
@@ -334,7 +332,7 @@
         <a class="btn" href="editor.html">See Phoenix Editor</a>
       </div>
       <div class="shot reveal reveal-d1">
-        <img width="1326" height="637" decoding="async" src="assets/site/editor-review.jpg" alt="Phoenix Editor's review step: the video with its detected cuts and Shorts candidates listed beside it" loading="lazy" />
+        <img width="1326" height="637" decoding="async" src="assets/site/editor-review.webp" alt="Phoenix Editor's review step: the video with its detected cuts and Shorts candidates listed beside it" loading="lazy" />
       </div>
     </div>
   </section>
@@ -411,13 +409,13 @@
 <footer class="site-foot">
   <div class="foot-grid">
     <div class="foot-brand">
-      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
       <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
     </div>
-    <div class="foot-col"><h4>Restore</h4><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a></div>
-    <div class="foot-col"><h4>Create</h4><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
-    <div class="foot-col"><h4>Guides</h4><a href="restore-old-video.html">Restoring old video</a><a href="vhs-restoration-software.html">VHS tapes</a><a href="old-phone-video.html">Old phone video</a><a href="topaz-video-ai-alternative.html">Topaz alternative</a></div>
-    <div class="foot-col"><h4>Company</h4><a href="about.html">About</a><a href="developers.html">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+    <div class="foot-col"><p class="foot-h">Restore</p><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="restore-old-video.html">Restoring old video</a><a href="vhs-restoration-software.html">VHS tapes</a><a href="old-phone-video.html">Old phone video</a><a href="topaz-video-ai-alternative.html">Topaz alternative</a></div>
+    <div class="foot-col"><p class="foot-h">Company</p><a href="about.html">About</a><a href="developers.html">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
   </div>
   <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>

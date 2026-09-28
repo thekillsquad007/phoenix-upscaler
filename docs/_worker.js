@@ -47,6 +47,12 @@ function prefersMarkdown(accept) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    // One host for search engines: www pages redirect to the apex, which is
+    // what every canonical, the sitemap and llms.txt already name.
+    if (url.hostname === "www.phoenixlabs.space") {
+      url.hostname = "phoenixlabs.space";
+      return Response.redirect(url.toString(), 301);
+    }
     const slug = pageSlug(url.pathname);
     const res = await env.ASSETS.fetch(request);
     const isHtml = (res.headers.get("content-type") || "").includes("text/html");

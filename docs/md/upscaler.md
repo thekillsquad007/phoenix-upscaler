@@ -1,5 +1,5 @@
 ---
-title: "Phoenix Upscaler: restore and upscale old video on your PC"
+title: "Phoenix Upscaler: the AI video upscaler you pay for once"
 description: "Restore and upscale old video on your own PC: tapes, DVDs, film scans and old phone clips. Removes noise, fixes interlacing, rebuilds detail. $129 once."
 url: https://phoenixlabs.space/upscaler
 ---
@@ -74,13 +74,13 @@ Straight off the film
 
 After Phoenix Enhanced
 
-![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_3.jpg)
+![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_3.webp)
 
-![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_3.jpg)
+![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_3.webp)
 
-![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_13.jpg)
+![Restored frame from a 1952 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh_a_13.webp)
 
-![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_13.jpg)
+![Original frame from the same 1952 film, soft and faded](https://phoenixlabs.space/assets/demo/enh_b_13.webp)
 
 Footage: *Texas Farm Family* (1952), public domain, via the Prelinger Archives. Restored with Phoenix Enhanced.
 
@@ -92,13 +92,13 @@ Straight off the film
 
 After Phoenix Enhanced
 
-![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_1_crop.jpg)
+![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_1_crop.webp)
 
-![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_1_fresh.jpg)
+![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_1_fresh.webp)
 
-![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_2_crop.jpg)
+![Restored frame from a 1938 home movie, sharp and clean](https://phoenixlabs.space/assets/demo/enh38_a_2_crop.webp)
 
-![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_2_fresh.jpg)
+![Original frame from the same 1938 film, soft and faded](https://phoenixlabs.space/assets/demo/enh38_b_2_fresh.webp)
 
 Footage: *Ivan Besse collection, Britton, South Dakota* (1938–39), public domain, via the Prelinger Archives. Restored with Phoenix Enhanced.
 

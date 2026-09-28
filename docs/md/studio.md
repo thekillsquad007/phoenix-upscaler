@@ -14,9 +14,9 @@ No account. No subscription. No credits. A failed job is refunded.
 
 Your file is used only for the job, then deleted automatically.
 
-![A restored face, sharp and detailed, in color](https://phoenixlabs.space/assets/demo/enhanced_after.jpg)
+![A restored face, sharp and detailed, in color](https://phoenixlabs.space/assets/demo/enhanced_after.webp)
 
-![The same face before restoration, soft and faded](https://phoenixlabs.space/assets/demo/enhanced_before.jpg)
+![The same face before restoration, soft and faded](https://phoenixlabs.space/assets/demo/enhanced_before.webp)
 
 Phoenix Enhanced — the diffusion-based mode, run on our GPUs.
 

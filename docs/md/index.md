@@ -1,10 +1,10 @@
 ---
-title: "Phoenix Labs: video tools that bring footage back to life"
+title: "Phoenix Labs: restore old video and turn images into video"
 description: "Restore and upscale old video on your PC or in the cloud, turn still images into clips with sound, and cut long streams into Shorts. No subscriptions."
 url: https://phoenixlabs.space/
 ---
 
-![](https://phoenixlabs.space/assets/site/hero-reel.jpg)
+![](https://phoenixlabs.space/assets/site/hero-reel.webp)
 
 Phoenix Labs
 
@@ -30,9 +30,9 @@ Tapes, DVDs, film scans, and phone clips from 2012 that look like a postage stam
 
 $129 once, every update included[Explore](https://phoenixlabs.space/upscaler)
 
-![A farmhouse from a 1950s colour film, restored: crisp boards, clean sky](https://phoenixlabs.space/assets/site/cloud-after.jpg)
+![A farmhouse from a 1950s colour film, restored: crisp boards, clean sky](https://phoenixlabs.space/assets/site/cloud-after.webp)
 
-![The same frame as it was: soft, noisy and small](https://phoenixlabs.space/assets/site/cloud-before.jpg)
+![The same frame as it was: soft, noisy and small](https://phoenixlabs.space/assets/site/cloud-before.webp)
 
 ### Cloud Restore
 
@@ -50,7 +50,7 @@ Drop in an image, say what should happen, and get five seconds of video back wit
 
 From $0.59 a clip[Explore](https://phoenixlabs.space/motion)
 
-![Phoenix Editor's review screen: the detected cuts and Shorts candidates beside the video](https://phoenixlabs.space/assets/site/editor-review.jpg)
+![Phoenix Editor's review screen: the detected cuts and Shorts candidates beside the video](https://phoenixlabs.space/assets/site/editor-review.webp)
 
 ### Phoenix Editor
 
@@ -99,7 +99,7 @@ Phoenix Editor listens to your recording, marks every silence and filler word, a
 
 [See Phoenix Editor](https://phoenixlabs.space/editor)
 
-![Phoenix Editor's review step: the video with its detected cuts and Shorts candidates listed beside it](https://phoenixlabs.space/assets/site/editor-review.jpg)
+![Phoenix Editor's review step: the video with its detected cuts and Shorts candidates listed beside it](https://phoenixlabs.space/assets/site/editor-review.webp)
 
 How we work
 

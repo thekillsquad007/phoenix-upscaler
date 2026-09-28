@@ -22,3 +22,14 @@
   Content-Type: text/markdown; charset=utf-8
   X-Robots-Tag: noindex
   Access-Control-Allow-Origin: *
+
+# App pages: no Cloudflare Web Analytics. Its automatic snippet is injected
+# into every HTML page unless the response says no-transform, and these URLs
+# can carry secrets: the Motion app takes a wallet key in its fragment
+# (#key=pmk_...), /connect carries OAuth parameters in its query.
+/motion-app*
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+/studio-app*
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+/connect*
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
