@@ -26,6 +26,12 @@ Phoenix Enhanced — the diffusion-based mode, run on our GPUs.
 
 **Refunded if it fails.** You only pay for a good result.
 
+## See a restore, start to finish
+
+Under a minute: pick a clip, see the price, and get the restored video back.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/ThqaRWynY-M)
+
 ## Three steps
 
 1

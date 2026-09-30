@@ -40,6 +40,8 @@ Purchases (the desktop licence, each cloud job, and Phoenix Motion top-ups) are 
 
 We may use privacy-preserving, cookie-free website analytics (aggregate page counts only) to understand traffic. This does not identify you or track you across other sites.
 
+Some pages have a walkthrough video hosted on YouTube. The page shows our own picture of it and contacts YouTube only when you press play; from then on, [Google's privacy policy](https://policies.google.com/privacy) covers that video.
+
 ## Your choices
 
 You can ask us to delete any cloud job data we still hold, or ask what we hold about you, by emailing [support@phoenixlabs.space](mailto:support@phoenixlabs.space). Because uploads are deleted automatically, there is usually nothing left to remove.

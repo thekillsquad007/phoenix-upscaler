@@ -124,6 +124,23 @@ document.querySelectorAll("[data-vcompare]").forEach((el) => {
   vids.forEach((v) => io.observe(v));
 })();
 
+// ── Walkthrough videos: YouTube loads only when pressed ────────────────────
+// Our own thumbnail stands in for the player, so a page makes no request to
+// YouTube (and YouTube sets nothing) until someone asks for the video.
+document.querySelectorAll("[data-yt]").forEach((el) => {
+  const btn = el.querySelector("button");
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    const f = document.createElement("iframe");
+    f.src = `https://www.youtube-nocookie.com/embed/${el.dataset.yt}?autoplay=1&rel=0`;
+    f.title = btn.getAttribute("aria-label").replace(/^Play the /, "");
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    el.replaceChildren(f);
+    f.focus();
+  });
+});
+
 // ── Reveal on scroll ──────────────────────────────────────────────────────
 (() => {
   const els = [...document.querySelectorAll(".reveal")];

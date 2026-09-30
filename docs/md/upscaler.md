@@ -24,6 +24,12 @@ Drag across it. A 1952 home movie, restored with Phoenix Enhanced.
 
 **Runs on your own GPU.** NVIDIA or AMD. No gaming PC? Use the [cloud studio](https://phoenixlabs.space/studio).
 
+## Watch it restore a home movie
+
+A one-minute walkthrough: drop in a clip, press Start, and see what comes back.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/xJzLuOTfqgc)
+
 ## It is not just tapes
 
 Phoenix was built for VHS, and tape is still the hardest case it handles. But lost resolution, compression, noise and combed motion are the same problems on almost any old footage, whatever recorded it.

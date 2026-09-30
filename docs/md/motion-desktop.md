@@ -22,6 +22,12 @@ Made on a PC with the desktop engine and the HD finish. Prompt: “The logo stay
 
 **NVIDIA and AMD.** Radeon cards run natively on Windows. No Linux, no WSL, no command line.
 
+## Watch a clip render on a Radeon
+
+A real clip made on an RX 7800 XT held to 8 GB, from the photo to the finished 1080p video.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/PIdb_yZzVfs)
+
 ## What it does
 
 The desktop app runs Wan 2.2, an open image-to-video model, cut down to four steps and packed to fit ordinary gaming cards. Then it tidies the result up for you.

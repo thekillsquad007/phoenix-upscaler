@@ -187,6 +187,12 @@ Drag across it. A 1952 home movie, restored with Phoenix Enhanced.
 
 **Runs on your own GPU.** NVIDIA or AMD. No gaming PC? Use the [cloud studio](https://phoenixlabs.space/studio).
 
+## Watch it restore a home movie
+
+A one-minute walkthrough: drop in a clip, press Start, and see what comes back.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/xJzLuOTfqgc)
+
 ## It is not just tapes
 
 Phoenix was built for VHS, and tape is still the hardest case it handles. But lost resolution, compression, noise and combed motion are the same problems on almost any old footage, whatever recorded it.
@@ -402,6 +408,12 @@ Phoenix Enhanced — the diffusion-based mode, run on our GPUs.
 
 **Refunded if it fails.** You only pay for a good result.
 
+## See a restore, start to finish
+
+Under a minute: pick a clip, see the price, and get the restored video back.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/ThqaRWynY-M)
+
 ## Three steps
 
 1
@@ -504,6 +516,12 @@ Our own logo, one prompt, first take. Unmute it: the fire is part of the clip.
 **Few rules.** Action, horror, the weird stuff. The one thing we don't make is sexual content.
 
 **It's yours.** No watermark. Use your clips however you like, commercially too.
+
+## Watch it make three clips
+
+A one-minute walkthrough. Every clip in it is a first take, with the sound it made.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/Swv-NA0TeXk)
 
 ## One image, one sentence
 
@@ -638,6 +656,12 @@ Made on a PC with the desktop engine and the HD finish. Prompt: “The logo stay
 **8 GB is enough.** The model streams from disk a piece at a time, so it doesn't need a 24 GB card.
 
 **NVIDIA and AMD.** Radeon cards run natively on Windows. No Linux, no WSL, no command line.
+
+## Watch a clip render on a Radeon
+
+A real clip made on an RX 7800 XT held to 8 GB, from the photo to the finished 1080p video.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/PIdb_yZzVfs)
 
 ## What it does
 
@@ -795,6 +819,12 @@ Real detection, before you render — see every cut and Shorts candidate on the 
 **Auto-cuts dead air and filler words.** No manual scrubbing.
 
 **Reactor template built in.** For reaction and commentary content.
+
+## Watch it edit 2.5 hours of gameplay
+
+It cut 23 minutes of dead air and found five highlights for Shorts. Under a minute, start to finish.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/2E8pdUGqvb0)
 
 ## What it does
 
@@ -1759,6 +1789,8 @@ Purchases (the desktop licence, each cloud job, and Phoenix Motion top-ups) are 
 ## Analytics
 
 We may use privacy-preserving, cookie-free website analytics (aggregate page counts only) to understand traffic. This does not identify you or track you across other sites.
+
+Some pages have a walkthrough video hosted on YouTube. The page shows our own picture of it and contacts YouTube only when you press play; from then on, [Google's privacy policy](https://policies.google.com/privacy) covers that video.
 
 ## Your choices
 

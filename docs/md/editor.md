@@ -24,6 +24,12 @@ Real detection, before you render — see every cut and Shorts candidate on the 
 
 **Reactor template built in.** For reaction and commentary content.
 
+## Watch it edit 2.5 hours of gameplay
+
+It cut 23 minutes of dead air and found five highlights for Shorts. Under a minute, start to finish.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/2E8pdUGqvb0)
+
 ## What it does
 
 ### Auto-cut long-form VODs

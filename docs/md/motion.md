@@ -22,6 +22,12 @@ Our own logo, one prompt, first take. Unmute it: the fire is part of the clip.
 
 **It's yours.** No watermark. Use your clips however you like, commercially too.
 
+## Watch it make three clips
+
+A one-minute walkthrough. Every clip in it is a first take, with the sound it made.
+
+It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/Swv-NA0TeXk)
+
 ## One image, one sentence
 
 Each of these started as a single still and the prompt under it. No editing afterwards, and each is the first take. The sound came out of the same pass as the picture.
