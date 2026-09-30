@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Phoenix Motion desktop: image to video on your own GPU</title>
+<meta name="description" content="Make image-to-video clips on your own PC: 8 GB NVIDIA and AMD Radeon cards, unlimited clips, HD finish, nothing uploaded. Free trial, then $49 for two years." />
+<link rel="canonical" href="https://phoenixlabs.space/motion-desktop" />
+<meta name="robots" content="max-image-preview:large" />
+<meta property="og:site_name" content="Phoenix Labs" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Phoenix Motion desktop: image to video on your own GPU" />
+<meta property="og:description" content="Unlimited image-to-video clips on your own 8 GB NVIDIA or AMD card. Free trial; $49 for two years." />
+<meta property="og:url" content="https://phoenixlabs.space/motion-desktop" />
+<meta property="og:image" content="https://phoenixlabs.space/assets/social/motion-desktop.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Phoenix Motion desktop: image to video on your own graphics card" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<meta name="theme-color" content="#0b0c0e" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=005b05b6" />
+<link rel="stylesheet" href="motion.css" />
+<link rel="manifest" href="site.webmanifest" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Phoenix Motion desktop",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Windows 10, Windows 11",
+      "description": "Image-to-video generation that runs on your own graphics card: 8 GB NVIDIA RTX 30-series or newer, or AMD Radeon RX 7700 to 7900 and RX 9060 to 9070. Unlimited five-second clips, an HD finish to 1080p, and batches of prompts. Nothing is uploaded.",
+      "url": "https://phoenixlabs.space/motion-desktop",
+      "downloadUrl": "https://api.phoenixlabs.space/download/motion-desktop",
+      "softwareVersion": "0.1.0",
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://phoenixlabs.space/#org",
+        "name": "Phoenix Labs",
+        "url": "https://phoenixlabs.space/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "49",
+        "priceCurrency": "USD",
+        "description": "Licence for two years",
+        "url": "https://phoenixlabs.space/motion-desktop#price"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Phoenix Labs",
+          "item": "https://phoenixlabs.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Phoenix Motion",
+          "item": "https://phoenixlabs.space/motion"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Desktop app",
+          "item": "https://phoenixlabs.space/motion-desktop"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which graphics cards does it run on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NVIDIA RTX 30-series or newer with 8 GB of memory or more, and AMD Radeon RX 7700 XT, 7800 XT, the RX 7900 series, RX 9060 XT and the RX 9070 series. It also needs 16 GB of system memory and Windows 10 or 11. Older NVIDIA cards (GTX, RTX 20) and the RX 7600 and RX 6000 series aren't supported yet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a clip take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About eight minutes for a five-second clip on a Radeon RX 7800 XT, including the half minute the HD finish adds. The app makes clips one after another, so you can queue a batch and walk away."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is anything uploaded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Your images and clips stay on your PC. The app goes online to download its engine and model on first run, and to check your licence key."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do desktop clips have sound?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not yet. The desktop engine makes the picture only. Phoenix Motion online makes sound in the same pass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can I make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The same as online: action, horror, the weird stuff. The one thing it won't make is sexual content, and nothing suggestive involving anyone who looks under 18. The desktop app checks that too."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the clips commercially?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The model (Wan 2.2) and the speed-up that makes it four steps are both Apache 2.0, which claims no rights in what you make."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after two years?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The app goes back to the free trial's limits: 480p clips with a small mark in the corner. Clips you already made stay yours, unmarked. Buy another two years to lift the limits again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I move it to a new PC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. In the app's Settings, release this PC, then enter your key on the new one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A clip came out hazy or odd. Why?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Image-to-video models sometimes drift or fade in the middle of a take, even at full precision. Make another take: the \"Takes of each prompt\" option makes up to four at once so you can keep the best."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="upscaler.html">Upscaler</a>
+    <a href="studio.html">Cloud Restore</a>
+    <a href="motion.html" aria-current="page">Motion</a>
+    <a href="editor.html">Editor</a>
+  </nav>
+  <a class="btn btn-sm nav-cta" href="#download">Download</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="motion-eyebrow">Phoenix Motion desktop · image to video on your PC</p>
+      <h1>Image to video on your own graphics card.</h1>
+      <p class="lede">
+        Drop in a still, say what should happen, and your PC makes a
+        five-second clip. It runs on the card most people already have: 8 GB,
+        NVIDIA or AMD. No cloud, no per-clip price, and nothing leaves your
+        computer. Queue up a batch before bed and wake up to a folder of takes.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-lg" href="https://api.phoenixlabs.space/download/motion-desktop">Download the free trial</a>
+        <a class="btn btn-ghost btn-lg" href="#price">$49 for two years</a>
+      </div>
+      <p class="fineprint">Windows 10 and 11, 64-bit. The trial makes unlimited 480p clips with a small mark in the corner.</p>
+    </div>
+
+    <figure class="hero-shot motion-hero">
+      <video width="1920" height="1050" src="assets/motion-desktop/logo-hd.mp4" poster="assets/motion-desktop/logo-hd.webp" muted loop playsinline preload="none" data-inview controls></video>
+      <figcaption>Made on a PC with the desktop engine and the HD finish. Prompt: “The logo stays still. Glowing embers drift slowly upward around it.”</figcaption>
+    </figure>
+  </section>
+
+  <section class="strip">
+    <div><strong>Unlimited clips.</strong> Your graphics card, your electricity. Make as many takes as you like.</div>
+    <div><strong>8 GB is enough.</strong> The model streams from disk a piece at a time, so it doesn't need a 24 GB card.</div>
+    <div><strong>NVIDIA and AMD.</strong> Radeon cards run natively on Windows. No Linux, no WSL, no command line.</div>
+  </section>
+
+  <section id="what" class="section">
+    <h2>What it does</h2>
+    <p class="section-sub">
+      The desktop app runs Wan 2.2, an open image-to-video model, cut down to
+      four steps and packed to fit ordinary gaming cards. Then it tidies the
+      result up for you.
+    </p>
+    <div class="step-grid">
+      <div>
+        <h3>HD finish</h3>
+        <p>Each clip is sharpened to 1080p with Real-ESRGAN, frame by frame. Edges and fine texture come out clean instead of soft. It adds about half a minute.</p>
+      </div>
+      <div>
+        <h3>Batches</h3>
+        <p>Write one prompt per line and ask for up to four takes of each. The app makes them one after another, up to 16 in a go, and every clip lands in your Videos folder.</p>
+      </div>
+      <div>
+        <h3>Private</h3>
+        <p>Images and clips never leave your PC. The app only goes online to download its engine and model once, and to check your licence key.</p>
+      </div>
+    </div>
+    <div class="motion-examples" style="margin-top: 32px">
+      <figure class="motion-example">
+        <video width="1920" height="1050" src="assets/motion-desktop/house-hd.mp4" poster="assets/motion-desktop/house-hd.webp" muted loop playsinline preload="none" data-inview controls></video>
+        <figcaption>Desktop engine, HD finish, first take: “Slow cinematic push-in toward the house. Wind moves through the dry grass.”</figcaption>
+      </figure>
+      <figure class="motion-example">
+        <picture>
+          <source srcset="assets/motion-desktop/hd-finish.webp" type="image/webp" />
+          <img src="assets/motion-desktop/hd-finish.jpg" width="1200" height="400" loading="lazy" alt="The same frame, left as the model makes it and scaled up, right after the HD finish: the roofline, chimney and antenna are crisper" />
+        </picture>
+        <figcaption>A close crop of that clip. Left: the model's 480p frame scaled up to 1080p. Right: the same frame with the HD finish.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="requirements" class="section section-alt">
+    <h2>Will it run on my PC?</h2>
+    <div class="table-wrap"><table class="req-table">
+      <tbody>
+        <tr><th>NVIDIA</th><td>RTX 30-series or newer with 8 GB or more<br /><span class="muted">e.g. RTX 3060 Ti, 3070, 4060, 4070, 5060, 5070</span></td></tr>
+        <tr><th>AMD</th><td>Radeon RX 7700 XT, RX 7800 XT, RX 7900 series, RX 9060 XT, RX 9070 series<br /><span class="muted">with AMD Software (Adrenalin) 26.2.2 or newer</span></td></tr>
+        <tr><th>Memory</th><td>16 GB of system memory</td></tr>
+        <tr><th>Storage</th><td>About 32 GB free for the engine and model<br /><span class="muted">it goes on your roomiest drive, not necessarily C:</span></td></tr>
+        <tr><th>System</th><td>Windows 10 or 11, 64-bit</td></tr>
+        <tr><th>Not yet</th><td>GTX and RTX 20-series, Radeon RX 7600 and RX 6000, Intel Arc, macOS, Linux</td></tr>
+      </tbody>
+    </table></div>
+    <p class="fineprint">
+      A five-second clip takes about eight minutes on a Radeon RX 7800 XT,
+      HD finish included. 720p clips need a card with 12 GB or more. The app
+      checks your card when it opens and tells you plainly if it can't run
+      it. If yours isn't on the list, <a href="motion.html">Phoenix Motion online</a>
+      makes clips on our GPUs, from $0.59 each, with sound.
+    </p>
+  </section>
+
+  <section id="how" class="section">
+    <h2>How it works</h2>
+    <div class="step-grid">
+      <div>
+        <p class="step-num">1</p>
+        <h3>Install</h3>
+        <p>An 87 MB installer. No admin rights needed.</p>
+      </div>
+      <div>
+        <p class="step-num">2</p>
+        <h3>First run</h3>
+        <p>The app sets itself up for your card: the right engine for NVIDIA or AMD, then the model, about 26 GB in all. If the download stops, it picks up where it left off.</p>
+      </div>
+      <div>
+        <p class="step-num">3</p>
+        <h3>Make clips</h3>
+        <p>Drop an image, write what should happen, press Make. Keep the ones you like; the app keeps a gallery of the rest.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="price" class="section section-alt">
+    <h2>What it costs</h2>
+    <div class="price-wrap">
+      <div class="price-card">
+        <p class="price-eyebrow">Phoenix Motion desktop</p>
+        <p class="price-amount">$49<span>for two years</span></p>
+        <ul>
+          <li>Unlimited clips on your own graphics card.</li>
+          <li>No mark in the corner.</li>
+          <li>720p on cards with 12 GB or more.</li>
+          <li>HD finish and batches, of course.</li>
+          <li>Every update and model improvement in those two years.</li>
+        </ul>
+        <a class="btn btn-lg btn-block" href="https://api.phoenixlabs.space/buy/motion-desktop">Buy, $49 for two years</a>
+        <a class="btn btn-ghost btn-block" href="#download">Or try it free first</a>
+        <p class="fineprint">Card payment handled by Lemon Squeezy. Your key arrives by email straight away; paste it into the app's Settings.</p>
+      </div>
+      <div class="price-aside">
+        <h3>Try it first</h3>
+        <p>
+          The free trial isn't time-limited. It makes as many 480p clips as you
+          like with a small mark in the corner, so you can see what your own
+          card can do before paying.
+        </p>
+        <h3>Desktop or online?</h3>
+        <p>
+          The desktop app is for making a lot of clips without watching a
+          balance. <a href="motion.html">Phoenix Motion online</a> is faster
+          (under a minute a clip), adds sound, and needs no graphics card, at
+          $0.59 to $0.99 a clip. Plenty of people use both.
+        </p>
+        <h3>After two years</h3>
+        <p>
+          The app goes back to the trial's limits. Everything you made stays
+          yours, unmarked. Buy another two years if you want to keep going.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="section">
+    <h2>Download</h2>
+    <div class="dl-grid">
+      <a class="dl" href="https://api.phoenixlabs.space/download/motion-desktop">
+        <strong>Windows</strong><span>10 and 11, 64-bit · 87 MB</span>
+      </a>
+      <span class="dl dl-soon"><strong>Linux</strong><span>Coming later</span></span>
+      <span class="dl dl-soon"><strong>macOS</strong><span>Not planned yet</span></span>
+    </div>
+    <p class="fineprint">
+      Windows may show a SmartScreen notice the first time you run the
+      installer, because it's new and not yet widely downloaded. Click
+      <strong>More info</strong>, then <strong>Run anyway</strong>.
+    </p>
+  </section>
+
+  <section id="faq" class="section section-alt">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Which graphics cards does it run on?</summary>
+        <p>NVIDIA RTX 30-series or newer with 8 GB of memory or more, and AMD Radeon RX 7700 XT, 7800 XT, the RX 7900 series, RX 9060 XT and the RX 9070 series. It also needs 16 GB of system memory and Windows 10 or 11. Older NVIDIA cards (GTX, RTX 20) and the RX 7600 and RX 6000 series aren't supported yet.</p>
+      </details>
+      <details>
+        <summary>How long does a clip take?</summary>
+        <p>About eight minutes for a five-second clip on a Radeon RX 7800 XT, including the half minute the HD finish adds. The app makes clips one after another, so you can queue a batch and walk away.</p>
+      </details>
+      <details>
+        <summary>Is anything uploaded?</summary>
+        <p>No. Your images and clips stay on your PC. The app goes online to download its engine and model on first run, and to check your licence key.</p>
+      </details>
+      <details>
+        <summary>Do desktop clips have sound?</summary>
+        <p>Not yet. The desktop engine makes the picture only. <a href="motion.html">Phoenix Motion online</a> makes sound in the same pass.</p>
+      </details>
+      <details>
+        <summary>What can I make?</summary>
+        <p>The same as online: action, horror, the weird stuff. The one thing it won't make is sexual content, and nothing suggestive involving anyone who looks under 18. The desktop app checks that too.</p>
+      </details>
+      <details>
+        <summary>Can I use the clips commercially?</summary>
+        <p>Yes. The model (Wan 2.2) and the speed-up that makes it four steps are both Apache 2.0, which claims no rights in what you make.</p>
+      </details>
+      <details>
+        <summary>What happens after two years?</summary>
+        <p>The app goes back to the free trial's limits: 480p clips with a small mark in the corner. Clips you already made stay yours, unmarked. Buy another two years to lift the limits again.</p>
+      </details>
+      <details>
+        <summary>Can I move it to a new PC?</summary>
+        <p>Yes. In the app's Settings, release this PC, then enter your key on the new one.</p>
+      </details>
+      <details>
+        <summary>A clip came out hazy or odd. Why?</summary>
+        <p>Image-to-video models sometimes drift or fade in the middle of a take, even at full precision. Make another take: the "Takes of each prompt" option makes up to four at once so you can keep the best.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>See what your graphics card can do.</h2>
+    <a class="btn btn-lg" href="https://api.phoenixlabs.space/download/motion-desktop">Download the free trial</a>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><p class="foot-h">Restore</p><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="motion-desktop.html">Motion desktop</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="restore-old-video.html">Restoring old video</a><a href="vhs-restoration-software.html">VHS tapes</a><a href="old-phone-video.html">Old phone video</a><a href="topaz-video-ai-alternative.html">Topaz alternative</a></div>
+    <div class="foot-col"><p class="foot-h">Company</p><a href="about.html">About</a><a href="developers.html">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
+</footer>
+
+<script src="site.js?v=25bb8de0"></script>
+</body>
+</html>

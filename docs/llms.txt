@@ -1,6 +1,6 @@
 # Phoenix Labs
 
-> Phoenix Labs makes video software. Phoenix Upscaler restores and upscales old video on your own PC for a one-time $129. Phoenix Cloud Restore does the same restoration on our GPUs, paid per clip. Phoenix Motion turns a still image into a five-second video with sound, paid per clip. Phoenix Editor cuts long streams and recordings into edits and captioned Shorts, $99 with a year of updates. Nothing is sold as a subscription, and nothing uses credits.
+> Phoenix Labs makes video software. Phoenix Upscaler restores and upscales old video on your own PC for a one-time $129. Phoenix Cloud Restore does the same restoration on our GPUs, paid per clip. Phoenix Motion turns a still image into a five-second video with sound, paid per clip online, or runs on your own 8 GB NVIDIA or AMD graphics card with the desktop app ($49 for two years). Phoenix Editor cuts long streams and recordings into edits and captioned Shorts, $99 with a year of updates. Nothing is sold as a subscription, and nothing uses credits.
 
 Prices are in US dollars. Payments are handled by Lemon Squeezy, the Merchant of Record. Support: support@phoenixlabs.space. Instagram: https://www.instagram.com/phoenixlabs.space/
 
@@ -48,6 +48,15 @@ The full text of every page, in one file: https://phoenixlabs.space/llms-full.tx
 - Content rules: no sexual or nude content, and nothing sexual or suggestive involving a minor. Other themes, including action, horror and fantasy, are allowed.
 - Uploaded images are deleted as soon as the clip is made; finished clips are deleted after about two days.
 - [Phoenix Motion](https://phoenixlabs.space/motion): examples with their prompts, prices, rules, FAQ
+
+## Phoenix Motion desktop (Windows, image to video on your own GPU)
+
+- The same idea as Phoenix Motion online, running locally: a still image and a prompt become a five-second clip (16 fps, no sound yet). Images and clips never leave the PC.
+- Runs on 8 GB graphics cards: NVIDIA RTX 30-series or newer, and AMD Radeon RX 7700 XT, 7800 XT, RX 7900 series, RX 9060 XT and RX 9070 series, natively on Windows (no WSL). Needs 16 GB of system memory, Windows 10 or 11 and about 32 GB of disk. About eight minutes a clip on a Radeon RX 7800 XT.
+- Engine: Wan 2.2 image-to-video (A14B) with the lightx2v four-step LoRAs, both Apache 2.0, packed to 4-bit and streamed from disk. An HD finish sharpens each clip to 1080p with Real-ESRGAN. Batches: one clip per prompt line, up to four takes each.
+- First run downloads the engine for the card and the model, about 26 GB, and resumes if interrupted.
+- Price: $49 for two years, unlimited clips, no watermark, 720p on 12 GB+ cards. The free trial has no time limit: 480p with a small mark. After two years the app goes back to the trial's limits until renewed.
+- [Phoenix Motion desktop](https://phoenixlabs.space/motion-desktop): requirements, download, price, FAQ
 
 ## Phoenix Editor (desktop, automatic editing for streamers)
 

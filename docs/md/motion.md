@@ -82,6 +82,10 @@ You rarely keep the first take. A card payment per 59-cent clip would cost more 
 
 Your balance lives behind a private wallet key that your browser keeps. Every top-up receipt has a link back to it, so you can pick it up on another device or after clearing your browser.
 
+### Making lots of clips? Run it on your own PC
+
+[Phoenix Motion desktop](https://phoenixlabs.space/motion-desktop) makes clips on your own graphics card, 8 GB NVIDIA or AMD, with no per-clip price and nothing uploaded. Slower than here and no sound yet, but unlimited. $49 for two years, with a free trial.
+
 ## What you can make
 
 Almost anything. Fight scenes, monsters, fantasy, dark and strange ideas, parody. We don't police taste, and we don't water down prompts behind your back.
