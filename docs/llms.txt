@@ -48,6 +48,7 @@ The full text of every page, in one file: https://phoenixlabs.space/llms-full.tx
 - Content rules: no sexual or nude content, and nothing sexual or suggestive involving a minor. Other themes, including action, horror and fantasy, are allowed.
 - Uploaded images are deleted as soon as the clip is made; finished clips are deleted after about two days.
 - [Phoenix Motion](https://phoenixlabs.space/motion): examples with their prompts, prices, rules, FAQ
+- [How to animate an old photo](https://phoenixlabs.space/animate-old-photos): scanning, cropping, prompts that keep the face true, what goes wrong
 
 ## Phoenix Motion desktop (Windows, image to video on your own GPU)
 
@@ -57,6 +58,7 @@ The full text of every page, in one file: https://phoenixlabs.space/llms-full.tx
 - First run downloads the engine for the card and the model, about 26 GB, and resumes if interrupted.
 - Price: $49 for two years, unlimited clips, no watermark, 720p on 12 GB+ cards. The free trial has no time limit: 480p with a small mark. After two years the app goes back to the trial's limits until renewed.
 - [Phoenix Motion desktop](https://phoenixlabs.space/motion-desktop): requirements, download, price, FAQ
+- [Running Wan 2.2 on an 8 GB GPU, AMD included](https://phoenixlabs.space/wan-2-2-8gb-gpu): engineering notes: int4 weights streamed per block (4.2 GB peak VRAM), native Windows ROCm, the attention layout fix, measured times
 
 ## Phoenix Editor (desktop, automatic editing for streamers)
 

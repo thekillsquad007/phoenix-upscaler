@@ -4,6 +4,8 @@
     "/",
     "/about",
     "/about.html",
+    "/animate-old-photos",
+    "/animate-old-photos.html",
     "/developers",
     "/developers.html",
     "/editor-guide",
@@ -33,7 +35,9 @@
     "/upscaler",
     "/upscaler.html",
     "/vhs-restoration-software",
-    "/vhs-restoration-software.html"
+    "/vhs-restoration-software.html",
+    "/wan-2-2-8gb-gpu",
+    "/wan-2-2-8gb-gpu.html"
   ],
   "exclude": []
 }

@@ -40,7 +40,7 @@ Each of these started as a single still and the prompt under it. No editing afte
 
 **Loop:** “The phoenix logo stays completely still. Only glowing embers drift slowly upward around it and its edges shimmer with heat.” Everything else holds still, and the clip ends where it starts.
 
-Stills: the Phoenix Labs logo, and frames from *Color Harmony* and *Texas Farm Family* (public domain, Prelinger Archives).
+Stills: the Phoenix Labs logo, and frames from *Color Harmony* and *Texas Farm Family* (public domain, Prelinger Archives). Animating family photos? Read [how to animate an old photo](https://phoenixlabs.space/animate-old-photos) first.
 
 ## How it works
 

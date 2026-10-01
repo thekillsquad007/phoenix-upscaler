@@ -61,7 +61,7 @@ A close crop of that clip. Left: the model's 480p frame scaled up to 1080p. Righ
 | System | Windows 10 or 11, 64-bit |
 | Not yet | GTX and RTX 20-series, Radeon RX 7600 and RX 6000, Intel Arc, macOS, Linux |
 
-A five-second clip takes about eight minutes on a Radeon RX 7800 XT, HD finish included. 720p clips need a card with 12 GB or more. The app checks your card when it opens and tells you plainly if it can't run it. If yours isn't on the list, [Phoenix Motion online](https://phoenixlabs.space/motion) makes clips on our GPUs, from $0.59 each, with sound.
+A five-second clip takes about eight minutes on a Radeon RX 7800 XT, HD finish included. 720p clips need a card with 12 GB or more. The app checks your card when it opens and tells you plainly if it can't run it. If yours isn't on the list, [Phoenix Motion online](https://phoenixlabs.space/motion) makes clips on our GPUs, from $0.59 each, with sound. How a 14B model fits on an 8 GB card: [our engineering notes](https://phoenixlabs.space/wan-2-2-8gb-gpu).
 
 ## How it works
 
