@@ -49,14 +49,23 @@ export default {
     const url = new URL(request.url);
     // One host for search engines: www pages redirect to the apex, which is
     // what every canonical, the sitemap and llms.txt already name.
-    if (url.hostname === "www.phoenixlabs.space") {
+    // The Pages project's own address served a second full copy of the site
+    // until 2026-11-04; it redirects too. Per-deploy and branch previews
+    // (<hash>.phoenix-labs.pages.dev) stay reachable for testing, unindexed.
+    if (url.hostname === "www.phoenixlabs.space" || url.hostname === "phoenix-labs.pages.dev") {
       url.hostname = "phoenixlabs.space";
       return Response.redirect(url.toString(), 301);
     }
+    const preview = url.hostname.endsWith(".pages.dev");
     const slug = pageSlug(url.pathname);
     const res = await env.ASSETS.fetch(request);
     const isHtml = (res.headers.get("content-type") || "").includes("text/html");
-    if (!slug || res.status !== 200 || !isHtml) return res;
+    if (!slug || res.status !== 200 || !isHtml) {
+      if (!preview) return res;
+      const hidden = new Response(res.body, res);
+      hidden.headers.set("x-robots-tag", "noindex");
+      return hidden;
+    }
 
     const mdPath = `/md/${slug}.md`;
     const links = [`<${mdPath}>; rel="alternate"; type="text/markdown"`, ...DISCOVERY].join(", ");
@@ -84,6 +93,7 @@ export default {
     for (const [k, v] of Object.entries(SECURITY)) if (!out.headers.has(k)) out.headers.set(k, v);
     out.headers.append("vary", "Accept");
     out.headers.set("link", links);
+    if (preview) out.headers.set("x-robots-tag", "noindex");
     return out;
   },
 };
