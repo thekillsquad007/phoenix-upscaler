@@ -166,12 +166,12 @@ Phoenix leans on the GPU for the actual restoration work, so what matters most i
 
 |  | Minimum | Recommended |
 | --- | --- | --- |
-| Graphics card | Any modern GPU, 4 GB VRAM NVIDIA, AMD or Intel | NVIDIA 8 GB+ or AMD 16 GB+ e.g. RTX 3060 / RX 7800 XT |
+| Graphics card | Windows: any modern GPU, 4 GB VRAM NVIDIA, AMD or Intel Linux: AMD or NVIDIA, 8 GB VRAM | NVIDIA 8 GB+ or AMD 16 GB+ e.g. RTX 3060 / RX 7800 XT |
 | Memory | 8 GB RAM | 16 GB RAM 32 GB for AMD Generative |
 | OS | Windows 10/11 (64-bit) or Linux | |
-| Storage | Free space roughly equal to your source footage | |
+| Storage | Free space roughly equal to your source footage, plus about 20 GB for Generative | |
 
-Standard and Enhanced restoration run on any modern graphics card. Generative mode, the deepest detail reconstruction, needs an 8 GB+ NVIDIA card, or a 16 GB+ AMD card after a one-time setup the app runs for you. Below that, or on a Mac? The [cloud studio](https://phoenixlabs.space/studio) does the same restoration on our GPUs with no hardware requirements at all.
+On Windows, Enhanced runs on any modern graphics card. Generative, the deepest detail reconstruction, needs an 8 GB+ NVIDIA card on Windows, or on AMD an RX 7800 XT, RX 7900 or RX 9000 series card, and an 8 GB+ AMD (RX 6000 or newer) or NVIDIA card on Linux, after a one-time setup the app runs for you. Below that, or on a Mac? The [cloud studio](https://phoenixlabs.space/studio) does the same restoration on our GPUs with no hardware requirements at all.
 
 ## Don't have a gaming PC?
 

@@ -35,22 +35,22 @@
           {
             "@type": "HowToStep",
             "name": "Install",
-            "text": "Download the installer and run it. Everything is bundled; no account, no second download."
+            "text": "Download the installer and run it. No account and nothing to configure first."
           },
           {
             "@type": "HowToStep",
             "name": "Add your video",
-            "text": "Drag the file onto the window. Phoenix reads the resolution, frame rate and whether it is interlaced."
+            "text": "Drag the file onto the window. Phoenix reads the resolution, frame rate and whether it is interlaced, and picks the settings for it."
           },
           {
             "@type": "HowToStep",
-            "name": "Pick a preset and quality mode",
-            "text": "Auto suits most footage. Quality mode decides how much work the GPU does."
+            "name": "Choose how much detail",
+            "text": "Balanced suits almost everything. Best adds a little more detail on fast motion and takes about 20% longer."
           },
           {
             "@type": "HowToStep",
-            "name": "Restore",
-            "text": "Press Restore and wait. Progress and the output folder are shown as it works."
+            "name": "Start the restoration",
+            "text": "Press Start restoration and wait. Progress and the output folder are shown as it works."
           }
         ]
       },
@@ -152,20 +152,28 @@
       then <strong>Run anyway</strong>.
     </p>
     <p>
-      ffmpeg and the restoration models are inside the installer. There is no
-      second download, no account and nothing to configure before your first
-      restore.
+      On Linux, download the AppImage, make it executable
+      (<code>chmod +x</code>) and run it.
+    </p>
+    <p>
+      There is no account and nothing to configure before you start. The one
+      extra download is Generative, which the app sets up for you the first
+      time you ask for it (step 4).
     </p>
   </section>
 
   <section class="section">
-    <h2>2. Add a video and pick a preset</h2>
+    <h2>2. Add a video</h2>
     <p>
       Drag the file onto the window, or click to browse. Phoenix reads the
       resolution, the frame rate and whether the footage is interlaced, and
-      shows you what it found.
+      picks the settings for it. For most people that is the whole step.
     </p>
-    <p>The preset tells it what kind of damage to expect:</p>
+    <p>
+      If you want to steer it, open <strong>Advanced options</strong> under
+      the Start button. The preset there tells Phoenix what kind of damage to
+      expect:
+    </p>
     <ul class="checklist">
       <li><strong>Auto</strong> inspects the file and chooses. Right almost always, and the right place to start.</li>
       <li><strong>VHS</strong> for tape and broadcast captures: heavier noise reduction, and deinterlacing on by default.</li>
@@ -181,65 +189,69 @@
   </section>
 
   <section class="section section-alt">
-    <h2>3. Choose a quality mode</h2>
+    <h2>3. Choose how much detail</h2>
     <p>
-      The preset says what kind of footage it is. The quality mode says how
-      hard your GPU should work on it. This is the setting that changes both
-      the result and the wait, so it is worth understanding.
+      Phoenix uses the best engine your PC has, and picks it for you. There
+      are two:
     </p>
 
     <div class="how-grid">
       <div class="path-card">
-        <h3>Standard</h3>
+        <h3>Generative</h3>
         <p>
-          Fast and compatible. Cleans, deinterlaces and scales without any
-          neural detail work. Runs on anything, including laptops with no
-          usable GPU. Use it to check a file is what you think it is before
-          committing to a long restore.
+          Diffusion-based detail reconstruction: it rebuilds texture rather
+          than sharpening what is there. The biggest visible jump, and the
+          slowest. Runs on Windows and Linux with a capable graphics card,
+          after a one-time setup (step 4).
         </p>
       </div>
       <div class="path-card">
         <h3>Enhanced</h3>
         <p>
-          Neural video restoration on any modern GPU, using paired frames so
-          motion stays consistent instead of shimmering. This is the mode most
-          people should use most of the time. It needs no setup beyond
-          installing Phoenix.
-        </p>
-      </div>
-      <div class="path-card">
-        <h3>Generative</h3>
-        <p>
-          Diffusion-based detail reconstruction: it rebuilds texture rather
-          than sharpening what is there. The biggest visible jump, and by far
-          the slowest. Needs a one-time setup step and a card with 8&nbsp;GB or
-          more.
+          Neural video restoration using paired frames, so motion stays
+          consistent instead of shimmering. Runs on any modern graphics card
+          on Windows, with no setup. Phoenix uses it when Generative isn't
+          set up.
         </p>
       </div>
     </div>
 
+    <p>With Generative, the main screen asks one question, how much detail:</p>
+    <ul class="checklist">
+      <li><strong>Balanced</strong> is the recommended choice. Clean, natural detail on any footage.</li>
+      <li><strong>Best</strong> adds a little more detail on fast-moving footage and takes about 20% longer. On a still close-up it is no better than Balanced.</li>
+    </ul>
+
     <p class="fineprint">
-      Phoenix picks a sensible default for your machine on first launch, and
-      it will never quietly give you a lesser mode than the one you chose. If
-      Generative is not set up, it says so and tells you what to do rather than
-      silently running Standard and handing you a disappointing file.
+      Phoenix will never quietly give you a lesser result than the one you
+      chose. If Generative is not set up, it says so and tells you what to do.
+      If your PC has no graphics card Phoenix can use, it tells you that too,
+      and points you to the cloud studio instead of producing a restore that
+      isn't worth keeping.
     </p>
   </section>
 
   <section class="section">
-    <h2>4. Set up Generative (optional, one time)</h2>
+    <h2>4. Set up Generative (one time)</h2>
     <p>
-      Generative is the only mode with an extra step, because it needs a
-      several-gigabyte model and a GPU compute stack that the installer would
-      otherwise force on everyone.
+      Generative is the only engine with an extra step, because it needs a
+      several-gigabyte model and a GPU compute stack built for your specific
+      graphics card.
     </p>
     <p>
       Click <strong>Install Generative</strong> in the app and leave it. It
-      downloads the models and sets up the runtime, which takes a while on a
-      normal connection and needs roughly 20&nbsp;GB free. On AMD cards it
-      installs into WSL, which Windows may ask to enable and which may want a
-      restart. This happens once; after it finishes, Generative is just another
-      option in the dropdown.
+      downloads the model and sets up everything it needs, which takes 15 to 40
+      minutes on a normal connection and needs roughly 20&nbsp;GB free. This
+      happens once. When it finishes, the Balanced and Best choices appear and
+      you can start.
+    </p>
+    <ul class="checklist">
+      <li><strong>Windows with an AMD card:</strong> it installs into Windows Subsystem for Linux, which Windows may ask to enable and which may want a restart, plus AMD&rsquo;s ROCm for WSL. AMD supports that on the Radeon RX 7800&nbsp;XT, RX 7900 and RX 9000 series, Radeon PRO W7000 and Ryzen AI Max. Keep the AMD graphics driver up to date.</li>
+      <li><strong>Linux:</strong> AMD (Radeon RX 6000 series or newer) or NVIDIA, with 8&nbsp;GB or more. Nothing needs root. If your user account can't use the graphics card for compute yet, the app shows the one command to fix that, then you click Install Generative again.</li>
+    </ul>
+    <p>
+      If setup stops, the app shows why and what to do next, right under the
+      Install button.
     </p>
     <p>
       Restores are chunked, so a failure part-way through is not fatal. If a
@@ -250,23 +262,37 @@
   </section>
 
   <section class="section section-alt">
-    <h2>5. Restore, and what to expect</h2>
+    <h2>5. Start the restoration, and what to expect</h2>
     <p>
-      Press <strong>Restore</strong>. Phoenix shows progress and the folder
-      your finished file will land in.
+      Press <strong>Start restoration</strong>. Phoenix shows progress and the
+      folder your finished file will land in. You can drop in several videos at
+      once, or add more while one is running. They restore one after another,
+      in the order you added them.
     </p>
     <p>
-      How long it takes depends almost entirely on the quality mode. Standard
-      runs at something close to playback speed. Enhanced is several times
-      slower than that. Generative is slower again by a wide margin, and a long
-      clip in Generative is genuinely an overnight job. None of this is a fault
-      to work around; rebuilding a picture frame by frame is simply expensive.
+      How long it takes depends mostly on the engine. Enhanced runs several
+      times slower than playback. Generative is slower again by a wide margin,
+      and a long clip in Generative is genuinely an overnight job. None of this
+      is a fault to work around. Rebuilding a picture frame by frame is simply
+      expensive.
     </p>
     <p>
-      Two practical notes. Working files can run to several gigabytes for a
-      long restore, and Phoenix puts them on the largest fixed drive it can
-      find rather than filling your system drive. And the output is a new file
-      next to the original, so your source is never touched.
+      You don't have to watch it. Phoenix keeps your PC awake while it works,
+      shows the progress on its taskbar button, and plays a short sound when
+      the queue is done.
+    </p>
+    <p>
+      Each finished video is saved to your Videos folder, in <strong>Phoenix
+      Upscaler</strong>, under the original's name with <em>(restored)</em>
+      added. You can change the folder under the Start button. Your source file
+      is never touched. To see what changed, click <strong>Compare before and
+      after</strong> on the finished restore and drag the line across the
+      picture.
+    </p>
+    <p>
+      One practical note. Working files can run to several gigabytes for a long
+      restore, and Phoenix puts them on the largest fixed drive it can find
+      rather than filling your system drive.
     </p>
   </section>
 
@@ -275,33 +301,50 @@
 
     <h3>The result looks soft, or barely different</h3>
     <p>
-      Almost always the quality mode. Standard does no neural work at all, so
-      on badly damaged footage the difference can be small. Try Enhanced first,
-      then Generative. If you are already on Generative and the picture is
-      still soft, the source may be out of focus rather than low resolution,
-      which is not something any restoration can fix.
+      If you used Enhanced, try Generative, which rebuilds far more detail. If
+      you are already on Generative, try Best. If the picture is still soft,
+      the source may be out of focus rather than low resolution, which is not
+      something any restoration can fix.
     </p>
 
     <h3>Faces look smooth or waxy</h3>
     <p>
       Too much restoration for the amount of real detail in the source. Try the
-      Faces preset, which is tuned to keep skin texture, or drop from
-      Generative to Enhanced. On a face that was only a few dozen pixels wide
-      to begin with, a slightly soft result is the honest one.
+      Faces preset under Advanced options, which is tuned to keep skin texture.
+      On a face that was only a few dozen pixels wide to begin with, a slightly
+      soft result is the honest one.
     </p>
 
     <h3>Motion shimmers or flickers</h3>
     <p>
-      Usually interlaced footage that was not detected. Set the preset to VHS,
-      which turns deinterlacing on explicitly. Anything captured from tape or
+      Usually interlaced footage that was not detected. Set the preset to VHS
+      under Advanced options, which turns deinterlacing on explicitly. Anything captured from tape or
       broadcast is interlaced far more often than people expect.
     </p>
 
     <h3>&ldquo;Generative isn't set up on this PC yet&rdquo;</h3>
     <p>
-      Exactly what it says: the models and runtime have not been installed.
-      Click <strong>Install Generative</strong>, or use Enhanced, which needs
-      no setup and is a real improvement over Standard.
+      Exactly what it says: the model and runtime have not been installed.
+      Click <strong>Install Generative</strong>. On Windows you can use
+      Enhanced in the meantime, which needs no setup.
+    </p>
+
+    <h3>Generative setup stopped</h3>
+    <p>
+      The app shows the reason under the Install button, and it is almost
+      always one of three: the internet connection dropped, the drive is short
+      of the roughly 20&nbsp;GB setup needs, or (on Linux) your user account
+      doesn't have access to the graphics card yet, in which case the app
+      shows the command that grants it. Fix that, then click
+      <strong>Install Generative</strong> again. It picks up where it stopped
+      instead of downloading everything twice.
+    </p>
+
+    <h3>&ldquo;This PC doesn't have a graphics card Phoenix can use&rdquo;</h3>
+    <p>
+      Phoenix only restores with engines that make a real difference, and those
+      need a graphics card. Without one, the <a href="studio.html">cloud
+      studio</a> runs the same restoration on our GPUs, priced per clip.
     </p>
 
     <h3>The job ran out of memory</h3>
@@ -349,7 +392,7 @@
   <section class="section section-alt">
     <h2>Things worth knowing</h2>
     <ul class="checklist">
-      <li><strong>Nothing is uploaded.</strong> Restoration happens on your own GPU. Phoenix contacts the internet to check for updates and to validate your licence, and for nothing else. Your video never leaves the machine.</li>
+      <li><strong>Nothing is uploaded.</strong> Restoration happens on your own GPU. Phoenix contacts the internet to check for updates (and download them) and to validate your licence, and for nothing else. Your video never leaves the machine.</li>
       <li><strong>The trial restores 60-second clips</strong> with a watermark, so you can see exactly what your own footage looks like before paying. Generative needs a licence.</li>
       <li><strong>One payment, $129.</strong> No subscription, no per-clip charge, no export limit. Updates are included.</li>
       <li><strong>Your originals are never modified.</strong> Every restore writes a new file.</li>
@@ -382,16 +425,6 @@
   <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>
 
-<script src="site.js?v=bd5119e4"></script>
-<script src="site.js?v=bd5119e4"></script>
-<script src="site.js?v=bd5119e4"></script>
-<script src="site.js?v=bd5119e4"></script>
-<script src="site.js?v=bd5119e4"></script>
-<script src="site.js?v=bd5119e4"></script>
-<script src="site.js?v=bd5119e4"></script>
-<script src="site.js?v=bd5119e4"></script>
-<script src="site.js?v=bd5119e4"></script>
-<script src="site.js?v=bd5119e4"></script>
 <script src="site.js?v=bd5119e4"></script>
 </body>
 </html>

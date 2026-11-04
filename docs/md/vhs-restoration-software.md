@@ -40,9 +40,9 @@ Restoration works from whatever the capture gives it. A wobbly, badly tracked ca
 
 ## Then restore it
 
-1. **Preview.** Pick a stretch with a face, some motion and a dark corner. Run a short Phoenix preview using Standard Restore first.
+1. **Try a short section.** Pick a stretch with a face, some motion and a dark corner. Restore a short section first, about 30 seconds, before committing to the whole tape.
 2. **Check the preview.** Check faces, text, motion, and noisy shadows before exporting a long tape.
-3. **Choose a restoration mode.** Standard and Enhanced run on any modern AMD, Intel or NVIDIA Windows GPU. Generative rebuilds the most detail and runs on 8 GB+ NVIDIA cards, or on 16 GB+ AMD cards after a one-time in-app setup. Pick Generative when the preview looks better.
+3. **Let Phoenix choose the engine.** Phoenix picks the best engine your PC has. Generative rebuilds the most detail: on Windows it runs on 8 GB+ NVIDIA cards and on AMD Radeon RX 7800 XT, RX 7900 and RX 9000 series cards, on Linux on 8 GB+ AMD or NVIDIA cards, after a one-time in-app setup. On Windows, Enhanced runs on any modern graphics card with no setup.
 4. **Export at the size you'll watch.** 1080p suits most screens. VHS holds too little detail to gain much from 4K unless you'll watch on a big 4K TV.
 
 ## What a restored tape looks like
