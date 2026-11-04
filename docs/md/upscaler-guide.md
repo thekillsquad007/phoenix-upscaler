@@ -8,7 +8,7 @@ url: https://phoenixlabs.space/upscaler-guide
 
 Everything from installing it to getting a finished file, plus the problems people actually run into and what to do about each one. Your first restore takes about five minutes of attention.
 
-[Get the installer](https://phoenixlabs.space/index#download) [Skip to troubleshooting](https://phoenixlabs.space/upscaler-guide#troubleshooting)
+[Get the installer](https://phoenixlabs.space/#download) [Skip to troubleshooting](https://phoenixlabs.space/upscaler-guide#troubleshooting)
 
 ## What Phoenix can work with
 
@@ -27,7 +27,7 @@ What it cannot do is invent a picture that was never recorded. A clip that is ge
 
 ## 1. Install it
 
-Download the installer from the [download section](https://phoenixlabs.space/index#download) and run it. It installs for your user account, so it never asks for an administrator password.
+Download the installer from the [download section](https://phoenixlabs.space/#download) and run it. It installs for your user account, so it never asks for an administrator password.
 
 Windows will show a blue “Windows protected your PC” box the first time. That appears for any installer without a paid code signing certificate. Click **More info**, then **Run anyway**.
 
@@ -151,4 +151,4 @@ A long restore writes large intermediates. Phoenix cleans them when a job finish
 
 The trial runs on 60-second clips, so pick the video you most want back and see what happens to it.
 
-[Download Phoenix](https://phoenixlabs.space/index#download)
+[Download Phoenix](https://phoenixlabs.space/#download)

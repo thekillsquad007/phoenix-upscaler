@@ -11,7 +11,7 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
   const path = location.pathname.replace(/\/index\.html$/, "/");
   const moved = ["#price", "#download", "#what", "#paths", "#proof", "#proof-2", "#how", "#faq", "#cloud"];
   if ((path === "/" || path.endsWith("/")) && moved.includes(location.hash)) {
-    location.replace(`upscaler.html${location.hash}`);
+    location.replace(`/upscaler${location.hash}`);
   }
 })();
 

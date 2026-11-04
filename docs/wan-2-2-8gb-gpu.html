@@ -85,14 +85,14 @@
 </head>
 <body>
   <header class="nav">
-  <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
   <nav class="nav-links" id="site-menu" aria-label="Products">
-    <a href="upscaler.html">Upscaler</a>
-    <a href="studio.html">Cloud Restore</a>
-    <a href="motion.html">Motion</a>
-    <a href="editor.html">Editor</a>
+    <a href="/upscaler">Upscaler</a>
+    <a href="/studio">Cloud Restore</a>
+    <a href="/motion">Motion</a>
+    <a href="/editor">Editor</a>
   </nav>
-  <a class="btn btn-sm nav-cta" href="motion-desktop.html">Motion desktop</a>
+  <a class="btn btn-sm nav-cta" href="/motion-desktop">Motion desktop</a>
   <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
 </header>
   <main class="content-page">
@@ -101,7 +101,7 @@
     <p class="lead">Wan 2.2's 14B image-to-video model normally wants a 24 GB card. We run it in 4.2 GB of video memory, on NVIDIA cards and on AMD Radeons natively on Windows. Three things do most of the work: int4 weights read from disk one transformer block at a time, the right ROCm attention kernel, and one copy that made attention twice as fast. A five-second 480p clip takes about seven and a half minutes on an RX 7800 XT held to 8 GB.</p>
     <p class="muted page-date">Updated <time datetime="2026-10-01">1 October 2026</time></p>
 
-    <p>These are the notes behind <a href="motion-desktop.html">Phoenix Motion desktop</a>, our image-to-video app. It's a paid product, but nothing below depends on it, and we'd rather the numbers were out there. Everything was measured on one machine: a Radeon RX 7800 XT (16 GB, gfx1101) capped at 8 GB with <code>torch.cuda.set_per_process_memory_fraction</code>, a Ryzen 9 5900X and 32 GB of RAM, on AMD's ROCm 7.2.1 Windows wheels (torch 2.9.1) with diffusers 0.40.0.</p>
+    <p>These are the notes behind <a href="/motion-desktop">Phoenix Motion desktop</a>, our image-to-video app. It's a paid product, but nothing below depends on it, and we'd rather the numbers were out there. Everything was measured on one machine: a Radeon RX 7800 XT (16 GB, gfx1101) capped at 8 GB with <code>torch.cuda.set_per_process_memory_fraction</code>, a Ryzen 9 5900X and 32 GB of RAM, on AMD's ROCm 7.2.1 Windows wheels (torch 2.9.1) with diffusers 0.40.0.</p>
 
     <h2>The model</h2>
     <p>Wan 2.2 I2V-A14B (Apache 2.0) is a mixture of two 14B experts: one handles the high-noise early steps, the other the low-noise late ones. With the four-step lightx2v distillation LoRAs merged in, a clip takes four denoising steps instead of dozens. Each expert in bf16 is about 28 GB, so even one of them is far past an 8 GB card.</p>
@@ -149,22 +149,22 @@
       <li>Desktop clips are silent. The browser version of Phoenix Motion makes sound in the same pass; the desktop model doesn't.</li>
     </ul>
 
-    <p class="muted">Related: <a href="motion-desktop.html">Phoenix Motion desktop</a> &middot; <a href="animate-old-photos.html">How to animate an old photo</a> &middot; <a href="motion.html">Phoenix Motion in the browser</a></p>
-    <div class="content-cta"><h2>Try it on your own card</h2><p>Phoenix Motion desktop sets all of this up on first run, NVIDIA or AMD. The free trial has no time limit.</p><a class="btn btn-primary" href="motion-desktop.html">See Motion desktop</a></div>
+    <p class="muted">Related: <a href="/motion-desktop">Phoenix Motion desktop</a> &middot; <a href="/animate-old-photos">How to animate an old photo</a> &middot; <a href="/motion">Phoenix Motion in the browser</a></p>
+    <div class="content-cta"><h2>Try it on your own card</h2><p>Phoenix Motion desktop sets all of this up on first run, NVIDIA or AMD. The free trial has no time limit.</p><a class="btn btn-primary" href="/motion-desktop">See Motion desktop</a></div>
   </main>
   <footer class="site-foot">
   <div class="foot-grid">
     <div class="foot-brand">
-      <a class="brand" href="./"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
       <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
     </div>
-    <div class="foot-col"><p class="foot-h">Restore</p><a href="upscaler.html">Phoenix Upscaler</a><a href="studio.html">Cloud Restore</a><a href="upscaler-guide.html">Upscaler guide</a></div>
-    <div class="foot-col"><p class="foot-h">Create</p><a href="motion.html">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="motion-desktop.html">Motion desktop</a><a href="editor.html">Phoenix Editor</a><a href="editor-guide.html">Editor guide</a></div>
-    <div class="foot-col"><p class="foot-h">Guides</p><a href="restore-old-video.html">Restoring old video</a><a href="vhs-restoration-software.html">VHS tapes</a><a href="old-phone-video.html">Old phone video</a><a href="topaz-video-ai-alternative.html">Topaz alternative</a><a href="animate-old-photos.html">Animating old photos</a></div>
-    <div class="foot-col"><p class="foot-h">Company</p><a href="about.html">About</a><a href="developers.html">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="refund.html">Refunds</a></div>
+    <div class="foot-col"><p class="foot-h">Restore</p><a href="/upscaler">Phoenix Upscaler</a><a href="/studio">Cloud Restore</a><a href="/upscaler-guide">Upscaler guide</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="/motion">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="/motion-desktop">Motion desktop</a><a href="/editor">Phoenix Editor</a><a href="/editor-guide">Editor guide</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/animate-old-photos">Animating old photos</a></div>
+    <div class="foot-col"><p class="foot-h">Company</p><a href="/about">About</a><a href="/developers">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/refund">Refunds</a></div>
   </div>
   <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>
-<script src="site.js?v=bd5119e4"></script>
+<script src="site.js?v=d1325a40"></script>
 </body>
 </html>
