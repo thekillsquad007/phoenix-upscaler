@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI video upscaling on an AMD Radeon GPU | Phoenix Upscaler</title>
+  <meta name="description" content="Most AI video upscalers assume an NVIDIA card. What works on a Radeon, which cards run diffusion upscaling, how fast it is, and what we had to fix." />
+  <link rel="canonical" href="https://phoenixlabs.space/ai-video-upscaling-amd-gpu" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta property="og:site_name" content="Phoenix Labs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="AI video upscaling on an AMD Radeon GPU" />
+  <meta property="og:description" content="Most AI video upscalers assume an NVIDIA card. What works on a Radeon, which cards run diffusion upscaling, how fast it is, and what we had to fix." />
+  <meta property="og:url" content="https://phoenixlabs.space/ai-video-upscaling-amd-gpu" />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/social/upscaler.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Phoenix Upscaler restoring old footage" />
+  <meta property="article:modified_time" content="2026-11-08" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=b6c83be7" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "AI video upscaling on an AMD Radeon GPU",
+        "description": "Most AI video upscalers assume an NVIDIA card. What works on a Radeon, which cards run diffusion upscaling, how fast it is, and what we had to fix.",
+        "image": "https://phoenixlabs.space/assets/social/upscaler.jpg",
+        "datePublished": "2026-11-08",
+        "dateModified": "2026-11-08",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "mainEntityOfPage": "https://phoenixlabs.space/ai-video-upscaling-amd-gpu",
+        "about": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Phoenix Upscaler",
+            "url": "https://phoenixlabs.space/upscaler"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Phoenix Labs",
+            "item": "https://phoenixlabs.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phoenix Upscaler",
+            "item": "https://phoenixlabs.space/upscaler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AI video upscaling on AMD",
+            "item": "https://phoenixlabs.space/ai-video-upscaling-amd-gpu"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can an AMD GPU do AI video upscaling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Upscalers built on DirectML or Vulkan run on any recent Radeon. The heavier diffusion upscalers need AMD's ROCm, which covers fewer cards and, on Windows, runs inside WSL2. It works, but it's slower than on a comparable NVIDIA card."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Radeon cards can run Phoenix's Generative mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On Windows, the cards AMD supports for ROCm under WSL: the Radeon RX 7800 XT, RX 7900 and RX 9000 series, Radeon PRO W7000 and Ryzen AI Max. On Linux, Radeon RX 6000 series or newer with 8 GB or more. Every other modern Radeon on Windows runs the Enhanced mode."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do so many AI video tools only support NVIDIA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most research models are written and tested on CUDA, NVIDIA's compute platform, and some depend on CUDA-only pieces such as custom attention kernels. Porting them to AMD means replacing those pieces and re-testing the picture, which most projects never get round to."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How fast is diffusion upscaling on a Radeon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On an RX 7800 XT, Phoenix's Generative mode takes about a minute of processing for each second of 320 to 360p footage. That's fine for clips and highlights. A whole two-hour tape is better suited to the Enhanced mode or to Cloud Restore."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a free upscaler that works on AMD?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Video2X uses Vulkan builds of Real-ESRGAN and similar models, which run on Radeon cards. It's free for any length if you're comfortable setting it up. Phoenix's free download restores 60-second clips with a small watermark."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+  <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="/upscaler">Upscaler</a>
+    <a href="/studio">Cloud Restore</a>
+    <a href="/motion">Motion</a>
+    <a href="/editor">Editor</a>
+  </nav>
+  <a class="btn btn-sm nav-cta" href="/upscaler#download">Download Phoenix</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+</header>
+  <main class="content-page">
+    <p class="badge">AMD and Radeon</p>
+    <h1>AI video upscaling on an AMD Radeon GPU</h1>
+    <p class="lead">Most AI video upscalers are written for NVIDIA cards first and AMD cards never. A Radeon can do the job. Lighter neural upscalers run on almost any recent card, and the heavy diffusion models run on the newer ones through AMD's ROCm. It takes more setup, and it's slower than NVIDIA. Here's what works, on which cards, and what we had to fix to get there.</p>
+    <p class="muted page-date">Updated <time datetime="2026-11-08">8 November 2026</time></p>
+
+    <h2>Two kinds of AI upscaler, and why AMD support differs</h2>
+    <ul>
+      <li><strong>Neural upscalers</strong> (Real-ESRGAN and its relatives, and video restoration models that compare neighbouring frames). These are small enough to export to portable formats. On Windows they can run through DirectML, and elsewhere through Vulkan, both of which work on Radeon cards. Fast enough for whole tapes.</li>
+      <li><strong>Diffusion upscalers</strong> (FlashVSR, SeedVR and similar). These rebuild texture instead of sharpening what's there, so they give the biggest visible jump. They're also big research models written for PyTorch on CUDA, sometimes with CUDA-only parts. On AMD they need ROCm, AMD's answer to CUDA, which supports fewer cards.</li>
+    </ul>
+
+    <h2>What runs on your card</h2>
+    <div class="table-wrap">
+      <table class="req-table">
+        <thead><tr><th>Your setup</th><th>What Phoenix uses</th></tr></thead>
+        <tbody>
+          <tr><th>Windows, any modern Radeon (4&nbsp;GB or more)</th><td>Enhanced: neural video restoration through DirectML. No setup.</td></tr>
+          <tr><th>Windows, RX 7800&nbsp;XT, RX 7900 or RX 9000 series, Radeon PRO W7000, Ryzen AI Max</th><td>Generative too: diffusion detail, after a one-time setup that installs WSL2 and AMD's ROCm for WSL. 32&nbsp;GB of system memory recommended.</td></tr>
+          <tr><th>Linux, RX 6000 series or newer, 8&nbsp;GB or more</th><td>Generative, with ROCm set up by the app. Nothing needs root.</td></tr>
+          <tr><th>No usable graphics card</th><td>Phoenix says so and points you to <a href="/studio">Cloud Restore</a> instead of making a restore that isn't worth keeping.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">The Windows Generative list is the set of cards AMD supports for ROCm under WSL. It will grow as AMD adds cards.</p>
+
+    <h2>Why Windows goes through WSL2</h2>
+    <p>PyTorch's ROCm builds have been most complete on Linux. So on Windows, Phoenix sets up a small Linux system inside Windows Subsystem for Linux (WSL2) and runs the diffusion model there, talking to your Radeon through AMD's WSL driver. Windows may ask to turn WSL on and to restart once. After that it's invisible: you press Restore in the same app.</p>
+
+    <h2>What we had to fix to make diffusion work on a Radeon</h2>
+    <p>We run FlashVSR, a one-step diffusion video upscaler, for Generative. Getting it from &ldquo;CUDA only&rdquo; to a usable picture on a 16&nbsp;GB RX 7800&nbsp;XT took a handful of changes. If you're porting something similar yourself, these are the ones that cost us time.</p>
+    <ul>
+      <li><strong>A CUDA-only attention kernel.</strong> FlashVSR is built around a block-sparse attention extension that only exists for CUDA. On AMD we fall back to PyTorch's standard attention, using AMD's AOTriton kernels so it doesn't run out of memory.</li>
+      <li><strong>A bug that turned every frame into noise.</strong> Passing the model's sparsity pattern to the standard attention as a mask looked correct and produced pure static on RDNA3. Plain dense attention, ignoring the mask, gives the right picture. It's slower, but it's the version that works.</li>
+      <li><strong>Memory that fragments.</strong> Long clips crept up in memory until they failed. Processing in chunks, moving finished frames off the card, and cleaning up between chunks fixed it.</li>
+      <li><strong>WSL reporting the wrong amount of RAM.</strong> Inside WSL the system looks much smaller than it is, and our memory planning got far too cautious, reloading the model every couple of chunks. The app now passes the real figure from Windows, which made jobs roughly twice as fast.</li>
+    </ul>
+
+    <h2>How fast it is</h2>
+    <p>On an RX 7800&nbsp;XT, Generative takes about a minute of processing per second of 320 to 360p footage. That's fine for the clips you care about most: a wedding speech, a first birthday, a few minutes of a holiday. A full two-hour tape isn't a sensible Generative job on this card. The Enhanced mode is much faster and suits long footage, and NVIDIA cards with the CUDA kernel are faster again.</p>
+
+    <h2>The quality catch, on any brand of card</h2>
+    <p>Diffusion upscalers on their own tend to warp on fast motion: an edge drifts a few pixels from where it was, a face changes shape slightly from frame to frame. So Phoenix never delivers the diffusion picture as it is. A conventional restore holds the shape of everything, and the diffusion output only contributes fine detail where it lines up with that. Where they disagree, the steady version wins. You get the texture without the wobble.</p>
+
+    <h2>Doing it with Phoenix</h2>
+    <p><a href="/upscaler">Phoenix Upscaler</a> is a desktop app for restoring old video (tapes, DVDs, film scans, early phone clips) on Windows and Linux, NVIDIA or AMD, for $129 once with every update included. It picks the best engine your card supports. The <a href="/upscaler-guide">setup guide</a> explains exactly what the Generative install adds. The free download restores 60-second clips with a small watermark, so you can see what your Radeon does with your footage before paying. Generative mode comes with the licence.</p>
+
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Can an AMD GPU do AI video upscaling?</summary>
+        <p>Yes. Upscalers built on DirectML or Vulkan run on any recent Radeon. The heavier diffusion upscalers need AMD's ROCm, which covers fewer cards and, on Windows, runs inside WSL2. It works, but it's slower than on a comparable NVIDIA card.</p>
+      </details>
+      <details>
+        <summary>Which Radeon cards can run Phoenix's Generative mode?</summary>
+        <p>On Windows, the cards AMD supports for ROCm under WSL: the Radeon RX 7800 XT, RX 7900 and RX 9000 series, Radeon PRO W7000 and Ryzen AI Max. On Linux, Radeon RX 6000 series or newer with 8 GB or more. Every other modern Radeon on Windows runs the Enhanced mode.</p>
+      </details>
+      <details>
+        <summary>Why do so many AI video tools only support NVIDIA?</summary>
+        <p>Most research models are written and tested on CUDA, NVIDIA's compute platform, and some depend on CUDA-only pieces such as custom attention kernels. Porting them to AMD means replacing those pieces and re-testing the picture, which most projects never get round to.</p>
+      </details>
+      <details>
+        <summary>How fast is diffusion upscaling on a Radeon?</summary>
+        <p>On an RX 7800 XT, Phoenix's Generative mode takes about a minute of processing for each second of 320 to 360p footage. That's fine for clips and highlights. A whole two-hour tape is better suited to the Enhanced mode or to Cloud Restore.</p>
+      </details>
+      <details>
+        <summary>Is there a free upscaler that works on AMD?</summary>
+        <p>Yes. Video2X uses Vulkan builds of Real-ESRGAN and similar models, which run on Radeon cards. It's free for any length if you're comfortable setting it up. Phoenix's free download restores 60-second clips with a small watermark.</p>
+      </details>
+    </div>
+
+    <p class="muted">Related: <a href="/upscale-low-resolution-video">Upscaling 240p and 360p video</a> &middot; <a href="/wan-2-2-8gb-gpu">Running Wan 2.2 on an 8 GB GPU, AMD included</a> &middot; <a href="/upscaler-guide">Phoenix Upscaler guide</a></p>
+    <div class="content-cta"><h2>See what your Radeon can do</h2><p>The free download restores 60-second clips with a small watermark. Generative mode comes with the licence.</p><a class="btn btn-primary" href="/upscaler#download">Download Phoenix</a></div>
+  </main>
+  <footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><p class="foot-h">Restore</p><a href="/upscaler">Phoenix Upscaler</a><a href="/studio">Cloud Restore</a><a href="/upscaler-guide">Upscaler guide</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="/motion">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="/motion-desktop">Motion desktop</a><a href="/editor">Phoenix Editor</a><a href="/editor-guide">Editor guide</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/upscale-low-resolution-video">Upscaling 240p video</a><a href="/ai-video-upscaling-amd-gpu">AI upscaling on AMD</a><a href="/animate-old-photos">Animating old photos</a></div>
+    <div class="foot-col"><p class="foot-h">Company</p><a href="/about">About</a><a href="/developers">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/refund">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
+</footer>
+<script src="site.js?v=6fbcf7aa"></script>
+</body>
+</html>

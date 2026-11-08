@@ -311,6 +311,12 @@ $129once
 
 Card payment handled by Lemon Squeezy. Your key arrives by email immediately.
 
+### Restoring footage for clients?
+
+The Business licence is for paid work on other people's footage: transfer services, videographers, archivists. Same app, $299 once, on up to five computers, with priority email support. Your own and your family's videos are covered by the $129 licence, including a channel that earns money.
+
+[Buy Business, $299](mailto:support@phoenixlabs.space)
+
 ### Try it first
 
 The free download restores 60-second clips with a small watermark, so you can point it at your own tape and see the result before paying anything.
@@ -334,7 +340,7 @@ Phoenix leans on the GPU for the actual restoration work, so what matters most i
 | OS | Windows 10/11 (64-bit) or Linux | |
 | Storage | Free space roughly equal to your source footage, plus about 20 GB for Generative | |
 
-On Windows, Enhanced runs on any modern graphics card. Generative, the deepest detail reconstruction, needs an 8 GB+ NVIDIA card on Windows, or on AMD an RX 7800 XT, RX 7900 or RX 9000 series card, and an 8 GB+ AMD (RX 6000 or newer) or NVIDIA card on Linux, after a one-time setup the app runs for you. Below that, or on a Mac? The [cloud studio](https://phoenixlabs.space/studio) does the same restoration on our GPUs with no hardware requirements at all.
+On Windows, Enhanced runs on any modern graphics card. Generative, the deepest detail reconstruction, needs an 8 GB+ NVIDIA card on Windows, or on AMD an RX 7800 XT, RX 7900 or RX 9000 series card, and an 8 GB+ AMD (RX 6000 or newer) or NVIDIA card on Linux, after a one-time setup the app runs for you. Below that, or on a Mac? The [cloud studio](https://phoenixlabs.space/studio) does the same restoration on our GPUs with no hardware requirements at all. More on Radeon cards in [AI video upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu).
 
 ## Don't have a gaming PC?
 
@@ -363,6 +369,10 @@ Longer than you'd like. A two-hour tape is an overnight job on most machines. It
 ### What happens if it crashes or I close the app partway through?
 
 It doesn't start over. Long Generative restores save progress as they go, so a crash, a driver hiccup, or closing the app mid-job just means picking up where it stopped next time you open Phoenix, not redoing the whole tape.
+
+### Can I use it for paid work on other people's footage?
+
+Yes, with the Business licence: $299 once, for transfer services, videographers and anyone restoring footage for clients. It's the same app, on up to five computers, with priority email support. The $129 licence covers your own and your family's footage, including videos on your own channel even if it earns money.
 
 ### Can I put it on my other computer?
 
@@ -999,7 +1009,7 @@ Lightly, if at all. Current restoration models are trained on noisy footage and 
 
 Yes. Phoenix Upscaler does all its work on your own computer, and once activated it doesn't need an internet connection.
 
-Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own footage
 
@@ -1092,7 +1102,7 @@ It depends on your graphics card and the mode. Time a 30-second test and multipl
 
 No. Phoenix Upscaler works entirely on your own computer and doesn't need an internet connection once it's activated. Cloud Restore is there if you'd rather not use your own PC.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative)
 
 ## Try it on your own tape
 
@@ -1183,7 +1193,7 @@ Phoenix Upscaler's free download restores 60-second clips with a small watermark
 
 No. It gets you a clean, stable picture of what the old phone recorded, at a size that suits a modern screen. Anything promising to turn a 2010 clip into new-phone footage is inventing the difference.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes](https://phoenixlabs.space/vhs-restoration-software) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes](https://phoenixlabs.space/vhs-restoration-software) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on one of your clips
 
@@ -1201,21 +1211,22 @@ Topaz alternative
 
 # A Topaz Video AI alternative you pay for once
 
-Topaz Video is a good tool, and since 2025 it's only sold as a subscription. If what you mostly need is to rescue old footage rather than finish commercial work, Phoenix Upscaler does that job on your own PC for $129, once, with every update included.
+Topaz Video is a good tool. Since 2025 it's only sold as a subscription, and since September 2026 Topaz Labs has belonged to Adobe. If what you mostly need is to rescue old footage rather than finish commercial work, Phoenix Upscaler does that job on your own PC for $129, once, with every update included.
 
-Updated 28 September 2026
+Updated 8 November 2026
 
 ## Side by side
 
 |  | Phoenix Upscaler | Topaz Video |
 | --- | --- | --- |
 | Price | $129 once | $59 a month, or $299 a year |
+| Owned by | Phoenix Labs, an independent company | Adobe, since September 2026 |
 | One-time licence | Yes. Every update included, nothing renews. | No. Subscription only since 2025. |
 | Runs on | Windows and Linux | Windows and Mac |
 | Where the work happens | On your own PC. Nothing uploads. | On your own computer |
 | Built for | Old footage: tapes, DVDs, film scans, old phone clips | A wide pro toolkit: upscaling, frame interpolation, slow motion, stabilisation |
 
-Topaz prices from topazlabs.com, checked September 2026. Their Topaz Studio bundle, with their photo apps, is $399 a year.
+Topaz prices from topazlabs.com, checked September 2026. Their Topaz Studio bundle, with their photo apps, is $399 a year. Adobe announced no price changes when its purchase of Topaz closed.
 
 ## When Phoenix is the better pick
 
@@ -1243,6 +1254,10 @@ Run the same short clip through both. Phoenix's free download restores 60-second
 
 No. Topaz moved to subscriptions in 2025. Topaz Video is $59 a month or $299 a year, and the Topaz Studio bundle is $399 a year (topazlabs.com, September 2026). Older perpetual licences keep working but no longer get new models.
 
+### Did Adobe buy Topaz Labs?
+
+Yes. Adobe completed its purchase of Topaz Labs on 23 September 2026. Adobe says Topaz stays its own brand with its own apps, and Topaz models also show up inside Adobe products such as Firefly and Photoshop. No price changes were announced when the deal closed.
+
 ### Is Phoenix Upscaler a subscription?
 
 No. It's $129 once, every future update is included, and you can install it on up to three of your own computers.
@@ -1255,7 +1270,7 @@ Not yet. On a Mac, use Cloud Restore: upload a clip, see the price in dollars, p
 
 On old, low-resolution footage, judge it on your own clip. The free download is there so you can compare the two side by side before paying anything. Phoenix aims for a clean, faithful picture rather than invented detail.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Old phone videos](https://phoenixlabs.space/old-phone-video)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [AI upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu)
 
 ## Compare on your own clip
 
@@ -1830,11 +1845,11 @@ url: https://phoenixlabs.space/terms
 
 # Terms of Service
 
-Last updated 27 September 2026. By buying or using Phoenix Upscaler, Phoenix Cloud Studio or Phoenix Motion (“the products”), you agree to these terms with Phoenix Labs (“we”, “us”).
+Last updated 8 November 2026. By buying or using Phoenix Upscaler, Phoenix Cloud Studio or Phoenix Motion (“the products”), you agree to these terms with Phoenix Labs (“we”, “us”).
 
 ## Desktop licence
 
-The desktop app is sold as a one-time purchase for a perpetual licence, including future updates, activatable on up to three computers you own or control at a time. The licence is for your own use; you may not resell, redistribute, or share your licence key. We grant you a non-exclusive, non-transferable right to use the software; we retain all intellectual-property rights in it.
+The desktop app is sold as a one-time purchase for a perpetual licence, including future updates, activatable on up to three computers you own or control at a time. There are two Phoenix Upscaler licences. The **Personal** licence covers footage that is yours or your family's, including videos you publish on your own channels, even if those channels earn money. The **Business** licence additionally covers paid work on footage that belongs to someone else, such as a transfer service, a videographer or an archivist working for clients, and can be activated on up to five computers your business owns or controls at a time. If you bought a Personal licence before 8 November 2026 and already used it for client work, you may keep doing so; you don't need to upgrade. You may not resell, redistribute, or share your licence key. We grant you a non-exclusive, non-transferable right to use the software; we retain all intellectual-property rights in it.
 
 ## Cloud studio
 
@@ -2104,3 +2119,209 @@ Related: [Phoenix Motion desktop](https://phoenixlabs.space/motion-desktop) · [
 Phoenix Motion desktop sets all of this up on first run, NVIDIA or AMD. The free trial has no time limit.
 
 [See Motion desktop](https://phoenixlabs.space/motion-desktop)
+
+---
+title: "How to upscale 240p and 360p video without the blocks | Phoenix Upscaler"
+description: "Upscaling a 240p or 360p clip often makes it look worse: the compression blocks get bigger. Here's why, and how to clean them up before you upscale."
+url: https://phoenixlabs.space/upscale-low-resolution-video
+---
+
+Low-resolution video
+
+# How to upscale 240p and 360p video without the blocks
+
+Put a 240p download or an early phone clip straight into an upscaler and it often comes out bigger, sharper and somehow worse: faces turn into mosaics and flat walls grow a grid. The upscaler is doing its job. It's sharpening what you gave it, and most of what a tiny, heavily compressed clip holds is compression damage. Clean that up first, then upscale once.
+
+Updated 8 November 2026
+
+## See the difference
+
+We took a clean frame, saved it as a 320×240 clip compressed about as hard as an old upload, then blew it up to 1280×960 twice with the same resize and the same sharpening. Once straight, and once after an ffmpeg deblock pass. Drag the handle.
+
+![The 240p frame deblocked before upscaling: a soft but smooth face](https://phoenixlabs.space/assets/guides/lowres-clean.webp)
+
+![The same 240p frame upscaled straight: the face is a grid of square tiles](https://phoenixlabs.space/assets/guides/lowres-naive.webp)
+
+Left: upscaled straight. Right: deblocked first. No AI in either one. This is only the clean-up step, so you can see what it does on its own. The [original 320×240 frame](https://phoenixlabs.space/assets/guides/lowres-source.jpg) is here too.
+
+## Why the blocks get bigger
+
+To save space, video compression cuts each frame into small squares, usually 8×8 pixels, and throws away most of the detail inside each one. At 240p on a small phone screen you barely notice. Blow it up four times and every square becomes a 32×32 tile with a hard outline.
+
+An upscaler, AI or not, is built to find edges and make them crisp. The line between two blocks is a hard, straight edge, so it gets sharpened like any other. And once that's happened it's baked in: no filter afterwards can tell the grid from the picture. The fix has to come first, while the blocks are still small.
+
+## 1. Find the least compressed copy
+
+Every re-upload and every trip through a messaging app compresses a clip again, and the damage stacks. The original file from the old phone or the first download beats a copy someone sent you. At the same resolution, the bigger file is usually the better one.
+
+## 2. Work out what kind of clip it is
+
+Old video comes in two kinds, and they need opposite treatment.
+
+- **Tape and DVD (480i or 576i).** VHS, Hi8 and MiniDV captures and DVDs are usually interlaced: anything that moves gets a striped, combed edge. They need deinterlacing and a light denoise. More on that in the [VHS guide](https://phoenixlabs.space/vhs-restoration-software).
+- **Internet and early phone video (288p or less, sometimes 360p).** These are usually progressive, so there's nothing to deinterlace, but they're crushed by compression. They need deblocking.
+
+The rule that matters: if it's 288 pixels tall or less, assume it's full of blocks, even if it looks fine at its own size. Deinterlacing one of these just throws away vertical detail you can't spare.
+
+## 3. Deblock before you upscale
+
+A good deblock pass makes the clip look a little softer at its own size. That's expected, and it's the point: you've taken out the fake detail (the grid) so the upscaler can work on the real detail underneath. Go easy on everything else. A heavily denoised clip looks waxy, and an upscaler will happily sharpen wax.
+
+## 4. Upscale once, to 1080p
+
+1080p already stretches a 360p clip three times each way and a 240p clip four and a half. That's plenty. Going to 4K doubles the file without adding anything the source had. Do it in one pass: upscale, restore, upscale again stacks each step's artifacts.
+
+## 5. Keep in-between files lossless
+
+If your tools hand frames from one step to the next, don't let them save JPEGs along the way. Every JPEG adds a fresh layer of 8×8 blocks, and the sharpening at the end brings all of them out. We learned this the hard way in our own pipeline. Use PNG for frames, and a near-lossless setting for any in-between video.
+
+## Doing it yourself with ffmpeg
+
+The free command-line tool [ffmpeg](https://ffmpeg.org/) has everything you need for the clean-up. Run it before whichever upscaler you use. For a clip 288 pixels tall or less:
+
+Deblock a low-res clip
+
+```
+ffmpeg -i lowres.mp4 \
+  -vf "spp=5,deblock=filter=strong:block=8,hqdn3d=3.2:2.4:5.5:4.0" \
+  -c:v libx264 -crf 12 -preset fast -c:a copy lowres_clean.mp4
+```
+
+- `spp=5` re-runs the compression maths at shifted positions and averages the results. It's very good at removing blocks and ringing without blurring real edges much.
+- `deblock` smooths what's left along the 8×8 grid.
+- `hqdn3d` cleans up the “mosquito” noise around edges that the other two leave behind.
+- `-crf 12` keeps the cleaned file close to lossless, so you don't add a new layer of blocks before the upscaler sees it.
+
+For an interlaced tape or DVD capture, deinterlace and denoise lightly instead:
+
+Deinterlace a tape capture
+
+```
+ffmpeg -i tape.mp4 -vf "yadif=0:-1:0,hqdn3d=2.0:1.5:3.0:2.5" \
+  -c:v libx264 -crf 12 -preset fast -c:a copy tape_clean.mp4
+```
+
+Not sure which you have? `ffprobe -v error -select_streams v:0 -show_entries stream=height,field_order input.mp4` prints the height, and a field order of `tt` or `bb` means interlaced.
+
+## What to expect
+
+Cleaned up and upscaled, a 240p clip looks like a soft but clean video: real faces instead of mosaics, walls that are actually flat. It won't look like it was shot in HD, and anything promising that is inventing the difference. Tape usually scales better than its resolution suggests, because a 480i capture holds more real picture than a 240p upload.
+
+## Doing it with Phoenix
+
+[Phoenix Upscaler](https://phoenixlabs.space/upscaler) does this for you. It reads each clip, deinterlaces only when the clip is interlaced, and its restoration models are trained to repair compression damage rather than sharpen it. On clips 288 pixels tall or less, the Generative mode runs the same deblock pass shown above before the detail model sees the picture. It runs on your own Windows or Linux PC, NVIDIA or AMD, for $129 once. The free download restores 60-second clips with a small watermark, so try one of yours first.
+
+## Questions
+
+### Can you upscale 240p video to 1080p?
+
+Yes, and with the blocks cleaned up first it comes out as a soft but clean picture that fills a modern screen. It won't look like it was filmed in HD. A 240p frame holds about a twenty-seventh of the pixels of a 1080p one, and nothing honest invents the rest.
+
+### Why does my video look worse after upscaling?
+
+Usually because the upscaler sharpened the compression blocks. To an upscaler, the straight edge between two blocks looks like real detail, so it makes it crisper. Deblock the clip before upscaling and the problem mostly goes away.
+
+### Should I upscale 360p to 4K?
+
+Rarely. 1080p already stretches a 360p clip three times in each direction. 4K doubles the file size again without adding detail the source never had. Pick 4K only if your editing project or TV insists on it.
+
+### Is deinterlacing the same as deblocking?
+
+No. Deinterlacing fixes the striped, combed edges on moving things in tape and DVD footage. Deblocking smooths the square grid that heavy compression leaves. Deinterlacing a progressive internet clip just throws away vertical detail.
+
+### Can I fix blocky video for free?
+
+Yes. The free command-line tool ffmpeg has the deblocking filters described on this page, and the commands are above. Phoenix Upscaler's free download also restores 60-second clips, with a small watermark, so you can compare.
+
+Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [Restoring VHS tapes](https://phoenixlabs.space/vhs-restoration-software) · [How to restore old video](https://phoenixlabs.space/restore-old-video)
+
+## Try it on your own clip
+
+The free download restores 60-second clips with a small watermark. Pick the blockiest one you have and judge the result yourself.
+
+[Download Phoenix](https://phoenixlabs.space/upscaler#download)
+
+---
+title: "AI video upscaling on an AMD Radeon GPU | Phoenix Upscaler"
+description: "Most AI video upscalers assume an NVIDIA card. What works on a Radeon, which cards run diffusion upscaling, how fast it is, and what we had to fix."
+url: https://phoenixlabs.space/ai-video-upscaling-amd-gpu
+---
+
+AMD and Radeon
+
+# AI video upscaling on an AMD Radeon GPU
+
+Most AI video upscalers are written for NVIDIA cards first and AMD cards never. A Radeon can do the job. Lighter neural upscalers run on almost any recent card, and the heavy diffusion models run on the newer ones through AMD's ROCm. It takes more setup, and it's slower than NVIDIA. Here's what works, on which cards, and what we had to fix to get there.
+
+Updated 8 November 2026
+
+## Two kinds of AI upscaler, and why AMD support differs
+
+- **Neural upscalers** (Real-ESRGAN and its relatives, and video restoration models that compare neighbouring frames). These are small enough to export to portable formats. On Windows they can run through DirectML, and elsewhere through Vulkan, both of which work on Radeon cards. Fast enough for whole tapes.
+- **Diffusion upscalers** (FlashVSR, SeedVR and similar). These rebuild texture instead of sharpening what's there, so they give the biggest visible jump. They're also big research models written for PyTorch on CUDA, sometimes with CUDA-only parts. On AMD they need ROCm, AMD's answer to CUDA, which supports fewer cards.
+
+## What runs on your card
+
+| Your setup | What Phoenix uses |
+| --- | --- |
+| Windows, any modern Radeon (4 GB or more) | Enhanced: neural video restoration through DirectML. No setup. |
+| Windows, RX 7800 XT, RX 7900 or RX 9000 series, Radeon PRO W7000, Ryzen AI Max | Generative too: diffusion detail, after a one-time setup that installs WSL2 and AMD's ROCm for WSL. 32 GB of system memory recommended. |
+| Linux, RX 6000 series or newer, 8 GB or more | Generative, with ROCm set up by the app. Nothing needs root. |
+| No usable graphics card | Phoenix says so and points you to [Cloud Restore](https://phoenixlabs.space/studio) instead of making a restore that isn't worth keeping. |
+
+The Windows Generative list is the set of cards AMD supports for ROCm under WSL. It will grow as AMD adds cards.
+
+## Why Windows goes through WSL2
+
+PyTorch's ROCm builds have been most complete on Linux. So on Windows, Phoenix sets up a small Linux system inside Windows Subsystem for Linux (WSL2) and runs the diffusion model there, talking to your Radeon through AMD's WSL driver. Windows may ask to turn WSL on and to restart once. After that it's invisible: you press Restore in the same app.
+
+## What we had to fix to make diffusion work on a Radeon
+
+We run FlashVSR, a one-step diffusion video upscaler, for Generative. Getting it from “CUDA only” to a usable picture on a 16 GB RX 7800 XT took a handful of changes. If you're porting something similar yourself, these are the ones that cost us time.
+
+- **A CUDA-only attention kernel.** FlashVSR is built around a block-sparse attention extension that only exists for CUDA. On AMD we fall back to PyTorch's standard attention, using AMD's AOTriton kernels so it doesn't run out of memory.
+- **A bug that turned every frame into noise.** Passing the model's sparsity pattern to the standard attention as a mask looked correct and produced pure static on RDNA3. Plain dense attention, ignoring the mask, gives the right picture. It's slower, but it's the version that works.
+- **Memory that fragments.** Long clips crept up in memory until they failed. Processing in chunks, moving finished frames off the card, and cleaning up between chunks fixed it.
+- **WSL reporting the wrong amount of RAM.** Inside WSL the system looks much smaller than it is, and our memory planning got far too cautious, reloading the model every couple of chunks. The app now passes the real figure from Windows, which made jobs roughly twice as fast.
+
+## How fast it is
+
+On an RX 7800 XT, Generative takes about a minute of processing per second of 320 to 360p footage. That's fine for the clips you care about most: a wedding speech, a first birthday, a few minutes of a holiday. A full two-hour tape isn't a sensible Generative job on this card. The Enhanced mode is much faster and suits long footage, and NVIDIA cards with the CUDA kernel are faster again.
+
+## The quality catch, on any brand of card
+
+Diffusion upscalers on their own tend to warp on fast motion: an edge drifts a few pixels from where it was, a face changes shape slightly from frame to frame. So Phoenix never delivers the diffusion picture as it is. A conventional restore holds the shape of everything, and the diffusion output only contributes fine detail where it lines up with that. Where they disagree, the steady version wins. You get the texture without the wobble.
+
+## Doing it with Phoenix
+
+[Phoenix Upscaler](https://phoenixlabs.space/upscaler) is a desktop app for restoring old video (tapes, DVDs, film scans, early phone clips) on Windows and Linux, NVIDIA or AMD, for $129 once with every update included. It picks the best engine your card supports. The [setup guide](https://phoenixlabs.space/upscaler-guide) explains exactly what the Generative install adds. The free download restores 60-second clips with a small watermark, so you can see what your Radeon does with your footage before paying. Generative mode comes with the licence.
+
+## Questions
+
+### Can an AMD GPU do AI video upscaling?
+
+Yes. Upscalers built on DirectML or Vulkan run on any recent Radeon. The heavier diffusion upscalers need AMD's ROCm, which covers fewer cards and, on Windows, runs inside WSL2. It works, but it's slower than on a comparable NVIDIA card.
+
+### Which Radeon cards can run Phoenix's Generative mode?
+
+On Windows, the cards AMD supports for ROCm under WSL: the Radeon RX 7800 XT, RX 7900 and RX 9000 series, Radeon PRO W7000 and Ryzen AI Max. On Linux, Radeon RX 6000 series or newer with 8 GB or more. Every other modern Radeon on Windows runs the Enhanced mode.
+
+### Why do so many AI video tools only support NVIDIA?
+
+Most research models are written and tested on CUDA, NVIDIA's compute platform, and some depend on CUDA-only pieces such as custom attention kernels. Porting them to AMD means replacing those pieces and re-testing the picture, which most projects never get round to.
+
+### How fast is diffusion upscaling on a Radeon?
+
+On an RX 7800 XT, Phoenix's Generative mode takes about a minute of processing for each second of 320 to 360p footage. That's fine for clips and highlights. A whole two-hour tape is better suited to the Enhanced mode or to Cloud Restore.
+
+### Is there a free upscaler that works on AMD?
+
+Yes. Video2X uses Vulkan builds of Real-ESRGAN and similar models, which run on Radeon cards. It's free for any length if you're comfortable setting it up. Phoenix's free download restores 60-second clips with a small watermark.
+
+Related: [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Running Wan 2.2 on an 8 GB GPU, AMD included](https://phoenixlabs.space/wan-2-2-8gb-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+
+## See what your Radeon can do
+
+The free download restores 60-second clips with a small watermark. Generative mode comes with the licence.
+
+[Download Phoenix](https://phoenixlabs.space/upscaler#download)

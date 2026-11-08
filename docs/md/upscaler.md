@@ -148,6 +148,12 @@ $129once
 
 Card payment handled by Lemon Squeezy. Your key arrives by email immediately.
 
+### Restoring footage for clients?
+
+The Business licence is for paid work on other people's footage: transfer services, videographers, archivists. Same app, $299 once, on up to five computers, with priority email support. Your own and your family's videos are covered by the $129 licence, including a channel that earns money.
+
+[Buy Business, $299](mailto:support@phoenixlabs.space)
+
 ### Try it first
 
 The free download restores 60-second clips with a small watermark, so you can point it at your own tape and see the result before paying anything.
@@ -171,7 +177,7 @@ Phoenix leans on the GPU for the actual restoration work, so what matters most i
 | OS | Windows 10/11 (64-bit) or Linux | |
 | Storage | Free space roughly equal to your source footage, plus about 20 GB for Generative | |
 
-On Windows, Enhanced runs on any modern graphics card. Generative, the deepest detail reconstruction, needs an 8 GB+ NVIDIA card on Windows, or on AMD an RX 7800 XT, RX 7900 or RX 9000 series card, and an 8 GB+ AMD (RX 6000 or newer) or NVIDIA card on Linux, after a one-time setup the app runs for you. Below that, or on a Mac? The [cloud studio](https://phoenixlabs.space/studio) does the same restoration on our GPUs with no hardware requirements at all.
+On Windows, Enhanced runs on any modern graphics card. Generative, the deepest detail reconstruction, needs an 8 GB+ NVIDIA card on Windows, or on AMD an RX 7800 XT, RX 7900 or RX 9000 series card, and an 8 GB+ AMD (RX 6000 or newer) or NVIDIA card on Linux, after a one-time setup the app runs for you. Below that, or on a Mac? The [cloud studio](https://phoenixlabs.space/studio) does the same restoration on our GPUs with no hardware requirements at all. More on Radeon cards in [AI video upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu).
 
 ## Don't have a gaming PC?
 
@@ -200,6 +206,10 @@ Longer than you'd like. A two-hour tape is an overnight job on most machines. It
 ### What happens if it crashes or I close the app partway through?
 
 It doesn't start over. Long Generative restores save progress as they go, so a crash, a driver hiccup, or closing the app mid-job just means picking up where it stopped next time you open Phoenix, not redoing the whole tape.
+
+### Can I use it for paid work on other people's footage?
+
+Yes, with the Business licence: $299 once, for transfer services, videographers and anyone restoring footage for clients. It's the same app, on up to five computers, with priority email support. The $129 licence covers your own and your family's footage, including videos on your own channel even if it earns money.
 
 ### Can I put it on my other computer?
 

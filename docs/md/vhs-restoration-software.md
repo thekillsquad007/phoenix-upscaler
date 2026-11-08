@@ -83,7 +83,7 @@ It depends on your graphics card and the mode. Time a 30-second test and multipl
 
 No. Phoenix Upscaler works entirely on your own computer and doesn't need an internet connection once it's activated. Cloud Restore is there if you'd rather not use your own PC.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative)
 
 ## Try it on your own tape
 

@@ -40,12 +40,22 @@
         "name": "Phoenix Labs",
         "url": "https://phoenixlabs.space/"
       },
-      "offers": {
-        "@type": "Offer",
-        "price": "129",
-        "priceCurrency": "USD",
-        "url": "https://phoenixlabs.space/upscaler#price"
-      }
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Personal licence",
+          "price": "129",
+          "priceCurrency": "USD",
+          "url": "https://phoenixlabs.space/upscaler#price"
+        },
+        {
+          "@type": "Offer",
+          "name": "Business licence",
+          "price": "299",
+          "priceCurrency": "USD",
+          "url": "https://phoenixlabs.space/upscaler#business"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -105,6 +115,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "It doesn't start over. Long Generative restores save progress as they go, so a crash, a driver hiccup, or closing the app mid-job just means picking up where it stopped next time you open Phoenix, not redoing the whole tape."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it for paid work on other people's footage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with the Business licence: $299 once, for transfer services, videographers and anyone restoring footage for clients. It's the same app, on up to five computers, with priority email support. The $129 licence covers your own and your family's footage, including videos on your own channel even if it earns money."
           }
         },
         {
@@ -433,6 +451,15 @@
         <p class="fineprint">Card payment handled by Lemon Squeezy. Your key arrives by email immediately.</p>
       </div>
       <div class="price-aside">
+        <h3 id="business">Restoring footage for clients?</h3>
+        <p>
+          The Business licence is for paid work on other people's footage:
+          transfer services, videographers, archivists. Same app, $299 once,
+          on up to five computers, with priority email support. Your own and
+          your family's videos are covered by the $129 licence, including a
+          channel that earns money.
+        </p>
+        <p><a class="btn btn-ghost" href="mailto:support@phoenixlabs.space" data-ls-checkout-business>Buy Business, $299</a></p>
         <h3>Try it first</h3>
         <p>
           The free download restores 60-second clips with a small watermark, so you
@@ -485,7 +512,8 @@
         RX 7900 or RX 9000 series card, and an 8 GB+ AMD (RX 6000 or newer) or NVIDIA card on Linux,
         after a one-time setup the app runs for you. Below that, or on a Mac? The
         <a href="/studio">cloud studio</a> does the same restoration on our GPUs
-        with no hardware requirements at all.
+        with no hardware requirements at all. More on Radeon cards in
+        <a href="/ai-video-upscaling-amd-gpu">AI video upscaling on AMD</a>.
       </p>
     </div>
   </section>
@@ -526,6 +554,10 @@
         <p>It doesn't start over. Long Generative restores save progress as they go, so a crash, a driver hiccup, or closing the app mid-job just means picking up where it stopped next time you open Phoenix, not redoing the whole tape.</p>
       </details>
       <details>
+        <summary>Can I use it for paid work on other people's footage?</summary>
+        <p>Yes, with the Business licence: $299 once, for transfer services, videographers and anyone restoring footage for clients. It's the same app, on up to five computers, with priority email support. The $129 licence covers your own and your family's footage, including videos on your own channel even if it earns money.</p>
+      </details>
+      <details>
         <summary>Can I put it on my other computer?</summary>
         <p>Yes, up to three at a time. Release one from inside the app and move it to a new machine whenever you want.</p>
       </details>
@@ -555,12 +587,12 @@
     </div>
     <div class="foot-col"><p class="foot-h">Restore</p><a href="/upscaler">Phoenix Upscaler</a><a href="/studio">Cloud Restore</a><a href="/upscaler-guide">Upscaler guide</a></div>
     <div class="foot-col"><p class="foot-h">Create</p><a href="/motion">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="/motion-desktop">Motion desktop</a><a href="/editor">Phoenix Editor</a><a href="/editor-guide">Editor guide</a></div>
-    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/animate-old-photos">Animating old photos</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/upscale-low-resolution-video">Upscaling 240p video</a><a href="/ai-video-upscaling-amd-gpu">AI upscaling on AMD</a><a href="/animate-old-photos">Animating old photos</a></div>
     <div class="foot-col"><p class="foot-h">Company</p><a href="/about">About</a><a href="/developers">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/refund">Refunds</a></div>
   </div>
   <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>
 
-<script src="site.js?v=d1325a40"></script>
+<script src="site.js?v=6fbcf7aa"></script>
 </body>
 </html>

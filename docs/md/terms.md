@@ -6,11 +6,11 @@ url: https://phoenixlabs.space/terms
 
 # Terms of Service
 
-Last updated 27 September 2026. By buying or using Phoenix Upscaler, Phoenix Cloud Studio or Phoenix Motion (“the products”), you agree to these terms with Phoenix Labs (“we”, “us”).
+Last updated 8 November 2026. By buying or using Phoenix Upscaler, Phoenix Cloud Studio or Phoenix Motion (“the products”), you agree to these terms with Phoenix Labs (“we”, “us”).
 
 ## Desktop licence
 
-The desktop app is sold as a one-time purchase for a perpetual licence, including future updates, activatable on up to three computers you own or control at a time. The licence is for your own use; you may not resell, redistribute, or share your licence key. We grant you a non-exclusive, non-transferable right to use the software; we retain all intellectual-property rights in it.
+The desktop app is sold as a one-time purchase for a perpetual licence, including future updates, activatable on up to three computers you own or control at a time. There are two Phoenix Upscaler licences. The **Personal** licence covers footage that is yours or your family's, including videos you publish on your own channels, even if those channels earn money. The **Business** licence additionally covers paid work on footage that belongs to someone else, such as a transfer service, a videographer or an archivist working for clients, and can be activated on up to five computers your business owns or controls at a time. If you bought a Personal licence before 8 November 2026 and already used it for client work, you may keep doing so; you don't need to upgrade. You may not resell, redistribute, or share your licence key. We grant you a non-exclusive, non-transferable right to use the software; we retain all intellectual-property rights in it.
 
 ## Cloud studio
 

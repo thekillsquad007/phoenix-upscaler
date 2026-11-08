@@ -8,21 +8,22 @@ Topaz alternative
 
 # A Topaz Video AI alternative you pay for once
 
-Topaz Video is a good tool, and since 2025 it's only sold as a subscription. If what you mostly need is to rescue old footage rather than finish commercial work, Phoenix Upscaler does that job on your own PC for $129, once, with every update included.
+Topaz Video is a good tool. Since 2025 it's only sold as a subscription, and since September 2026 Topaz Labs has belonged to Adobe. If what you mostly need is to rescue old footage rather than finish commercial work, Phoenix Upscaler does that job on your own PC for $129, once, with every update included.
 
-Updated 28 September 2026
+Updated 8 November 2026
 
 ## Side by side
 
 |  | Phoenix Upscaler | Topaz Video |
 | --- | --- | --- |
 | Price | $129 once | $59 a month, or $299 a year |
+| Owned by | Phoenix Labs, an independent company | Adobe, since September 2026 |
 | One-time licence | Yes. Every update included, nothing renews. | No. Subscription only since 2025. |
 | Runs on | Windows and Linux | Windows and Mac |
 | Where the work happens | On your own PC. Nothing uploads. | On your own computer |
 | Built for | Old footage: tapes, DVDs, film scans, old phone clips | A wide pro toolkit: upscaling, frame interpolation, slow motion, stabilisation |
 
-Topaz prices from topazlabs.com, checked September 2026. Their Topaz Studio bundle, with their photo apps, is $399 a year.
+Topaz prices from topazlabs.com, checked September 2026. Their Topaz Studio bundle, with their photo apps, is $399 a year. Adobe announced no price changes when its purchase of Topaz closed.
 
 ## When Phoenix is the better pick
 
@@ -50,6 +51,10 @@ Run the same short clip through both. Phoenix's free download restores 60-second
 
 No. Topaz moved to subscriptions in 2025. Topaz Video is $59 a month or $299 a year, and the Topaz Studio bundle is $399 a year (topazlabs.com, September 2026). Older perpetual licences keep working but no longer get new models.
 
+### Did Adobe buy Topaz Labs?
+
+Yes. Adobe completed its purchase of Topaz Labs on 23 September 2026. Adobe says Topaz stays its own brand with its own apps, and Topaz models also show up inside Adobe products such as Firefly and Photoshop. No price changes were announced when the deal closed.
+
 ### Is Phoenix Upscaler a subscription?
 
 No. It's $129 once, every future update is included, and you can install it on up to three of your own computers.
@@ -62,7 +67,7 @@ Not yet. On a Mac, use Cloud Restore: upload a clip, see the price in dollars, p
 
 On old, low-resolution footage, judge it on your own clip. The free download is there so you can compare the two side by side before paying anything. Phoenix aims for a clean, faithful picture rather than invented detail.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Old phone videos](https://phoenixlabs.space/old-phone-video)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [AI upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu)
 
 ## Compare on your own clip
 

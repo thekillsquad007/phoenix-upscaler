@@ -73,7 +73,7 @@ Lightly, if at all. Current restoration models are trained on noisy footage and 
 
 Yes. Phoenix Upscaler does all its work on your own computer, and once activated it doesn't need an internet connection.
 
-Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own footage
 

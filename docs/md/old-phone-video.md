@@ -81,7 +81,7 @@ Phoenix Upscaler's free download restores 60-second clips with a small watermark
 
 No. It gets you a clean, stable picture of what the old phone recorded, at a size that suits a modern screen. Anything promising to turn a 2010 clip into new-phone footage is inventing the difference.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes](https://phoenixlabs.space/vhs-restoration-software) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes](https://phoenixlabs.space/vhs-restoration-software) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on one of your clips
 

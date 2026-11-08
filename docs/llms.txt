@@ -24,7 +24,7 @@ The full text of every page, in one file: https://phoenixlabs.space/llms-full.tx
 
 - What it fixes: VHS, Hi8 and MiniDV tapes, DVDs, 8mm and Super 8 film scans, phone video from the 2010s, old uploads, gameplay and webcam recordings. It removes noise, deinterlaces combed motion and rebuilds detail lost to compression, with output up to 4K.
 - Where it runs: Windows 10 and 11, and Linux, on your own graphics card. On Windows any modern card works; Generative, the mode that rebuilds the most detail, needs a stronger NVIDIA or AMD card. Video never leaves your computer, and it works offline once activated. There is no macOS version; Mac users can use Cloud Restore.
-- Price: $129 once. Every future update is included, nothing renews, and it installs on up to three of your own computers. The free download restores 60-second clips with a small watermark. Refundable within 14 days.
+- Price: $129 once. Every future update is included, nothing renews, and it installs on up to three of your own computers. That Personal licence covers your own and your family's footage, including a channel that earns money. Paid work on other people's footage (transfer services, videographers) needs the Business licence: $299 once, five computers, priority support. The free download restores 60-second clips with a small watermark. Refundable within 14 days.
 - Opens MP4, MOV, MKV and AVI.
 - What it won't do: invent detail the camera never recorded. Out-of-focus footage stays out of focus.
 - [Phoenix Upscaler](https://phoenixlabs.space/upscaler): features, before/after demos, price, download, system requirements, FAQ
@@ -73,7 +73,9 @@ The full text of every page, in one file: https://phoenixlabs.space/llms-full.tx
 - [How to restore old video](https://phoenixlabs.space/restore-old-video): diagnosing old footage and fixing it in the right order, for tapes, DVDs, film scans and old phone clips
 - [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software): how to restore VHS tapes at home: what's wrong with the picture and where each problem gets fixed, capturing well, restoring, and what to expect
 - [How to make old phone videos look better](https://phoenixlabs.space/old-phone-video): finding the best copy, restoring instead of sharpening, what size to export, and what can't be saved
-- [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative): Phoenix Upscaler and Topaz Video compared on price, licence and platforms
+- [How to upscale 240p and 360p video without the blocks](https://phoenixlabs.space/upscale-low-resolution-video): why upscaling a tiny compressed clip enlarges the blocks, deblocking first, the ffmpeg commands, and what to expect
+- [AI video upscaling on an AMD Radeon GPU](https://phoenixlabs.space/ai-video-upscaling-amd-gpu): which Radeon cards run neural vs diffusion upscaling, why Windows uses WSL2 and ROCm, speed on an RX 7800 XT, and the fixes needed
+- [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative): Phoenix Upscaler and Topaz Video compared on price, licence, platforms and ownership (Adobe bought Topaz Labs in September 2026)
 
 ## Policies
 

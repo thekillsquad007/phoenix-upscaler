@@ -23,7 +23,11 @@ const LEMON_CHECKOUT_URL = "https://phoenixlabss.lemonsqueezy.com/checkout/buy/6
 // the $129 perpetual Upscaler, so it must never fall back to the one above.
 const LEMON_EDITOR_CHECKOUT_URL = "https://phoenixlabss.lemonsqueezy.com/checkout/buy/47adb5fa-7203-4e78-8517-c2c48aeff18a";
 
-for (const [attr, url] of [["data-ls-checkout", LEMON_CHECKOUT_URL], ["data-ls-checkout-editor", LEMON_EDITOR_CHECKOUT_URL]]) {
+// Upscaler Business: $299 once, client work, 5 computers. Same app, same key
+// box; the licence is a usage right, not a feature tier.
+const LEMON_BUSINESS_CHECKOUT_URL = "https://phoenixlabss.lemonsqueezy.com/checkout/buy/4bbcdddb-5556-4ea6-80b1-e86b13d92d40";
+
+for (const [attr, url] of [["data-ls-checkout", LEMON_CHECKOUT_URL], ["data-ls-checkout-editor", LEMON_EDITOR_CHECKOUT_URL], ["data-ls-checkout-business", LEMON_BUSINESS_CHECKOUT_URL]]) {
   document.querySelectorAll(`[${attr}]`).forEach((btn) => {
     if (!url) return;
     btn.href = url;

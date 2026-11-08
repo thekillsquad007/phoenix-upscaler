@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to upscale 240p and 360p video without the blocks | Phoenix Upscaler</title>
+  <meta name="description" content="Upscaling a 240p or 360p clip often makes it look worse: the compression blocks get bigger. Here&#x27;s why, and how to clean them up before you upscale." />
+  <link rel="canonical" href="https://phoenixlabs.space/upscale-low-resolution-video" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta property="og:site_name" content="Phoenix Labs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to upscale 240p and 360p video without the blocks" />
+  <meta property="og:description" content="Upscaling a 240p or 360p clip often makes it look worse: the compression blocks get bigger. Here&#x27;s why, and how to clean them up before you upscale." />
+  <meta property="og:url" content="https://phoenixlabs.space/upscale-low-resolution-video" />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/social/upscale-low-resolution-video.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="The same 240p frame upscaled with and without deblocking first" />
+  <meta property="article:modified_time" content="2026-11-08" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/phoenix-icon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/phoenix-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=b6c83be7" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to upscale 240p and 360p video without the blocks",
+        "description": "Upscaling a 240p or 360p clip often makes it look worse: the compression blocks get bigger. Here's why, and how to clean them up before you upscale.",
+        "image": "https://phoenixlabs.space/assets/social/upscale-low-resolution-video.jpg",
+        "datePublished": "2026-11-08",
+        "dateModified": "2026-11-08",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "mainEntityOfPage": "https://phoenixlabs.space/upscale-low-resolution-video",
+        "about": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Phoenix Upscaler",
+            "url": "https://phoenixlabs.space/upscaler"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to upscale a 240p or 360p video to 1080p",
+        "description": "Clean up compression blocks first, then upscale once, so the upscaler sharpens the picture and not the damage.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Find the least compressed copy",
+            "text": "Use the original download or file, not a copy that went through a chat app or was re-uploaded."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Work out what kind of clip it is",
+            "text": "Interlaced tape and DVD captures need deinterlacing. Progressive internet and phone clips at 288p or less need deblocking instead."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Deblock before upscaling",
+            "text": "Smooth out the 8x8 compression grid while the blocks are still small. Once an upscaler has sharpened them they can't be removed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Upscale once, to 1080p",
+            "text": "Upscale in a single pass to the size you'll watch. 1080p is plenty for a 240p or 360p source."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Keep in-between files lossless",
+            "text": "If your tools pass frames between steps, use PNG or a near-lossless video setting so you don't add fresh blocks along the way."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Phoenix Labs",
+            "item": "https://phoenixlabs.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phoenix Upscaler",
+            "item": "https://phoenixlabs.space/upscaler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Upscaling low-resolution video",
+            "item": "https://phoenixlabs.space/upscale-low-resolution-video"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can you upscale 240p video to 1080p?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, and with the blocks cleaned up first it comes out as a soft but clean picture that fills a modern screen. It won't look like it was filmed in HD. A 240p frame holds about a twenty-seventh of the pixels of a 1080p one, and nothing honest invents the rest."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my video look worse after upscaling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually because the upscaler sharpened the compression blocks. To an upscaler, the straight edge between two blocks looks like real detail, so it makes it crisper. Deblock the clip before upscaling and the problem mostly goes away."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I upscale 360p to 4K?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rarely. 1080p already stretches a 360p clip three times in each direction. 4K doubles the file size again without adding detail the source never had. Pick 4K only if your editing project or TV insists on it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is deinterlacing the same as deblocking?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Deinterlacing fixes the striped, combed edges on moving things in tape and DVD footage. Deblocking smooths the square grid that heavy compression leaves. Deinterlacing a progressive internet clip just throws away vertical detail."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I fix blocky video for free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The free command-line tool ffmpeg has the deblocking filters described on this page, and the commands are above. Phoenix Upscaler's free download also restores 60-second clips, with a small watermark, so you can compare."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+  <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="/upscaler">Upscaler</a>
+    <a href="/studio">Cloud Restore</a>
+    <a href="/motion">Motion</a>
+    <a href="/editor">Editor</a>
+  </nav>
+  <a class="btn btn-sm nav-cta" href="/upscaler#download">Download Phoenix</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+</header>
+  <main class="content-page">
+    <p class="badge">Low-resolution video</p>
+    <h1>How to upscale 240p and 360p video without the blocks</h1>
+    <p class="lead">Put a 240p download or an early phone clip straight into an upscaler and it often comes out bigger, sharper and somehow worse: faces turn into mosaics and flat walls grow a grid. The upscaler is doing its job. It's sharpening what you gave it, and most of what a tiny, heavily compressed clip holds is compression damage. Clean that up first, then upscale once.</p>
+    <p class="muted page-date">Updated <time datetime="2026-11-08">8 November 2026</time></p>
+
+    <h2>See the difference</h2>
+    <p>We took a clean frame, saved it as a 320&times;240 clip compressed about as hard as an old upload, then blew it up to 1280&times;960 twice with the same resize and the same sharpening. Once straight, and once after an ffmpeg deblock pass. Drag the handle.</p>
+    <div class="ba" data-ba>
+      <img width="1280" height="960" loading="lazy" decoding="async" class="ba-after" src="assets/guides/lowres-clean.webp" alt="The 240p frame deblocked before upscaling: a soft but smooth face" />
+      <div class="ba-clip"><img width="1280" height="960" loading="lazy" decoding="async" src="assets/guides/lowres-naive.webp" alt="The same 240p frame upscaled straight: the face is a grid of square tiles" /></div>
+      <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare" />
+      <span class="ba-handle" aria-hidden="true"></span>
+    </div>
+    <p class="muted">Left: upscaled straight. Right: deblocked first. No AI in either one. This is only the clean-up step, so you can see what it does on its own. The <a href="assets/guides/lowres-source.jpg">original 320&times;240 frame</a> is here too.</p>
+
+    <h2>Why the blocks get bigger</h2>
+    <p>To save space, video compression cuts each frame into small squares, usually 8&times;8 pixels, and throws away most of the detail inside each one. At 240p on a small phone screen you barely notice. Blow it up four times and every square becomes a 32&times;32 tile with a hard outline.</p>
+    <p>An upscaler, AI or not, is built to find edges and make them crisp. The line between two blocks is a hard, straight edge, so it gets sharpened like any other. And once that's happened it's baked in: no filter afterwards can tell the grid from the picture. The fix has to come first, while the blocks are still small.</p>
+
+    <h2>1. Find the least compressed copy</h2>
+    <p>Every re-upload and every trip through a messaging app compresses a clip again, and the damage stacks. The original file from the old phone or the first download beats a copy someone sent you. At the same resolution, the bigger file is usually the better one.</p>
+
+    <h2>2. Work out what kind of clip it is</h2>
+    <p>Old video comes in two kinds, and they need opposite treatment.</p>
+    <ul>
+      <li><strong>Tape and DVD (480i or 576i).</strong> VHS, Hi8 and MiniDV captures and DVDs are usually interlaced: anything that moves gets a striped, combed edge. They need deinterlacing and a light denoise. More on that in the <a href="/vhs-restoration-software">VHS guide</a>.</li>
+      <li><strong>Internet and early phone video (288p or less, sometimes 360p).</strong> These are usually progressive, so there's nothing to deinterlace, but they're crushed by compression. They need deblocking.</li>
+    </ul>
+    <p>The rule that matters: if it's 288 pixels tall or less, assume it's full of blocks, even if it looks fine at its own size. Deinterlacing one of these just throws away vertical detail you can't spare.</p>
+
+    <h2>3. Deblock before you upscale</h2>
+    <p>A good deblock pass makes the clip look a little softer at its own size. That's expected, and it's the point: you've taken out the fake detail (the grid) so the upscaler can work on the real detail underneath. Go easy on everything else. A heavily denoised clip looks waxy, and an upscaler will happily sharpen wax.</p>
+
+    <h2>4. Upscale once, to 1080p</h2>
+    <p>1080p already stretches a 360p clip three times each way and a 240p clip four and a half. That's plenty. Going to 4K doubles the file without adding anything the source had. Do it in one pass: upscale, restore, upscale again stacks each step's artifacts.</p>
+
+    <h2>5. Keep in-between files lossless</h2>
+    <p>If your tools hand frames from one step to the next, don't let them save JPEGs along the way. Every JPEG adds a fresh layer of 8&times;8 blocks, and the sharpening at the end brings all of them out. We learned this the hard way in our own pipeline. Use PNG for frames, and a near-lossless setting for any in-between video.</p>
+
+    <h2>Doing it yourself with ffmpeg</h2>
+    <p>The free command-line tool <a href="https://ffmpeg.org/" rel="noopener">ffmpeg</a> has everything you need for the clean-up. Run it before whichever upscaler you use. For a clip 288 pixels tall or less:</p>
+<div class="code"><div class="code-label"><span>Deblock a low-res clip</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -i lowres.mp4 \
+  -vf "spp=5,deblock=filter=strong:block=8,hqdn3d=3.2:2.4:5.5:4.0" \
+  -c:v libx264 -crf 12 -preset fast -c:a copy lowres_clean.mp4</code></pre></div>
+    <ul>
+      <li><code>spp=5</code> re-runs the compression maths at shifted positions and averages the results. It's very good at removing blocks and ringing without blurring real edges much.</li>
+      <li><code>deblock</code> smooths what's left along the 8&times;8 grid.</li>
+      <li><code>hqdn3d</code> cleans up the &ldquo;mosquito&rdquo; noise around edges that the other two leave behind.</li>
+      <li><code>-crf 12</code> keeps the cleaned file close to lossless, so you don't add a new layer of blocks before the upscaler sees it.</li>
+    </ul>
+    <p>For an interlaced tape or DVD capture, deinterlace and denoise lightly instead:</p>
+<div class="code"><div class="code-label"><span>Deinterlace a tape capture</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -i tape.mp4 -vf "yadif=0:-1:0,hqdn3d=2.0:1.5:3.0:2.5" \
+  -c:v libx264 -crf 12 -preset fast -c:a copy tape_clean.mp4</code></pre></div>
+    <p>Not sure which you have? <code>ffprobe -v error -select_streams v:0 -show_entries stream=height,field_order input.mp4</code> prints the height, and a field order of <code>tt</code> or <code>bb</code> means interlaced.</p>
+
+    <h2>What to expect</h2>
+    <p>Cleaned up and upscaled, a 240p clip looks like a soft but clean video: real faces instead of mosaics, walls that are actually flat. It won't look like it was shot in HD, and anything promising that is inventing the difference. Tape usually scales better than its resolution suggests, because a 480i capture holds more real picture than a 240p upload.</p>
+
+    <h2>Doing it with Phoenix</h2>
+    <p><a href="/upscaler">Phoenix Upscaler</a> does this for you. It reads each clip, deinterlaces only when the clip is interlaced, and its restoration models are trained to repair compression damage rather than sharpen it. On clips 288 pixels tall or less, the Generative mode runs the same deblock pass shown above before the detail model sees the picture. It runs on your own Windows or Linux PC, NVIDIA or AMD, for $129 once. The free download restores 60-second clips with a small watermark, so try one of yours first.</p>
+
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Can you upscale 240p video to 1080p?</summary>
+        <p>Yes, and with the blocks cleaned up first it comes out as a soft but clean picture that fills a modern screen. It won't look like it was filmed in HD. A 240p frame holds about a twenty-seventh of the pixels of a 1080p one, and nothing honest invents the rest.</p>
+      </details>
+      <details>
+        <summary>Why does my video look worse after upscaling?</summary>
+        <p>Usually because the upscaler sharpened the compression blocks. To an upscaler, the straight edge between two blocks looks like real detail, so it makes it crisper. Deblock the clip before upscaling and the problem mostly goes away.</p>
+      </details>
+      <details>
+        <summary>Should I upscale 360p to 4K?</summary>
+        <p>Rarely. 1080p already stretches a 360p clip three times in each direction. 4K doubles the file size again without adding detail the source never had. Pick 4K only if your editing project or TV insists on it.</p>
+      </details>
+      <details>
+        <summary>Is deinterlacing the same as deblocking?</summary>
+        <p>No. Deinterlacing fixes the striped, combed edges on moving things in tape and DVD footage. Deblocking smooths the square grid that heavy compression leaves. Deinterlacing a progressive internet clip just throws away vertical detail.</p>
+      </details>
+      <details>
+        <summary>Can I fix blocky video for free?</summary>
+        <p>Yes. The free command-line tool ffmpeg has the deblocking filters described on this page, and the commands are above. Phoenix Upscaler's free download also restores 60-second clips, with a small watermark, so you can compare.</p>
+      </details>
+    </div>
+
+    <p class="muted">Related: <a href="/old-phone-video">Old phone videos</a> &middot; <a href="/vhs-restoration-software">Restoring VHS tapes</a> &middot; <a href="/restore-old-video">How to restore old video</a></p>
+    <div class="content-cta"><h2>Try it on your own clip</h2><p>The free download restores 60-second clips with a small watermark. Pick the blockiest one you have and judge the result yourself.</p><a class="btn btn-primary" href="/upscaler#download">Download Phoenix</a></div>
+  </main>
+  <footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><p class="foot-h">Restore</p><a href="/upscaler">Phoenix Upscaler</a><a href="/studio">Cloud Restore</a><a href="/upscaler-guide">Upscaler guide</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="/motion">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="/motion-desktop">Motion desktop</a><a href="/editor">Phoenix Editor</a><a href="/editor-guide">Editor guide</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/upscale-low-resolution-video">Upscaling 240p video</a><a href="/ai-video-upscaling-amd-gpu">AI upscaling on AMD</a><a href="/animate-old-photos">Animating old photos</a></div>
+    <div class="foot-col"><p class="foot-h">Company</p><a href="/about">About</a><a href="/developers">API &amp; AI agents</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/refund">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
+</footer>
+<script src="site.js?v=6fbcf7aa"></script>
+</body>
+</html>
