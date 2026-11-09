@@ -27,7 +27,36 @@ const LEMON_EDITOR_CHECKOUT_URL = "https://phoenixlabss.lemonsqueezy.com/checkou
 // box; the licence is a usage right, not a feature tier.
 const LEMON_BUSINESS_CHECKOUT_URL = "https://phoenixlabss.lemonsqueezy.com/checkout/buy/4bbcdddb-5556-4ea6-80b1-e86b13d92d40";
 
-for (const [attr, url] of [["data-ls-checkout", LEMON_CHECKOUT_URL], ["data-ls-checkout-editor", LEMON_EDITOR_CHECKOUT_URL], ["data-ls-checkout-business", LEMON_BUSINESS_CHECKOUT_URL]]) {
+// ── Affiliate links (Klibon) ───────────────────────────────────────────────
+// An affiliate's link lands with ?via=<code>. Keep it in this browser for 60
+// days (last click wins), take it out of the address bar, and hand it to the
+// Upscaler checkouts as custom data; the Worker reports the sale to Klibon
+// (studio_worker/src/affiliate.ts). No third-party script, no cookie.
+const AFFILIATE_DAYS = 60;
+const affiliateCode = (() => {
+  const key = "phoenix_via";
+  try {
+    const params = new URLSearchParams(location.search);
+    const via = params.get("via");
+    if (via && /^[A-Za-z0-9_-]{1,64}$/.test(via)) {
+      localStorage.setItem(key, JSON.stringify({ code: via, at: Date.now() }));
+      params.delete("via");
+      const rest = params.toString();
+      history.replaceState(null, "", location.pathname + (rest ? `?${rest}` : "") + location.hash);
+    }
+    const saved = JSON.parse(localStorage.getItem(key) || "null");
+    if (saved && Date.now() - saved.at < AFFILIATE_DAYS * 86400000) return saved.code;
+  } catch { /* storage blocked: no attribution, the page still works */ }
+  return null;
+})();
+const withAffiliate = (url) => {
+  if (!url || !affiliateCode) return url;
+  const u = new URL(url);
+  u.searchParams.set("checkout[custom][klibon]", affiliateCode);
+  return u.toString();
+};
+
+for (const [attr, url] of [["data-ls-checkout", withAffiliate(LEMON_CHECKOUT_URL)], ["data-ls-checkout-editor", LEMON_EDITOR_CHECKOUT_URL], ["data-ls-checkout-business", withAffiliate(LEMON_BUSINESS_CHECKOUT_URL)]]) {
   document.querySelectorAll(`[${attr}]`).forEach((btn) => {
     if (!url) return;
     btn.href = url;
