@@ -56,6 +56,27 @@ const withAffiliate = (url) => {
   return u.toString();
 };
 
+// ── Affiliate links (Lemon Squeezy) ────────────────────────────────────────
+// The public program (/affiliates) runs on Lemon Squeezy: links carry ?aff=.
+// Their affiliate.js records the click, keeps an ls_aff_ref cookie and adds
+// aff_ref to every Lemon Squeezy checkout link (including ones set below). It
+// fingerprints the browser to do that, so it loads only for visitors who came
+// through an affiliate link, now or on an earlier visit, never for anyone else.
+(() => {
+  let referred = false;
+  try {
+    referred = new URLSearchParams(location.search).has("aff") || /(?:^|;\s*)ls_aff_ref=/.test(document.cookie);
+  } catch { /* cookies blocked: no attribution */ }
+  if (!referred) return;
+  window.lemonSqueezyAffiliateConfig = { store: "phoenixlabss" };
+  const s = document.createElement("script");
+  s.src = "https://lmsqueezy.com/affiliate.js";
+  s.defer = true;
+  // It starts itself on window load; if that already happened, start it here.
+  s.onload = () => { if (document.readyState === "complete") window.createLemonSqueezyAffiliate?.(); };
+  document.head.appendChild(s);
+})();
+
 for (const [attr, url] of [["data-ls-checkout", withAffiliate(LEMON_CHECKOUT_URL)], ["data-ls-checkout-editor", LEMON_EDITOR_CHECKOUT_URL], ["data-ls-checkout-business", withAffiliate(LEMON_BUSINESS_CHECKOUT_URL)]]) {
   document.querySelectorAll(`[${attr}]`).forEach((btn) => {
     if (!url) return;

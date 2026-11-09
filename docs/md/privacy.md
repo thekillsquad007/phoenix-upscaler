@@ -44,6 +44,8 @@ We may use privacy-preserving, cookie-free website analytics (aggregate page cou
 
 If you arrive through a partner's link (an address ending in `?via=` and a code), your browser keeps that code in local storage for 60 days, and it is passed to checkout if you buy Phoenix Upscaler. We then tell our affiliate platform, Klibon, about that purchase only: the code, the amount before tax, an order and customer number, and your email address, which Klibon stores as a hash and uses to stop people referring themselves. Purchases that didn't come through a partner's link are never sent. Clearing your browser's site data removes the code.
 
+Partners in our main [affiliate program](https://phoenixlabs.space/affiliates) use links ending in `?aff=`. Only when you arrive through one of those (or came through one earlier) does the page load Lemon Squeezy's affiliate script. It records the visit with Lemon Squeezy so the partner is credited, sets a cookie called `ls_aff_ref`, and uses a browser fingerprint to recognise the same visit; [Lemon Squeezy's privacy policy](https://www.lemonsqueezy.com/privacy) covers that data. Visitors who didn't come through such a link never load it.
+
 Some pages have a walkthrough video hosted on YouTube. The page shows our own picture of it and contacts YouTube only when you press play; from then on, [Google's privacy policy](https://policies.google.com/privacy) covers that video.
 
 ## Your choices

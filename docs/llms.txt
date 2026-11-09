@@ -82,3 +82,4 @@ The full text of every page, in one file: https://phoenixlabs.space/llms-full.tx
 - [Privacy policy](https://phoenixlabs.space/privacy)
 - [Terms of service](https://phoenixlabs.space/terms)
 - [Refund policy](https://phoenixlabs.space/refund)
+- [Affiliate program](https://phoenixlabs.space/affiliates): 35% of each Phoenix Upscaler sale (30% Business, 25% Editor), 60-day tracking, run on Lemon Squeezy

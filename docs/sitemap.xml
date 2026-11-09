@@ -97,6 +97,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://phoenixlabs.space/affiliates</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://phoenixlabs.space/refund</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>yearly</changefreq>
