@@ -72,7 +72,7 @@ Phoenix will never quietly give you a lesser result than the one you chose. If G
 
 Generative is the only engine with an extra step, because it needs a several-gigabyte model and a GPU compute stack built for your specific graphics card.
 
-Click **Install Generative** in the app and leave it. It downloads the model and sets up everything it needs. That is about 15 GB, so it takes 30 to 90 minutes depending on your connection, and it needs roughly 20 GB free. This happens once. When it finishes, the Balanced and Best choices appear and you can start.
+Click **Install Generative** in the app and leave it. It downloads the model and sets up everything it needs. That is about 15 GB, so it takes 30 to 90 minutes depending on your connection, and it needs roughly 25 GB free. This happens once. When it finishes, the Balanced and Best choices appear and you can start.
 
 - **Windows with an AMD card:** it installs into Windows Subsystem for Linux, which Windows may ask to enable and which may want a restart, plus AMD’s ROCm for WSL. AMD supports that on the Radeon RX 7800 XT, RX 7900 and RX 9000 series, Radeon PRO W7000 and Ryzen AI Max. Keep the AMD graphics driver up to date.
 - **Linux:** AMD (Radeon RX 6000 series or newer) or NVIDIA, with 8 GB or more. Nothing needs root. If your user account can't use the graphics card for compute yet, the app shows the one command to fix that, then you click Install Generative again.
@@ -113,7 +113,7 @@ Exactly what it says: the model and runtime have not been installed. Click **Ins
 
 ### Generative setup stopped
 
-The app shows the reason under the Install button, and it is almost always one of three: the internet connection dropped, the drive is short of the roughly 20 GB setup needs, or (on Linux) your user account doesn't have access to the graphics card yet, in which case the app shows the command that grants it. Fix that, then click **Install Generative** again. It picks up where it stopped instead of downloading everything twice.
+The app shows the reason under the Install button, and it is almost always one of three: the internet connection dropped, the drive is short of the roughly 25 GB setup needs, or (on Linux) your user account doesn't have access to the graphics card yet, in which case the app shows the command that grants it. Fix that, then click **Install Generative** again. It picks up where it stopped instead of downloading everything twice.
 
 ### “This PC doesn't have a graphics card Phoenix can use”
 

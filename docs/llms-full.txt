@@ -338,7 +338,7 @@ Phoenix leans on the GPU for the actual restoration work, so what matters most i
 | Graphics card | Windows: any modern GPU, 4 GB VRAM NVIDIA, AMD or Intel Linux: AMD or NVIDIA, 8 GB VRAM | NVIDIA 8 GB+ or AMD 16 GB+ e.g. RTX 3060 / RX 7800 XT |
 | Memory | 8 GB RAM | 16 GB RAM 32 GB for AMD Generative |
 | OS | Windows 10/11 (64-bit) or Linux | |
-| Storage | Free space roughly equal to your source footage, plus about 20 GB for Generative | |
+| Storage | Free space roughly equal to your source footage, plus about 25 GB for Generative | |
 
 On Windows, Enhanced runs on any modern graphics card. Generative, the deepest detail reconstruction, needs an 8 GB+ NVIDIA card on Windows, or on AMD an RX 7800 XT, RX 7900 or RX 9000 series card, and an 8 GB+ AMD (RX 6000 or newer) or NVIDIA card on Linux, after a one-time setup the app runs for you. Below that, or on a Mac? The [cloud studio](https://phoenixlabs.space/studio) does the same restoration on our GPUs with no hardware requirements at all. More on Radeon cards in [AI video upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu).
 
@@ -1535,7 +1535,7 @@ Phoenix will never quietly give you a lesser result than the one you chose. If G
 
 Generative is the only engine with an extra step, because it needs a several-gigabyte model and a GPU compute stack built for your specific graphics card.
 
-Click **Install Generative** in the app and leave it. It downloads the model and sets up everything it needs. That is about 15 GB, so it takes 30 to 90 minutes depending on your connection, and it needs roughly 20 GB free. This happens once. When it finishes, the Balanced and Best choices appear and you can start.
+Click **Install Generative** in the app and leave it. It downloads the model and sets up everything it needs. That is about 15 GB, so it takes 30 to 90 minutes depending on your connection, and it needs roughly 25 GB free. This happens once. When it finishes, the Balanced and Best choices appear and you can start.
 
 - **Windows with an AMD card:** it installs into Windows Subsystem for Linux, which Windows may ask to enable and which may want a restart, plus AMD’s ROCm for WSL. AMD supports that on the Radeon RX 7800 XT, RX 7900 and RX 9000 series, Radeon PRO W7000 and Ryzen AI Max. Keep the AMD graphics driver up to date.
 - **Linux:** AMD (Radeon RX 6000 series or newer) or NVIDIA, with 8 GB or more. Nothing needs root. If your user account can't use the graphics card for compute yet, the app shows the one command to fix that, then you click Install Generative again.
@@ -1576,7 +1576,7 @@ Exactly what it says: the model and runtime have not been installed. Click **Ins
 
 ### Generative setup stopped
 
-The app shows the reason under the Install button, and it is almost always one of three: the internet connection dropped, the drive is short of the roughly 20 GB setup needs, or (on Linux) your user account doesn't have access to the graphics card yet, in which case the app shows the command that grants it. Fix that, then click **Install Generative** again. It picks up where it stopped instead of downloading everything twice.
+The app shows the reason under the Install button, and it is almost always one of three: the internet connection dropped, the drive is short of the roughly 25 GB setup needs, or (on Linux) your user account doesn't have access to the graphics card yet, in which case the app shows the command that grants it. Fix that, then click **Install Generative** again. It picks up where it stopped instead of downloading everything twice.
 
 ### “This PC doesn't have a graphics card Phoenix can use”
 
