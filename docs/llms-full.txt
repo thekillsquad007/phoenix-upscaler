@@ -1535,7 +1535,7 @@ Phoenix will never quietly give you a lesser result than the one you chose. If G
 
 Generative is the only engine with an extra step, because it needs a several-gigabyte model and a GPU compute stack built for your specific graphics card.
 
-Click **Install Generative** in the app and leave it. It downloads the model and sets up everything it needs, which takes 15 to 40 minutes on a normal connection and needs roughly 20 GB free. This happens once. When it finishes, the Balanced and Best choices appear and you can start.
+Click **Install Generative** in the app and leave it. It downloads the model and sets up everything it needs. That is about 15 GB, so it takes 30 to 90 minutes depending on your connection, and it needs roughly 20 GB free. This happens once. When it finishes, the Balanced and Best choices appear and you can start.
 
 - **Windows with an AMD card:** it installs into Windows Subsystem for Linux, which Windows may ask to enable and which may want a restart, plus AMD’s ROCm for WSL. AMD supports that on the Radeon RX 7800 XT, RX 7900 and RX 9000 series, Radeon PRO W7000 and Ryzen AI Max. Keep the AMD graphics driver up to date.
 - **Linux:** AMD (Radeon RX 6000 series or newer) or NVIDIA, with 8 GB or more. Nothing needs root. If your user account can't use the graphics card for compute yet, the app shows the one command to fix that, then you click Install Generative again.
