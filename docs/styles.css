@@ -570,3 +570,9 @@ code { font-family: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, "
   .reveal { opacity: 1; transform: none; transition: none; }
   .product-media .pan { animation: none; }
 }
+
+/* Product marks: the Phoenix bird in each product's colour. */
+.pmark { display: inline-block; vertical-align: -0.22em; margin-right: 0.45em; object-fit: contain; }
+.rail-item strong .pmark { width: 22px; height: 22px; }
+.product-top h3 .pmark { width: 26px; height: 26px; }
+.hero-pmark { display: block; width: 64px; height: 64px; margin: 0 0 14px -4px; object-fit: contain; }

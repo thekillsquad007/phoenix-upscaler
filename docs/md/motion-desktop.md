@@ -4,6 +4,8 @@ description: "Make image-to-video clips on your own PC: 8 GB NVIDIA and AMD Rade
 url: https://phoenixlabs.space/motion-desktop
 ---
 
+![](https://phoenixlabs.space/assets/brand/products/motion-mark-96.png)
+
 Phoenix Motion desktop · image to video on your PC
 
 # Image to video on your own graphics card.

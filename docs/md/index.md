@@ -14,7 +14,7 @@ Restore footage the years have been hard on. Turn a still into a moving clip wit
 
 [See the tools](https://phoenixlabs.space/#products) [Make a clip, from $0.59](https://phoenixlabs.space/motion-app)
 
- [**Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**Phoenix Motion**Any image into a 5-second clip, with sound.From $0.59 a clip](https://phoenixlabs.space/motion) [**Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor)
+ [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**![](https://phoenixlabs.space/assets/brand/products/motion-mark-64.png)Phoenix Motion**Any image into a 5-second clip, with sound.From $0.59 a clip](https://phoenixlabs.space/motion) [**![](https://phoenixlabs.space/assets/brand/products/editor-mark-64.png)Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor)
 
 The tools
 

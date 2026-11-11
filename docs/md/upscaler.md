@@ -4,6 +4,8 @@ description: "Restore and upscale old video on your own PC: tapes, DVDs, film sc
 url: https://phoenixlabs.space/upscaler
 ---
 
+![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-96.png)
+
 Phoenix Upscaler
 
 # Old video looks old. This fixes that.

@@ -4,6 +4,8 @@ description: "Phoenix Editor cuts dead air and filler words from long recordings
 url: https://phoenixlabs.space/editor
 ---
 
+![](https://phoenixlabs.space/assets/brand/products/editor-mark-96.png)
+
 # Stop editing your VODs by hand.
 
 Phoenix Editor watches your Let's Play or stream recording, cuts the dead air and filler words, and turns your best moments into captioned, vertically-cropped Shorts automatically.

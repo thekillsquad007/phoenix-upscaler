@@ -18,7 +18,7 @@ Restore footage the years have been hard on. Turn a still into a moving clip wit
 
 [See the tools](https://phoenixlabs.space/#products) [Make a clip, from $0.59](https://phoenixlabs.space/motion-app)
 
- [**Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**Phoenix Motion**Any image into a 5-second clip, with sound.From $0.59 a clip](https://phoenixlabs.space/motion) [**Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor)
+ [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**![](https://phoenixlabs.space/assets/brand/products/motion-mark-64.png)Phoenix Motion**Any image into a 5-second clip, with sound.From $0.59 a clip](https://phoenixlabs.space/motion) [**![](https://phoenixlabs.space/assets/brand/products/editor-mark-64.png)Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor)
 
 The tools
 
@@ -166,6 +166,8 @@ title: "Phoenix Upscaler: the AI video upscaler you pay for once"
 description: "Restore and upscale old video on your own PC: tapes, DVDs, film scans and old phone clips. Removes noise, fixes interlacing, rebuilds detail. $129 once."
 url: https://phoenixlabs.space/upscaler
 ---
+
+![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-96.png)
 
 Phoenix Upscaler
 
@@ -396,6 +398,8 @@ description: "Restore old video online with no gaming PC and no install. Upload 
 url: https://phoenixlabs.space/studio
 ---
 
+![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-96.png)
+
 # No gaming PC? Restore it in the cloud.
 
 Phoenix Cloud Restore cleans up and upscales old video on our datacenter GPUs, so it works from a Mac, a laptop or a phone. Upload a clip, see exactly what it costs in dollars, pay for that one job, and download the result.
@@ -508,6 +512,8 @@ title: "Phoenix Motion: image to video AI with sound, from $0.59"
 description: "Upload an image, say what should happen, and get a five-second video with sound. Logos, art, product shots, portraits and loops. From $0.59 a clip."
 url: https://phoenixlabs.space/motion
 ---
+
+![](https://phoenixlabs.space/assets/brand/products/motion-mark-96.png)
 
 Phoenix Motion · image to video
 
@@ -648,6 +654,8 @@ title: "Phoenix Motion desktop: image to video on your own GPU"
 description: "Make image-to-video clips on your own PC: 8 GB NVIDIA and AMD Radeon cards, unlimited clips, HD finish, nothing uploaded. Free trial, then $49 for two years."
 url: https://phoenixlabs.space/motion-desktop
 ---
+
+![](https://phoenixlabs.space/assets/brand/products/motion-mark-96.png)
 
 Phoenix Motion desktop · image to video on your PC
 
@@ -809,6 +817,8 @@ title: "Phoenix Editor: automatic video editing for streamers"
 description: "Phoenix Editor cuts dead air and filler words from long recordings and turns the best moments into captioned Shorts, on your own GPU. $99 with updates."
 url: https://phoenixlabs.space/editor
 ---
+
+![](https://phoenixlabs.space/assets/brand/products/editor-mark-96.png)
 
 # Stop editing your VODs by hand.
 
