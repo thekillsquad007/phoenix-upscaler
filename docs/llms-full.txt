@@ -18,13 +18,13 @@ Restore footage the years have been hard on. Turn a still into a moving clip wit
 
 [See the tools](https://phoenixlabs.space/#products) [Make a clip, from $0.59](https://phoenixlabs.space/motion-app)
 
- [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**![](https://phoenixlabs.space/assets/brand/products/motion-mark-64.png)Phoenix Motion**Any image into a 5-second clip, with sound.From $0.59 a clip](https://phoenixlabs.space/motion) [**![](https://phoenixlabs.space/assets/brand/products/editor-mark-64.png)Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor)
+ [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**![](https://phoenixlabs.space/assets/brand/products/motion-mark-64.png)Phoenix Motion**Any image into a 5-second clip, with sound.From $0.59 a clip](https://phoenixlabs.space/motion) [**![](https://phoenixlabs.space/assets/brand/products/editor-mark-64.png)Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor) [**![](https://phoenixlabs.space/assets/brand/products/local-ai-mark-64.png)Phoenix Local AI**A private AI chat that runs on your phone.$9.99 once](https://phoenixlabs.space/local-ai)
 
 The tools
 
-## Four tools. The tedious parts of video, done for you.
+## Tools that do the tedious part for you.
 
-Each one does a job people used to lose whole evenings to. Two run on your own machine and are yours to keep. Two run in our cloud, and you see the price in dollars before anything starts.
+Four of them take on the jobs video people used to lose whole evenings to: some run on your own machine and are yours to keep, some run in our cloud with the price in dollars before anything starts. The newest is a private AI chat that lives on your phone.
 
 ### Phoenix Upscaler
 
@@ -63,6 +63,16 @@ Windows & Linux
 Give it a VOD or a Let's Play. It cuts the dead air and filler words, finds the moments worth clipping, and turns them into captioned vertical Shorts. You check every cut before anything renders.
 
 $99 with a year of updates[Explore](https://phoenixlabs.space/editor)
+
+![Phoenix Local AI's new chat screen: 'Ask anything. It stays on this phone.'](https://phoenixlabs.space/assets/site/local-ai-chat.webp)
+
+### Phoenix Local AI
+
+Android
+
+A private AI chat that runs open models like Gemma, Qwen and Phi on your phone itself. No account, no upload, and it keeps working in airplane mode. Got a PC running Ollama or LM Studio, or an OpenRouter key? Add it and chat with bigger models from the same app.
+
+$9.99 once, 7 days free[Explore](https://phoenixlabs.space/local-ai)
 
 Upscaler & Cloud Restore
 
@@ -133,7 +143,7 @@ Questions
 
 ### What does Phoenix Labs make?
 
-Four video tools. Phoenix Upscaler restores and upscales old video on your own PC, for $129 once. Cloud Restore does the same restoration on our GPUs, paid per clip from $2.99. Phoenix Motion turns a still image into a five-second clip with sound, from $0.59 a clip. Phoenix Editor cuts long streams and recordings down and makes captioned Shorts, $99 with a year of updates.
+Four video tools and an Android app. Phoenix Upscaler restores and upscales old video on your own PC, for $129 once. Cloud Restore does the same restoration on our GPUs, paid per clip from $2.99. Phoenix Motion turns a still image into a five-second clip with sound, from $0.59 a clip. Phoenix Editor cuts long streams and recordings down and makes captioned Shorts, $99 with a year of updates. Phoenix Local AI is a private AI chat app for Android that runs models on the phone itself, $9.99 once.
 
 ### Is anything a subscription?
 
