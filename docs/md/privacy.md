@@ -32,9 +32,16 @@ Restoration runs locally; your video files are never uploaded. To activate a lic
 - **Your wallet key**: kept in your browser. We store only a one-way hash of it. Your top-up receipt from Lemon Squeezy includes a link carrying the key, so you can reopen your balance from your email.
 - **Your email**: given to Lemon Squeezy for the receipt when you top up, and kept with your balance so we can help if you contact us. We do not send marketing email.
 
+## Phoenix Local AI
+
+- **Your chats**: stored only on your phone. With an on-device model they are never sent anywhere. If you add your own server or a cloud provider such as OpenRouter, your messages go from your phone straight to that service, under its own privacy policy; they do not pass through us.
+- **Models**: downloaded from Hugging Face when you pick one, so Hugging Face sees that download request.
+- **Your licence key**: sent to Lemon Squeezy with your phone's maker and model name to activate it, and checked about once a week after that. Nothing else about you or your chats is sent.
+- **No analytics**: the app contains no analytics or advertising code and has no account. If it crashes, it offers to open an email to us with the crash details; nothing is sent unless you send that email yourself.
+
 ## Payments
 
-Purchases (the desktop licence, each cloud job, and Phoenix Motion top-ups) are processed by [Lemon Squeezy](https://www.lemonsqueezy.com/privacy), which acts as the Merchant of Record and handles billing, tax, and card data under its own privacy policy.
+Purchases (the desktop licences, Phoenix Local AI, each cloud job, and Phoenix Motion top-ups) are processed by [Lemon Squeezy](https://www.lemonsqueezy.com/privacy), which acts as the Merchant of Record and handles billing, tax, and card data under its own privacy policy.
 
 ## Analytics
 

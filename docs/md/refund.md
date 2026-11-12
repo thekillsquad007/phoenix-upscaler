@@ -12,6 +12,10 @@ Last updated 27 September 2026.
 
 If the desktop app doesn’t work for you, email us within **14 days** of purchase for a full refund. There’s a free trial on short clips so you can confirm it runs on your machine before buying, but we’ll still honour the 14-day window if something goes wrong.
 
+## Phoenix Local AI ($9.99)
+
+If Phoenix Local AI doesn’t work for you, email us within **14 days** of purchase for a full refund. The 7-day free trial lets you check it runs well on your phone first, but the 14-day window still applies.
+
 ## Cloud jobs (pay per job)
 
 - **Failed jobs are refunded automatically.** If a restore fails to complete, you are refunded, so you only pay for a result you can download. A restore paid from your Phoenix balance is refunded to the balance.

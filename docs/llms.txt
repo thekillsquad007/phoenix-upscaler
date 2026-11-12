@@ -68,6 +68,12 @@ The full text of every page, in one file: https://phoenixlabs.space/llms-full.tx
 - [Phoenix Editor](https://phoenixlabs.space/editor)
 - [Phoenix Editor guide](https://phoenixlabs.space/editor-guide): setup and a first edit
 
+## Phoenix Local AI (Android, private AI chat)
+
+- A private AI chat app for Android 8.0+. Runs open models (Gemma 4, Gemma 3, Qwen, Phi-4 Mini, a DeepSeek R1 distill, or any GGUF from Hugging Face) on the phone itself, offline, with no account and no analytics. Also connects to your own Ollama, LM Studio or OpenAI-compatible server, or OpenRouter and Requesty with your own key. Voice in and out, photo and file attachments for vision models, MCP tools.
+- Sold directly as an APK, not on Google Play. Price: $9.99 once, every update included, up to 3 phones. 7-day free trial.
+- [Phoenix Local AI](https://phoenixlabs.space/local-ai)
+
 ## Guides and comparisons
 
 - [How to restore old video](https://phoenixlabs.space/restore-old-video): diagnosing old footage and fixing it in the right order, for tapes, DVDs, film scans and old phone clips

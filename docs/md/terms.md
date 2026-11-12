@@ -12,6 +12,10 @@ Last updated 8 November 2026. By buying or using Phoenix Upscaler, Phoenix Cloud
 
 The desktop app is sold as a one-time purchase for a perpetual licence, including future updates, activatable on up to three computers you own or control at a time. There are two Phoenix Upscaler licences. The **Personal** licence covers footage that is yours or your family's, including videos you publish on your own channels, even if those channels earn money. The **Business** licence additionally covers paid work on footage that belongs to someone else, such as a transfer service, a videographer or an archivist working for clients, and can be activated on up to five computers your business owns or controls at a time. If you bought a Personal licence before 8 November 2026 and already used it for client work, you may keep doing so; you don't need to upgrade. You may not resell, redistribute, or share your licence key. We grant you a non-exclusive, non-transferable right to use the software; we retain all intellectual-property rights in it.
 
+## Phoenix Local AI
+
+Phoenix Local AI is an Android app sold as a one-time purchase for a perpetual licence, including future updates, activatable on up to three phones you own or control at a time. It starts with a 7-day free trial. You may not resell, redistribute, or share your licence key. AI models you download in the app are made by third parties and come under their own licences; answers they generate can be wrong, so don’t rely on them for medical, legal, financial or safety decisions. If you connect your own server or a third-party provider, your use of it is between you and that provider. We grant you a non-exclusive, non-transferable right to use the app; we retain all intellectual-property rights in it.
+
 ## Cloud studio
 
 The cloud studio is a pay-per-job service. You can pay for each job separately at the price shown before you pay, or from your Phoenix balance (see below). There is no subscription. You must have the right to upload and process any file you submit, and you must not submit unlawful content or content you do not own or have permission to use.
