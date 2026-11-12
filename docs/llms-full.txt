@@ -980,6 +980,28 @@ Android 8.0 or later. Not on Google Play: you install it straight from this page
 
 **$9.99 once.** Every update included, on up to 3 phones.
 
+## Companions that remember you
+
+Pick someone to talk to. Ember cheers you on, Sage helps you wind down, Jinx roasts you (gently) and Atlas will explain anything. Each one has a face, a personality, and a memory of what you tell them.
+
+### They remember
+
+Mention your dog's name or a job interview on Friday, and next week they'll ask how it went. What they remember carries from one chat to the next.
+
+### On your phone, not ours
+
+A companion's memory is a list kept on the phone. It only goes to the model you chat with, which never leaves the phone if you use an on-device model.
+
+### You can read every line
+
+Open a companion's memory to see everything they've picked up. Fix a line, delete it, add your own, or make them forget it all.
+
+### Friendly, not flirty
+
+Companions are for company: a chat at the end of the day, a pep talk, a second opinion. No romance or adult roleplay.
+
+ ![The Companions screen in Phoenix Local AI: Ember, Sage, Jinx and Atlas, each with an animated face, a Talk button and their memory](https://phoenixlabs.space/assets/site/local-ai-companions.webp)
+
 ## What it does
 
 ### Models that run on the phone

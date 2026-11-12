@@ -596,3 +596,7 @@ code { font-family: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, "
 @media (max-width: 1000px) { .product-rail { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 720px) { .product-card-wide { grid-template-columns: 1fr; } .product-card-wide .product-body { padding: 24px 26px 26px; } }
 @media (max-width: 560px) { .product-rail { grid-template-columns: 1fr; } }
+/* Local AI: companions, copy beside a phone shot. */
+.companions { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+.companions .how-grid { margin-bottom: 0; }
+@media (max-width: 900px) { .companions { grid-template-columns: 1fr; gap: 40px; } }
