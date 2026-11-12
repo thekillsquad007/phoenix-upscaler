@@ -6,7 +6,7 @@ url: https://phoenixlabs.space/privacy
 
 # Privacy Policy
 
-Last updated 9 November 2026. Phoenix Upscaler, Phoenix Cloud Studio and Phoenix Motion are products of Phoenix Labs (“we”, “us”).
+Last updated 13 November 2026. Phoenix Upscaler, Phoenix Cloud Studio and Phoenix Motion are products of Phoenix Labs (“we”, “us”).
 
 ## The short version
 
@@ -37,6 +37,9 @@ Restoration runs locally; your video files are never uploaded. To activate a lic
 - **Your chats**: stored only on your phone. With an on-device model they are never sent anywhere. If you add your own server or a cloud provider such as OpenRouter, your messages go from your phone straight to that service, under its own privacy policy; they do not pass through us.
 - **Models**: downloaded from Hugging Face when you pick one, so Hugging Face sees that download request.
 - **Your licence key**: sent to Lemon Squeezy with your phone's maker and model name to activate it, and checked about once a week after that. Nothing else about you or your chats is sent.
+- **Updates**: the version downloaded from our website asks GitHub for the latest version number about once a day, and downloads the update from GitHub if you choose to install it. Like any web request, this shows GitHub your IP address; nothing about you or your chats is sent. You can turn the check off in Settings. Store versions are updated by the store instead.
+- **Reporting a reply**: if you report an AI reply as offensive or harmful, the app sends us that one reply, the reason you picked and any note you wrote, so we can review it and choose safer models. Nothing else from your chats is sent. We keep a one-way hash of your IP address with the report, only to stop one connection flooding us with reports.
+- **Google Play version**: if you unlock the app with a Google Play purchase, Google handles the payment under its own privacy policy. The app asks the Play Store on your phone whether you own the unlock; we don't receive your payment or account details.
 - **No analytics**: the app contains no analytics or advertising code and has no account. If it crashes, it offers to open an email to us with the crash details; nothing is sent unless you send that email yourself.
 
 ## Payments
