@@ -254,7 +254,7 @@ p { margin: 0 0 1em; }
 /* Walkthrough video: our thumbnail until pressed, then YouTube's player (site.js) */
 .yt { position: relative; aspect-ratio: 16 / 9; max-width: 960px; border-radius: var(--radius-lg); overflow: hidden; background: #000; border: 1px solid var(--line); }
 .yt button { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; font: inherit; cursor: pointer; }
-.yt img, .yt iframe { display: block; width: 100%; height: 100%; object-fit: cover; border: 0; }
+.yt img, .yt iframe, .yt video { display: block; width: 100%; height: 100%; object-fit: cover; border: 0; }
 .yt button:hover img { filter: brightness(1.08); }
 .yt button:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
 .yt-play { position: absolute; right: 16px; top: 16px; display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px 6px 6px; border-radius: 999px; background: var(--glass); backdrop-filter: blur(6px); color: var(--ink); font-weight: 700; font-size: 15px; font-variant-numeric: tabular-nums; }

@@ -26,11 +26,11 @@ Real detection, before you render — see every cut and Shorts candidate on the 
 
 **Reactor template built in.** For reaction and commentary content.
 
-## Watch it edit 2.5 hours of gameplay
+## Watch it edit a real Let's Play
 
-It cut 23 minutes of dead air and found five highlights for Shorts. Under a minute, start to finish.
+A 20-minute recording with a facecam. It cut the pauses, ums and dead footage down to 14:51, then picked the Shorts. Nothing was touched up afterwards.
 
-It plays from YouTube when you press it. [Watch on YouTube](https://youtu.be/2E8pdUGqvb0)
+Footage: Chris Were, with HamishTPB in the Wesnoth clip, both CC BY 4.0.
 
 ## What it does
 
@@ -40,7 +40,7 @@ Transcribes your recording, then removes silence, dead air and filler words auto
 
 ### Auto-generate Shorts
 
-Scores your VOD for highlight moments, then reframes, crops and burns in captions for vertical Shorts/TikTok/Reels — subject-tracking crop follows the action, not the center of the frame.
+Finds the moments worth a Short, in whole sentences, then builds the vertical clip for Shorts, TikTok or Reels. If you have a facecam, it sits on top with the gameplay underneath; if not, the crop follows the action. Captions are burned in a few words at a time.
 
 ### Reactor template
 
