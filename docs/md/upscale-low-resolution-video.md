@@ -111,7 +111,7 @@ No. Deinterlacing fixes the striped, combed edges on moving things in tape and D
 
 Yes. The free command-line tool ffmpeg has the deblocking filters described on this page, and the commands are above. Phoenix Upscaler's free download also restores 60-second clips, with a small watermark, so you can compare.
 
-Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [Restoring VHS tapes](https://phoenixlabs.space/vhs-restoration-software) · [How to restore old video](https://phoenixlabs.space/restore-old-video)
+Related: [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own clip
 

@@ -147,6 +147,8 @@ A long restore writes large intermediates. Phoenix cleans them when a job finish
 - **Your originals are never modified.** Every restore writes a new file.
 - **No gaming PC?** The [cloud studio](https://phoenixlabs.space/studio) runs the same engine on rented GPUs, priced per clip, with the price shown before you pay.
 
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative)
+
 ## Try it on something that matters to you
 
 The trial runs on 60-second clips, so pick the video you most want back and see what happens to it.

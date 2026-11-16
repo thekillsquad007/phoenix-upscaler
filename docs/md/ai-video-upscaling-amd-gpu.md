@@ -75,7 +75,7 @@ On an RX 7800 XT, Phoenix's Generative mode takes about a minute of processing f
 
 Yes. Video2X uses Vulkan builds of Real-ESRGAN and similar models, which run on Radeon cards. It's free for any length if you're comfortable setting it up. Phoenix's free download restores 60-second clips with a small watermark.
 
-Related: [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Running Wan 2.2 on an 8 GB GPU, AMD included](https://phoenixlabs.space/wan-2-2-8gb-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Wan 2.2 on an 8 GB GPU](https://phoenixlabs.space/wan-2-2-8gb-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video)
 
 ## See what your Radeon can do
 

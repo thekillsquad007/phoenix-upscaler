@@ -79,7 +79,7 @@ If you have a graphics card with 8 GB of memory, the Phoenix Motion desktop app 
 
 Clips you make with Phoenix Motion are yours to use, commercially too, with no watermark on paid clips. You still need the right to use the original photo, which matters for pictures taken by a professional studio.
 
-Related: [Phoenix Motion](https://phoenixlabs.space/motion) · [Motion desktop](https://phoenixlabs.space/motion-desktop) · [How to restore old video](https://phoenixlabs.space/restore-old-video)
+Related: [Phoenix Motion](https://phoenixlabs.space/motion) · [Motion desktop](https://phoenixlabs.space/motion-desktop) · [Wan 2.2 on an 8 GB GPU](https://phoenixlabs.space/wan-2-2-8gb-gpu) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video)
 
 ## Try it on one of your photos
 

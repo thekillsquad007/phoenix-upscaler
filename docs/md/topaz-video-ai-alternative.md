@@ -67,7 +67,7 @@ Not yet. On a Mac, use Cloud Restore: upload a clip, see the price in dollars, p
 
 On old, low-resolution footage, judge it on your own clip. The free download is there so you can compare the two side by side before paying anything. Phoenix aims for a clean, faithful picture rather than invented detail.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [AI upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Compare on your own clip
 

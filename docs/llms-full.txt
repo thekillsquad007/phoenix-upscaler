@@ -1192,7 +1192,7 @@ Lightly, if at all. Current restoration models are trained on noisy footage and 
 
 Yes. Phoenix Upscaler does all its work on your own computer, and once activated it doesn't need an internet connection.
 
-Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own footage
 
@@ -1285,7 +1285,7 @@ It depends on your graphics card and the mode. Time a 30-second test and multipl
 
 No. Phoenix Upscaler works entirely on your own computer and doesn't need an internet connection once it's activated. Cloud Restore is there if you'd rather not use your own PC.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own tape
 
@@ -1376,7 +1376,7 @@ Phoenix Upscaler's free download restores 60-second clips with a small watermark
 
 No. It gets you a clean, stable picture of what the old phone recorded, at a size that suits a modern screen. Anything promising to turn a 2010 clip into new-phone footage is inventing the difference.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes](https://phoenixlabs.space/vhs-restoration-software) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on one of your clips
 
@@ -1453,7 +1453,7 @@ Not yet. On a Mac, use Cloud Restore: upload a clip, see the price in dollars, p
 
 On old, low-resolution footage, judge it on your own clip. The free download is there so you can compare the two side by side before paying anything. Phoenix aims for a clean, faithful picture rather than invented detail.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [VHS restoration software](https://phoenixlabs.space/vhs-restoration-software) · [Old phone videos](https://phoenixlabs.space/old-phone-video) · [AI upscaling on AMD](https://phoenixlabs.space/ai-video-upscaling-amd-gpu)
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Compare on your own clip
 
@@ -1792,6 +1792,8 @@ A long restore writes large intermediates. Phoenix cleans them when a job finish
 - **One payment, $129.** No subscription, no per-clip charge, no export limit. Updates are included.
 - **Your originals are never modified.** Every restore writes a new file.
 - **No gaming PC?** The [cloud studio](https://phoenixlabs.space/studio) runs the same engine on rented GPUs, priced per clip, with the price shown before you pay.
+
+Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative)
 
 ## Try it on something that matters to you
 
@@ -2333,7 +2335,7 @@ If you have a graphics card with 8 GB of memory, the Phoenix Motion desktop app 
 
 Clips you make with Phoenix Motion are yours to use, commercially too, with no watermark on paid clips. You still need the right to use the original photo, which matters for pictures taken by a professional studio.
 
-Related: [Phoenix Motion](https://phoenixlabs.space/motion) · [Motion desktop](https://phoenixlabs.space/motion-desktop) · [How to restore old video](https://phoenixlabs.space/restore-old-video)
+Related: [Phoenix Motion](https://phoenixlabs.space/motion) · [Motion desktop](https://phoenixlabs.space/motion-desktop) · [Wan 2.2 on an 8 GB GPU](https://phoenixlabs.space/wan-2-2-8gb-gpu) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video)
 
 ## Try it on one of your photos
 
@@ -2411,7 +2413,7 @@ Wan's 480p output looks soft on a modern screen, so every clip can get an HD pas
 - The four-step model occasionally goes hazy mid-clip, usually on portraits. Another seed fixes it, but it would be better not to need one.
 - Desktop clips are silent. The browser version of Phoenix Motion makes sound in the same pass; the desktop model doesn't.
 
-Related: [Phoenix Motion desktop](https://phoenixlabs.space/motion-desktop) · [How to animate an old photo](https://phoenixlabs.space/animate-old-photos) · [Phoenix Motion in the browser](https://phoenixlabs.space/motion)
+Related: [Motion desktop](https://phoenixlabs.space/motion-desktop) · [Animating an old photo](https://phoenixlabs.space/animate-old-photos) · [Phoenix Motion](https://phoenixlabs.space/motion) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [How to restore old video](https://phoenixlabs.space/restore-old-video)
 
 ## Try it on your own card
 
@@ -2532,7 +2534,7 @@ No. Deinterlacing fixes the striped, combed edges on moving things in tape and D
 
 Yes. The free command-line tool ffmpeg has the deblocking filters described on this page, and the commands are above. Phoenix Upscaler's free download also restores 60-second clips, with a small watermark, so you can compare.
 
-Related: [Old phone videos](https://phoenixlabs.space/old-phone-video) · [Restoring VHS tapes](https://phoenixlabs.space/vhs-restoration-software) · [How to restore old video](https://phoenixlabs.space/restore-old-video)
+Related: [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own clip
 
@@ -2617,7 +2619,7 @@ On an RX 7800 XT, Phoenix's Generative mode takes about a minute of processing f
 
 Yes. Video2X uses Vulkan builds of Real-ESRGAN and similar models, which run on Radeon cards. It's free for any length if you're comfortable setting it up. Phoenix's free download restores 60-second clips with a small watermark.
 
-Related: [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Running Wan 2.2 on an 8 GB GPU, AMD included](https://phoenixlabs.space/wan-2-2-8gb-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Wan 2.2 on an 8 GB GPU](https://phoenixlabs.space/wan-2-2-8gb-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video)
 
 ## See what your Radeon can do
 
