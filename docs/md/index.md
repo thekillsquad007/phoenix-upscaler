@@ -14,7 +14,7 @@ Restore footage the years have been hard on. Turn a still into a moving clip wit
 
 [See the tools](https://phoenixlabs.space/#products) [Make a clip, from $0.59](https://phoenixlabs.space/motion-app)
 
- [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**![](https://phoenixlabs.space/assets/brand/products/motion-mark-64.png)Phoenix Motion**Any image into a 5-second clip, in the browser or on your PC.From $0.59 a clip, or $49 desktop](https://phoenixlabs.space/motion) [**![](https://phoenixlabs.space/assets/brand/products/editor-mark-64.png)Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor) [**![](https://phoenixlabs.space/assets/brand/products/local-ai-mark-64.png)Phoenix Local AI**A private AI chat that runs on your phone.$9.99 once](https://phoenixlabs.space/local-ai)
+ [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**![](https://phoenixlabs.space/assets/brand/products/motion-mark-64.png)Phoenix Motion**Any image into a 5-second clip, with sound.From $0.59 a clip](https://phoenixlabs.space/motion) [**![](https://phoenixlabs.space/assets/brand/products/editor-mark-64.png)Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor) [**![](https://phoenixlabs.space/assets/brand/products/local-ai-mark-64.png)Phoenix Local AI**A private AI chat that runs on your phone.$9.99 once](https://phoenixlabs.space/local-ai)
 
 The tools
 
@@ -36,7 +36,7 @@ $129 once, every update included[Explore](https://phoenixlabs.space/upscaler)
 
 ### Cloud Restore
 
-Browser or desktop
+In your browser
 
 The same restoration, run on our datacenter GPUs. Works from a Mac, a laptop or a phone. Upload a clip, see the exact price, pay for that one job, download the result. A job that fails is refunded.
 
@@ -44,9 +44,9 @@ From $2.99 a clip[Explore](https://phoenixlabs.space/studio)
 
 ### Phoenix Motion
 
-Browser or desktop
+In your browser
 
-Drop in an image, say what should happen, and get five seconds of video back with sound made in the same pass. Logos, concept art, product shots, portraits. Or make a seamless loop where only the part you name moves. Making a lot of clips? [Motion desktop](https://phoenixlabs.space/motion-desktop) runs on your own 8 GB graphics card, unlimited, $49 for two years.
+Drop in an image, say what should happen, and get five seconds of video back with sound made in the same pass. Logos, concept art, product shots, portraits. Or make a seamless loop where only the part you name moves.
 
 From $0.59 a clip[Explore](https://phoenixlabs.space/motion)
 

@@ -12,9 +12,9 @@ Phoenix Motion · image to video
 
 Phoenix Motion turns a still image into a five-second video, sound included. Drop in a picture and say what should happen. Logos, concept art, product shots, portraits, paintings, screenshots. If it's a still, it can move.
 
-[Make a clip](https://phoenixlabs.space/motion-app) [Run it on your own PC](https://phoenixlabs.space/motion-desktop)
+[Make a clip](https://phoenixlabs.space/motion-app) [See what it makes](https://phoenixlabs.space/motion#examples)
 
-In your browser from $0.59 a clip, paid from a balance. No subscription, no watermark. Or [Motion desktop](https://phoenixlabs.space/motion-desktop): unlimited clips on an 8 GB NVIDIA or AMD card, $49 for two years, free trial.
+From $0.59 a clip, paid from a balance. No subscription, no watermark.
 
 Our own logo, one prompt, first take. Unmute it: the fire is part of the clip.
 
