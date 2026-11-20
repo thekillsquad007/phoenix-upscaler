@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to deinterlace video (and fix the lines) | Phoenix Upscaler</title>
+  <meta name="description" content="Horizontal lines on anything that moves in old tape or DVD footage are interlacing. How to tell, which deinterlacer to use, and the free ffmpeg commands." />
+  <link rel="canonical" href="https://phoenixlabs.space/deinterlace-video" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta property="og:site_name" content="Phoenix Labs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to deinterlace video and get rid of the lines" />
+  <meta property="og:description" content="Horizontal lines on anything that moves in old tape or DVD footage are interlacing. How to tell, which deinterlacer to use, and the free ffmpeg commands." />
+  <meta property="og:url" content="https://phoenixlabs.space/deinterlace-video" />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/social/upscaler.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Phoenix Upscaler restoring old video" />
+  <meta property="article:modified_time" content="2026-11-20" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/brand/products/upscaler.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/products/upscaler-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/brand/products/upscaler-touch.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=f0bb2559" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to deinterlace video and get rid of the lines",
+        "description": "Horizontal lines on anything that moves in old tape or DVD footage are interlacing. How to tell, which deinterlacer to use, and the free ffmpeg commands.",
+        "image": "https://phoenixlabs.space/assets/social/upscaler.jpg",
+        "datePublished": "2026-11-20",
+        "dateModified": "2026-11-20",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "mainEntityOfPage": "https://phoenixlabs.space/deinterlace-video",
+        "about": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Phoenix Upscaler",
+            "url": "https://phoenixlabs.space/upscaler"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to deinterlace a video",
+        "description": "Check that the clip really is interlaced, pick a frame rate, deinterlace once at the start, and only then denoise or upscale.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Check that it's interlaced",
+            "text": "Pause on something moving. Fine horizontal stripes along its edges mean interlacing. ffprobe or ffmpeg's idet filter can confirm it."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Rule out film on an NTSC DVD",
+            "text": "Movies and TV shot on film often reach NTSC DVDs through 3:2 pulldown. Those need inverse telecine, which rebuilds the original 24 frames, not deinterlacing."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Pick a frame rate",
+            "text": "Keep the original 25 or 30 frames per second for the most film-like look and smaller files, or double it to 50 or 60 for the smoothest motion."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Deinterlace first",
+            "text": "Run the deinterlacer before any denoise, sharpening or upscaling. Every one of those steps treats the stripes as detail and makes them harder to remove."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Save in a progressive format",
+            "text": "Encode the result as ordinary progressive video, at a high quality setting if more steps follow."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Phoenix Labs",
+            "item": "https://phoenixlabs.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phoenix Upscaler",
+            "item": "https://phoenixlabs.space/upscaler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Deinterlacing video",
+            "item": "https://phoenixlabs.space/deinterlace-video"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why does my old video have lines on it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most tape and DVD video is interlaced: each frame is two half-pictures taken a fiftieth or sixtieth of a second apart, one on the odd lines and one on the even lines. A TV showed them one after the other. A computer screen shows both at once, so anything that moved between them gets a striped edge."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best deinterlacer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "QTGMC, a VapourSynth and AviSynth script, gives the cleanest result but takes real setup. In plain ffmpeg, bwdif is a little cleaner than the older yadif and just as easy. For most home tapes the difference between those two is small next to everything else that's wrong with the picture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I deinterlace to 25 or 50 frames per second?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "50 (or 60 for NTSC) keeps every moment the camera recorded, so motion looks smooth and live, the way it did on a TV. 25 or 30 halves the file size and looks more like film. Both are correct. Pick 50 or 60 for sports and fast action, and keep the original rate if the file is going into a slideshow or an edit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can deinterlacing hurt a video?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, if the video wasn't interlaced. Running a deinterlacer on progressive video, like most phone clips and internet downloads, blends lines that were already fine and softens the picture. Check first, or use a mode that only touches frames marked as interlaced."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Phoenix Upscaler deinterlace automatically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. It deinterlaces only clips that are interlaced and keeps the original frame rate. Phoenix doesn't undo 3:2 pulldown, so run inverse telecine on a film-sourced NTSC DVD first."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body><!--email_off-->
+  <header class="nav">
+  <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="/upscaler">Upscaler</a>
+    <a href="/studio">Cloud Restore</a>
+    <a href="/motion">Motion</a>
+    <a href="/editor">Editor</a>
+    <a href="/local-ai">Local AI</a>
+  </nav>
+  <a class="btn btn-sm nav-cta" href="/upscaler#download">Download Phoenix</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+</header>
+  <main class="content-page">
+    <p class="badge">Deinterlacing</p>
+    <h1>How to deinterlace video and get rid of the lines</h1>
+    <p class="lead">You play an old tape capture or a DVD on your computer and everything that moves has fine horizontal stripes along its edges, like a comb. Nothing is broken. The video is interlaced, a trick from the days of tube TVs, and your screen is showing it the wrong way. A deinterlacer fixes it, and it's the first thing any restoration should do.</p>
+    <p class="muted page-date">Updated <time datetime="2026-11-20">20 November 2026</time></p>
+
+    <h2>What interlacing is</h2>
+    <p>Old video systems couldn't send a full picture fast enough, so they sent half of one at a time. First the odd lines (one field), then the even lines (the next field), fifty times a second in PAL countries and about sixty in NTSC ones. A tube TV drew each field as it arrived and your eye blended them.</p>
+    <p>A file stores the two fields woven together as one frame. But they were recorded a fiftieth or sixtieth of a second apart, so anything that moved sits in two places at once: one position on the odd lines, another on the even ones. A computer or modern TV shows the whole frame at once, and you see the stripes.</p>
+    <p>Almost all standard-definition tape is interlaced: VHS, S-VHS, Hi8, Video8, MiniDV and Digital8. So are most DVDs made from video, and most broadcast TV recordings. Phone video and internet downloads usually aren't.</p>
+
+    <h2>1. Check that it's really interlaced</h2>
+    <p>Pause on a frame where something moves sideways, like a hand, a car or a camera pan, and zoom in. Combing on the moving edges means interlaced. A still scene shows nothing either way, so pick a busy one.</p>
+    <p>To check the file itself, <code>ffprobe</code> (part of ffmpeg) prints the field order the file claims:</p>
+<div class="code"><div class="code-label"><span>Read the field order</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffprobe -v error -select_streams v:0 -show_entries stream=height,field_order capture.mp4</code></pre></div>
+    <p><code>tt</code> or <code>bb</code> means interlaced, <code>progressive</code> means not. Files lie sometimes, especially after a re-encode, so for a second opinion let ffmpeg measure the combing itself:</p>
+<div class="code"><div class="code-label"><span>Measure combing</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -i capture.mp4 -frames:v 500 -vf idet -an -f null -</code></pre></div>
+    <p>The last &ldquo;Multi frame detection&rdquo; line counts TFF, BFF and progressive frames. Mostly TFF or BFF means interlaced.</p>
+
+    <h2>2. Rule out film on an NTSC DVD</h2>
+    <p>Movies and many TV series were shot on film at 24 frames a second. To get them onto 30-frame NTSC video, the frames were spread over fields in a repeating 3:2 pattern called pulldown. It combs like interlaced video, but deinterlacing it is wrong: you get blur and a small stutter every fifth frame.</p>
+    <p>What it needs is inverse telecine, which puts the original 24 film frames back together. In ffmpeg that's <code>fieldmatch,decimate</code> (see below). PAL DVDs of films don't have this problem: film was simply sped up from 24 to 25 frames.</p>
+    <p>Home video from a camcorder is real interlaced video, so this step only matters for discs of films and TV.</p>
+
+    <h2>3. Pick a frame rate</h2>
+    <p>A deinterlacer can turn every frame into one picture, keeping the 25 or 30 frames a second you started with. Or it can turn every field into a picture, giving 50 or 60. Both are correct, and the choice is about taste:</p>
+    <ul>
+      <li><strong>Field rate (50 or 60).</strong> Keeps every moment the camera saw. Motion looks smooth and &ldquo;live&rdquo;, like the TV did. Best for sports, dancing and anything fast. Bigger files.</li>
+      <li><strong>Frame rate (25 or 30).</strong> Half the size, and a calmer, more film-like look. Fine for most family footage, and easier to drop into an edit with other clips.</li>
+    </ul>
+
+    <h2>4. Deinterlace first, before anything else</h2>
+    <p>Do it at the start, on the original capture. Denoising, sharpening and upscaling all see the stripes as fine detail. A denoiser smears them into a ghostly double edge, a sharpener makes them crisper, and an upscaler bakes them into the bigger picture where no deinterlacer can find them again. And deinterlace once: two passes blur twice.</p>
+
+    <h2>5. Save it as progressive video</h2>
+    <p>Encode the result normally. If more steps follow, use a high quality setting (<code>-crf 12</code> or lower in ffmpeg) so the next tool isn't working from a freshly compressed copy.</p>
+
+    <h2>Which deinterlacer to use</h2>
+    <ul>
+      <li><strong>yadif.</strong> Built into ffmpeg, fast, and good. The safe default for years.</li>
+      <li><strong>bwdif.</strong> Also built into ffmpeg and just as easy. Slightly cleaner edges than yadif on most footage.</li>
+      <li><strong>QTGMC.</strong> A script for VapourSynth or AviSynth, used by archivists and tape transfer services. Clearly the best on shimmer and fine detail, and much slower, with a real setup cost.</li>
+      <li><strong>Your video player's deinterlacer.</strong> VLC and most players can deinterlace while playing. That fixes how it looks on your screen but changes nothing in the file.</li>
+      <li><strong>Simple &ldquo;blend&rdquo; or &ldquo;discard&rdquo; modes.</strong> Blending leaves ghosts on motion, discarding throws away half the lines. Avoid both if you have the choice.</li>
+    </ul>
+
+    <h2>Doing it yourself with ffmpeg</h2>
+    <p>The free command-line tool <a href="https://ffmpeg.org/" rel="noopener">ffmpeg</a> does all of this. Keep the original frame rate:</p>
+<div class="code"><div class="code-label"><span>Deinterlace, same frame rate</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -i capture.mp4 -vf "bwdif=mode=send_frame:parity=auto:deint=all" \
+  -c:v libx264 -crf 14 -preset slow -c:a copy deinterlaced.mp4</code></pre></div>
+    <p>Double it to field rate (50 or 60) for the smoothest motion:</p>
+<div class="code"><div class="code-label"><span>Deinterlace to field rate</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -i capture.mp4 -vf "bwdif=mode=send_field:parity=auto:deint=all" \
+  -c:v libx264 -crf 14 -preset slow -c:a copy deinterlaced_50p.mp4</code></pre></div>
+    <p>For a film or TV series on an NTSC DVD, undo the pulldown instead. Frames that can't be matched still get deinterlaced:</p>
+<div class="code"><div class="code-label"><span>Inverse telecine</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -i film_dvd.mkv -vf "fieldmatch,bwdif=deint=interlaced,decimate" \
+  -c:v libx264 -crf 14 -preset slow -c:a copy film_24p.mp4</code></pre></div>
+    <ul>
+      <li><code>parity=auto</code> reads the field order from the file. If motion looks jerky and goes back and forth, the file has it wrong: try <code>parity=tff</code> or <code>parity=bff</code>.</li>
+      <li><code>deint=all</code> treats every frame as interlaced. Swap in <code>deint=interlaced</code> to touch only frames the file marks as interlaced, which is safer on mixed footage.</li>
+      <li>yadif takes the same options: replace <code>bwdif</code> with <code>yadif</code>.</li>
+    </ul>
+
+    <h2>Doing it with Phoenix</h2>
+    <p><a href="/upscaler">Phoenix Upscaler</a> handles this step for you. It checks each clip, deinterlaces only when the clip is interlaced, and keeps the original frame rate. In Generative mode it also measures the combing with idet, so a capture that's wrongly labelled progressive still gets fixed and a real progressive file is left alone. Then it denoises and restores detail, in that order. It doesn't undo 3:2 pulldown, so run the inverse telecine command above on a film-sourced NTSC disc first. Phoenix runs on your own Windows or Linux PC, NVIDIA or AMD, for $129 once, and the free download restores 60-second clips with a small watermark.</p>
+
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Why does my old video have lines on it?</summary>
+        <p>Most tape and DVD video is interlaced: each frame is two half-pictures taken a fiftieth or sixtieth of a second apart, one on the odd lines and one on the even lines. A TV showed them one after the other. A computer screen shows both at once, so anything that moved between them gets a striped edge.</p>
+      </details>
+      <details>
+        <summary>What is the best deinterlacer?</summary>
+        <p>QTGMC, a VapourSynth and AviSynth script, gives the cleanest result but takes real setup. In plain ffmpeg, bwdif is a little cleaner than the older yadif and just as easy. For most home tapes the difference between those two is small next to everything else that's wrong with the picture.</p>
+      </details>
+      <details>
+        <summary>Should I deinterlace to 25 or 50 frames per second?</summary>
+        <p>50 (or 60 for NTSC) keeps every moment the camera recorded, so motion looks smooth and live, the way it did on a TV. 25 or 30 halves the file size and looks more like film. Both are correct. Pick 50 or 60 for sports and fast action, and keep the original rate if the file is going into a slideshow or an edit.</p>
+      </details>
+      <details>
+        <summary>Can deinterlacing hurt a video?</summary>
+        <p>Yes, if the video wasn't interlaced. Running a deinterlacer on progressive video, like most phone clips and internet downloads, blends lines that were already fine and softens the picture. Check first, or use a mode that only touches frames marked as interlaced.</p>
+      </details>
+      <details>
+        <summary>Does Phoenix Upscaler deinterlace automatically?</summary>
+        <p>Yes. It deinterlaces only clips that are interlaced and keeps the original frame rate. Phoenix doesn't undo 3:2 pulldown, so run inverse telecine on a film-sourced NTSC DVD first.</p>
+      </details>
+    </div>
+
+    <p class="muted">Related: <a href="/vhs-restoration-software">Restoring VHS tapes at home</a> &middot; <a href="/upscale-dvd-to-hd">Upscaling a DVD to HD</a> &middot; <a href="/restore-old-video">How to restore old video</a> &middot; <a href="/upscale-low-resolution-video">Upscaling 240p and 360p video</a> &middot; <a href="/linux-video-upscaler">AI video upscaling on Linux</a> &middot; <a href="/upscaler-guide">Phoenix Upscaler guide</a></p>
+    <div class="content-cta"><h2>Try it on your own tape</h2><p>The free download restores 60-second clips with a small watermark. Pick a stretch with plenty of movement and judge the result yourself.</p><a class="btn btn-primary" href="/upscaler#download">Download Phoenix</a></div>
+  </main>
+  <footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><p class="foot-h">Restore</p><a href="/upscaler">Phoenix Upscaler</a><a href="/studio">Cloud Restore</a><a href="/upscaler-guide">Upscaler guide</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="/motion">Phoenix Motion</a><a href="/motion-app">Make a clip</a><a href="/motion-desktop">Motion desktop</a><a href="/editor">Phoenix Editor</a><a href="/editor-guide">Editor guide</a><a href="/local-ai">Phoenix Local AI</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/upscale-low-resolution-video">Upscaling 240p video</a><a href="/ai-video-upscaling-amd-gpu">AI upscaling on AMD</a><a href="/deinterlace-video">Deinterlacing video</a><a href="/upscale-dvd-to-hd">Upscaling DVDs</a><a href="/linux-video-upscaler">Upscaling on Linux</a><a href="/animate-old-photos">Animating old photos</a><a href="/wan-2-2-8gb-gpu">Wan 2.2 on 8 GB</a></div>
+    <div class="foot-col"><p class="foot-h">Company</p><a href="/about">About</a><a href="/developers">API &amp; AI agents</a><a href="/affiliates">Affiliates</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/refund">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
+</footer>
+<script src="site.js?v=a8b919db"></script>
+<!--/email_off--></body>
+</html>

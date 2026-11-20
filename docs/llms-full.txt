@@ -18,7 +18,7 @@ Restore footage the years have been hard on. Turn a still into a moving clip wit
 
 [See the tools](https://phoenixlabs.space/#products) [Make a clip, from $0.59](https://phoenixlabs.space/motion-app)
 
- [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**![](https://phoenixlabs.space/assets/brand/products/motion-mark-64.png)Phoenix Motion**Any image into a 5-second clip, with sound.From $0.59 a clip](https://phoenixlabs.space/motion) [**![](https://phoenixlabs.space/assets/brand/products/editor-mark-64.png)Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor) [**![](https://phoenixlabs.space/assets/brand/products/local-ai-mark-64.png)Phoenix Local AI**A private AI chat that runs on your phone.$9.99 once](https://phoenixlabs.space/local-ai)
+ [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Phoenix Upscaler**Restore and upscale old video on your own GPU.$129 once](https://phoenixlabs.space/upscaler) [**![](https://phoenixlabs.space/assets/brand/products/upscaler-mark-64.png)Cloud Restore**The same restoration, no gaming PC needed.From $2.99 a clip](https://phoenixlabs.space/studio) [**![](https://phoenixlabs.space/assets/brand/products/motion-mark-64.png)Phoenix Motion**Any image into a 5-second clip, in the browser or on your PC.From $0.59 a clip, or $49 desktop](https://phoenixlabs.space/motion) [**![](https://phoenixlabs.space/assets/brand/products/editor-mark-64.png)Phoenix Editor**Streams cut down, Shorts made for you.$99, a year of updates](https://phoenixlabs.space/editor) [**![](https://phoenixlabs.space/assets/brand/products/local-ai-mark-64.png)Phoenix Local AI**A private AI chat that runs on your phone.$9.99 once](https://phoenixlabs.space/local-ai)
 
 The tools
 
@@ -40,7 +40,7 @@ $129 once, every update included[Explore](https://phoenixlabs.space/upscaler)
 
 ### Cloud Restore
 
-In your browser
+Browser or desktop
 
 The same restoration, run on our datacenter GPUs. Works from a Mac, a laptop or a phone. Upload a clip, see the exact price, pay for that one job, download the result. A job that fails is refunded.
 
@@ -48,9 +48,9 @@ From $2.99 a clip[Explore](https://phoenixlabs.space/studio)
 
 ### Phoenix Motion
 
-In your browser
+Browser or desktop
 
-Drop in an image, say what should happen, and get five seconds of video back with sound made in the same pass. Logos, concept art, product shots, portraits. Or make a seamless loop where only the part you name moves.
+Drop in an image, say what should happen, and get five seconds of video back with sound made in the same pass. Logos, concept art, product shots, portraits. Or make a seamless loop where only the part you name moves. Making a lot of clips? [Motion desktop](https://phoenixlabs.space/motion-desktop) runs on your own 8 GB graphics card, unlimited, $49 for two years.
 
 From $0.59 a clip[Explore](https://phoenixlabs.space/motion)
 
@@ -531,9 +531,9 @@ Phoenix Motion · image to video
 
 Phoenix Motion turns a still image into a five-second video, sound included. Drop in a picture and say what should happen. Logos, concept art, product shots, portraits, paintings, screenshots. If it's a still, it can move.
 
-[Make a clip](https://phoenixlabs.space/motion-app) [See what it makes](https://phoenixlabs.space/motion#examples)
+[Make a clip](https://phoenixlabs.space/motion-app) [Run it on your own PC](https://phoenixlabs.space/motion-desktop)
 
-From $0.59 a clip, paid from a balance. No subscription, no watermark.
+In your browser from $0.59 a clip, paid from a balance. No subscription, no watermark. Or [Motion desktop](https://phoenixlabs.space/motion-desktop): unlimited clips on an 8 GB NVIDIA or AMD card, $49 for two years, free trial.
 
 Our own logo, one prompt, first take. Unmute it: the fire is part of the clip.
 
@@ -1192,7 +1192,7 @@ Lightly, if at all. Current restoration models are trained on noisy footage and 
 
 Yes. Phoenix Upscaler does all its work on your own computer, and once activated it doesn't need an internet connection.
 
-Related: [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Deinterlacing video](https://phoenixlabs.space/deinterlace-video) · [Upscaling a DVD to HD](https://phoenixlabs.space/upscale-dvd-to-hd) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own footage
 
@@ -1285,7 +1285,7 @@ It depends on your graphics card and the mode. Time a 30-second test and multipl
 
 No. Phoenix Upscaler works entirely on your own computer and doesn't need an internet connection once it's activated. Cloud Restore is there if you'd rather not use your own PC.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Deinterlacing video](https://phoenixlabs.space/deinterlace-video) · [Upscaling a DVD to HD](https://phoenixlabs.space/upscale-dvd-to-hd) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own tape
 
@@ -1376,7 +1376,7 @@ Phoenix Upscaler's free download restores 60-second clips with a small watermark
 
 No. It gets you a clean, stable picture of what the old phone recorded, at a size that suits a modern screen. Anything promising to turn a 2010 clip into new-phone footage is inventing the difference.
 
-Related: [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Deinterlacing video](https://phoenixlabs.space/deinterlace-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on one of your clips
 
@@ -1453,7 +1453,7 @@ Not yet. On a Mac, use Cloud Restore: upload a clip, see the price in dollars, p
 
 On old, low-resolution footage, judge it on your own clip. The free download is there so you can compare the two side by side before paying anything. Phoenix aims for a clean, faithful picture rather than invented detail.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [AI video upscaling on Linux](https://phoenixlabs.space/linux-video-upscaler) · [Upscaling a DVD to HD](https://phoenixlabs.space/upscale-dvd-to-hd) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Compare on your own clip
 
@@ -1710,7 +1710,7 @@ Neural video restoration using paired frames, so motion stays consistent instead
 With Generative, the main screen asks one question, how much detail:
 
 - **Balanced** is the recommended choice. Clean, natural detail on any footage.
-- **Best** adds a little more detail on fast-moving footage and takes about 20% longer. On a still close-up it is no better than Balanced.
+- **Best** adds a little more detail on fast-moving footage and takes about 20% longer. On a PC with a 16 GB AMD card and 24 GB of memory or more, Best works at a bigger size instead: more detail, and one and a half to three times as long as Balanced. On a still close-up it is no better than Balanced.
 
 Phoenix will never quietly give you a lesser result than the one you chose. If Generative is not set up, it says so and tells you what to do. If your PC has no graphics card Phoenix can use, it tells you that too, and points you to the cloud studio instead of producing a restore that isn't worth keeping.
 
@@ -1719,6 +1719,8 @@ Phoenix will never quietly give you a lesser result than the one you chose. If G
 Generative is the only engine with an extra step, because it needs a several-gigabyte model and a GPU compute stack built for your specific graphics card.
 
 Click **Install Generative** in the app and leave it. It downloads the model and sets up everything it needs. That is about 15 GB, so it takes 30 to 90 minutes depending on your connection, and it needs roughly 25 GB free. This happens once. When it finishes, the Balanced and Best choices appear and you can start.
+
+On a PC with a 16 GB AMD card and 24 GB of memory or more, it then downloads a newer AI model too, another 7 GB that needs about 8 GB more free space. Generative works while that runs. If you set up Generative before version 0.11, choose Generative and click **Get the newer AI model (7 GB)**.
 
 - **Windows with an AMD card:** it installs into Windows Subsystem for Linux, which Windows may ask to enable and which may want a restart, plus AMD’s ROCm for WSL. AMD supports that on the Radeon RX 7800 XT, RX 7900 and RX 9000 series, Radeon PRO W7000 and Ryzen AI Max. Keep the AMD graphics driver up to date.
 - **Linux:** AMD (Radeon RX 6000 series or newer) or NVIDIA, with 8 GB or more. Nothing needs root. If your user account can't use the graphics card for compute yet, the app shows the one command to fix that, then you click Install Generative again.
@@ -2344,7 +2346,7 @@ Drop in a scan, describe one small movement, and see the first take in about a m
 [Make a clip](https://phoenixlabs.space/motion-app)
 
 ---
-title: "Running Wan 2.2 image-to-video on an 8 GB GPU, AMD included | Phoenix Labs"
+title: "Wan 2.2 image-to-video on an 8 GB GPU, AMD too | Phoenix Labs"
 description: "How we fit Wan 2.2's 14B image-to-video model into 4.2 GB of VRAM on 8 GB cards, Radeons on native Windows ROCm included: int4 weights streamed per block."
 url: https://phoenixlabs.space/wan-2-2-8gb-gpu
 ---
@@ -2422,7 +2424,7 @@ Phoenix Motion desktop sets all of this up on first run, NVIDIA or AMD. The free
 [See Motion desktop](https://phoenixlabs.space/motion-desktop)
 
 ---
-title: "How to upscale 240p and 360p video without the blocks | Phoenix Upscaler"
+title: "Upscale 240p and 360p video without blocks | Phoenix Upscaler"
 description: "Upscaling a 240p or 360p clip often makes it look worse: the compression blocks get bigger. Here's why, and how to clean them up before you upscale."
 url: https://phoenixlabs.space/upscale-low-resolution-video
 ---
@@ -2534,7 +2536,7 @@ No. Deinterlacing fixes the striped, combed edges on moving things in tape and D
 
 Yes. The free command-line tool ffmpeg has the deblocking filters described on this page, and the commands are above. Phoenix Upscaler's free download also restores 60-second clips, with a small watermark, so you can compare.
 
-Related: [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Deinterlacing video](https://phoenixlabs.space/deinterlace-video) · [Upscaling a DVD to HD](https://phoenixlabs.space/upscale-dvd-to-hd) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own clip
 
@@ -2619,10 +2621,382 @@ On an RX 7800 XT, Phoenix's Generative mode takes about a minute of processing f
 
 Yes. Video2X uses Vulkan builds of Real-ESRGAN and similar models, which run on Radeon cards. It's free for any length if you're comfortable setting it up. Phoenix's free download restores 60-second clips with a small watermark.
 
-Related: [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Wan 2.2 on an 8 GB GPU](https://phoenixlabs.space/wan-2-2-8gb-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video)
+Related: [AI video upscaling on Linux](https://phoenixlabs.space/linux-video-upscaler) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Wan 2.2 on an 8 GB GPU](https://phoenixlabs.space/wan-2-2-8gb-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video)
 
 ## See what your Radeon can do
 
 The free download restores 60-second clips with a small watermark. Generative mode comes with the licence.
+
+[Download Phoenix](https://phoenixlabs.space/upscaler#download)
+
+---
+title: "How to deinterlace video (and fix the lines) | Phoenix Upscaler"
+description: "Horizontal lines on anything that moves in old tape or DVD footage are interlacing. How to tell, which deinterlacer to use, and the free ffmpeg commands."
+url: https://phoenixlabs.space/deinterlace-video
+---
+
+Deinterlacing
+
+# How to deinterlace video and get rid of the lines
+
+You play an old tape capture or a DVD on your computer and everything that moves has fine horizontal stripes along its edges, like a comb. Nothing is broken. The video is interlaced, a trick from the days of tube TVs, and your screen is showing it the wrong way. A deinterlacer fixes it, and it's the first thing any restoration should do.
+
+Updated 20 November 2026
+
+## What interlacing is
+
+Old video systems couldn't send a full picture fast enough, so they sent half of one at a time. First the odd lines (one field), then the even lines (the next field), fifty times a second in PAL countries and about sixty in NTSC ones. A tube TV drew each field as it arrived and your eye blended them.
+
+A file stores the two fields woven together as one frame. But they were recorded a fiftieth or sixtieth of a second apart, so anything that moved sits in two places at once: one position on the odd lines, another on the even ones. A computer or modern TV shows the whole frame at once, and you see the stripes.
+
+Almost all standard-definition tape is interlaced: VHS, S-VHS, Hi8, Video8, MiniDV and Digital8. So are most DVDs made from video, and most broadcast TV recordings. Phone video and internet downloads usually aren't.
+
+## 1. Check that it's really interlaced
+
+Pause on a frame where something moves sideways, like a hand, a car or a camera pan, and zoom in. Combing on the moving edges means interlaced. A still scene shows nothing either way, so pick a busy one.
+
+To check the file itself, `ffprobe` (part of ffmpeg) prints the field order the file claims:
+
+Read the field order
+
+```
+ffprobe -v error -select_streams v:0 -show_entries stream=height,field_order capture.mp4
+```
+
+`tt` or `bb` means interlaced, `progressive` means not. Files lie sometimes, especially after a re-encode, so for a second opinion let ffmpeg measure the combing itself:
+
+Measure combing
+
+```
+ffmpeg -i capture.mp4 -frames:v 500 -vf idet -an -f null -
+```
+
+The last “Multi frame detection” line counts TFF, BFF and progressive frames. Mostly TFF or BFF means interlaced.
+
+## 2. Rule out film on an NTSC DVD
+
+Movies and many TV series were shot on film at 24 frames a second. To get them onto 30-frame NTSC video, the frames were spread over fields in a repeating 3:2 pattern called pulldown. It combs like interlaced video, but deinterlacing it is wrong: you get blur and a small stutter every fifth frame.
+
+What it needs is inverse telecine, which puts the original 24 film frames back together. In ffmpeg that's `fieldmatch,decimate` (see below). PAL DVDs of films don't have this problem: film was simply sped up from 24 to 25 frames.
+
+Home video from a camcorder is real interlaced video, so this step only matters for discs of films and TV.
+
+## 3. Pick a frame rate
+
+A deinterlacer can turn every frame into one picture, keeping the 25 or 30 frames a second you started with. Or it can turn every field into a picture, giving 50 or 60. Both are correct, and the choice is about taste:
+
+- **Field rate (50 or 60).** Keeps every moment the camera saw. Motion looks smooth and “live”, like the TV did. Best for sports, dancing and anything fast. Bigger files.
+- **Frame rate (25 or 30).** Half the size, and a calmer, more film-like look. Fine for most family footage, and easier to drop into an edit with other clips.
+
+## 4. Deinterlace first, before anything else
+
+Do it at the start, on the original capture. Denoising, sharpening and upscaling all see the stripes as fine detail. A denoiser smears them into a ghostly double edge, a sharpener makes them crisper, and an upscaler bakes them into the bigger picture where no deinterlacer can find them again. And deinterlace once: two passes blur twice.
+
+## 5. Save it as progressive video
+
+Encode the result normally. If more steps follow, use a high quality setting (`-crf 12` or lower in ffmpeg) so the next tool isn't working from a freshly compressed copy.
+
+## Which deinterlacer to use
+
+- **yadif.** Built into ffmpeg, fast, and good. The safe default for years.
+- **bwdif.** Also built into ffmpeg and just as easy. Slightly cleaner edges than yadif on most footage.
+- **QTGMC.** A script for VapourSynth or AviSynth, used by archivists and tape transfer services. Clearly the best on shimmer and fine detail, and much slower, with a real setup cost.
+- **Your video player's deinterlacer.** VLC and most players can deinterlace while playing. That fixes how it looks on your screen but changes nothing in the file.
+- **Simple “blend” or “discard” modes.** Blending leaves ghosts on motion, discarding throws away half the lines. Avoid both if you have the choice.
+
+## Doing it yourself with ffmpeg
+
+The free command-line tool [ffmpeg](https://ffmpeg.org/) does all of this. Keep the original frame rate:
+
+Deinterlace, same frame rate
+
+```
+ffmpeg -i capture.mp4 -vf "bwdif=mode=send_frame:parity=auto:deint=all" \
+  -c:v libx264 -crf 14 -preset slow -c:a copy deinterlaced.mp4
+```
+
+Double it to field rate (50 or 60) for the smoothest motion:
+
+Deinterlace to field rate
+
+```
+ffmpeg -i capture.mp4 -vf "bwdif=mode=send_field:parity=auto:deint=all" \
+  -c:v libx264 -crf 14 -preset slow -c:a copy deinterlaced_50p.mp4
+```
+
+For a film or TV series on an NTSC DVD, undo the pulldown instead. Frames that can't be matched still get deinterlaced:
+
+Inverse telecine
+
+```
+ffmpeg -i film_dvd.mkv -vf "fieldmatch,bwdif=deint=interlaced,decimate" \
+  -c:v libx264 -crf 14 -preset slow -c:a copy film_24p.mp4
+```
+
+- `parity=auto` reads the field order from the file. If motion looks jerky and goes back and forth, the file has it wrong: try `parity=tff` or `parity=bff`.
+- `deint=all` treats every frame as interlaced. Swap in `deint=interlaced` to touch only frames the file marks as interlaced, which is safer on mixed footage.
+- yadif takes the same options: replace `bwdif` with `yadif`.
+
+## Doing it with Phoenix
+
+[Phoenix Upscaler](https://phoenixlabs.space/upscaler) handles this step for you. It checks each clip, deinterlaces only when the clip is interlaced, and keeps the original frame rate. In Generative mode it also measures the combing with idet, so a capture that's wrongly labelled progressive still gets fixed and a real progressive file is left alone. Then it denoises and restores detail, in that order. It doesn't undo 3:2 pulldown, so run the inverse telecine command above on a film-sourced NTSC disc first. Phoenix runs on your own Windows or Linux PC, NVIDIA or AMD, for $129 once, and the free download restores 60-second clips with a small watermark.
+
+## Questions
+
+### Why does my old video have lines on it?
+
+Most tape and DVD video is interlaced: each frame is two half-pictures taken a fiftieth or sixtieth of a second apart, one on the odd lines and one on the even lines. A TV showed them one after the other. A computer screen shows both at once, so anything that moved between them gets a striped edge.
+
+### What is the best deinterlacer?
+
+QTGMC, a VapourSynth and AviSynth script, gives the cleanest result but takes real setup. In plain ffmpeg, bwdif is a little cleaner than the older yadif and just as easy. For most home tapes the difference between those two is small next to everything else that's wrong with the picture.
+
+### Should I deinterlace to 25 or 50 frames per second?
+
+50 (or 60 for NTSC) keeps every moment the camera recorded, so motion looks smooth and live, the way it did on a TV. 25 or 30 halves the file size and looks more like film. Both are correct. Pick 50 or 60 for sports and fast action, and keep the original rate if the file is going into a slideshow or an edit.
+
+### Can deinterlacing hurt a video?
+
+Yes, if the video wasn't interlaced. Running a deinterlacer on progressive video, like most phone clips and internet downloads, blends lines that were already fine and softens the picture. Check first, or use a mode that only touches frames marked as interlaced.
+
+### Does Phoenix Upscaler deinterlace automatically?
+
+Yes. It deinterlaces only clips that are interlaced and keeps the original frame rate. Phoenix doesn't undo 3:2 pulldown, so run inverse telecine on a film-sourced NTSC DVD first.
+
+Related: [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [Upscaling a DVD to HD](https://phoenixlabs.space/upscale-dvd-to-hd) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [AI video upscaling on Linux](https://phoenixlabs.space/linux-video-upscaler) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+
+## Try it on your own tape
+
+The free download restores 60-second clips with a small watermark. Pick a stretch with plenty of movement and judge the result yourself.
+
+[Download Phoenix](https://phoenixlabs.space/upscaler#download)
+
+---
+title: "How to upscale a DVD to HD (1080p) | Phoenix Upscaler"
+description: "Home DVDs look soft and blocky on a big TV. How to copy the video off the disc, fix its shape and interlacing, and upscale it to 1080p without new damage."
+url: https://phoenixlabs.space/upscale-dvd-to-hd
+---
+
+DVD
+
+# How to upscale a DVD to HD
+
+A wedding DVD, a tape transfer from the 2000s, a camcorder that burned straight to disc: on a modern TV they all look soft, smeared and a little blocky. A DVD is a better source than the tape it often came from, so it scales up well, but only if you copy it off the disc cleanly and fix two quirks first.
+
+Updated 20 November 2026
+
+## What's on a DVD
+
+Every DVD stores the picture at 720×480 (NTSC: North America and Japan) or 720×576 (PAL: most of Europe, Asia and Australia), compressed with MPEG-2. That's about a sixth of the pixels in a 1080p frame. Two other things matter before you upscale:
+
+- **The pixels aren't square.** The same 720-wide frame is shown at 4:3 or stretched to 16:9 widescreen, depending on a flag in the file.
+- **Most home DVDs are interlaced.** Anything from a camcorder or a tape was recorded as interlaced video, and the disc keeps it that way.
+
+## 1. Copy the video off the disc, untouched
+
+You want the MPEG-2 video exactly as it is on the disc. Anything that “converts” it to MP4 at the same time compresses it a second time, and the upscaler will sharpen those new blocks too.
+
+- **MakeMKV** (free while in beta, Windows, Mac and Linux) copies each title on the disc into one MKV file with no re-encode. The easiest route.
+- **The files themselves.** Open the disc's `VIDEO_TS` folder. The video sits in `VTS_01_1.VOB`, `VTS_01_2.VOB` and so on, split into 1 GB pieces. ffmpeg can join them without re-encoding (below).
+
+## 2. Fix the shape
+
+This is the step most people miss. A 720×480 frame is 3:2, but a 4:3 disc is meant to be shown narrower and a widescreen disc wider. DVD players read that from the file. Many editors and upscalers don't, and keep the 720×480 shape, so everyone looks slightly too wide (4:3) or too thin (16:9).
+
+Resizing to square pixels before upscaling settles it for every tool that comes after: 640×480 or 768×576 for a 4:3 disc, 854×480 or 1024×576 for widescreen. The ffmpeg command below works out the right width from the file.
+
+## 3. Deinterlace, or undo pulldown
+
+Pause on something moving. Fine horizontal stripes on its edges mean the disc is interlaced. Home video needs a deinterlacer, and it has to run before anything else touches the picture.
+
+Discs of films and TV series from NTSC countries are different. They usually carry 24-frame film spread over 30-frame video in a 3:2 pattern, which needs inverse telecine, not deinterlacing. The [deinterlacing guide](https://phoenixlabs.space/deinterlace-video) explains both and has the commands.
+
+## 4. Upscale once, to 1080p
+
+Going from 480 or 576 lines to 1080 is a bit more than twice in each direction, which is well within what a good upscaler handles. Do it in one pass. Upscaling in steps, or restoring and then upscaling again, stacks each step's artifacts.
+
+A proper video upscaler also handles the MPEG-2 damage: blocks in dark scenes and fast motion, and fizzy “mosquito” noise around edges. A plain resize, like the one your TV does, makes those bigger along with everything else.
+
+## 5. Keep the original copy
+
+Hold on to the untouched MKV or VOB files from step 1. Discs don't last forever, and restoration tools keep getting better. With the original copy you can always redo it later.
+
+## Doing it yourself with ffmpeg
+
+The free command-line tool [ffmpeg](https://ffmpeg.org/) handles the copying and the clean-up. To join a title's VOB files without re-encoding:
+
+Join the VOB files
+
+```
+ffmpeg -fflags +genpts -i "concat:VTS_01_1.VOB|VTS_01_2.VOB|VTS_01_3.VOB" \
+  -map 0:v -map 0:a -c copy dvd.mkv
+```
+
+Then fix the shape and deinterlace in one pass, keeping it close to lossless for the upscaler:
+
+Square pixels and deinterlace
+
+```
+ffmpeg -i dvd.mkv \
+  -vf "bwdif=mode=send_frame:parity=auto:deint=interlaced,scale=trunc(iw*sar/2)*2:ih:flags=lanczos,setsar=1" \
+  -c:v libx264 -crf 12 -preset slow -c:a copy dvd_clean.mp4
+```
+
+- `bwdif` deinterlaces, and `deint=interlaced` touches only frames the disc marks as interlaced.
+- `scale=trunc(iw*sar/2)*2:ih` widens or narrows the frame by the pixel shape the file declares, and `setsar=1` marks the result as square.
+- `-crf 12` keeps it nearly lossless, so the upscaler sees the disc's picture and not a new layer of compression.
+- On a film or TV series from an NTSC disc, swap `bwdif=...` for `fieldmatch,bwdif=deint=interlaced,decimate`.
+
+Feed `dvd_clean.mp4` to whichever upscaler you use.
+
+## What to expect
+
+Done this way, a home DVD at 1080p looks like a clean, steady, slightly soft HD picture: faces have skin instead of smear, and dark scenes stop crawling with blocks. It won't look like it was shot on a modern camera. If the DVD was made from a VHS tape, the tape's softness is baked in and the result will look like a very good tape transfer.
+
+## Doing it with Phoenix
+
+[Phoenix Upscaler](https://phoenixlabs.space/upscaler) takes the cleaned file from the steps above and does the rest. It checks for interlacing and only deinterlaces when it's there, and its restoration models are trained to repair compression damage rather than sharpen it. Generative mode rebuilds texture in faces and fabric, then finishes at up to 1080p. It runs on your own Windows or Linux PC, NVIDIA or AMD, for $129 once. It also reads the pixel shape the DVD declares and restores the picture at its proper 4:3 or 16:9 shape, so you can skip step 2. The free download restores 60-second clips with a small watermark, so try a chapter of yours before you buy.
+
+## Questions
+
+### Can you convert a DVD to HD?
+
+You can turn it into a 1080p file that looks cleaner and sharper than the disc on a big screen. It won't match something filmed in HD: a DVD frame is 720 by 480 or 576 pixels, and an upscaler can only clean up and rebuild so much of the rest.
+
+### Is it worth upscaling a DVD to 4K?
+
+Rarely. 1080p already stretches a DVD more than twice in each direction. 4K quadruples the file size again without adding anything the disc had. Your 4K TV will scale a good 1080p file up just fine.
+
+### Why does my upscaled DVD look stretched?
+
+Because DVD pixels aren't square. A 720 by 480 frame is meant to be shown at 4:3 or 16:9, and a player knows that from a flag in the file. Many tools ignore the flag and keep the 720 by 480 shape. Resize to square pixels before upscaling, as shown on this page.
+
+### Does a DVD player or TV upscale DVDs already?
+
+Yes, an upscaling player or a modern TV resizes the picture as it plays. It's a quick resize, though, not a restoration: it doesn't remove compression blocks, and the result disappears when you stop playing. An upscaled file is something you can keep, share and edit.
+
+### Can I copy a store-bought movie DVD?
+
+That depends on where you live, because most commercial movie discs are copy-protected and many countries forbid getting around it. Home DVDs, like camcorder discs and tape transfers you paid for, have no protection, and they're what this guide is for.
+
+Related: [Deinterlacing video](https://phoenixlabs.space/deinterlace-video) · [Restoring VHS tapes at home](https://phoenixlabs.space/vhs-restoration-software) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+
+## Try it on one chapter
+
+The free download restores 60-second clips with a small watermark. Pick a scene with faces in it and judge the result yourself.
+
+[Download Phoenix](https://phoenixlabs.space/upscaler#download)
+
+---
+title: "AI video upscaler for Linux: your options | Phoenix Upscaler"
+description: "Topaz Video AI has no Linux version. The AI video upscalers that do run on Linux, free and paid, what each needs, and how they compare on old footage."
+url: https://phoenixlabs.space/linux-video-upscaler
+---
+
+Linux
+
+# AI video upscaling on Linux: what actually runs
+
+Search for a video upscaler and most of what comes up, Topaz Video AI included, is Windows and Mac only. Linux has real options, though. Some are free and some take an evening of setup. Here's what each one is good at, what hardware it wants, and which to pick for old home video in particular.
+
+Updated 20 November 2026
+
+## The short version
+
+- **Clean footage, cartoons, any GPU, free:** Video2X.
+- **You like building pipelines:** VapourSynth, or chaiNNer for a visual editor.
+- **Old tapes, DVDs and phone clips, one app:** Phoenix Upscaler, with an AMD or NVIDIA card with 8 GB or more.
+- **No suitable graphics card:** a cloud service, since CPU-only AI upscaling takes hours per minute.
+
+## Video2X
+
+[Video2X](https://github.com/k4yt3x/video2x) is a free, open-source upscaler that runs well-known models like Real-ESRGAN, Real-CUGAN and RIFE (for frame interpolation) through Vulkan. Vulkan means it works on nearly any recent graphics card: AMD, NVIDIA or Intel, with the normal drivers. It's packaged for several distributions and as an AppImage.
+
+It works one frame at a time, with models trained mostly on still images and anime. On clean footage and animation that's excellent. On old video it sharpens whatever is there, including tape noise, interlacing stripes and compression blocks, and frames can shimmer slightly from one to the next. Clean the clip first (see below) and it does much better.
+
+## VapourSynth and chaiNNer
+
+**VapourSynth** is the scriptable video toolkit archivists use. With plugins like QTGMC for deinterlacing and vs-mlrt for running AI models on the GPU, it can do everything a commercial restorer does, and you control every step. It's also the most work: Python scripts, plugin builds and tuning per clip.
+
+**chaiNNer** is a free node editor for image models, with a Linux build. You wire up a chain of models visually, which makes it great for trying things. It's image-first, so for long videos you'll be splitting into frames and joining them back up.
+
+## Phoenix Upscaler
+
+[Phoenix Upscaler](https://phoenixlabs.space/upscaler) ships as an AppImage. Its Linux version runs Generative mode: a video diffusion model that rebuilds texture in faces, fabric and hair instead of only sharpening edges, while a second, source-faithful pass keeps people looking like themselves. Before that it works out what each clip needs. It deinterlaces interlaced tape and DVD captures, and deblocks heavily compressed low-resolution clips before the detail model sees them. You pick a clip and a quality level, and it does the rest.
+
+- **Graphics card:** AMD Radeon RX 6000 series or newer, or NVIDIA, with 8 GB of video memory or more.
+- **Setup:** the first time, the app downloads its own Python environment, PyTorch (ROCm or CUDA) and the model, about 25 GB, in 30 to 90 minutes. Nothing needs root. If your account isn't allowed to use the GPU for compute yet, the app shows the one command that fixes it.
+- **Distribution:** built and tested on Ubuntu 24.04. Other current 64-bit distributions from 2024 on should work.
+- **Price:** $129 once, no subscription. The free download restores 60-second clips with a small watermark.
+
+It's honest to say what it isn't. The Linux version has no lighter mode for small cards (the Windows version does), so a card under 8 GB can't run it. And it's built for old footage. For clean HD or anime, Video2X is free and very good.
+
+## How they compare
+
+|  | Video2X | VapourSynth | Phoenix Upscaler |
+| --- | --- | --- | --- |
+| Price | Free | Free | $129 once |
+| Graphics card | Any Vulkan card | Depends on plugins | AMD RX 6000+ or NVIDIA, 8 GB+ |
+| Setup | Package or AppImage | Scripts and plugins | AppImage, one-click model setup |
+| Deinterlacing | No | Yes (QTGMC) | Automatic |
+| Model type | Per-frame image models | Your choice | Video diffusion plus a source-faithful base |
+| Best at | Anime, clean footage | Full control | Old tapes, DVDs, phone clips |
+
+## Cleaning old video first, with ffmpeg
+
+Whatever upscaler you use, old footage turns out better when its damage is cleaned up before the AI sees it. For an interlaced tape or DVD capture, deinterlace and denoise lightly:
+
+Deinterlace a tape capture
+
+```
+ffmpeg -i tape.mp4 -vf "bwdif=deint=interlaced,hqdn3d=2.0:1.5:3.0:2.5" \
+  -c:v libx264 -crf 12 -preset fast -c:a copy tape_clean.mp4
+```
+
+For a blocky clip 288 pixels tall or less, deblock instead:
+
+Deblock a low-res clip
+
+```
+ffmpeg -i lowres.mp4 \
+  -vf "spp=5,deblock=filter=strong:block=8,hqdn3d=3.2:2.4:5.5:4.0" \
+  -c:v libx264 -crf 12 -preset fast -c:a copy lowres_clean.mp4
+```
+
+The [deinterlacing guide](https://phoenixlabs.space/deinterlace-video) and the [low-resolution guide](https://phoenixlabs.space/upscale-low-resolution-video) explain each filter.
+
+## Getting the GPU working
+
+- **NVIDIA:** install the proprietary driver from your distribution. If `nvidia-smi` lists your card, CUDA apps that bring their own runtime (Phoenix does) will find it.
+- **AMD:** the kernel's amdgpu driver is enough for Vulkan tools. ROCm apps also need your user in the `render` and `video` groups: `sudo usermod -aG render,video $USER`, then log out and back in.
+- **Intel Arc:** works with Vulkan tools like Video2X. Most PyTorch-based upscalers, Phoenix included, don't support it on Linux yet.
+
+## Questions
+
+### Does Topaz Video AI run on Linux?
+
+No. Topaz Video AI is made for Windows and macOS only, and Topaz doesn't offer a Linux build. On Linux you need one of the tools on this page, or a cloud service.
+
+### What is the best free video upscaler for Linux?
+
+Video2X, which is open source and runs Real-ESRGAN and other models on almost any graphics card through Vulkan. It's a good fit for cartoons and clean footage. On old, noisy, interlaced tape it sharpens the damage along with the picture unless you clean the clip first.
+
+### Can I upscale video on Linux with an AMD graphics card?
+
+Yes. Vulkan-based tools like Video2X work on any recent AMD card. Diffusion models need ROCm, AMD's compute platform, which supports the Radeon RX 6000 series and newer. Phoenix Upscaler sets ROCm up for its Generative mode itself, without root.
+
+### Which Linux distributions does Phoenix Upscaler support?
+
+It ships as an AppImage, so there's nothing to install system-wide. It's built and tested on Ubuntu 24.04, and other current 64-bit distributions from 2024 on should work. The free version lets you check on your own machine before you buy.
+
+### Does upscaling work on Linux without a graphics card?
+
+Only slowly. Plain resizing in ffmpeg works on any CPU, and some AI tools have CPU modes, but a minute of video can take hours. Phoenix's Linux version needs an AMD or NVIDIA card with 8 GB or more. Without one, [Phoenix Cloud Restore](https://phoenixlabs.space/studio) runs the same restoration in a browser.
+
+Related: [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [Deinterlacing video](https://phoenixlabs.space/deinterlace-video) · [Upscaling a DVD to HD](https://phoenixlabs.space/upscale-dvd-to-hd) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+
+## Try it on your own machine
+
+Download the AppImage, run the free version on a 60-second clip, and see whether your card and distribution are happy before you spend anything.
 
 [Download Phoenix](https://phoenixlabs.space/upscaler#download)

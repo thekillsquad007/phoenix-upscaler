@@ -81,6 +81,9 @@ The full text of every page, in one file: https://phoenixlabs.space/llms-full.tx
 - [How to make old phone videos look better](https://phoenixlabs.space/old-phone-video): finding the best copy, restoring instead of sharpening, what size to export, and what can't be saved
 - [How to upscale 240p and 360p video without the blocks](https://phoenixlabs.space/upscale-low-resolution-video): why upscaling a tiny compressed clip enlarges the blocks, deblocking first, the ffmpeg commands, and what to expect
 - [AI video upscaling on an AMD Radeon GPU](https://phoenixlabs.space/ai-video-upscaling-amd-gpu): which Radeon cards run neural vs diffusion upscaling, why Windows uses WSL2 and ROCm, speed on an RX 7800 XT, and the fixes needed
+- [How to deinterlace video and get rid of the lines](https://phoenixlabs.space/deinterlace-video): what interlacing is, how to check for it, 3:2 pulldown on NTSC DVDs, field rate vs frame rate, which deinterlacer to use, and the ffmpeg commands
+- [How to upscale a DVD to HD](https://phoenixlabs.space/upscale-dvd-to-hd): copying a home DVD without re-encoding, fixing non-square pixels and interlacing, upscaling to 1080p, and the ffmpeg commands
+- [AI video upscaling on Linux: what actually runs](https://phoenixlabs.space/linux-video-upscaler): Video2X, VapourSynth, chaiNNer and Phoenix Upscaler on Linux compared, hardware needs, and getting AMD or NVIDIA working
 - [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative): Phoenix Upscaler and Topaz Video compared on price, licence, platforms and ownership (Adobe bought Topaz Labs in September 2026)
 
 ## Policies

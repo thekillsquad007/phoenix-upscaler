@@ -1,5 +1,5 @@
 ---
-title: "Running Wan 2.2 image-to-video on an 8 GB GPU, AMD included | Phoenix Labs"
+title: "Wan 2.2 image-to-video on an 8 GB GPU, AMD too | Phoenix Labs"
 description: "How we fit Wan 2.2's 14B image-to-video model into 4.2 GB of VRAM on 8 GB cards, Radeons on native Windows ROCm included: int4 weights streamed per block."
 url: https://phoenixlabs.space/wan-2-2-8gb-gpu
 ---

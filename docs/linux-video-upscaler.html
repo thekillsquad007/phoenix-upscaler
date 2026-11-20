@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI video upscaler for Linux: your options | Phoenix Upscaler</title>
+  <meta name="description" content="Topaz Video AI has no Linux version. The AI video upscalers that do run on Linux, free and paid, what each needs, and how they compare on old footage." />
+  <link rel="canonical" href="https://phoenixlabs.space/linux-video-upscaler" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta property="og:site_name" content="Phoenix Labs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="AI video upscaling on Linux: what actually runs" />
+  <meta property="og:description" content="Topaz Video AI has no Linux version. The AI video upscalers that do run on Linux, free and paid, what each needs, and how they compare on old footage." />
+  <meta property="og:url" content="https://phoenixlabs.space/linux-video-upscaler" />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/social/upscaler.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Phoenix Upscaler restoring old video" />
+  <meta property="article:modified_time" content="2026-11-20" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/brand/products/upscaler.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/products/upscaler-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/brand/products/upscaler-touch.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=f0bb2559" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "AI video upscaling on Linux: what actually runs",
+        "description": "Topaz Video AI has no Linux version. The AI video upscalers that do run on Linux, free and paid, what each needs, and how they compare on old footage.",
+        "image": "https://phoenixlabs.space/assets/social/upscaler.jpg",
+        "datePublished": "2026-11-20",
+        "dateModified": "2026-11-20",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "mainEntityOfPage": "https://phoenixlabs.space/linux-video-upscaler",
+        "about": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Phoenix Upscaler",
+            "url": "https://phoenixlabs.space/upscaler"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Phoenix Labs",
+            "item": "https://phoenixlabs.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phoenix Upscaler",
+            "item": "https://phoenixlabs.space/upscaler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AI video upscaling on Linux",
+            "item": "https://phoenixlabs.space/linux-video-upscaler"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Topaz Video AI run on Linux?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Topaz Video AI is made for Windows and macOS only, and Topaz doesn't offer a Linux build. On Linux you need one of the tools on this page, or a cloud service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best free video upscaler for Linux?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Video2X, which is open source and runs Real-ESRGAN and other models on almost any graphics card through Vulkan. It's a good fit for cartoons and clean footage. On old, noisy, interlaced tape it sharpens the damage along with the picture unless you clean the clip first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I upscale video on Linux with an AMD graphics card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Vulkan-based tools like Video2X work on any recent AMD card. Diffusion models need ROCm, AMD's compute platform, which supports the Radeon RX 6000 series and newer. Phoenix Upscaler sets ROCm up for its Generative mode itself, without root."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Linux distributions does Phoenix Upscaler support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It ships as an AppImage, so there's nothing to install system-wide. It's built and tested on Ubuntu 24.04, and other current 64-bit distributions from 2024 on should work. The free version lets you check on your own machine before you buy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does upscaling work on Linux without a graphics card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only slowly. Plain resizing in ffmpeg works on any CPU, and some AI tools have CPU modes, but a minute of video can take hours. Phoenix's Linux version needs an AMD or NVIDIA card with 8 GB or more. Without one, Phoenix Cloud Restore runs the same restoration in a browser."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body><!--email_off-->
+  <header class="nav">
+  <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="/upscaler">Upscaler</a>
+    <a href="/studio">Cloud Restore</a>
+    <a href="/motion">Motion</a>
+    <a href="/editor">Editor</a>
+    <a href="/local-ai">Local AI</a>
+  </nav>
+  <a class="btn btn-sm nav-cta" href="/upscaler#download">Download Phoenix</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+</header>
+  <main class="content-page">
+    <p class="badge">Linux</p>
+    <h1>AI video upscaling on Linux: what actually runs</h1>
+    <p class="lead">Search for a video upscaler and most of what comes up, Topaz Video AI included, is Windows and Mac only. Linux has real options, though. Some are free and some take an evening of setup. Here's what each one is good at, what hardware it wants, and which to pick for old home video in particular.</p>
+    <p class="muted page-date">Updated <time datetime="2026-11-20">20 November 2026</time></p>
+
+    <h2>The short version</h2>
+    <ul>
+      <li><strong>Clean footage, cartoons, any GPU, free:</strong> Video2X.</li>
+      <li><strong>You like building pipelines:</strong> VapourSynth, or chaiNNer for a visual editor.</li>
+      <li><strong>Old tapes, DVDs and phone clips, one app:</strong> Phoenix Upscaler, with an AMD or NVIDIA card with 8 GB or more.</li>
+      <li><strong>No suitable graphics card:</strong> a cloud service, since CPU-only AI upscaling takes hours per minute.</li>
+    </ul>
+
+    <h2>Video2X</h2>
+    <p><a href="https://github.com/k4yt3x/video2x" rel="noopener">Video2X</a> is a free, open-source upscaler that runs well-known models like Real-ESRGAN, Real-CUGAN and RIFE (for frame interpolation) through Vulkan. Vulkan means it works on nearly any recent graphics card: AMD, NVIDIA or Intel, with the normal drivers. It's packaged for several distributions and as an AppImage.</p>
+    <p>It works one frame at a time, with models trained mostly on still images and anime. On clean footage and animation that's excellent. On old video it sharpens whatever is there, including tape noise, interlacing stripes and compression blocks, and frames can shimmer slightly from one to the next. Clean the clip first (see below) and it does much better.</p>
+
+    <h2>VapourSynth and chaiNNer</h2>
+    <p><strong>VapourSynth</strong> is the scriptable video toolkit archivists use. With plugins like QTGMC for deinterlacing and vs-mlrt for running AI models on the GPU, it can do everything a commercial restorer does, and you control every step. It's also the most work: Python scripts, plugin builds and tuning per clip.</p>
+    <p><strong>chaiNNer</strong> is a free node editor for image models, with a Linux build. You wire up a chain of models visually, which makes it great for trying things. It's image-first, so for long videos you'll be splitting into frames and joining them back up.</p>
+
+    <h2>Phoenix Upscaler</h2>
+    <p><a href="/upscaler">Phoenix Upscaler</a> ships as an AppImage. Its Linux version runs Generative mode: a video diffusion model that rebuilds texture in faces, fabric and hair instead of only sharpening edges, while a second, source-faithful pass keeps people looking like themselves. Before that it works out what each clip needs. It deinterlaces interlaced tape and DVD captures, and deblocks heavily compressed low-resolution clips before the detail model sees them. You pick a clip and a quality level, and it does the rest.</p>
+    <ul>
+      <li><strong>Graphics card:</strong> AMD Radeon RX 6000 series or newer, or NVIDIA, with 8 GB of video memory or more.</li>
+      <li><strong>Setup:</strong> the first time, the app downloads its own Python environment, PyTorch (ROCm or CUDA) and the model, about 25 GB, in 30 to 90 minutes. Nothing needs root. If your account isn't allowed to use the GPU for compute yet, the app shows the one command that fixes it.</li>
+      <li><strong>Distribution:</strong> built and tested on Ubuntu 24.04. Other current 64-bit distributions from 2024 on should work.</li>
+      <li><strong>Price:</strong> $129 once, no subscription. The free download restores 60-second clips with a small watermark.</li>
+    </ul>
+    <p>It's honest to say what it isn't. The Linux version has no lighter mode for small cards (the Windows version does), so a card under 8 GB can't run it. And it's built for old footage. For clean HD or anime, Video2X is free and very good.</p>
+
+    <h2>How they compare</h2>
+    <div class="table-wrap">
+      <table class="req-table">
+        <thead><tr><th></th><th>Video2X</th><th>VapourSynth</th><th>Phoenix Upscaler</th></tr></thead>
+        <tbody>
+          <tr><th>Price</th><td>Free</td><td>Free</td><td>$129 once</td></tr>
+          <tr><th>Graphics card</th><td>Any Vulkan card</td><td>Depends on plugins</td><td>AMD RX 6000+ or NVIDIA, 8 GB+</td></tr>
+          <tr><th>Setup</th><td>Package or AppImage</td><td>Scripts and plugins</td><td>AppImage, one-click model setup</td></tr>
+          <tr><th>Deinterlacing</th><td>No</td><td>Yes (QTGMC)</td><td>Automatic</td></tr>
+          <tr><th>Model type</th><td>Per-frame image models</td><td>Your choice</td><td>Video diffusion plus a source-faithful base</td></tr>
+          <tr><th>Best at</th><td>Anime, clean footage</td><td>Full control</td><td>Old tapes, DVDs, phone clips</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Cleaning old video first, with ffmpeg</h2>
+    <p>Whatever upscaler you use, old footage turns out better when its damage is cleaned up before the AI sees it. For an interlaced tape or DVD capture, deinterlace and denoise lightly:</p>
+<div class="code"><div class="code-label"><span>Deinterlace a tape capture</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -i tape.mp4 -vf "bwdif=deint=interlaced,hqdn3d=2.0:1.5:3.0:2.5" \
+  -c:v libx264 -crf 12 -preset fast -c:a copy tape_clean.mp4</code></pre></div>
+    <p>For a blocky clip 288 pixels tall or less, deblock instead:</p>
+<div class="code"><div class="code-label"><span>Deblock a low-res clip</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -i lowres.mp4 \
+  -vf "spp=5,deblock=filter=strong:block=8,hqdn3d=3.2:2.4:5.5:4.0" \
+  -c:v libx264 -crf 12 -preset fast -c:a copy lowres_clean.mp4</code></pre></div>
+    <p>The <a href="/deinterlace-video">deinterlacing guide</a> and the <a href="/upscale-low-resolution-video">low-resolution guide</a> explain each filter.</p>
+
+    <h2>Getting the GPU working</h2>
+    <ul>
+      <li><strong>NVIDIA:</strong> install the proprietary driver from your distribution. If <code>nvidia-smi</code> lists your card, CUDA apps that bring their own runtime (Phoenix does) will find it.</li>
+      <li><strong>AMD:</strong> the kernel's amdgpu driver is enough for Vulkan tools. ROCm apps also need your user in the <code>render</code> and <code>video</code> groups: <code>sudo usermod -aG render,video $USER</code>, then log out and back in.</li>
+      <li><strong>Intel Arc:</strong> works with Vulkan tools like Video2X. Most PyTorch-based upscalers, Phoenix included, don't support it on Linux yet.</li>
+    </ul>
+
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Does Topaz Video AI run on Linux?</summary>
+        <p>No. Topaz Video AI is made for Windows and macOS only, and Topaz doesn't offer a Linux build. On Linux you need one of the tools on this page, or a cloud service.</p>
+      </details>
+      <details>
+        <summary>What is the best free video upscaler for Linux?</summary>
+        <p>Video2X, which is open source and runs Real-ESRGAN and other models on almost any graphics card through Vulkan. It's a good fit for cartoons and clean footage. On old, noisy, interlaced tape it sharpens the damage along with the picture unless you clean the clip first.</p>
+      </details>
+      <details>
+        <summary>Can I upscale video on Linux with an AMD graphics card?</summary>
+        <p>Yes. Vulkan-based tools like Video2X work on any recent AMD card. Diffusion models need ROCm, AMD's compute platform, which supports the Radeon RX 6000 series and newer. Phoenix Upscaler sets ROCm up for its Generative mode itself, without root.</p>
+      </details>
+      <details>
+        <summary>Which Linux distributions does Phoenix Upscaler support?</summary>
+        <p>It ships as an AppImage, so there's nothing to install system-wide. It's built and tested on Ubuntu 24.04, and other current 64-bit distributions from 2024 on should work. The free version lets you check on your own machine before you buy.</p>
+      </details>
+      <details>
+        <summary>Does upscaling work on Linux without a graphics card?</summary>
+        <p>Only slowly. Plain resizing in ffmpeg works on any CPU, and some AI tools have CPU modes, but a minute of video can take hours. Phoenix's Linux version needs an AMD or NVIDIA card with 8 GB or more. Without one, <a href="/studio">Phoenix Cloud Restore</a> runs the same restoration in a browser.</p>
+      </details>
+    </div>
+
+    <p class="muted">Related: <a href="/ai-video-upscaling-amd-gpu">AI upscaling on an AMD Radeon</a> &middot; <a href="/topaz-video-ai-alternative">Topaz Video AI alternative</a> &middot; <a href="/deinterlace-video">Deinterlacing video</a> &middot; <a href="/upscale-dvd-to-hd">Upscaling a DVD to HD</a> &middot; <a href="/restore-old-video">How to restore old video</a> &middot; <a href="/upscaler-guide">Phoenix Upscaler guide</a></p>
+    <div class="content-cta"><h2>Try it on your own machine</h2><p>Download the AppImage, run the free version on a 60-second clip, and see whether your card and distribution are happy before you spend anything.</p><a class="btn btn-primary" href="/upscaler#download">Download Phoenix</a></div>
+  </main>
+  <footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><p class="foot-h">Restore</p><a href="/upscaler">Phoenix Upscaler</a><a href="/studio">Cloud Restore</a><a href="/upscaler-guide">Upscaler guide</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="/motion">Phoenix Motion</a><a href="/motion-app">Make a clip</a><a href="/motion-desktop">Motion desktop</a><a href="/editor">Phoenix Editor</a><a href="/editor-guide">Editor guide</a><a href="/local-ai">Phoenix Local AI</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/upscale-low-resolution-video">Upscaling 240p video</a><a href="/ai-video-upscaling-amd-gpu">AI upscaling on AMD</a><a href="/deinterlace-video">Deinterlacing video</a><a href="/upscale-dvd-to-hd">Upscaling DVDs</a><a href="/linux-video-upscaler">Upscaling on Linux</a><a href="/animate-old-photos">Animating old photos</a><a href="/wan-2-2-8gb-gpu">Wan 2.2 on 8 GB</a></div>
+    <div class="foot-col"><p class="foot-h">Company</p><a href="/about">About</a><a href="/developers">API &amp; AI agents</a><a href="/affiliates">Affiliates</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/refund">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
+</footer>
+<script src="site.js?v=a8b919db"></script>
+<!--/email_off--></body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to upscale a DVD to HD (1080p) | Phoenix Upscaler</title>
+  <meta name="description" content="Home DVDs look soft and blocky on a big TV. How to copy the video off the disc, fix its shape and interlacing, and upscale it to 1080p without new damage." />
+  <link rel="canonical" href="https://phoenixlabs.space/upscale-dvd-to-hd" />
+  <meta name="robots" content="max-image-preview:large" />
+  <meta property="og:site_name" content="Phoenix Labs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to upscale a DVD to HD" />
+  <meta property="og:description" content="Home DVDs look soft and blocky on a big TV. How to copy the video off the disc, fix its shape and interlacing, and upscale it to 1080p without new damage." />
+  <meta property="og:url" content="https://phoenixlabs.space/upscale-dvd-to-hd" />
+  <meta property="og:image" content="https://phoenixlabs.space/assets/social/upscaler.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Phoenix Upscaler restoring old video" />
+  <meta property="article:modified_time" content="2026-11-20" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/brand/products/upscaler.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/brand/products/upscaler-mark-64.png" />
+  <link rel="apple-touch-icon" href="assets/brand/products/upscaler-touch.png" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=f0bb2559" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to upscale a DVD to HD",
+        "description": "Home DVDs look soft and blocky on a big TV. How to copy the video off the disc, fix its shape and interlacing, and upscale it to 1080p without new damage.",
+        "image": "https://phoenixlabs.space/assets/social/upscaler.jpg",
+        "datePublished": "2026-11-20",
+        "dateModified": "2026-11-20",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://phoenixlabs.space/#org",
+          "name": "Phoenix Labs",
+          "url": "https://phoenixlabs.space/"
+        },
+        "mainEntityOfPage": "https://phoenixlabs.space/upscale-dvd-to-hd",
+        "about": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Phoenix Upscaler",
+            "url": "https://phoenixlabs.space/upscaler"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to upscale a DVD to 1080p",
+        "description": "Copy the video off the disc without re-encoding, fix the pixel shape and interlacing, then upscale once to 1080p.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Copy the video off the disc",
+            "text": "Copy the MPEG-2 video as it is, with no re-encode, using MakeMKV or by joining the VOB files with ffmpeg."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Fix the shape",
+            "text": "DVD pixels aren't square. Resize to square pixels first, or a 4:3 picture comes out stretched sideways and a widescreen one squashed."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Deinterlace, or undo pulldown",
+            "text": "Video-sourced discs need deinterlacing. Films and TV series on NTSC discs need inverse telecine instead."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Upscale once, to 1080p",
+            "text": "Upscale in a single pass to 1080p. A DVD holds about a sixth of the pixels of a 1080p frame, so 4K rarely adds anything."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Keep the original disc copy",
+            "text": "Keep the untouched copy from step 1. Better tools will come, and you can always start again from it."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Phoenix Labs",
+            "item": "https://phoenixlabs.space/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phoenix Upscaler",
+            "item": "https://phoenixlabs.space/upscaler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Upscaling a DVD to HD",
+            "item": "https://phoenixlabs.space/upscale-dvd-to-hd"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can you convert a DVD to HD?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can turn it into a 1080p file that looks cleaner and sharper than the disc on a big screen. It won't match something filmed in HD: a DVD frame is 720 by 480 or 576 pixels, and an upscaler can only clean up and rebuild so much of the rest."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it worth upscaling a DVD to 4K?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rarely. 1080p already stretches a DVD more than twice in each direction. 4K quadruples the file size again without adding anything the disc had. Your 4K TV will scale a good 1080p file up just fine."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my upscaled DVD look stretched?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because DVD pixels aren't square. A 720 by 480 frame is meant to be shown at 4:3 or 16:9, and a player knows that from a flag in the file. Many tools ignore the flag and keep the 720 by 480 shape. Resize to square pixels before upscaling, as shown on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a DVD player or TV upscale DVDs already?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, an upscaling player or a modern TV resizes the picture as it plays. It's a quick resize, though, not a restoration: it doesn't remove compression blocks, and the result disappears when you stop playing. An upscaled file is something you can keep, share and edit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I copy a store-bought movie DVD?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "That depends on where you live, because most commercial movie discs are copy-protected and many countries forbid getting around it. Home DVDs, like camcorder discs and tape transfers you paid for, have no protection, and they're what this guide is for."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body><!--email_off-->
+  <header class="nav">
+  <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+  <nav class="nav-links" id="site-menu" aria-label="Products">
+    <a href="/upscaler">Upscaler</a>
+    <a href="/studio">Cloud Restore</a>
+    <a href="/motion">Motion</a>
+    <a href="/editor">Editor</a>
+    <a href="/local-ai">Local AI</a>
+  </nav>
+  <a class="btn btn-sm nav-cta" href="/upscaler#download">Download Phoenix</a>
+  <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
+</header>
+  <main class="content-page">
+    <p class="badge">DVD</p>
+    <h1>How to upscale a DVD to HD</h1>
+    <p class="lead">A wedding DVD, a tape transfer from the 2000s, a camcorder that burned straight to disc: on a modern TV they all look soft, smeared and a little blocky. A DVD is a better source than the tape it often came from, so it scales up well, but only if you copy it off the disc cleanly and fix two quirks first.</p>
+    <p class="muted page-date">Updated <time datetime="2026-11-20">20 November 2026</time></p>
+
+    <h2>What's on a DVD</h2>
+    <p>Every DVD stores the picture at 720&times;480 (NTSC: North America and Japan) or 720&times;576 (PAL: most of Europe, Asia and Australia), compressed with MPEG-2. That's about a sixth of the pixels in a 1080p frame. Two other things matter before you upscale:</p>
+    <ul>
+      <li><strong>The pixels aren't square.</strong> The same 720-wide frame is shown at 4:3 or stretched to 16:9 widescreen, depending on a flag in the file.</li>
+      <li><strong>Most home DVDs are interlaced.</strong> Anything from a camcorder or a tape was recorded as interlaced video, and the disc keeps it that way.</li>
+    </ul>
+
+    <h2>1. Copy the video off the disc, untouched</h2>
+    <p>You want the MPEG-2 video exactly as it is on the disc. Anything that &ldquo;converts&rdquo; it to MP4 at the same time compresses it a second time, and the upscaler will sharpen those new blocks too.</p>
+    <ul>
+      <li><strong>MakeMKV</strong> (free while in beta, Windows, Mac and Linux) copies each title on the disc into one MKV file with no re-encode. The easiest route.</li>
+      <li><strong>The files themselves.</strong> Open the disc's <code>VIDEO_TS</code> folder. The video sits in <code>VTS_01_1.VOB</code>, <code>VTS_01_2.VOB</code> and so on, split into 1 GB pieces. ffmpeg can join them without re-encoding (below).</li>
+    </ul>
+
+    <h2>2. Fix the shape</h2>
+    <p>This is the step most people miss. A 720&times;480 frame is 3:2, but a 4:3 disc is meant to be shown narrower and a widescreen disc wider. DVD players read that from the file. Many editors and upscalers don't, and keep the 720&times;480 shape, so everyone looks slightly too wide (4:3) or too thin (16:9).</p>
+    <p>Resizing to square pixels before upscaling settles it for every tool that comes after: 640&times;480 or 768&times;576 for a 4:3 disc, 854&times;480 or 1024&times;576 for widescreen. The ffmpeg command below works out the right width from the file.</p>
+
+    <h2>3. Deinterlace, or undo pulldown</h2>
+    <p>Pause on something moving. Fine horizontal stripes on its edges mean the disc is interlaced. Home video needs a deinterlacer, and it has to run before anything else touches the picture.</p>
+    <p>Discs of films and TV series from NTSC countries are different. They usually carry 24-frame film spread over 30-frame video in a 3:2 pattern, which needs inverse telecine, not deinterlacing. The <a href="/deinterlace-video">deinterlacing guide</a> explains both and has the commands.</p>
+
+    <h2>4. Upscale once, to 1080p</h2>
+    <p>Going from 480 or 576 lines to 1080 is a bit more than twice in each direction, which is well within what a good upscaler handles. Do it in one pass. Upscaling in steps, or restoring and then upscaling again, stacks each step's artifacts.</p>
+    <p>A proper video upscaler also handles the MPEG-2 damage: blocks in dark scenes and fast motion, and fizzy &ldquo;mosquito&rdquo; noise around edges. A plain resize, like the one your TV does, makes those bigger along with everything else.</p>
+
+    <h2>5. Keep the original copy</h2>
+    <p>Hold on to the untouched MKV or VOB files from step 1. Discs don't last forever, and restoration tools keep getting better. With the original copy you can always redo it later.</p>
+
+    <h2>Doing it yourself with ffmpeg</h2>
+    <p>The free command-line tool <a href="https://ffmpeg.org/" rel="noopener">ffmpeg</a> handles the copying and the clean-up. To join a title's VOB files without re-encoding:</p>
+<div class="code"><div class="code-label"><span>Join the VOB files</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -fflags +genpts -i "concat:VTS_01_1.VOB|VTS_01_2.VOB|VTS_01_3.VOB" \
+  -map 0:v -map 0:a -c copy dvd.mkv</code></pre></div>
+    <p>Then fix the shape and deinterlace in one pass, keeping it close to lossless for the upscaler:</p>
+<div class="code"><div class="code-label"><span>Square pixels and deinterlace</span><button type="button" class="code-copy" data-copy>Copy</button></div>
+<pre><code>ffmpeg -i dvd.mkv \
+  -vf "bwdif=mode=send_frame:parity=auto:deint=interlaced,scale=trunc(iw*sar/2)*2:ih:flags=lanczos,setsar=1" \
+  -c:v libx264 -crf 12 -preset slow -c:a copy dvd_clean.mp4</code></pre></div>
+    <ul>
+      <li><code>bwdif</code> deinterlaces, and <code>deint=interlaced</code> touches only frames the disc marks as interlaced.</li>
+      <li><code>scale=trunc(iw*sar/2)*2:ih</code> widens or narrows the frame by the pixel shape the file declares, and <code>setsar=1</code> marks the result as square.</li>
+      <li><code>-crf 12</code> keeps it nearly lossless, so the upscaler sees the disc's picture and not a new layer of compression.</li>
+      <li>On a film or TV series from an NTSC disc, swap <code>bwdif=...</code> for <code>fieldmatch,bwdif=deint=interlaced,decimate</code>.</li>
+    </ul>
+    <p>Feed <code>dvd_clean.mp4</code> to whichever upscaler you use.</p>
+
+    <h2>What to expect</h2>
+    <p>Done this way, a home DVD at 1080p looks like a clean, steady, slightly soft HD picture: faces have skin instead of smear, and dark scenes stop crawling with blocks. It won't look like it was shot on a modern camera. If the DVD was made from a VHS tape, the tape's softness is baked in and the result will look like a very good tape transfer.</p>
+
+    <h2>Doing it with Phoenix</h2>
+    <p><a href="/upscaler">Phoenix Upscaler</a> takes the cleaned file from the steps above and does the rest. It checks for interlacing and only deinterlaces when it's there, and its restoration models are trained to repair compression damage rather than sharpen it. Generative mode rebuilds texture in faces and fabric, then finishes at up to 1080p. It runs on your own Windows or Linux PC, NVIDIA or AMD, for $129 once. It also reads the pixel shape the DVD declares and restores the picture at its proper 4:3 or 16:9 shape, so you can skip step 2. The free download restores 60-second clips with a small watermark, so try a chapter of yours before you buy.</p>
+
+    <h2>Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Can you convert a DVD to HD?</summary>
+        <p>You can turn it into a 1080p file that looks cleaner and sharper than the disc on a big screen. It won't match something filmed in HD: a DVD frame is 720 by 480 or 576 pixels, and an upscaler can only clean up and rebuild so much of the rest.</p>
+      </details>
+      <details>
+        <summary>Is it worth upscaling a DVD to 4K?</summary>
+        <p>Rarely. 1080p already stretches a DVD more than twice in each direction. 4K quadruples the file size again without adding anything the disc had. Your 4K TV will scale a good 1080p file up just fine.</p>
+      </details>
+      <details>
+        <summary>Why does my upscaled DVD look stretched?</summary>
+        <p>Because DVD pixels aren't square. A 720 by 480 frame is meant to be shown at 4:3 or 16:9, and a player knows that from a flag in the file. Many tools ignore the flag and keep the 720 by 480 shape. Resize to square pixels before upscaling, as shown on this page.</p>
+      </details>
+      <details>
+        <summary>Does a DVD player or TV upscale DVDs already?</summary>
+        <p>Yes, an upscaling player or a modern TV resizes the picture as it plays. It's a quick resize, though, not a restoration: it doesn't remove compression blocks, and the result disappears when you stop playing. An upscaled file is something you can keep, share and edit.</p>
+      </details>
+      <details>
+        <summary>Can I copy a store-bought movie DVD?</summary>
+        <p>That depends on where you live, because most commercial movie discs are copy-protected and many countries forbid getting around it. Home DVDs, like camcorder discs and tape transfers you paid for, have no protection, and they're what this guide is for.</p>
+      </details>
+    </div>
+
+    <p class="muted">Related: <a href="/deinterlace-video">Deinterlacing video</a> &middot; <a href="/vhs-restoration-software">Restoring VHS tapes at home</a> &middot; <a href="/restore-old-video">How to restore old video</a> &middot; <a href="/upscale-low-resolution-video">Upscaling 240p and 360p video</a> &middot; <a href="/topaz-video-ai-alternative">Topaz Video AI alternative</a> &middot; <a href="/upscaler-guide">Phoenix Upscaler guide</a></p>
+    <div class="content-cta"><h2>Try it on one chapter</h2><p>The free download restores 60-second clips with a small watermark. Pick a scene with faces in it and judge the result yourself.</p><a class="btn btn-primary" href="/upscaler#download">Download Phoenix</a></div>
+  </main>
+  <footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
+      <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
+    </div>
+    <div class="foot-col"><p class="foot-h">Restore</p><a href="/upscaler">Phoenix Upscaler</a><a href="/studio">Cloud Restore</a><a href="/upscaler-guide">Upscaler guide</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="/motion">Phoenix Motion</a><a href="/motion-app">Make a clip</a><a href="/motion-desktop">Motion desktop</a><a href="/editor">Phoenix Editor</a><a href="/editor-guide">Editor guide</a><a href="/local-ai">Phoenix Local AI</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/upscale-low-resolution-video">Upscaling 240p video</a><a href="/ai-video-upscaling-amd-gpu">AI upscaling on AMD</a><a href="/deinterlace-video">Deinterlacing video</a><a href="/upscale-dvd-to-hd">Upscaling DVDs</a><a href="/linux-video-upscaler">Upscaling on Linux</a><a href="/animate-old-photos">Animating old photos</a><a href="/wan-2-2-8gb-gpu">Wan 2.2 on 8 GB</a></div>
+    <div class="foot-col"><p class="foot-h">Company</p><a href="/about">About</a><a href="/developers">API &amp; AI agents</a><a href="/affiliates">Affiliates</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/refund">Refunds</a></div>
+  </div>
+  <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
+</footer>
+<script src="site.js?v=a8b919db"></script>
+<!--/email_off--></body>
+</html>

@@ -115,7 +115,7 @@
   }
   </script>
 </head>
-<body>
+<body><!--email_off-->
 <header class="nav">
   <a class="brand" href="/"><img class="brand-mark" src="assets/brand/phoenix-mark-96.png" alt="" width="30" height="30" /><span>Phoenix Labs</span></a>
   <nav class="nav-links" id="site-menu" aria-label="Products">
@@ -125,7 +125,7 @@
     <a href="/editor">Editor</a>
     <a href="/local-ai">Local AI</a>
   </nav>
-  <a class="btn btn-sm nav-cta" href="motion-app.html">Make an agent key</a>
+  <a class="btn btn-sm nav-cta" href="/motion-app">Make an agent key</a>
   <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><span></span></button>
 </header>
 
@@ -147,12 +147,12 @@
   <ol>
     <li><strong>Add it as a connector</strong> (in Claude or ChatGPT, a custom connector in settings) and click <em>Connect</em>.</li>
     <li><strong>Approve it on Phoenix.</strong> A Phoenix page opens showing which app is asking and where it will send you back to. Set a spending limit, say $10, and click <em>Allow</em>. If this browser has no Phoenix balance yet, the page makes one.</li>
-    <li><strong>Add money when you need to</strong>, in <a href="motion-app.html">Phoenix Motion</a> or from a top-up link the assistant gives you.</li>
+    <li><strong>Add money when you need to</strong>, in <a href="/motion-app">Phoenix Motion</a> or from a top-up link the assistant gives you.</li>
   </ol>
   <p>The connection shows up in Phoenix Motion under your balance, then <em>Agent keys</em>, marked as a connected app. Revoke it there to disconnect the app at once.</p>
 
   <h2>Or use an agent key</h2>
-  <p>For apps and scripts that don't sign in: click your balance in <a href="motion-app.html">Phoenix Motion</a>, then <em>Agent keys</em>, set a limit, and copy the <code>pak_…</code> key it shows (you see it only once). Then connect with one of these.</p>
+  <p>For apps and scripts that don't sign in: click your balance in <a href="/motion-app">Phoenix Motion</a>, then <em>Agent keys</em>, set a limit, and copy the <code>pak_…</code> key it shows (you see it only once). Then connect with one of these.</p>
   <h3>Claude Code</h3>
   <div class="code"><div class="code-label"><span>Terminal</span><button type="button" class="code-copy" data-copy>Copy</button></div>
 <pre><code>claude mcp add --transport http phoenix https://api.phoenixlabs.space/mcp --header "Authorization: Bearer pak_your_key"</code></pre></div>
@@ -213,7 +213,7 @@
   <ul>
     <li><strong>Over MCP:</strong> call <code>top_up_with_usdc</code>. It answers with the payment terms; sign the USDC transfer and call it again with the payment in <code>_meta["x402/payment"]</code>.</li>
     <li><strong>Over HTTP:</strong> <code>POST /wallet/topup/crypto</code> with <code>{"amount_cents": 500}</code> answers <code>402</code> with the terms in the <code>PAYMENT-REQUIRED</code> header. Send the same request again with the signed payment in <code>PAYMENT-SIGNATURE</code>. Any x402 client library does this for you.</li>
-    <li><strong>In the browser:</strong> people can pay the same way from <em>Add balance</em> in <a href="motion-app.html">Phoenix Motion</a>, with MetaMask, Coinbase Wallet or Rabby.</li>
+    <li><strong>In the browser:</strong> people can pay the same way from <em>Add balance</em> in <a href="/motion-app">Phoenix Motion</a>, with MetaMask, Coinbase Wallet or Rabby.</li>
   </ul>
   <p class="muted">We credit a payment only after reading the transfer back from the Base network ourselves. USDC payments go straight to Phoenix Labs, not through our card processor, and unused USDC balance is refunded in USDC to the address that paid.</p>
 
@@ -269,7 +269,7 @@ curl -X POST https://api.phoenixlabs.space/cloud/jobs/JOB_ID/start -H "Authoriza
     </details>
   </div>
 
-  <div class="content-cta"><h2>Make your first agent key</h2><p>Add a few dollars of balance, set a limit you're comfortable with, and connect your assistant.</p><a class="btn btn-primary" href="motion-app.html">Open Phoenix Motion</a></div>
+  <div class="content-cta"><h2>Make your first agent key</h2><p>Add a few dollars of balance, set a limit you're comfortable with, and connect your assistant.</p><a class="btn btn-primary" href="/motion-app">Open Phoenix Motion</a></div>
 </main>
 
 <footer class="site-foot">
@@ -279,12 +279,12 @@ curl -X POST https://api.phoenixlabs.space/cloud/jobs/JOB_ID/start -H "Authoriza
       <p>Video tools that do the tedious part, on your own PC or in our cloud.</p>
     </div>
     <div class="foot-col"><p class="foot-h">Restore</p><a href="/upscaler">Phoenix Upscaler</a><a href="/studio">Cloud Restore</a><a href="/upscaler-guide">Upscaler guide</a></div>
-    <div class="foot-col"><p class="foot-h">Create</p><a href="/motion">Phoenix Motion</a><a href="motion-app.html">Make a clip</a><a href="/motion-desktop">Motion desktop</a><a href="/editor">Phoenix Editor</a><a href="/editor-guide">Editor guide</a><a href="/local-ai">Phoenix Local AI</a></div>
-    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/upscale-low-resolution-video">Upscaling 240p video</a><a href="/ai-video-upscaling-amd-gpu">AI upscaling on AMD</a><a href="/animate-old-photos">Animating old photos</a><a href="/wan-2-2-8gb-gpu">Wan 2.2 on 8 GB</a></div>
+    <div class="foot-col"><p class="foot-h">Create</p><a href="/motion">Phoenix Motion</a><a href="/motion-app">Make a clip</a><a href="/motion-desktop">Motion desktop</a><a href="/editor">Phoenix Editor</a><a href="/editor-guide">Editor guide</a><a href="/local-ai">Phoenix Local AI</a></div>
+    <div class="foot-col"><p class="foot-h">Guides</p><a href="/restore-old-video">Restoring old video</a><a href="/vhs-restoration-software">VHS tapes</a><a href="/old-phone-video">Old phone video</a><a href="/topaz-video-ai-alternative">Topaz alternative</a><a href="/upscale-low-resolution-video">Upscaling 240p video</a><a href="/ai-video-upscaling-amd-gpu">AI upscaling on AMD</a><a href="/deinterlace-video">Deinterlacing video</a><a href="/upscale-dvd-to-hd">Upscaling DVDs</a><a href="/linux-video-upscaler">Upscaling on Linux</a><a href="/animate-old-photos">Animating old photos</a><a href="/wan-2-2-8gb-gpu">Wan 2.2 on 8 GB</a></div>
     <div class="foot-col"><p class="foot-h">Company</p><a href="/about">About</a><a href="/developers">API &amp; AI agents</a><a href="/affiliates">Affiliates</a><a href="mailto:support@phoenixlabs.space">Support</a><a href="https://www.instagram.com/phoenixlabs.space/" rel="me noopener">Instagram</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/refund">Refunds</a></div>
   </div>
   <div class="foot-legal"><span>© 2026 Phoenix Labs</span><span>Payments handled by Lemon Squeezy, our Merchant of Record.</span></div>
 </footer>
 <script src="site.js?v=a8b919db"></script>
-</body>
+<!--/email_off--></body>
 </html>

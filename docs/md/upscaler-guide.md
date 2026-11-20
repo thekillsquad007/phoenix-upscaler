@@ -64,7 +64,7 @@ Neural video restoration using paired frames, so motion stays consistent instead
 With Generative, the main screen asks one question, how much detail:
 
 - **Balanced** is the recommended choice. Clean, natural detail on any footage.
-- **Best** adds a little more detail on fast-moving footage and takes about 20% longer. On a still close-up it is no better than Balanced.
+- **Best** adds a little more detail on fast-moving footage and takes about 20% longer. On a PC with a 16 GB AMD card and 24 GB of memory or more, Best works at a bigger size instead: more detail, and one and a half to three times as long as Balanced. On a still close-up it is no better than Balanced.
 
 Phoenix will never quietly give you a lesser result than the one you chose. If Generative is not set up, it says so and tells you what to do. If your PC has no graphics card Phoenix can use, it tells you that too, and points you to the cloud studio instead of producing a restore that isn't worth keeping.
 
@@ -73,6 +73,8 @@ Phoenix will never quietly give you a lesser result than the one you chose. If G
 Generative is the only engine with an extra step, because it needs a several-gigabyte model and a GPU compute stack built for your specific graphics card.
 
 Click **Install Generative** in the app and leave it. It downloads the model and sets up everything it needs. That is about 15 GB, so it takes 30 to 90 minutes depending on your connection, and it needs roughly 25 GB free. This happens once. When it finishes, the Balanced and Best choices appear and you can start.
+
+On a PC with a 16 GB AMD card and 24 GB of memory or more, it then downloads a newer AI model too, another 7 GB that needs about 8 GB more free space. Generative works while that runs. If you set up Generative before version 0.11, choose Generative and click **Get the newer AI model (7 GB)**.
 
 - **Windows with an AMD card:** it installs into Windows Subsystem for Linux, which Windows may ask to enable and which may want a restart, plus AMD’s ROCm for WSL. AMD supports that on the Radeon RX 7800 XT, RX 7900 and RX 9000 series, Radeon PRO W7000 and Ryzen AI Max. Keep the AMD graphics driver up to date.
 - **Linux:** AMD (Radeon RX 6000 series or newer) or NVIDIA, with 8 GB or more. Nothing needs root. If your user account can't use the graphics card for compute yet, the app shows the one command to fix that, then you click Install Generative again.

@@ -4,6 +4,6 @@
 User-agent: *
 Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
-Disallow: /studio-app.html
+Disallow: /studio-app
 
 Sitemap: https://phoenixlabs.space/sitemap.xml

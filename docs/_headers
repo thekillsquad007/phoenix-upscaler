@@ -23,6 +23,11 @@
   X-Robots-Tag: noindex
   Access-Control-Allow-Origin: *
 
+# The whole site as one text file, for agents. Without noindex Google could
+# index it as a duplicate of every page.
+/llms-full.txt
+  X-Robots-Tag: noindex
+
 # App pages: no Cloudflare Web Analytics. Its automatic snippet is injected
 # into every HTML page unless the response says no-transform, and these URLs
 # can carry secrets: the Motion app takes a wallet key in its fragment

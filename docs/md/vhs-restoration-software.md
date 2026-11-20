@@ -83,7 +83,7 @@ It depends on your graphics card and the mode. Time a 30-second test and multipl
 
 No. Phoenix Upscaler works entirely on your own computer and doesn't need an internet connection once it's activated. Cloud Restore is there if you'd rather not use your own PC.
 
-Related: [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
+Related: [Deinterlacing video](https://phoenixlabs.space/deinterlace-video) · [Upscaling a DVD to HD](https://phoenixlabs.space/upscale-dvd-to-hd) · [How to restore old video](https://phoenixlabs.space/restore-old-video) · [Making old phone video look better](https://phoenixlabs.space/old-phone-video) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [Topaz Video AI alternative](https://phoenixlabs.space/topaz-video-ai-alternative) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Phoenix Upscaler guide](https://phoenixlabs.space/upscaler-guide)
 
 ## Try it on your own tape
 
