@@ -158,3 +158,5 @@ Three things, and only these: model downloads from Hugging Face when you pick a 
 ## Your own AI, in your pocket
 
 [Download free for 7 days](https://phoenixlabs.space/local-ai#download)
+
+Model names such as Gemma, Qwen and Phi belong to their makers. Phoenix Labs is independent and not affiliated with or endorsed by them.

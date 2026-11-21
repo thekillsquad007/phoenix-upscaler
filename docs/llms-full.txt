@@ -1115,6 +1115,8 @@ Three things, and only these: model downloads from Hugging Face when you pick a 
 
 [Download free for 7 days](https://phoenixlabs.space/local-ai#download)
 
+Model names such as Gemma, Qwen and Phi belong to their makers. Phoenix Labs is independent and not affiliated with or endorsed by them.
+
 ---
 title: "How to restore old video: tapes, DVDs, film and phone clips"
 description: "How to restore old video from tapes, DVDs, film scans or an old phone: work out what's wrong, fix it in the right order, and know what restoration can't do."
@@ -2105,7 +2107,7 @@ All purchases are sold and fulfilled by Lemon Squeezy, our Merchant of Record. L
 
 ## Acceptable use
 
-Don’t use the products to break the law, infringe others’ rights, or attempt to disrupt, reverse-engineer for redistribution, or resell the service. We may suspend access that violates these terms.
+Don’t use the products to break the law, infringe others’ rights, or attempt to disrupt, reverse-engineer for redistribution, or resell the service. You may not use any Phoenix Labs product to make sexual, nude or sexually suggestive content, anything involving a minor in a sexual way, or deepfakes of real people without their consent. The full rules are in our [Acceptable Use Policy](https://phoenixlabs.space/acceptable-use). We may suspend access that violates these terms.
 
 ## No warranty
 
@@ -2420,6 +2422,8 @@ Wan's 480p output looks soft on a modern screen, so every clip can get an HD pas
 - Seven and a half minutes is fine for a clip you care about and slow for experimenting. Most of it is still attention.
 - The four-step model occasionally goes hazy mid-clip, usually on portraits. Another seed fixes it, but it would be better not to need one.
 - Desktop clips are silent. The browser version of Phoenix Motion makes sound in the same pass; the desktop model doesn't.
+
+Wan 2.2 is an open model made by Alibaba’s Wan team. Phoenix Labs is independent and not affiliated with or endorsed by them; Phoenix Motion desktop is our own app that runs open models like it on your card.
 
 Related: [Motion desktop](https://phoenixlabs.space/motion-desktop) · [Animating an old photo](https://phoenixlabs.space/animate-old-photos) · [Phoenix Motion](https://phoenixlabs.space/motion) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [How to restore old video](https://phoenixlabs.space/restore-old-video)
 
@@ -3006,3 +3010,38 @@ Related: [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upsc
 Download the AppImage, run the free version on a 60-second clip, and see whether your card and distribution are happy before you spend anything.
 
 [Download Phoenix](https://phoenixlabs.space/upscaler#download)
+
+---
+title: "Acceptable Use Policy | Phoenix Labs"
+description: "What you can and can’t make with Phoenix Labs tools: no sexual content, nothing involving minors, no deepfakes."
+url: https://phoenixlabs.space/acceptable-use
+---
+
+# Acceptable Use Policy
+
+Last updated 21 November 2026.
+
+This policy covers everything Phoenix Labs makes: Phoenix Upscaler, Cloud Restore, Phoenix Motion (online and desktop), Phoenix Editor and Phoenix Local AI. It sits alongside our [Terms](https://phoenixlabs.space/terms).
+
+## Never allowed
+
+- Sexual, nude or sexually suggestive content of any kind.
+- Anything that sexualises, exploits or harms a minor.
+- Deepfakes: face swaps, putting a real person into a scene they weren’t in, or making someone appear to say or do something they didn’t, without their consent.
+- Content meant to deceive people about real events, to impersonate someone, or to harass, threaten or bully.
+- Violent extremism, content that promotes self-harm, or anything illegal where you or the people shown live.
+- Material you don’t have the right to use, such as someone else’s footage or artwork.
+
+## How we enforce it
+
+Prompts for generated video are checked before anything is made, and prompts or images that ask for the content above are refused and cost nothing. Cloud jobs go through the same check. We may pause or close an account or balance that keeps asking for refused content, and we report child sexual abuse material to the authorities.
+
+## AI-generated content
+
+Phoenix Motion clips are made by AI and are marked as AI-generated in their file metadata. If you post them, follow the platform’s rules for labelling AI content. Phoenix Labs is an independent company: the open models our tools run on are integrations, and we are not affiliated with or endorsed by their makers.
+
+## Reporting
+
+To report content made with our tools, email [support@phoenixlabs.space](mailto:support@phoenixlabs.space). In Phoenix Local AI you can also use Report reply on any answer.
+
+[← Back to Phoenix Labs](https://phoenixlabs.space/)

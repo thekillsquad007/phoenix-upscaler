@@ -65,7 +65,7 @@ All purchases are sold and fulfilled by Lemon Squeezy, our Merchant of Record. L
 
 ## Acceptable use
 
-Don’t use the products to break the law, infringe others’ rights, or attempt to disrupt, reverse-engineer for redistribution, or resell the service. We may suspend access that violates these terms.
+Don’t use the products to break the law, infringe others’ rights, or attempt to disrupt, reverse-engineer for redistribution, or resell the service. You may not use any Phoenix Labs product to make sexual, nude or sexually suggestive content, anything involving a minor in a sexual way, or deepfakes of real people without their consent. The full rules are in our [Acceptable Use Policy](https://phoenixlabs.space/acceptable-use). We may suspend access that violates these terms.
 
 ## No warranty
 

@@ -68,6 +68,8 @@ Wan's 480p output looks soft on a modern screen, so every clip can get an HD pas
 - The four-step model occasionally goes hazy mid-clip, usually on portraits. Another seed fixes it, but it would be better not to need one.
 - Desktop clips are silent. The browser version of Phoenix Motion makes sound in the same pass; the desktop model doesn't.
 
+Wan 2.2 is an open model made by Alibaba’s Wan team. Phoenix Labs is independent and not affiliated with or endorsed by them; Phoenix Motion desktop is our own app that runs open models like it on your card.
+
 Related: [Motion desktop](https://phoenixlabs.space/motion-desktop) · [Animating an old photo](https://phoenixlabs.space/animate-old-photos) · [Phoenix Motion](https://phoenixlabs.space/motion) · [AI upscaling on an AMD Radeon](https://phoenixlabs.space/ai-video-upscaling-amd-gpu) · [Upscaling 240p and 360p video](https://phoenixlabs.space/upscale-low-resolution-video) · [How to restore old video](https://phoenixlabs.space/restore-old-video)
 
 ## Try it on your own card
