@@ -24,27 +24,25 @@ Android 8.0 or later. Not on Google Play: you install it straight from this page
 
 **$9.99 once.** Every update included, on up to 3 phones.
 
-## Companions that remember you
+## Assistants that remember how you like things
 
-Pick someone to talk to. Ember cheers you on, Sage helps you wind down, Jinx roasts you (gently) and Atlas will explain anything. Each one has a face, a personality, and a memory of what you tell them.
+Pick an assistant for the job. Ember keeps you on track with your goals, Sage helps you think a problem through, Jinx gives blunt feedback on your writing and Atlas will explain anything.
 
 ### They remember
 
-Mention your dog's name or a job interview on Friday, and next week they'll ask how it went. What they remember carries from one chat to the next.
+Tell one your project's name or that you prefer short answers, and it keeps that in mind next time. What it remembers carries from one chat to the next.
 
 ### On your phone, not ours
 
-A companion's memory is a list kept on the phone. It only goes to the model you chat with, which never leaves the phone if you use an on-device model.
+An assistant's memory is a list kept on the phone. It only goes to the model you chat with, which never leaves the phone if you use an on-device model.
 
 ### You can read every line
 
-Open a companion's memory to see everything they've picked up. Fix a line, delete it, add your own, or make them forget it all.
+Open an assistant's memory to see everything it has picked up. Fix a line, delete it, add your own, or clear it all.
 
-### Friendly, not flirty
+### Work, not romance
 
-Companions are for company: a chat at the end of the day, a pep talk, a second opinion. No romance or adult roleplay.
-
- ![The Companions screen in Phoenix Local AI: Ember, Sage, Jinx and Atlas, each with an animated face, a Talk button and their memory](https://phoenixlabs.space/assets/site/local-ai-companions.webp)
+The assistants are tools for planning, learning and writing. There's no romance, relationship or adult roleplay.
 
 ## What it does
 
