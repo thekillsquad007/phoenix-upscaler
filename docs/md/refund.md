@@ -6,11 +6,19 @@ url: https://phoenixlabs.space/refund
 
 # Refund Policy
 
-Last updated 27 September 2026.
+Last updated 21 November 2026.
 
-## Desktop app ($129)
+## Phoenix Upscaler ($129, Business $299)
 
-If the desktop app doesn’t work for you, email us within **14 days** of purchase for a full refund. There’s a free trial on short clips so you can confirm it runs on your machine before buying, but we’ll still honour the 14-day window if something goes wrong.
+If Phoenix Upscaler doesn’t work for you, email us within **14 days** of purchase for a full refund. This covers the personal and the Business licence. There’s a free trial on short clips so you can confirm it runs on your machine before buying, but we’ll still honour the 14-day window if something goes wrong.
+
+## Phoenix Editor ($99, then optional $49 a year)
+
+If Phoenix Editor doesn’t work for you, email us within **14 days** of purchase for a full refund. The same 14 days apply to each yearly renewal. You can turn renewal off at any time and keep using the version you have.
+
+## Phoenix Motion desktop ($49 for two years)
+
+If Phoenix Motion desktop doesn’t work for you, email us within **14 days** of purchase for a full refund. The free trial lets you check it runs on your graphics card first, but the 14-day window still applies.
 
 ## Phoenix Local AI ($9.99)
 
